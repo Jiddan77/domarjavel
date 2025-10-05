@@ -1,30 +1,42 @@
-async function getJSON(url: string) {
-  const res = await fetch(url, { cache: "no-store" });
-  let data: any = null;
-  try { data = await res.json(); } catch {}
-  return { ok: res.ok, status: res.status, data };
-}
+"use client";
 
-export default async function TestAPI() {
-  const base = process.env.NEXT_PUBLIC_API_BASE || "/api";
+import { useEffect, useState } from "react";
 
-  const health = await getJSON(`${base}/health`);
-  const indexResp = await getJSON(`${base}/index`);
+export default function TestAPI() {
+  const [apiUrl, setApiUrl] = useState("Loading...");
+  const [testResult, setTestResult] = useState("Loading...");
+
+  useEffect(() => {
+    console.log("TestAPI useEffect running");
+    const url = "http://localhost:8000";
+    setApiUrl(url);
+    
+    console.log("Making API call to:", url);
+    
+    // Test API call
+    fetch(`${url}/health`)
+      .then(res => {
+        console.log("API response received:", res.status);
+        return res.json();
+      })
+      .then(data => {
+        console.log("API data:", data);
+        setTestResult(`Success: ${JSON.stringify(data)}`);
+      })
+      .catch(err => {
+        console.error("API error:", err);
+        setTestResult(`Error: ${err.message}`);
+      });
+  }, []);
 
   return (
-    <main className="p-6 space-y-6">
-      <h1 className="text-2xl font-semibold">API Test</h1>
-
-      <section className="rounded-lg border p-4">
-        <h2 className="text-lg font-medium">/api/health</h2>
-        <pre className="mt-2 bg-black/5 p-3 rounded">{JSON.stringify(health, null, 2)}</pre>
-      </section>
-
-      <section className="rounded-lg border p-4">
-        <h2 className="text-lg font-medium">/api/index</h2>
-        <p className="text-sm opacity-75">Visar antal domare, lag och säsonger om allt funkar.</p>
-        <pre className="mt-2 bg-black/5 p-3 rounded">{JSON.stringify(indexResp, null, 2)}</pre>
-      </section>
-    </main>
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-4">API Test</h1>
+      <div className="space-y-2">
+        <p><strong>API URL:</strong> {apiUrl}</p>
+        <p><strong>Test Result:</strong> {testResult}</p>
+        <p><strong>Timestamp:</strong> {new Date().toISOString()}</p>
+      </div>
+    </div>
   );
 }

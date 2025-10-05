@@ -1,13 +1,20 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
   "functions": {
-    "api/**/*.py": {
-      "runtime": "python3.12",
-      "includeFiles": [
-        "../Backend/**"
-      ]
+    "api/index.py": {
+      "runtime": "python3.9"
     }
   },
-  "regions": [
-    "arn1"
-  ]
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    }
+  ],
+  "env": {
+    "DATA_DIR": "../Backend/data",
+    "API_CORS_ORIGINS": "https://dommarjavel.vercel.app"
+  }
 }

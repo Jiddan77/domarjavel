@@ -2,18 +2,13 @@ export type Match = {
   match_id: number;
   season: number;
   date: string;
-  home_team: string;
-  away_team: string;
   referee: string;
-  home_away?: "home" | "away";
-  home_goals?: number;
-  away_goals?: number;
-  yellow_cards_home?: number;
-  yellow_cards_away?: number;
-  red_cards_home?: number;
-  red_cards_away?: number;
-  penalties_home?: number;
-  penalties_away?: number;
+  home: string;
+  away: string;
+  score: string;
+  yellow: string;
+  red: string;
+  penalty: string;
 };
 
 export async function loadMatches(): Promise<Match[]> {

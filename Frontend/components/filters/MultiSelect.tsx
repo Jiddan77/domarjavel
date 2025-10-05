@@ -6,8 +6,9 @@ export default function MultiSelect(props: {
   options: Opt[];
   values: string[];
   onChange: (values: string[]) => void;
+  disabled?: boolean;
 }) {
-  const { label, options, values, onChange } = props;
+  const { label, options, values, onChange, disabled = false } = props;
   const map = useMemo(() => new Set(values), [values]);
   function toggle(v: string) {
     const s = new Set(map);
@@ -21,8 +22,17 @@ export default function MultiSelect(props: {
         {options.map(o => (
           <button
             key={o.value}
-            onClick={() => toggle(o.value)}
-            className={`px-2 py-1 rounded border text-sm hover:opacity-90 ${map.has(o.value) ? "bg-white text-black dark:bg-white dark:text-black" : "bg-transparent"}`}
+            onClick={() => !disabled && toggle(o.value)}
+            disabled={disabled}
+            className={`px-2 py-1 rounded border text-sm transition-colors ${
+              disabled 
+                ? "opacity-50 cursor-not-allowed" 
+                : "hover:opacity-90"
+            } ${
+              map.has(o.value) 
+                ? "bg-white text-black dark:bg-white dark:text-black" 
+                : "bg-transparent"
+            }`}
           >
             {o.label}
           </button>
