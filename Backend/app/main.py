@@ -62,12 +62,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Create a router for main API endpoints
-from fastapi import APIRouter
-main_router = APIRouter()
-
-# Include routers
-app.include_router(main_router, prefix="/api", tags=["main"])
+# Include chunks API router
 app.include_router(chunks_router, prefix="/api", tags=["chunks"])
 
 # Database lifecycle
@@ -140,7 +135,7 @@ async def health_check():
         "version": "1.0.0"
     }
 
-@main_router.get("/index")
+@app.get("/api/index")
 async def get_index():
     """Get basic API information"""
     return {
@@ -158,7 +153,7 @@ async def get_index():
         ]
     }
 
-@main_router.get("/matches")
+@app.get("/api/matches")
 async def get_matches(
     season: Optional[List[int]] = Query(None),
     referee: Optional[List[str]] = Query(None),
@@ -179,12 +174,12 @@ async def get_matches(
         include_total=include_total
     )
 
-@main_router.get("/seasons")
+@app.get("/api/seasons")
 async def get_seasons():
     """Get available seasons"""
     return await db_manager.get_seasons()
 
-@main_router.get("/referees")
+@app.get("/api/referees")
 async def get_referees(
     season: Optional[List[int]] = Query(None),
     min_matches: int = Query(1, alias="minMatches")
@@ -192,7 +187,7 @@ async def get_referees(
     """Get referees with match counts"""
     return await db_manager.get_referees(season=season, min_matches=min_matches)
 
-@main_router.get("/teams")
+@app.get("/api/teams")
 async def get_teams(
     season: Optional[List[int]] = Query(None),
     min_matches: int = Query(1, alias="minMatches")
@@ -221,7 +216,7 @@ async def get_teams(
     
     return sorted(filtered_teams, key=lambda x: x["matches"], reverse=True)
 
-@main_router.get("/stats")
+@app.get("/api/stats")
 async def get_stats(
     season: Optional[List[int]] = Query(None),
     referee: Optional[List[str]] = Query(None),
@@ -269,7 +264,7 @@ async def get_stats(
         "avgPenalty": round(avg_penalty, 2)
     }
 
-@main_router.get("/leaderboard")
+@app.get("/api/leaderboard")
 async def get_leaderboard(
     season: Optional[List[int]] = Query(None),
     team: Optional[List[str]] = Query(None),
