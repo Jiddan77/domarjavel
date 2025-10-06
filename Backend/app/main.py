@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional, Dict, Any
 import json
@@ -6,6 +6,8 @@ import os
 from pathlib import Path
 from .chunks_api import router as chunks_router
 from .database import db_manager
+import time
+from collections import defaultdict
 
 app = FastAPI(
     title="Dommarjävel API",
@@ -13,17 +15,59 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# Simple rate limiting
+rate_limit_storage = defaultdict(list)
+RATE_LIMIT_REQUESTS = 100  # requests per minute
+RATE_LIMIT_WINDOW = 60  # seconds
+
+def check_rate_limit(client_ip: str) -> bool:
+    now = time.time()
+    # Clean old requests
+    rate_limit_storage[client_ip] = [
+        req_time for req_time in rate_limit_storage[client_ip] 
+        if now - req_time < RATE_LIMIT_WINDOW
+    ]
+    
+    # Check if under limit
+    if len(rate_limit_storage[client_ip]) >= RATE_LIMIT_REQUESTS:
+        return False
+    
+    # Add current request
+    rate_limit_storage[client_ip].append(now)
+    return True
+
+@app.middleware("http")
+async def rate_limit_middleware(request: Request, call_next):
+    client_ip = request.client.host
+    
+    # Skip rate limiting for health checks
+    if request.url.path in ["/", "/health"]:
+        response = await call_next(request)
+        return response
+    
+    if not check_rate_limit(client_ip):
+        raise HTTPException(status_code=429, detail="Rate limit exceeded")
+    
+    response = await call_next(request)
+    return response
+
 # CORS configuration
-origins = os.getenv("API_CORS_ORIGINS", "http://localhost:3000").split(",")
+default_origins = "http://localhost:3000,https://dommarjavel.vercel.app,https://domarjavel-production.up.railway.app"
+origins = os.getenv("API_CORS_ORIGINS", default_origins).split(",")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],  # Only needed methods
     allow_headers=["*"],
 )
 
-# Include chunks API router
+# Create a router for main API endpoints
+from fastapi import APIRouter
+main_router = APIRouter()
+
+# Include routers
+app.include_router(main_router, prefix="/api", tags=["main"])
 app.include_router(chunks_router, prefix="/api", tags=["chunks"])
 
 # Database lifecycle
@@ -79,7 +123,12 @@ def load_data():
 
 @app.get("/")
 async def root():
-    return {"message": "Dommarjävel API is running", "status": "healthy"}
+    return {
+        "message": "Dommarjävel API is running", 
+        "status": "healthy",
+        "description": "Swedish football referee statistics",
+        "version": "1.0.0"
+    }
 
 @app.get("/health")
 async def health_check():
@@ -91,7 +140,7 @@ async def health_check():
         "version": "1.0.0"
     }
 
-@app.get("/index")
+@main_router.get("/index")
 async def get_index():
     """Get basic API information"""
     return {
@@ -109,7 +158,7 @@ async def get_index():
         ]
     }
 
-@app.get("/matches")
+@main_router.get("/matches")
 async def get_matches(
     season: Optional[List[int]] = Query(None),
     referee: Optional[List[str]] = Query(None),
@@ -130,12 +179,12 @@ async def get_matches(
         include_total=include_total
     )
 
-@app.get("/seasons")
+@main_router.get("/seasons")
 async def get_seasons():
     """Get available seasons"""
     return await db_manager.get_seasons()
 
-@app.get("/referees")
+@main_router.get("/referees")
 async def get_referees(
     season: Optional[List[int]] = Query(None),
     min_matches: int = Query(1, alias="minMatches")
@@ -143,7 +192,7 @@ async def get_referees(
     """Get referees with match counts"""
     return await db_manager.get_referees(season=season, min_matches=min_matches)
 
-@app.get("/teams")
+@main_router.get("/teams")
 async def get_teams(
     season: Optional[List[int]] = Query(None),
     min_matches: int = Query(1, alias="minMatches")
@@ -172,7 +221,7 @@ async def get_teams(
     
     return sorted(filtered_teams, key=lambda x: x["matches"], reverse=True)
 
-@app.get("/stats")
+@main_router.get("/stats")
 async def get_stats(
     season: Optional[List[int]] = Query(None),
     referee: Optional[List[str]] = Query(None),
@@ -220,7 +269,7 @@ async def get_stats(
         "avgPenalty": round(avg_penalty, 2)
     }
 
-@app.get("/leaderboard")
+@main_router.get("/leaderboard")
 async def get_leaderboard(
     season: Optional[List[int]] = Query(None),
     team: Optional[List[str]] = Query(None),
