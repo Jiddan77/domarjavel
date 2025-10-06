@@ -22,13 +22,23 @@ class DatabaseManager:
         """Initialize database connection pool."""
         if self.database_url:
             try:
+                print(f"🔄 Attempting to connect to database...")
                 self.pool = await asyncpg.create_pool(
                     self.database_url,
                     min_size=1,
                     max_size=10,
-                    command_timeout=60
+                    command_timeout=30,  # Reduced timeout
+                    server_settings={
+                        'application_name': 'dommarjavel_api'
+                    }
                 )
                 print("✅ Database pool initialized")
+                
+                # Test the connection
+                async with self.pool.acquire() as conn:
+                    await conn.fetchval("SELECT 1")
+                print("✅ Database connection test successful")
+                
             except Exception as e:
                 print(f"❌ Database connection failed: {e}")
                 print("🔄 Falling back to JSON file")

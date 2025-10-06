@@ -29,10 +29,21 @@ app.include_router(chunks_router, prefix="/api", tags=["chunks"])
 # Database lifecycle
 @app.on_event("startup")
 async def startup_event():
-    await db_manager.initialize()
+    print("🚀 Starting Dommarjävel API...")
+    try:
+        import asyncio
+        await asyncio.wait_for(db_manager.initialize(), timeout=30.0)
+        print("✅ Startup completed successfully")
+    except asyncio.TimeoutError:
+        print("⚠️ Database initialization timed out, continuing with JSON fallback")
+        db_manager.json_fallback = True
+    except Exception as e:
+        print(f"❌ Startup error: {e}")
+        db_manager.json_fallback = True
 
 @app.on_event("shutdown")
 async def shutdown_event():
+    print("🛑 Shutting down Dommarjävel API...")
     await db_manager.close()
 
 # Utility functions
@@ -66,9 +77,19 @@ def load_data():
         return {"matches": data}
     return data
 
+@app.get("/")
+async def root():
+    return {"message": "Dommarjävel API is running", "status": "healthy"}
+
 @app.get("/health")
 async def health_check():
-    return {"status": "healthy", "service": "dommarjavel-api"}
+    db_status = "connected" if db_manager.pool and not db_manager.json_fallback else "json_fallback"
+    return {
+        "status": "healthy", 
+        "service": "dommarjavel-api",
+        "database": db_status,
+        "version": "1.0.0"
+    }
 
 @app.get("/index")
 async def get_index():
