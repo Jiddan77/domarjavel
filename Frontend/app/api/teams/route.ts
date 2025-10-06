@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 
+// Force dynamic rendering for this route
+export const dynamic = 'force-dynamic';
+
 // Mock team data
 const mockTeams = [
   { name: 'Malmö FF', matches: 30 },
