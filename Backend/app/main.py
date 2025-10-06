@@ -145,6 +145,42 @@ async def health_check():
         "version": "1.0.0"
     }
 
+@app.get("/debug")
+async def debug_info():
+    """Debug endpoint to check file paths and data loading"""
+    import os
+    current_dir = os.getcwd()
+    
+    # Check possible data file paths
+    possible_paths = [
+        Path(os.getenv("DATA_DIR", "data")) / "data.json",
+        Path("Backend/data/data.json"),
+        Path(__file__).parent.parent / "data" / "data.json",
+    ]
+    
+    path_info = {}
+    for i, path in enumerate(possible_paths):
+        path_info[f"path_{i}"] = {
+            "path": str(path),
+            "exists": path.exists(),
+            "absolute": str(path.absolute()) if path.exists() else None
+        }
+    
+    # Try to load data
+    data = load_data()
+    match_count = len(data.get("matches", []))
+    
+    return {
+        "current_directory": current_dir,
+        "data_paths": path_info,
+        "matches_loaded": match_count,
+        "database_fallback": db_manager.json_fallback,
+        "environment_vars": {
+            "DATA_DIR": os.getenv("DATA_DIR"),
+            "DATABASE_URL": "***" if os.getenv("DATABASE_URL") else None
+        }
+    }
+
 @app.get("/api/index")
 async def get_index():
     """Get basic API information"""
