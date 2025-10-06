@@ -102,19 +102,29 @@ def parse_score(score_str):
 
 # Data loading
 def load_data():
-    data_dir = os.getenv("DATA_DIR", "data")
-    data_path = Path(data_dir) / "data.json"
+    # Try multiple possible paths for the data file
+    possible_paths = [
+        Path(os.getenv("DATA_DIR", "data")) / "data.json",  # Original path
+        Path("Backend/data/data.json"),  # Railway deployment path
+        Path(__file__).parent.parent / "data" / "data.json",  # Relative to this file
+    ]
     
-    if not data_path.exists():
-        return {"matches": []}
+    for data_path in possible_paths:
+        if data_path.exists():
+            try:
+                with open(data_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                
+                # Ensure data has matches key
+                if isinstance(data, list):
+                    return {"matches": data}
+                return data
+            except Exception as e:
+                print(f"❌ Error loading data from {data_path}: {e}")
+                continue
     
-    with open(data_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    
-    # Ensure data has matches key
-    if isinstance(data, list):
-        return {"matches": data}
-    return data
+    print(f"❌ No data file found in any of these paths: {[str(p) for p in possible_paths]}")
+    return {"matches": []}
 
 @app.get("/")
 async def root():
