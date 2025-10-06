@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 from .chunks_api import router as chunks_router
+from .database import db_manager
 
 app = FastAPI(
     title="Dommarjävel API",
@@ -24,6 +25,15 @@ app.add_middleware(
 
 # Include chunks API router
 app.include_router(chunks_router, prefix="/api", tags=["chunks"])
+
+# Database lifecycle
+@app.on_event("startup")
+async def startup_event():
+    await db_manager.initialize()
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    await db_manager.close()
 
 # Utility functions
 def parse_score(score_str):
@@ -89,53 +99,20 @@ async def get_matches(
     include_total: bool = Query(False, alias="includeTotal")
 ):
     """Get matches with optional filtering"""
-    data = load_data()
-    matches = data.get("matches", [])
-    
-    # Apply filters
-    filtered_matches = matches
-    
-    if season:
-        filtered_matches = [m for m in filtered_matches if m.get("season") in season]
-    
-    if referee:
-        filtered_matches = [m for m in filtered_matches if m.get("referee") in referee]
-    
-    if team:
-        if side == "home":
-            filtered_matches = [m for m in filtered_matches if m.get("home") in team]
-        elif side == "away":
-            filtered_matches = [m for m in filtered_matches if m.get("away") in team]
-        else:
-            filtered_matches = [m for m in filtered_matches if m.get("home") in team or m.get("away") in team]
-    
-    total = len(filtered_matches)
-    
-    # Apply offset and limit
-    start_idx = offset
-    end_idx = offset + limit
-    limited_matches = filtered_matches[start_idx:end_idx]
-    
-    if include_total:
-        return {"matches": limited_matches, "total": total}
-    
-    return limited_matches
+    return await db_manager.get_matches(
+        season=season,
+        referee=referee,
+        team=team,
+        side=side,
+        limit=limit,
+        offset=offset,
+        include_total=include_total
+    )
 
 @app.get("/seasons")
 async def get_seasons():
     """Get available seasons"""
-    data = load_data()
-    matches = data.get("matches", [])
-    
-    seasons = {}
-    for match in matches:
-        season = match.get("season")
-        if season:
-            if season not in seasons:
-                seasons[season] = {"season": season, "matches": 0}
-            seasons[season]["matches"] += 1
-    
-    return list(seasons.values())
+    return await db_manager.get_seasons()
 
 @app.get("/referees")
 async def get_referees(
@@ -143,25 +120,7 @@ async def get_referees(
     min_matches: int = Query(1, alias="minMatches")
 ):
     """Get referees with match counts"""
-    data = load_data()
-    matches = data.get("matches", [])
-    
-    # Filter by season if provided
-    if season:
-        matches = [m for m in matches if m.get("season") in season]
-    
-    referees = {}
-    for match in matches:
-        ref = match.get("referee")
-        if ref:
-            if ref not in referees:
-                referees[ref] = {"name": ref, "matches": 0}
-            referees[ref]["matches"] += 1
-    
-    # Filter by minimum matches
-    filtered_refs = [ref for ref in referees.values() if ref["matches"] >= min_matches]
-    
-    return sorted(filtered_refs, key=lambda x: x["matches"], reverse=True)
+    return await db_manager.get_referees(season=season, min_matches=min_matches)
 
 @app.get("/teams")
 async def get_teams(
