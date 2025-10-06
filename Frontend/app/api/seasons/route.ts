@@ -1,23 +1,23 @@
-import { NextResponse } from "next/server";
-import { loadMatches } from "@/lib/loadData";
+import { NextResponse } from 'next/server';
 
-export async function GET(req: Request) {
-  const { searchParams } = new URL(req.url);
-  const flat = searchParams.get("flat") === "1";
+// Mock data for now - replace with actual data source
+const mockSeasons = [
+  { season: 2025, matches: 240 },
+  { season: 2024, matches: 240 },
+  { season: 2023, matches: 240 },
+  { season: 2022, matches: 240 },
+  { season: 2021, matches: 240 },
+  { season: 2020, matches: 240 }
+];
 
-  const matches = await loadMatches();
-  const counts = new Map<number, number>();
-  for (const m of matches) {
-    counts.set(m.season, (counts.get(m.season) ?? 0) + 1);
+export async function GET() {
+  try {
+    return NextResponse.json(mockSeasons);
+  } catch (error) {
+    console.error('Error fetching seasons:', error);
+    return NextResponse.json(
+      { error: 'Failed to fetch seasons' },
+      { status: 500 }
+    );
   }
-  const entries = [...counts.entries()].sort((a, b) => b[0] - a[0]); // nyaste först
-
-  if (flat) {
-    return NextResponse.json(entries.map(([season]) => season), {
-      headers: { "Cache-Control": "no-store" },
-    });
-  }
-
-  const data = entries.map(([season, matches]) => ({ season, matches }));
-  return NextResponse.json(data, { headers: { "Cache-Control": "no-store" } });
 }

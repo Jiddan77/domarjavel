@@ -1,60 +1,108 @@
-import { NextResponse } from "next/server";
-import { loadMatches, parseCSV, Match } from "@/lib/loadData";
+import { NextResponse } from 'next/server';
 
-const toNumArr = (xs: string[]) => xs.map(n => Number(n)).filter(Number.isFinite);
-const norm = (s: any) => (s ?? "").toString().trim().replace(/\s+/g, " ").toUpperCase();
-
-function getTeamNamesRaw(m: any) {
-  const home = m.home_team ?? m.home ?? m.homeTeam ?? m.home_name ?? m.team_home ?? m.homeTeamName ?? m.home_club ?? "";
-  const away = m.away_team ?? m.away ?? m.awayTeam ?? m.away_name ?? m.team_away ?? m.awayTeamName ?? m.away_club ?? "";
-  return { home, away };
-}
-
-// svensk datumparser: "6 juli 2025" m.m.
-function parseDate(val: any): number {
-  const s = (val ?? "").toString().trim();
-  const t = Date.parse(s);
-  if (!Number.isNaN(t)) return t;
-  const mapp: Record<string, number> = {
-    januari:0, februari:1, mars:2, april:3, maj:4, juni:5,
-    juli:6, augusti:7, september:8, oktober:9, november:10, december:11
-  };
-  const r = s.match(/^(\d{1,2})\s+([A-Za-zåäöÅÄÖ]+)\s+(\d{4})$/);
-  if (r) {
-    const d = Number(r[1]), mm = mapp[r[2].toLowerCase()], y = Number(r[3]);
-    if (Number.isFinite(d) && mm != null && Number.isFinite(y)) return new Date(y, mm, d).getTime();
+// Mock match data
+const mockMatches = [
+  {
+    match_id: 6143281,
+    season: 2025,
+    date: "26 juli 2025",
+    referee: "ADAM LADEBÄCK",
+    home: "IF Brommapojkarna",
+    away: "Malmö FF",
+    score: "2–3",
+    yellow: "2–2",
+    red: "0–0",
+    penalty: "0–0",
+    status: "FINISHED",
+    extendedStatus: "FINISHED_RECENTLY",
+    date_iso: "2025-07-26T13:00:00.000Z",
+    datetime: "2025-07-26 13:00"
+  },
+  {
+    match_id: 6143283,
+    season: 2025,
+    date: "26 juli 2025",
+    referee: "KRISTOFFER KARLSSON",
+    home: "GAIS",
+    away: "Halmstads BK",
+    score: "1–2",
+    yellow: "2–2",
+    red: "0–0",
+    penalty: "0–0",
+    status: "FINISHED",
+    extendedStatus: "FINISHED_RECENTLY",
+    date_iso: "2025-07-26T15:00:00.000Z",
+    datetime: "2025-07-26 15:00"
+  },
+  {
+    match_id: 6143284,
+    season: 2025,
+    date: "27 juli 2025",
+    referee: "RICHARD SUNDELL",
+    home: "AIK",
+    away: "Djurgården",
+    score: "1–1",
+    yellow: "3–1",
+    red: "2–0",
+    penalty: "0–0",
+    status: "FINISHED",
+    extendedStatus: "FINISHED",
+    date_iso: "2025-07-27T17:00:00.000Z",
+    datetime: "2025-07-27 17:00"
   }
-  return 0; // sist
-}
+];
 
-export async function GET(req: Request) {
-  const { searchParams } = new URL(req.url);
-  const seasons = toNumArr(parseCSV(searchParams.get("season")));
-  const referees = parseCSV(searchParams.get("referee")).map(norm);
-  const teams = parseCSV(searchParams.get("team")).map(norm);
-  const side = searchParams.get("side");
-  const limit = Number(searchParams.get("limit") ?? "0");
-  const includeTotal = searchParams.get("includeTotal") === "1";
-
-  const all = await loadMatches();
-
-  let out = all.filter((mm: Match & any) => {
-    const ms = Number(mm.season); // <- funkar även om säsong är "2025"
-    const { home, away } = getTeamNamesRaw(mm);
-    const hN = norm(home), aN = norm(away);
-
-    if (seasons.length && !seasons.includes(ms)) return false;
-    if (referees.length && !referees.includes(norm(mm.referee))) return false;
-    if (teams.length && !(teams.includes(hN) || teams.includes(aN))) return false;
-    if (side && mm.home_away && mm.home_away !== side) return false;
-    return true;
-  });
-
-  // sortera datum (nyast först)
-  out.sort((a: any, b: any) => parseDate(b.date) - parseDate(a.date));
-
-  const total = out.length;
-  if (limit > 0) out = out.slice(0, limit);
-
-  return NextResponse.json(includeTotal ? { items: out, total } : out, { headers: { "Cache-Control": "no-store" } });
+export async function GET(request: Request) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const season = searchParams.getAll('season');
+    const referee = searchParams.getAll('referee');
+    const team = searchParams.getAll('team');
+    const side = searchParams.get('side');
+    const limit = parseInt(searchParams.get('limit') || '100');
+    const offset = parseInt(searchParams.get('offset') || '0');
+    const includeTotal = searchParams.get('includeTotal') === 'true';
+    
+    // Filter matches based on parameters
+    let filteredMatches = [...mockMatches];
+    
+    if (season.length > 0) {
+      const seasonNumbers = season.map(s => parseInt(s));
+      filteredMatches = filteredMatches.filter(m => seasonNumbers.includes(m.season));
+    }
+    
+    if (referee.length > 0) {
+      filteredMatches = filteredMatches.filter(m => referee.includes(m.referee));
+    }
+    
+    if (team.length > 0) {
+      if (side === 'home') {
+        filteredMatches = filteredMatches.filter(m => team.includes(m.home));
+      } else if (side === 'away') {
+        filteredMatches = filteredMatches.filter(m => team.includes(m.away));
+      } else {
+        filteredMatches = filteredMatches.filter(m => 
+          team.includes(m.home) || team.includes(m.away)
+        );
+      }
+    }
+    
+    const total = filteredMatches.length;
+    const paginatedMatches = filteredMatches.slice(offset, offset + limit);
+    
+    if (includeTotal) {
+      return NextResponse.json({
+        matches: paginatedMatches,
+        total: total
+      });
+    }
+    
+    return NextResponse.json(paginatedMatches);
+  } catch (error) {
+    console.error('Error fetching matches:', error);
+    return NextResponse.json(
+      { error: 'Failed to fetch matches' },
+      { status: 500 }
+    );
+  }
 }
