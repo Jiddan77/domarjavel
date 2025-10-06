@@ -11,7 +11,7 @@ export const swrConfig: SWRConfiguration = {
   onError: (error) => {
     console.error("SWR Error:", error);
   },
-  onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+  onErrorRetry: (error, _key, _config, revalidate, { retryCount }) => {
     // Don't retry on 404
     if (error.status === 404) return;
     

@@ -3,7 +3,7 @@ import useSWR from "swr";
 import { fetcher } from "@/lib/fetcher";
 import type { Match } from "@/lib/loadData";
 
-type MatchesResponse = Match[] | { items: Match[]; total: number };
+type MatchesResponse = Match[] | { matches: Match[]; total: number };
 
 export function useMatches(params: {
   season?: number[]; referee?: string[]; team?: string[]; side?: "home" | "away"; limit?: number; offset?: number; includeTotal?: boolean;

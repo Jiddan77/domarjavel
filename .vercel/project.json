@@ -1,0 +1,11 @@
+{
+  "projectId": "your-project-id",
+  "orgId": "your-org-id",
+  "settings": {
+    "buildCommand": "npm run build",
+    "outputDirectory": ".next",
+    "installCommand": "npm install",
+    "framework": "nextjs",
+    "rootDirectory": "Frontend"
+  }
+}

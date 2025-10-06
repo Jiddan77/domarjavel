@@ -21,9 +21,12 @@ export async function fetchMatches(params: {
   limit?: number;
   cursor?: string;
 }) {
-  const q = new URLSearchParams(
-    Object.fromEntries(Object.entries(params).filter(([,v]) => v !== undefined && v !== ""))
-  );
+  const q = new URLSearchParams();
+  Object.entries(params).forEach(([key, value]) => {
+    if (value !== undefined && value !== "") {
+      q.set(key, String(value));
+    }
+  });
   const res = await fetch(`/api/matches?${q.toString()}`, { cache: "no-store" });
   if (!res.ok) throw new Error("Failed to fetch matches");
   return res.json() as Promise<{ items: Match[]; nextCursor?: string }>;
