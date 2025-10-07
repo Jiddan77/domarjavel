@@ -55,9 +55,19 @@ jobs:
         echo '{"matches": []}' > data/data.json
         # Start server in background and test basic endpoints
         python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 &
-        sleep 5
+        sleep 10
+        # Wait for server to be ready
+        for i in {1..30}; do
+          if curl -s http://localhost:8000/health > /dev/null; then
+            echo "Server is ready"
+            break
+          fi
+          echo "Waiting for server... ($i/30)"
+          sleep 1
+        done
+        # Test endpoints that actually exist
+        curl -f http://localhost:8000/ || exit 1
         curl -f http://localhost:8000/health || exit 1
-        curl -f http://localhost:8000/docs || exit 1
 
   test-frontend:
     runs-on: ubuntu-latest
@@ -139,17 +149,26 @@ jobs:
       run: |
         cd Backend
         python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 &
-        sleep 5
+        sleep 10
+        # Wait for server to be ready
+        for i in {1..30}; do
+          if curl -s http://localhost:8000/health > /dev/null; then
+            echo "Server is ready"
+            break
+          fi
+          echo "Waiting for server... ($i/30)"
+          sleep 1
+        done
     
     - name: Test API integration
       run: |
-        # Test core endpoints
+        # Test core endpoints with correct paths
         curl -f http://localhost:8000/health
-        curl -f http://localhost:8000/matches
-        curl -f http://localhost:8000/seasons
-        curl -f http://localhost:8000/referees
-        curl -f http://localhost:8000/teams
-        curl -f http://localhost:8000/stats
+        curl -f http://localhost:8000/api/matches
+        curl -f http://localhost:8000/api/seasons
+        curl -f http://localhost:8000/api/referees
+        curl -f http://localhost:8000/api/teams
+        curl -f http://localhost:8000/api/stats
     
     - name: Build frontend
       run: |
