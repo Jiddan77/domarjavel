@@ -138,26 +138,11 @@ async def root():
 @app.get("/health")
 async def health_check():
     db_status = "connected" if db_manager.pool and not db_manager.json_fallback else "json_fallback"
-    
-    # Debug info for data file
-    import os
-    from pathlib import Path
-    
-    debug_info = {
-        "cwd": str(Path.cwd()),
-        "data_file_path": str(db_manager.data_file),
-        "data_file_exists": db_manager.data_file.exists() if hasattr(db_manager, 'data_file') else False,
-        "backend_data_exists": Path("Backend/data/data.json").exists(),
-        "data_data_exists": Path("data/data.json").exists(),
-        "files_in_cwd": [f for f in os.listdir(".") if not f.startswith(".")],
-    }
-    
     return {
         "status": "healthy", 
         "service": "dommarjavel-api",
         "database": db_status,
-        "version": "1.0.0",
-        "debug": debug_info
+        "version": "1.0.0"
     }
 
 @app.get("/debug")
