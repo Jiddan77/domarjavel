@@ -17,6 +17,9 @@ class DatabaseManager:
         self.json_fallback = not self.database_url
         if self.json_fallback:
             self.data_file = Path(__file__).parent.parent / 'data' / 'data.json'
+            print(f"📁 Data file path set to: {self.data_file}")
+            print(f"📁 Current working directory: {Path.cwd()}")
+            print(f"📁 This file location: {Path(__file__).parent}")
     
     async def initialize(self):
         """Initialize database connection pool."""
@@ -54,8 +57,30 @@ class DatabaseManager:
     def _load_json_data(self) -> List[Dict[str, Any]]:
         """Load data from JSON file as fallback."""
         try:
-            with open(self.data_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
+            # Try multiple possible paths for the data file
+            possible_paths = [
+                self.data_file,  # Original path
+                Path('Backend/data/data.json'),  # From root
+                Path('data/data.json'),  # From Backend dir
+                Path(__file__).parent.parent / 'data' / 'data.json'  # Absolute from this file
+            ]
+            
+            data = None
+            for path in possible_paths:
+                try:
+                    if path.exists():
+                        print(f"📁 Loading data from: {path}")
+                        with open(path, 'r', encoding='utf-8') as f:
+                            data = json.load(f)
+                        break
+                except Exception as e:
+                    print(f"❌ Failed to load from {path}: {e}")
+                    continue
+            
+            if data is None:
+                print(f"❌ No data file found in any of the expected locations")
+                return []
+                
             return data.get('matches', []) if isinstance(data, dict) else data
         except Exception as e:
             print(f"❌ Error loading JSON data: {e}")

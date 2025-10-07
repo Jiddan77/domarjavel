@@ -10,3 +10,4 @@ restartPolicyMaxRetries = 3
 
 [environments.production.variables]
 PYTHONPATH = "Backend"
+DATA_DIR = "Backend/data"
