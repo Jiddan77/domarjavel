@@ -70,8 +70,12 @@ class DatabaseManager:
                 try:
                     if path.exists():
                         print(f"📁 Loading data from: {path}")
-                        with open(path, 'r', encoding='utf-8') as f:
-                            data = json.load(f)
+                        # Ensure proper UTF-8 encoding and handle BOM
+                        with open(path, 'r', encoding='utf-8-sig') as f:
+                            content = f.read()
+                            # Clean up any problematic characters
+                            content = content.replace('\ufeff', '')  # Remove BOM
+                            data = json.loads(content)
                         break
                 except Exception as e:
                     print(f"❌ Failed to load from {path}: {e}")
@@ -80,8 +84,21 @@ class DatabaseManager:
             if data is None:
                 print(f"❌ No data file found in any of the expected locations")
                 return []
-                
-            return data.get('matches', []) if isinstance(data, dict) else data
+            
+            matches = data.get('matches', []) if isinstance(data, dict) else data
+            
+            # Clean up referee names and other text fields
+            for match in matches:
+                if 'referee' in match and match['referee']:
+                    # Clean up referee names - remove problematic characters
+                    referee = match['referee']
+                    # Replace common problematic characters
+                    referee = referee.replace('�', '').replace('♦', '').replace('◊', '')
+                    # Clean up extra spaces
+                    referee = ' '.join(referee.split())
+                    match['referee'] = referee
+                    
+            return matches
         except Exception as e:
             print(f"❌ Error loading JSON data: {e}")
             return []
