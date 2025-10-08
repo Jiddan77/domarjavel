@@ -15,14 +15,18 @@ import AdvancedStatsPanel from "@/components/AdvancedStatsPanel";
 import TopRefereesForTeam from "@/components/TopRefereesForTeam";
 import EnhancedTeamStats from "@/components/EnhancedTeamStats";
 import TeamPreference from "@/components/TeamPreference";
+import HistoricalTrends from "@/components/HistoricalTrends";
+import TelemetrySummary from "@/components/TelemetrySummary";
 import MatchTable from "@/components/MatchTable";
 import Leaderboard from "@/components/Leaderboard";
+import { trackFilterChange, trackPageView } from "@/lib/telemetry";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import ErrorMessage from "@/components/ErrorMessage";
 import Pagination from "@/components/Pagination";
 import { BarChart3, TrendingUp, Users, Calendar, Filter, Search, Trophy } from "lucide-react";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home() {
   const [seasonSel, setSeasonSel] = useState<number[]>([]);
@@ -62,6 +66,22 @@ export default function Home() {
   
   // Reset to page 1 when filters change
   const resetPage = () => setCurrentPage(1);
+
+  // Track page view and filter changes
+  useEffect(() => {
+    trackPageView('main');
+  }, []);
+
+  useEffect(() => {
+    if (hasActiveFilters) {
+      trackFilterChange({
+        seasons: seasonSel,
+        referees: refSel,
+        teams: teamSel,
+        side: side
+      });
+    }
+  }, [seasonSel, refSel, teamSel, side, hasActiveFilters]);
 
   // Show loading state for initial data
   if (seasonsLoading) {
@@ -256,16 +276,16 @@ export default function Home() {
           <section className="space-y-8">
             {/* Main Stats Panel */}
             {statsLoading ? (
-              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
+              <Card padding="lg">
                 <div className="flex items-center justify-center">
                   <LoadingSpinner size="md" className="mr-3" />
                   <span className="text-slate-600 dark:text-slate-400">Loading statistics...</span>
                 </div>
-              </div>
+              </Card>
             ) : statsError ? (
               <ErrorMessage error={statsError} />
             ) : (
-              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
+              <Card hover gradient>
                 <div className="flex items-center gap-3 mb-6">
                   <TrendingUp className="w-5 h-5 text-blue-600" />
                   <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
@@ -273,7 +293,7 @@ export default function Home() {
                   </h2>
                 </div>
                 <StatsPanel stats={stats} />
-              </div>
+              </Card>
             )}
 
             {/* Facts Panel */}
@@ -299,6 +319,17 @@ export default function Home() {
                 season={seasonSel}
               />
             )}
+
+            {/* Historical Trends for Selected Referee */}
+            {refSel.length === 1 && matches.length > 0 && (
+              <HistoricalTrends 
+                refereeName={refSel[0]} 
+                matches={matches}
+              />
+            )}
+
+            {/* Telemetry Summary */}
+            <TelemetrySummary />
 
             {/* Advanced Statistics Section */}
             {advancedStatsLoading ? (
