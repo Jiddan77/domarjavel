@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Home, Plane, Trophy, Users, TrendingUp, TrendingDown, Target, Award } from "lucide-react";
+import { Home, Plane, Trophy, Users, TrendingUp, TrendingDown, Award } from "lucide-react";
 import type { AdvancedStatsResponse, AdvancedRefereeStats } from "@/hooks/useAdvancedStats";
 
 const fmt = (n?: number, d = 2) => (typeof n === "number" && isFinite(n)) ? n.toFixed(d) : "-";
