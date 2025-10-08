@@ -8,6 +8,37 @@ from typing import Optional, List, Dict, Any
 import json
 from pathlib import Path
 
+# Import normalization functions from main module
+def normalize_team_name(team_name):
+    """Normalize team names to remove duplicates"""
+    if not team_name:
+        return team_name
+    
+    normalizations = {
+        "Hammarby IF": "Hammarby",
+        "Djurgårdens IF": "Djurgården",
+        "GIF Sundsvall": "Sundsvall",
+        "Örebro SK": "Örebro",
+        "Varbergs BOIS": "Varberg",
+        "Östersunds FK": "Östersund"
+    }
+    
+    return normalizations.get(team_name, team_name)
+
+def normalize_referee_name(referee_name):
+    """Clean and normalize referee names"""
+    if not referee_name:
+        return None
+    
+    cleaned = referee_name.strip()
+    if not cleaned or cleaned.lower() in ['', 'null', 'none', 'unknown', 'tbd', 'n/a']:
+        return None
+    
+    cleaned = cleaned.replace('�', '').replace('♦', '').replace('◊', '')
+    cleaned = ' '.join(cleaned.split())
+    
+    return cleaned if cleaned else None
+
 class DatabaseManager:
     def __init__(self):
         self.database_url = os.getenv('DATABASE_URL')
@@ -87,18 +118,24 @@ class DatabaseManager:
             
             matches = data.get('matches', []) if isinstance(data, dict) else data
             
-            # Clean up referee names and other text fields
+            # Clean up and normalize data
+            cleaned_matches = []
             for match in matches:
-                if 'referee' in match and match['referee']:
-                    # Clean up referee names - remove problematic characters
-                    referee = match['referee']
-                    # Replace common problematic characters
-                    referee = referee.replace('�', '').replace('♦', '').replace('◊', '')
-                    # Clean up extra spaces
-                    referee = ' '.join(referee.split())
-                    match['referee'] = referee
+                # Normalize referee names
+                if 'referee' in match:
+                    match['referee'] = normalize_referee_name(match['referee'])
+                
+                # Normalize team names
+                if 'home' in match:
+                    match['home'] = normalize_team_name(match['home'])
+                if 'away' in match:
+                    match['away'] = normalize_team_name(match['away'])
+                
+                # Only include matches with valid referees
+                if match.get('referee'):
+                    cleaned_matches.append(match)
                     
-            return matches
+            return cleaned_matches
         except Exception as e:
             print(f"❌ Error loading JSON data: {e}")
             return []

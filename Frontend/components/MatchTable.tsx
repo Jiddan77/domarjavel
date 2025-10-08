@@ -84,30 +84,30 @@ export default function MatchTable({ items, showUpcoming = false }: { items: Mat
   const ordered = [...filtered].sort((a: any, b: any) => pDate(b.date) - pDate(a.date));
   return (
     <div className="mt-4 rounded-2xl border overflow-auto">
-      <table className="w-full text-sm min-w-[720px]">
+      <table className="w-full text-xs sm:text-sm min-w-[720px]">
         <thead className="bg-black/5 dark:bg-white/5">
           <tr>
-            <th className="text-left p-2">Datum</th>
-            <th className="text-left p-2">Match</th>
-            <th className="text-left p-2">Resultat</th>
-            <th className="text-left p-2">Gula</th>
-            <th className="text-left p-2">Röda</th>
-            <th className="text-left p-2">Straffar</th>
-            <th className="text-left p-2">Domare</th>
-            <th className="text-left p-2">Säsong</th>
+            <th className="text-left p-1 sm:p-2">Datum</th>
+            <th className="text-left p-1 sm:p-2">Match</th>
+            <th className="text-left p-1 sm:p-2">Resultat</th>
+            <th className="text-left p-1 sm:p-2">Gula</th>
+            <th className="text-left p-1 sm:p-2">Röda</th>
+            <th className="text-left p-1 sm:p-2">Straffar</th>
+            <th className="text-left p-1 sm:p-2">Domare</th>
+            <th className="text-left p-1 sm:p-2">Säsong</th>
           </tr>
         </thead>
         <tbody>
           {ordered.map((m: any) => (
             <tr key={m.match_id} className="border-t">
-              <td className="p-2 whitespace-nowrap">{m.date}</td>
-              <td className="p-2">{team(m, "home")} – {team(m, "away")}</td>
-              <td className="p-2">{score(m)}</td>
-              <td className="p-2">{cardTot(m, "yellow")}</td>
-              <td className="p-2">{cardTot(m, "red")}</td>
-              <td className="p-2">{pens(m)}</td>
-              <td className="p-2">{m.referee}</td>
-              <td className="p-2">{m.season}</td>
+              <td className="p-1 sm:p-2 whitespace-nowrap">{m.date}</td>
+              <td className="p-1 sm:p-2">{team(m, "home")} – {team(m, "away")}</td>
+              <td className="p-1 sm:p-2">{score(m)}</td>
+              <td className="p-1 sm:p-2">{cardTot(m, "yellow")}</td>
+              <td className="p-1 sm:p-2">{cardTot(m, "red")}</td>
+              <td className="p-1 sm:p-2">{pens(m)}</td>
+              <td className="p-1 sm:p-2">{m.referee}</td>
+              <td className="p-1 sm:p-2">{m.season}</td>
             </tr>
           ))}
           {ordered.length === 0 && <tr><td colSpan={8} className="p-4 opacity-70">Inga matcher för filtret.</td></tr>}

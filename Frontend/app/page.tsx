@@ -12,6 +12,7 @@ import MultiSelect from "@/components/filters/MultiSelect";
 import StatsPanel from "@/components/StatsPanel";
 import FactsPanel from "@/components/FactsPanel";
 import AdvancedStatsPanel from "@/components/AdvancedStatsPanel";
+import TopRefereesForTeam from "@/components/TopRefereesForTeam";
 import MatchTable from "@/components/MatchTable";
 import Leaderboard from "@/components/Leaderboard";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -87,30 +88,30 @@ export default function Home() {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
         {/* Professional Header */}
         <header className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-                    <BarChart3 className="w-6 h-6 text-white" />
+              <div className="flex items-center gap-2 sm:gap-4">
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
+                    <BarChart3 className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
                   </div>
                   <div>
-                    <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    <h1 className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                       Dommarjävel
                     </h1>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">Swedish Football Referee Analytics</p>
+                    <p className="hidden sm:block text-sm text-slate-600 dark:text-slate-400">Swedish Football Referee Analytics</p>
                   </div>
                 </div>
               </div>
               
-              <div className="flex items-center gap-4">
-                <div className="hidden sm:flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+              <div className="flex items-center gap-2 sm:gap-4">
+                <div className="hidden md:flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
                   <Calendar className="w-4 h-4" />
                   <span>Seasons 2020-2025</span>
                 </div>
                 <button
                   onClick={() => setShowFilters(!showFilters)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition-all ${
+                  className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border transition-all ${
                     showFilters || hasActiveFilters
                       ? "bg-blue-50 border-blue-200 text-blue-700 dark:bg-blue-900/20 dark:border-blue-700 dark:text-blue-300"
                       : "bg-white border-slate-200 text-slate-700 hover:bg-slate-50 dark:bg-slate-800 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-700"
@@ -127,16 +128,16 @@ export default function Home() {
           </div>
         </header>
 
-        <main className="max-w-7xl mx-auto px-6 py-8 space-y-8">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-8 space-y-4 sm:space-y-8">
           {/* Advanced Filters Panel */}
           {showFilters && (
-            <section className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
-              <div className="flex items-center gap-3 mb-6">
+            <section className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-4 sm:p-6 shadow-sm">
+              <div className="flex items-center gap-3 mb-4 sm:mb-6">
                 <Search className="w-5 h-5 text-slate-600 dark:text-slate-400" />
-                <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Advanced Filters</h2>
+                <h2 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100">Advanced Filters</h2>
               </div>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <div className="space-y-2">
                   <MultiSelect 
                     label="Säsong" 
@@ -261,9 +262,17 @@ export default function Home() {
 
             {/* Facts Panel */}
             {stats && !statsLoading && (
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border border-blue-200 dark:border-blue-800 p-6">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border border-blue-200 dark:border-blue-800 p-4 sm:p-6">
                 <FactsPanel stats={stats} />
               </div>
+            )}
+
+            {/* Top Referees for Selected Team */}
+            {teamSel.length === 1 && matches.length > 0 && (
+              <TopRefereesForTeam 
+                teamName={teamSel[0]} 
+                matches={matches}
+              />
             )}
 
             {/* Advanced Statistics Section */}

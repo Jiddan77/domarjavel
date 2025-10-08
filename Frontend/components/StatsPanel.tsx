@@ -42,29 +42,29 @@ export default function StatsPanel({ stats }: { stats: any }) {
   ];
   
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
       {statItems.map((item, index) => {
         const Icon = item.icon;
         return (
           <div 
             key={index}
-            className={`p-6 rounded-xl border-2 ${item.bgColor} ${item.borderColor} transition-all hover:shadow-md`}
+            className={`p-3 sm:p-6 rounded-xl border-2 ${item.bgColor} ${item.borderColor} transition-all hover:shadow-md`}
           >
-            <div className="flex items-center gap-3 mb-3">
-              <div className={`p-2 rounded-lg ${item.bgColor} ${item.color}`}>
-                <Icon className="w-5 h-5" />
+            <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+              <div className={`p-1 sm:p-2 rounded-lg ${item.bgColor} ${item.color}`}>
+                <Icon className="w-3 h-3 sm:w-5 sm:h-5" />
               </div>
-              <div className="text-sm font-medium text-slate-700 dark:text-slate-300">
+              <div className="text-xs sm:text-sm font-medium text-slate-700 dark:text-slate-300">
                 {item.label}
               </div>
             </div>
             
             <div className="space-y-1">
-              <div className={`text-3xl font-bold ${item.color}`}>
+              <div className={`text-xl sm:text-3xl font-bold ${item.color}`}>
                 {item.value.toLocaleString()}
               </div>
               {item.average !== undefined && (
-                <div className="text-sm text-slate-600 dark:text-slate-400">
+                <div className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
                   Snitt: {typeof item.average === 'number' ? item.average.toFixed(2) : '-'}/match
                 </div>
               )}

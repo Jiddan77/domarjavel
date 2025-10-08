@@ -100,6 +100,39 @@ def parse_score(score_str):
         pass
     return 0, 0
 
+def normalize_team_name(team_name):
+    """Normalize team names to remove duplicates"""
+    if not team_name:
+        return team_name
+    
+    # Team name normalization mapping
+    normalizations = {
+        "Hammarby IF": "Hammarby",
+        "Djurgårdens IF": "Djurgården",
+        "GIF Sundsvall": "Sundsvall",
+        "Örebro SK": "Örebro",
+        "Varbergs BOIS": "Varberg",
+        "Östersunds FK": "Östersund"
+    }
+    
+    return normalizations.get(team_name, team_name)
+
+def normalize_referee_name(referee_name):
+    """Clean and normalize referee names"""
+    if not referee_name:
+        return None
+    
+    # Remove empty/placeholder referees
+    cleaned = referee_name.strip()
+    if not cleaned or cleaned.lower() in ['', 'null', 'none', 'unknown', 'tbd', 'n/a']:
+        return None
+    
+    # Remove problematic characters that might have been missed
+    cleaned = cleaned.replace('�', '').replace('♦', '').replace('◊', '')
+    cleaned = ' '.join(cleaned.split())  # Normalize whitespace
+    
+    return cleaned if cleaned else None
+
 # Data loading
 def load_data():
     # Try multiple possible paths for the data file
