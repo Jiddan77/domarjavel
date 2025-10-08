@@ -25,10 +25,23 @@ function score(m: any) {
 }
 
 function cardTot(m: any, kind: "yellow"|"red") {
+  // Try to parse from the format "2-1" or "0-0" in yellow/red fields
+  const cardStr = m[kind] || m[`${kind}_cards`] || "";
+  if (typeof cardStr === "string" && cardStr.includes("-")) {
+    const parts = cardStr.split("-");
+    if (parts.length === 2) {
+      const h = parseInt(parts[0]) || 0;
+      const a = parseInt(parts[1]) || 0;
+      return h + a;
+    }
+  }
+  
+  // Fallback to other field formats
   const h = Number(m[`${kind}_cards_home`] ?? m[`${kind}CardsHome`] ?? m?.cards?.[kind]?.home ?? m?.[`${kind}`]?.home ?? m?.stats?.cards?.[kind]?.home ?? 0);
   const a = Number(m[`${kind}_cards_away`] ?? m[`${kind}CardsAway`] ?? m?.cards?.[kind]?.away ?? m?.[`${kind}`]?.away ?? m?.stats?.cards?.[kind]?.away ?? 0);
   const tot = (Number.isFinite(h)?h:0) + (Number.isFinite(a)?a:0);
   if (tot) return tot;
+  
   const ev = (m.events ?? m.timeline ?? []) as any[];
   if (Array.isArray(ev)) {
     const key = kind === "yellow" ? "yellow" : "red";
@@ -37,17 +50,36 @@ function cardTot(m: any, kind: "yellow"|"red") {
   return 0;
 }
 function pens(m: any) {
+  // Try to parse from the format "1-0" or "0-0" in penalty field
+  const penStr = m.penalty || m.penalties || "";
+  if (typeof penStr === "string" && penStr.includes("-")) {
+    const parts = penStr.split("-");
+    if (parts.length === 2) {
+      const h = parseInt(parts[0]) || 0;
+      const a = parseInt(parts[1]) || 0;
+      return h + a;
+    }
+  }
+  
+  // Fallback to other field formats
   const h = Number(m.penalties_home ?? m.penalty_home ?? m.penaltiesHome ?? m?.penalties?.home ?? m?.stats?.penalties?.home ?? 0);
   const a = Number(m.penalties_away ?? m.penalty_away ?? m.penaltiesAway ?? m?.penalties?.away ?? m?.stats?.penalties?.away ?? 0);
   const tot = (Number.isFinite(h)?h:0) + (Number.isFinite(a)?a:0);
   if (tot) return tot;
+  
   const ev = (m.events ?? m.timeline ?? []) as any[];
   if (Array.isArray(ev)) return ev.filter(e => (e.type ?? e.event ?? e.kind ?? "").toString().toLowerCase().match(/pen|straff/)).length;
   return 0;
 }
 
-export default function MatchTable({ items }: { items: Match[] }) {
-  const ordered = [...items].sort((a: any, b: any) => pDate(b.date) - pDate(a.date));
+export default function MatchTable({ items, showUpcoming = false }: { items: Match[]; showUpcoming?: boolean }) {
+  // Filter items based on showUpcoming flag
+  const filtered = items.filter((item: any) => {
+    const hasScore = score(item) !== "–" && score(item) !== "0–0";
+    return showUpcoming ? !hasScore : hasScore;
+  });
+  
+  const ordered = [...filtered].sort((a: any, b: any) => pDate(b.date) - pDate(a.date));
   return (
     <div className="mt-4 rounded-2xl border overflow-auto">
       <table className="w-full text-sm min-w-[720px]">

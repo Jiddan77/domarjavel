@@ -25,6 +25,7 @@ export default function Home() {
   const [side, setSide] = useState<"" | "home" | "away">("");
   const [currentPage, setCurrentPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
+  const [showUpcoming, setShowUpcoming] = useState(false);
   const itemsPerPage = 50;
 
   const { seasons, error: seasonsError, isLoading: seasonsLoading } = useSeasons();
@@ -293,16 +294,31 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Calendar className="w-5 h-5 text-green-600" />
-                  <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Match Results</h2>
+                  <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                    {showUpcoming ? "Upcoming Matches" : "Match Results"}
+                  </h2>
                   {matchesLoading && <LoadingSpinner size="sm" />}
                 </div>
-                <div className="flex items-center gap-4 text-sm text-slate-600 dark:text-slate-400">
-                  <span>Total: {total || 0} matches</span>
-                  {hasActiveFilters && (
-                    <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs dark:bg-blue-900/30 dark:text-blue-300">
-                      Filtered
-                    </span>
-                  )}
+                <div className="flex items-center gap-4">
+                  <button
+                    onClick={() => setShowUpcoming(!showUpcoming)}
+                    className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                      showUpcoming
+                        ? "bg-purple-100 text-purple-700 border border-purple-200 dark:bg-purple-900/30 dark:text-purple-300 dark:border-purple-700"
+                        : "bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-300 dark:border-slate-600 dark:hover:bg-slate-600"
+                    }`}
+                  >
+                    <Calendar className="w-4 h-4" />
+                    {showUpcoming ? "Show Results" : "Show Upcoming"}
+                  </button>
+                  <div className="text-sm text-slate-600 dark:text-slate-400">
+                    <span>Total: {total || 0} matches</span>
+                    {hasActiveFilters && (
+                      <span className="ml-2 px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs dark:bg-blue-900/30 dark:text-blue-300">
+                        Filtered
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
@@ -312,7 +328,7 @@ export default function Home() {
                 <ErrorMessage error={matchesError} />
               ) : (
                 <>
-                  <MatchTable items={matches} />
+                  <MatchTable items={matches} showUpcoming={showUpcoming} />
                   {totalPages > 1 && (
                     <div className="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700">
                       <Pagination

@@ -1,59 +1,83 @@
 import type { LeaderboardItem } from "@/hooks/useLeaderboard";
+import { Crown, TrendingUp, TrendingDown } from "lucide-react";
 
-const fmt = (n?: number, d=2) => (typeof n === "number" && isFinite(n)) ? n.toFixed(d).replace(".", ",") : "-";
-
-function List({ title, items, valueKey, suffix }: { 
-  title: string; 
-  items: LeaderboardItem[]; 
-  valueKey: keyof LeaderboardItem; 
-  suffix: string; 
-}) {
-  return (
-    <div className="p-4 rounded-2xl border">
-      <div className="font-semibold mb-2">{title}</div>
-      <ol className="space-y-1 list-decimal list-inside">
-        {items.slice(0, 5).map((item, i) => (
-          <li key={i}>
-            <span className="font-medium">{item.name}</span>
-            <span className="opacity-70 ml-2 text-sm">
-              {fmt(item[valueKey] as number)} {suffix}
-              <span className="opacity-50 ml-1">({item.matches} matcher)</span>
-            </span>
-          </li>
-        ))}
-        {items.length === 0 && <div className="opacity-60 text-sm">—</div>}
-      </ol>
-    </div>
-  );
-}
+const fmt = (n?: number, d=2) => (typeof n === "number" && isFinite(n)) ? n.toFixed(d) : "-";
 
 export default function Leaderboard({ data }: { data?: LeaderboardItem[] }) {
-  if (!data || data.length === 0) return null;
+  if (!data || data.length === 0) {
+    return (
+      <div className="text-center py-8 text-slate-500 dark:text-slate-400">
+        <div className="text-sm">No referee data available</div>
+      </div>
+    );
+  }
   
   // Sort data for different categories
   const byTotalCards = [...data].sort((a, b) => b.avgTotal - a.avgTotal);
-  const byYellow = [...data].sort((a, b) => b.avgYellow - a.avgYellow);
-  const byRed = [...data].sort((a, b) => b.avgRed - a.avgRed);
-  const byPenalties = [...data].sort((a, b) => b.avgPenalty - a.avgPenalty);
   const nicest = [...data].sort((a, b) => a.avgTotal - b.avgTotal);
   
   return (
-    <section className="space-y-4">
-      <div className="space-y-1">
-        <h2 className="text-xl font-semibold">Domarstatistik</h2>
-        <div className="opacity-80">Rankning baserat på snitt per match</div>
-        <div className="text-sm opacity-70">
-          {data.length} domare analyserade
+    <div className="space-y-6">
+      {/* Strictest Referees */}
+      <div>
+        <div className="flex items-center gap-2 mb-4">
+          <TrendingUp className="w-4 h-4 text-red-500" />
+          <h3 className="font-semibold text-slate-900 dark:text-slate-100">Most Cards</h3>
+        </div>
+        <div className="space-y-3">
+          {byTotalCards.slice(0, 3).map((item, i) => (
+            <div key={i} className="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-700 rounded-lg">
+              <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
+                i === 0 ? "bg-yellow-500 text-white" : 
+                i === 1 ? "bg-slate-400 text-white" : 
+                "bg-orange-500 text-white"
+              }`}>
+                {i + 1}
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="font-medium text-sm text-slate-900 dark:text-slate-100 truncate">
+                  {item.name}
+                </div>
+                <div className="text-xs text-slate-600 dark:text-slate-400">
+                  {fmt(item.avgTotal)} cards/match • {item.matches} games
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <List title="👨‍⚖️ Snällast domare" items={nicest} valueKey="avgTotal" suffix="kort/match" />
-        <List title="🔥 Strängast domare" items={byTotalCards} valueKey="avgTotal" suffix="kort/match" />
-        <List title="🟨 Flest gula kort" items={byYellow} valueKey="avgYellow" suffix="per match" />
-        <List title="🟥 Flest röda kort" items={byRed} valueKey="avgRed" suffix="per match" />
-        <List title="⚽ Flest straffar" items={byPenalties} valueKey="avgPenalty" suffix="per match" />
+      {/* Lenient Referees */}
+      <div>
+        <div className="flex items-center gap-2 mb-4">
+          <TrendingDown className="w-4 h-4 text-green-500" />
+          <h3 className="font-semibold text-slate-900 dark:text-slate-100">Fewest Cards</h3>
+        </div>
+        <div className="space-y-3">
+          {nicest.slice(0, 3).map((item, i) => (
+            <div key={i} className="flex items-center gap-3 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
+              <div className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs font-bold">
+                {i + 1}
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="font-medium text-sm text-slate-900 dark:text-slate-100 truncate">
+                  {item.name}
+                </div>
+                <div className="text-xs text-slate-600 dark:text-slate-400">
+                  {fmt(item.avgTotal)} cards/match • {item.matches} games
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </section>
+
+      {/* Summary */}
+      <div className="pt-4 border-t border-slate-200 dark:border-slate-700">
+        <div className="text-xs text-slate-600 dark:text-slate-400 text-center">
+          Analyzing {data.length} referees
+        </div>
+      </div>
+    </div>
   );
 }
