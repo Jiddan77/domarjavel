@@ -32,7 +32,6 @@ export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
   const [showUpcoming, setShowUpcoming] = useState(false);
-  const [userTeamPreference, setUserTeamPreference] = useState<string | null>(null);
   const itemsPerPage = 50;
 
   const { seasons, error: seasonsError, isLoading: seasonsLoading } = useSeasons();
@@ -116,7 +115,6 @@ export default function Home() {
                 
                 <TeamPreference 
                   teams={teams.map(t => t.name)}
-                  onTeamChange={setUserTeamPreference}
                 />
                 
                 <Link

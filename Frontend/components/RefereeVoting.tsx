@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ThumbsUp, ThumbsDown, Users, TrendingUp } from "lucide-react";
+import { ThumbsUp, ThumbsDown, Users } from "lucide-react";
 
 type VoteData = {
   up: number;

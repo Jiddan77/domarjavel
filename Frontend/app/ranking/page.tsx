@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useAdvancedStats } from "@/hooks/useAdvancedStats";
-import { Trophy, Users, TrendingUp, TrendingDown, ThumbsUp, ThumbsDown, ArrowLeft } from "lucide-react";
+import { Trophy, Users, TrendingUp, TrendingDown, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import RefereeVoting from "@/components/RefereeVoting";
 import LoadingSpinner from "@/components/LoadingSpinner";
