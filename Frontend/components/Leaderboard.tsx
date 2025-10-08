@@ -1,5 +1,5 @@
 import type { LeaderboardItem } from "@/hooks/useLeaderboard";
-import { Crown, TrendingUp, TrendingDown } from "lucide-react";
+import { TrendingUp, TrendingDown } from "lucide-react";
 
 const fmt = (n?: number, d=2) => (typeof n === "number" && isFinite(n)) ? n.toFixed(d) : "-";
 
