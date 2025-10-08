@@ -1,4 +1,4 @@
-import { Users, Trophy, AlertTriangle, Target } from "lucide-react";
+import { Trophy } from "lucide-react";
 
 type TeamRefereeStats = {
   name: string;
@@ -75,7 +75,6 @@ export default function TopRefereesForTeam({
 
     const teamYellow = parseCardString(yellowStr, isHome);
     const teamRed = parseCardString(redStr, isHome);
-    const teamPenalty = parseCardString(penaltyStr, isHome);
 
     stats.totalCards += teamYellow + teamRed;
   });
