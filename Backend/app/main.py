@@ -310,6 +310,152 @@ async def get_stats(
         "avgPenalty": round(avg_penalty, 2)
     }
 
+@app.get("/api/advanced-stats")
+async def get_advanced_stats(
+    season: Optional[List[int]] = Query(None),
+    team: Optional[List[str]] = Query(None),
+    limit: int = Query(10),
+    min_matches: int = Query(5, alias="minMatches")
+):
+    """Get advanced referee statistics including home/away bias and team-specific performance"""
+    data = load_data()
+    matches = data.get("matches", [])
+    
+    # Filter matches
+    filtered_matches = matches
+    if season:
+        filtered_matches = [m for m in filtered_matches if m.get("season") in season]
+    if team:
+        filtered_matches = [m for m in filtered_matches if m.get("home") in team or m.get("away") in team]
+    
+    # Calculate advanced referee stats
+    referee_stats = {}
+    for match in filtered_matches:
+        ref = match.get("referee")
+        if not ref:
+            continue
+            
+        if ref not in referee_stats:
+            referee_stats[ref] = {
+                "name": ref,
+                "total_matches": 0,
+                "home_wins": 0,
+                "away_wins": 0,
+                "draws": 0,
+                "home_cards": 0,
+                "away_cards": 0,
+                "home_penalties": 0,
+                "away_penalties": 0,
+                "team_performance": {}
+            }
+        
+        stats = referee_stats[ref]
+        stats["total_matches"] += 1
+        
+        # Parse score to determine winner
+        score_str = match.get("score", "0-0")
+        home_score, away_score = parse_score(score_str)
+        
+        if home_score > away_score:
+            stats["home_wins"] += 1
+        elif away_score > home_score:
+            stats["away_wins"] += 1
+        else:
+            stats["draws"] += 1
+        
+        # Parse cards
+        yellow_home, yellow_away = parse_score(match.get("yellow", "0-0"))
+        red_home, red_away = parse_score(match.get("red", "0-0"))
+        penalty_home, penalty_away = parse_score(match.get("penalty", "0-0"))
+        
+        stats["home_cards"] += yellow_home + red_home
+        stats["away_cards"] += yellow_away + red_away
+        stats["home_penalties"] += penalty_home
+        stats["away_penalties"] += penalty_away
+        
+        # Team-specific performance
+        home_team = match.get("home")
+        away_team = match.get("away")
+        
+        for team_name in [home_team, away_team]:
+            if team_name:
+                if team_name not in stats["team_performance"]:
+                    stats["team_performance"][team_name] = {
+                        "matches": 0,
+                        "wins": 0,
+                        "cards": 0,
+                        "penalties": 0
+                    }
+                
+                team_stats = stats["team_performance"][team_name]
+                team_stats["matches"] += 1
+                
+                if team_name == home_team:
+                    if home_score > away_score:
+                        team_stats["wins"] += 1
+                    team_stats["cards"] += yellow_home + red_home
+                    team_stats["penalties"] += penalty_home
+                else:  # away team
+                    if away_score > home_score:
+                        team_stats["wins"] += 1
+                    team_stats["cards"] += yellow_away + red_away
+                    team_stats["penalties"] += penalty_away
+    
+    # Calculate derived statistics
+    advanced_stats = []
+    for ref_data in referee_stats.values():
+        if ref_data["total_matches"] >= min_matches:
+            total = ref_data["total_matches"]
+            
+            # Home bias calculations
+            home_win_rate = ref_data["home_wins"] / total if total > 0 else 0
+            away_win_rate = ref_data["away_wins"] / total if total > 0 else 0
+            draw_rate = ref_data["draws"] / total if total > 0 else 0
+            
+            # Card bias
+            total_cards = ref_data["home_cards"] + ref_data["away_cards"]
+            home_card_rate = ref_data["home_cards"] / total_cards if total_cards > 0 else 0.5
+            
+            # Penalty bias
+            total_penalties = ref_data["home_penalties"] + ref_data["away_penalties"]
+            home_penalty_rate = ref_data["home_penalties"] / total_penalties if total_penalties > 0 else 0.5
+            
+            # Home bias score (> 0.5 = home favorable, < 0.5 = away favorable)
+            home_bias_score = (home_win_rate * 0.4 + home_card_rate * 0.3 + home_penalty_rate * 0.3)
+            
+            advanced_stats.append({
+                "name": ref_data["name"],
+                "matches": total,
+                "home_win_rate": round(home_win_rate, 3),
+                "away_win_rate": round(away_win_rate, 3),
+                "draw_rate": round(draw_rate, 3),
+                "home_bias_score": round(home_bias_score, 3),
+                "home_card_rate": round(home_card_rate, 3),
+                "home_penalty_rate": round(home_penalty_rate, 3),
+                "avg_cards_per_match": round(total_cards / total, 2) if total > 0 else 0,
+                "avg_penalties_per_match": round(total_penalties / total, 2) if total > 0 else 0,
+                "team_performance": {
+                    team: {
+                        "matches": perf["matches"],
+                        "win_rate": round(perf["wins"] / perf["matches"], 3) if perf["matches"] > 0 else 0,
+                        "avg_cards": round(perf["cards"] / perf["matches"], 2) if perf["matches"] > 0 else 0,
+                        "avg_penalties": round(perf["penalties"] / perf["matches"], 2) if perf["matches"] > 0 else 0
+                    }
+                    for team, perf in ref_data["team_performance"].items()
+                    if perf["matches"] >= 3  # Only include teams with 3+ matches
+                }
+            })
+    
+    return {
+        "referees": advanced_stats,
+        "summary": {
+            "total_referees": len(advanced_stats),
+            "total_matches": sum(r["matches"] for r in advanced_stats),
+            "avg_home_win_rate": round(sum(r["home_win_rate"] for r in advanced_stats) / len(advanced_stats), 3) if advanced_stats else 0,
+            "avg_away_win_rate": round(sum(r["away_win_rate"] for r in advanced_stats) / len(advanced_stats), 3) if advanced_stats else 0
+        }
+    }
+
 @app.get("/api/leaderboard")
 async def get_leaderboard(
     season: Optional[List[int]] = Query(None),

@@ -25,10 +25,11 @@ function score(m: any) {
 }
 
 function cardTot(m: any, kind: "yellow"|"red") {
-  // Try to parse from the format "2-1" or "0-0" in yellow/red fields
+  // Try to parse from the format "2–1" or "0–0" in yellow/red fields (note: en-dash –)
   const cardStr = m[kind] || m[`${kind}_cards`] || "";
-  if (typeof cardStr === "string" && cardStr.includes("-")) {
-    const parts = cardStr.split("-");
+  if (typeof cardStr === "string") {
+    // Handle both en-dash (–) and regular dash (-)
+    const parts = cardStr.split(/[–-]/);
     if (parts.length === 2) {
       const h = parseInt(parts[0]) || 0;
       const a = parseInt(parts[1]) || 0;
@@ -50,10 +51,11 @@ function cardTot(m: any, kind: "yellow"|"red") {
   return 0;
 }
 function pens(m: any) {
-  // Try to parse from the format "1-0" or "0-0" in penalty field
+  // Try to parse from the format "1–0" or "0–0" in penalty field (note: en-dash –)
   const penStr = m.penalty || m.penalties || "";
-  if (typeof penStr === "string" && penStr.includes("-")) {
-    const parts = penStr.split("-");
+  if (typeof penStr === "string") {
+    // Handle both en-dash (–) and regular dash (-)
+    const parts = penStr.split(/[–-]/);
     if (parts.length === 2) {
       const h = parseInt(parts[0]) || 0;
       const a = parseInt(parts[1]) || 0;

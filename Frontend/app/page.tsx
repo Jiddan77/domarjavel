@@ -7,9 +7,11 @@ import { useTeams } from "@/hooks/useTeams";
 import { useMatches } from "@/hooks/useMatches";
 import { useStats } from "@/hooks/useStats";
 import { useLeaderboard } from "@/hooks/useLeaderboard";
+import { useAdvancedStats } from "@/hooks/useAdvancedStats";
 import MultiSelect from "@/components/filters/MultiSelect";
 import StatsPanel from "@/components/StatsPanel";
 import FactsPanel from "@/components/FactsPanel";
+import AdvancedStatsPanel from "@/components/AdvancedStatsPanel";
 import MatchTable from "@/components/MatchTable";
 import Leaderboard from "@/components/Leaderboard";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -43,6 +45,7 @@ export default function Home() {
   });
   const { stats, error: statsError, isLoading: statsLoading } = useStats({ season: seasonSel, referee: refSel, team: teamSel, side: side || undefined });
   const { leaderboard, error: leaderboardError, isLoading: leaderboardLoading } = useLeaderboard({ season: seasonSel, team: teamSel, limit: 5, minMatches: 8, minTeamMatches: 5 });
+  const { advancedStats, error: advancedStatsError, isLoading: advancedStatsLoading } = useAdvancedStats({ season: seasonSel, team: teamSel, minMatches: 5, limit: 20 });
 
   const seasonOpts = useMemo(() => seasons.map(s => ({ value: String(s.season), label: String(s.season) })), [seasons]);
   const refOpts = useMemo(() => referees.map(r => ({ value: r.name, label: r.name })), [referees]);
@@ -233,59 +236,72 @@ export default function Home() {
           {teamsError && <ErrorMessage error={teamsError} />}
 
           {/* Professional Stats Dashboard */}
-          <section className="grid lg:grid-cols-3 gap-8">
+          <section className="space-y-8">
             {/* Main Stats Panel */}
-            <div className="lg:col-span-2 space-y-6">
-              {statsLoading ? (
-                <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
-                  <div className="flex items-center justify-center">
-                    <LoadingSpinner size="md" className="mr-3" />
-                    <span className="text-slate-600 dark:text-slate-400">Loading statistics...</span>
-                  </div>
+            {statsLoading ? (
+              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
+                <div className="flex items-center justify-center">
+                  <LoadingSpinner size="md" className="mr-3" />
+                  <span className="text-slate-600 dark:text-slate-400">Loading statistics...</span>
                 </div>
-              ) : statsError ? (
-                <ErrorMessage error={statsError} />
-              ) : (
-                <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
-                  <div className="flex items-center gap-3 mb-6">
-                    <TrendingUp className="w-5 h-5 text-blue-600" />
-                    <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-                      {hasActiveFilters ? "Filtered Statistics" : "Overall Statistics"}
-                    </h2>
-                  </div>
-                  <StatsPanel stats={stats} />
+              </div>
+            ) : statsError ? (
+              <ErrorMessage error={statsError} />
+            ) : (
+              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
+                <div className="flex items-center gap-3 mb-6">
+                  <TrendingUp className="w-5 h-5 text-blue-600" />
+                  <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                    {hasActiveFilters ? "Filtered Statistics" : "Overall Statistics"}
+                  </h2>
                 </div>
-              )}
+                <StatsPanel stats={stats} />
+              </div>
+            )}
 
-              {/* Facts Panel */}
-              {stats && !statsLoading && (
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border border-blue-200 dark:border-blue-800 p-6">
-                  <FactsPanel stats={stats} />
-                </div>
-              )}
-            </div>
+            {/* Facts Panel */}
+            {stats && !statsLoading && (
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border border-blue-200 dark:border-blue-800 p-6">
+                <FactsPanel stats={stats} />
+              </div>
+            )}
 
-            {/* Leaderboard Sidebar */}
-            <div className="space-y-6">
-              {leaderboardLoading ? (
-                <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
-                  <div className="flex items-center justify-center">
-                    <LoadingSpinner size="md" className="mr-3" />
-                    <span className="text-slate-600 dark:text-slate-400">Loading leaderboard...</span>
-                  </div>
+            {/* Advanced Statistics Section */}
+            {advancedStatsLoading ? (
+              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
+                <div className="flex items-center justify-center">
+                  <LoadingSpinner size="md" className="mr-3" />
+                  <span className="text-slate-600 dark:text-slate-400">Loading advanced analytics...</span>
                 </div>
-              ) : leaderboardError ? (
-                <ErrorMessage error={leaderboardError} />
-              ) : (
-                <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
-                  <div className="flex items-center gap-3 mb-6">
-                    <Users className="w-5 h-5 text-purple-600" />
-                    <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Top Referees</h2>
-                  </div>
-                  <Leaderboard data={leaderboard} />
+              </div>
+            ) : advancedStatsError ? (
+              <ErrorMessage error={advancedStatsError} />
+            ) : (
+              <AdvancedStatsPanel 
+                data={advancedStats} 
+                selectedTeam={teamSel.length === 1 ? teamSel[0] : undefined}
+              />
+            )}
+
+            {/* Top Referees Section - Now under Advanced Stats */}
+            {leaderboardLoading ? (
+              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
+                <div className="flex items-center justify-center">
+                  <LoadingSpinner size="md" className="mr-3" />
+                  <span className="text-slate-600 dark:text-slate-400">Loading referee rankings...</span>
                 </div>
-              )}
-            </div>
+              </div>
+            ) : leaderboardError ? (
+              <ErrorMessage error={leaderboardError} />
+            ) : (
+              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
+                <div className="flex items-center gap-3 mb-6">
+                  <Users className="w-5 h-5 text-purple-600" />
+                  <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Top Referees by Cards</h2>
+                </div>
+                <Leaderboard data={leaderboard} />
+              </div>
+            )}
           </section>
 
           {/* Professional Matches Section */}
