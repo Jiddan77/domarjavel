@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { X, Calendar, Users, AlertTriangle, Target, Trophy, ExternalLink } from "lucide-react";
+import { X, Calendar, Target, Trophy, ExternalLink } from "lucide-react";
 
 type MatchDetail = {
   match_id: string;

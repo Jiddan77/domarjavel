@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BarChart3, TrendingUp, TrendingDown, Users, Trophy, Target, AlertTriangle } from "lucide-react";
+import { BarChart3, TrendingUp, TrendingDown, Users, Trophy, AlertTriangle } from "lucide-react";
 
 type TeamStats = {
   teamName: string;

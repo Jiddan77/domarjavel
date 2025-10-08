@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { useState } from "react";
 import type { Match } from "@/lib/loadData";
-import MatchDetailsModal from "./MatchDetailsModal";
 import MatchDetailsModal from "./MatchDetailsModal";
 
 const month: Record<string, number> = { januari:0,februari:1,mars:2,april:3,maj:4,juni:5,juli:6,augusti:7,september:8,oktober:9,november:10,december:11 };
