@@ -80,17 +80,55 @@ function HomeBiasCard({ referees }: { referees: AdvancedRefereeStats[] }) {
   );
 }
 
-function TeamSpecificStats({ referees, selectedTeam }: { referees: AdvancedRefereeStats[]; selectedTeam?: string }) {
-  if (!selectedTeam) {
+function TeamSpecificStats({ referees, selectedTeam, allTeams }: { 
+  referees: AdvancedRefereeStats[]; 
+  selectedTeam?: string;
+  allTeams: string[];
+}) {
+  const [localSelectedTeam, setLocalSelectedTeam] = useState(selectedTeam || "");
+  const [showWorst, setShowWorst] = useState(false);
+
+  // Use local selection if no team is selected from main filters
+  const activeTeam = selectedTeam || localSelectedTeam;
+
+  // Get all teams that have data in the referees
+  const availableTeams = Array.from(
+    new Set(
+      referees.flatMap(ref => Object.keys(ref.team_performance))
+    )
+  ).sort();
+
+  if (!activeTeam) {
     return (
       <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
-        <div className="flex items-center gap-3 mb-4">
+        <div className="flex items-center gap-3 mb-6">
           <Users className="w-5 h-5 text-purple-600" />
           <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Team-Specific Performance</h3>
         </div>
-        <div className="text-center py-8 text-slate-500 dark:text-slate-400">
-          <Users className="w-12 h-12 mx-auto mb-3 opacity-50" />
-          <p>Select a team in the filters to see referee performance for that specific team</p>
+        
+        <div className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+              Select a team to analyze:
+            </label>
+            <select
+              value={localSelectedTeam}
+              onChange={(e) => setLocalSelectedTeam(e.target.value)}
+              className="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            >
+              <option value="">Choose a team...</option>
+              {availableTeams.map(team => (
+                <option key={team} value={team}>{team}</option>
+              ))}
+            </select>
+          </div>
+          
+          {!localSelectedTeam && (
+            <div className="text-center py-8 text-slate-500 dark:text-slate-400">
+              <Users className="w-12 h-12 mx-auto mb-3 opacity-50" />
+              <p>Select a team above or use the main filters to see referee performance analysis</p>
+            </div>
+          )}
         </div>
       </div>
     );
@@ -99,41 +137,81 @@ function TeamSpecificStats({ referees, selectedTeam }: { referees: AdvancedRefer
   const teamStats = referees
     .map(ref => ({
       ...ref,
-      teamPerf: ref.team_performance[selectedTeam]
+      teamPerf: ref.team_performance[activeTeam]
     }))
     .filter(ref => ref.teamPerf && ref.teamPerf.matches >= 3)
-    .sort((a, b) => b.teamPerf.win_rate - a.teamPerf.win_rate);
+    .sort((a, b) => showWorst ? a.teamPerf.win_rate - b.teamPerf.win_rate : b.teamPerf.win_rate - a.teamPerf.win_rate);
 
   return (
     <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
-      <div className="flex items-center gap-3 mb-6">
-        <Users className="w-5 h-5 text-purple-600" />
-        <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-          Best Referees for {selectedTeam}
-        </h3>
+      <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center gap-3">
+          <Users className="w-5 h-5 text-purple-600" />
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+            {showWorst ? "Worst" : "Best"} Referees for {activeTeam}
+          </h3>
+        </div>
+        
+        <div className="flex items-center gap-3">
+          {!selectedTeam && (
+            <select
+              value={localSelectedTeam}
+              onChange={(e) => setLocalSelectedTeam(e.target.value)}
+              className="px-3 py-1 text-sm border border-slate-300 dark:border-slate-600 rounded-md bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
+            >
+              {availableTeams.map(team => (
+                <option key={team} value={team}>{team}</option>
+              ))}
+            </select>
+          )}
+          
+          <button
+            onClick={() => setShowWorst(!showWorst)}
+            className={`px-3 py-1 text-sm rounded-md font-medium transition-all ${
+              showWorst
+                ? "bg-red-100 text-red-700 border border-red-200 dark:bg-red-900/30 dark:text-red-300 dark:border-red-700"
+                : "bg-green-100 text-green-700 border border-green-200 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700"
+            }`}
+          >
+            {showWorst ? "Show Best" : "Show Worst"}
+          </button>
+        </div>
       </div>
 
       <div className="space-y-3">
         {teamStats.slice(0, 5).map((ref, i) => (
-          <div key={i} className="flex items-center justify-between p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+          <div key={i} className={`flex items-center justify-between p-4 rounded-lg ${
+            showWorst 
+              ? "bg-red-50 dark:bg-red-900/20" 
+              : "bg-green-50 dark:bg-green-900/20"
+          }`}>
             <div className="flex items-center gap-3">
               <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                i === 0 ? "bg-yellow-500 text-white" : 
-                i === 1 ? "bg-slate-400 text-white" : 
-                i === 2 ? "bg-orange-500 text-white" :
-                "bg-slate-300 text-slate-700"
+                showWorst ? (
+                  i === 0 ? "bg-red-500 text-white" : 
+                  i === 1 ? "bg-red-400 text-white" : 
+                  i === 2 ? "bg-red-300 text-white" :
+                  "bg-slate-300 text-slate-700"
+                ) : (
+                  i === 0 ? "bg-yellow-500 text-white" : 
+                  i === 1 ? "bg-slate-400 text-white" : 
+                  i === 2 ? "bg-orange-500 text-white" :
+                  "bg-slate-300 text-slate-700"
+                )
               }`}>
                 {i + 1}
               </div>
               <div>
                 <div className="font-medium text-slate-900 dark:text-slate-100">{ref.name}</div>
                 <div className="text-sm text-slate-600 dark:text-slate-400">
-                  {ref.teamPerf.matches} matches with {selectedTeam}
+                  {ref.teamPerf.matches} matches with {activeTeam}
                 </div>
               </div>
             </div>
             <div className="text-right">
-              <div className="text-lg font-semibold text-purple-600">
+              <div className={`text-lg font-semibold ${
+                showWorst ? "text-red-600" : "text-green-600"
+              }`}>
                 {pct(ref.teamPerf.win_rate)}
               </div>
               <div className="text-xs text-slate-500">win rate</div>
@@ -145,10 +223,19 @@ function TeamSpecificStats({ referees, selectedTeam }: { referees: AdvancedRefer
         ))}
         {teamStats.length === 0 && (
           <div className="text-center py-4 text-slate-500 dark:text-slate-400">
-            No sufficient data for {selectedTeam} (need 3+ matches per referee)
+            No sufficient data for {activeTeam} (need 3+ matches per referee)
           </div>
         )}
       </div>
+
+      {teamStats.length > 0 && (
+        <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+          <div className="text-xs text-slate-600 dark:text-slate-400 text-center">
+            Showing {showWorst ? "worst" : "best"} performing referees for {activeTeam} 
+            (minimum 3 matches required)
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -208,9 +295,10 @@ function WinRateAnalysis({ referees }: { referees: AdvancedRefereeStats[] }) {
   );
 }
 
-export default function AdvancedStatsPanel({ data, selectedTeam }: { 
+export default function AdvancedStatsPanel({ data, selectedTeam, allTeams = [] }: { 
   data?: AdvancedStatsResponse; 
   selectedTeam?: string;
+  allTeams?: string[];
 }) {
   const [activeTab, setActiveTab] = useState<"bias" | "teams" | "outcomes">("bias");
 
@@ -282,7 +370,7 @@ export default function AdvancedStatsPanel({ data, selectedTeam }: {
 
       {/* Tab Content */}
       {activeTab === "bias" && <HomeBiasCard referees={data.referees} />}
-      {activeTab === "teams" && <TeamSpecificStats referees={data.referees} selectedTeam={selectedTeam} />}
+      {activeTab === "teams" && <TeamSpecificStats referees={data.referees} selectedTeam={selectedTeam} allTeams={allTeams} />}
       {activeTab === "outcomes" && <WinRateAnalysis referees={data.referees} />}
     </div>
   );
