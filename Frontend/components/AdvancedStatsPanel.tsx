@@ -80,10 +80,9 @@ function HomeBiasCard({ referees }: { referees: AdvancedRefereeStats[] }) {
   );
 }
 
-function TeamSpecificStats({ referees, selectedTeam, allTeams }: { 
+function TeamSpecificStats({ referees, selectedTeam }: { 
   referees: AdvancedRefereeStats[]; 
   selectedTeam?: string;
-  allTeams: string[];
 }) {
   const [localSelectedTeam, setLocalSelectedTeam] = useState(selectedTeam || "");
   const [showWorst, setShowWorst] = useState(false);
@@ -295,10 +294,9 @@ function WinRateAnalysis({ referees }: { referees: AdvancedRefereeStats[] }) {
   );
 }
 
-export default function AdvancedStatsPanel({ data, selectedTeam, allTeams = [] }: { 
+export default function AdvancedStatsPanel({ data, selectedTeam }: { 
   data?: AdvancedStatsResponse; 
   selectedTeam?: string;
-  allTeams?: string[];
 }) {
   const [activeTab, setActiveTab] = useState<"bias" | "teams" | "outcomes">("bias");
 
@@ -370,7 +368,7 @@ export default function AdvancedStatsPanel({ data, selectedTeam, allTeams = [] }
 
       {/* Tab Content */}
       {activeTab === "bias" && <HomeBiasCard referees={data.referees} />}
-      {activeTab === "teams" && <TeamSpecificStats referees={data.referees} selectedTeam={selectedTeam} allTeams={allTeams} />}
+      {activeTab === "teams" && <TeamSpecificStats referees={data.referees} selectedTeam={selectedTeam} />}
       {activeTab === "outcomes" && <WinRateAnalysis referees={data.referees} />}
     </div>
   );

@@ -280,7 +280,6 @@ export default function Home() {
               <AdvancedStatsPanel 
                 data={advancedStats} 
                 selectedTeam={teamSel.length === 1 ? teamSel[0] : undefined}
-                allTeams={teams.map(t => t.name)}
               />
             )}
 
