@@ -489,6 +489,53 @@ async def get_advanced_stats(
         }
     }
 
+@app.post("/api/referee-vote")
+async def vote_referee(vote_data: dict):
+    """Submit a vote for a referee"""
+    referee_name = vote_data.get("referee")
+    vote = vote_data.get("vote")  # "up" or "down"
+    team_preference = vote_data.get("teamPreference")
+    
+    if not referee_name or vote not in ["up", "down"]:
+        raise HTTPException(status_code=400, detail="Invalid vote data")
+    
+    # For now, store votes in memory (in production, use database)
+    if not hasattr(app.state, "votes"):
+        app.state.votes = {}
+    
+    if referee_name not in app.state.votes:
+        app.state.votes[referee_name] = {
+            "up": 0,
+            "down": 0,
+            "total": 0,
+            "by_team": {}
+        }
+    
+    # Update vote counts
+    app.state.votes[referee_name][vote] += 1
+    app.state.votes[referee_name]["total"] += 1
+    
+    # Track by team preference if provided
+    if team_preference:
+        if team_preference not in app.state.votes[referee_name]["by_team"]:
+            app.state.votes[referee_name]["by_team"][team_preference] = {"up": 0, "down": 0, "total": 0}
+        
+        app.state.votes[referee_name]["by_team"][team_preference][vote] += 1
+        app.state.votes[referee_name]["by_team"][team_preference]["total"] += 1
+    
+    return {"success": True, "message": "Vote recorded"}
+
+@app.get("/api/referee-votes")
+async def get_referee_votes(referee: str = None):
+    """Get voting data for referees"""
+    if not hasattr(app.state, "votes"):
+        app.state.votes = {}
+    
+    if referee:
+        return app.state.votes.get(referee, {"up": 0, "down": 0, "total": 0, "by_team": {}})
+    
+    return app.state.votes
+
 @app.get("/api/leaderboard")
 async def get_leaderboard(
     season: Optional[List[int]] = Query(None),

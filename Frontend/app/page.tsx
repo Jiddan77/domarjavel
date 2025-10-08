@@ -14,13 +14,15 @@ import FactsPanel from "@/components/FactsPanel";
 import AdvancedStatsPanel from "@/components/AdvancedStatsPanel";
 import TopRefereesForTeam from "@/components/TopRefereesForTeam";
 import EnhancedTeamStats from "@/components/EnhancedTeamStats";
+import TeamPreference from "@/components/TeamPreference";
 import MatchTable from "@/components/MatchTable";
 import Leaderboard from "@/components/Leaderboard";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import ErrorMessage from "@/components/ErrorMessage";
 import Pagination from "@/components/Pagination";
-import { BarChart3, TrendingUp, Users, Calendar, Filter, Search } from "lucide-react";
+import { BarChart3, TrendingUp, Users, Calendar, Filter, Search, Trophy } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   const [seasonSel, setSeasonSel] = useState<number[]>([]);
@@ -30,6 +32,7 @@ export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
   const [showUpcoming, setShowUpcoming] = useState(false);
+  const [userTeamPreference, setUserTeamPreference] = useState<string | null>(null);
   const itemsPerPage = 50;
 
   const { seasons, error: seasonsError, isLoading: seasonsLoading } = useSeasons();
@@ -110,6 +113,20 @@ export default function Home() {
                   <Calendar className="w-4 h-4" />
                   <span>Seasons 2020-2025</span>
                 </div>
+                
+                <TeamPreference 
+                  teams={teams.map(t => t.name)}
+                  onTeamChange={setUserTeamPreference}
+                />
+                
+                <Link
+                  href="/ranking"
+                  className="flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 dark:bg-slate-800 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-700 transition-colors"
+                >
+                  <Trophy className="w-4 h-4" />
+                  <span className="hidden sm:inline">Rankings</span>
+                </Link>
+                
                 <button
                   onClick={() => setShowFilters(!showFilters)}
                   className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border transition-all ${
