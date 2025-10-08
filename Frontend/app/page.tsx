@@ -13,6 +13,7 @@ import StatsPanel from "@/components/StatsPanel";
 import FactsPanel from "@/components/FactsPanel";
 import AdvancedStatsPanel from "@/components/AdvancedStatsPanel";
 import TopRefereesForTeam from "@/components/TopRefereesForTeam";
+import EnhancedTeamStats from "@/components/EnhancedTeamStats";
 import MatchTable from "@/components/MatchTable";
 import Leaderboard from "@/components/Leaderboard";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
@@ -272,6 +273,15 @@ export default function Home() {
               <TopRefereesForTeam 
                 teamName={teamSel[0]} 
                 matches={matches}
+              />
+            )}
+
+            {/* Enhanced Team Statistics */}
+            {teamSel.length === 1 && matches.length > 0 && (
+              <EnhancedTeamStats 
+                teamName={teamSel[0]} 
+                matches={matches}
+                season={seasonSel}
               />
             )}
 

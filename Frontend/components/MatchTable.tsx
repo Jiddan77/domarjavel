@@ -1,4 +1,8 @@
+import { useState } from "react";
+import { useState } from "react";
 import type { Match } from "@/lib/loadData";
+import MatchDetailsModal from "./MatchDetailsModal";
+import MatchDetailsModal from "./MatchDetailsModal";
 
 const month: Record<string, number> = { januari:0,februari:1,mars:2,april:3,maj:4,juni:5,juli:6,augusti:7,september:8,oktober:9,november:10,december:11 };
 const pDate = (s: any) => {
@@ -75,6 +79,9 @@ function pens(m: any) {
 }
 
 export default function MatchTable({ items, showUpcoming = false }: { items: Match[]; showUpcoming?: boolean }) {
+  const [selectedMatch, setSelectedMatch] = useState<any | null>(null);
+  const [showModal, setShowModal] = useState(false);
+
   // Filter items based on showUpcoming flag
   const filtered = items.filter((item: any) => {
     const hasScore = score(item) !== "–" && score(item) !== "0–0";
@@ -82,37 +89,60 @@ export default function MatchTable({ items, showUpcoming = false }: { items: Mat
   });
   
   const ordered = [...filtered].sort((a: any, b: any) => pDate(b.date) - pDate(a.date));
+
+  const handleMatchClick = (match: any) => {
+    setSelectedMatch(match);
+    setShowModal(true);
+  };
+
   return (
-    <div className="mt-4 rounded-2xl border overflow-auto">
-      <table className="w-full text-xs sm:text-sm min-w-[720px]">
-        <thead className="bg-black/5 dark:bg-white/5">
-          <tr>
-            <th className="text-left p-1 sm:p-2">Datum</th>
-            <th className="text-left p-1 sm:p-2">Match</th>
-            <th className="text-left p-1 sm:p-2">Resultat</th>
-            <th className="text-left p-1 sm:p-2">Gula</th>
-            <th className="text-left p-1 sm:p-2">Röda</th>
-            <th className="text-left p-1 sm:p-2">Straffar</th>
-            <th className="text-left p-1 sm:p-2">Domare</th>
-            <th className="text-left p-1 sm:p-2">Säsong</th>
-          </tr>
-        </thead>
-        <tbody>
-          {ordered.map((m: any) => (
-            <tr key={m.match_id} className="border-t">
-              <td className="p-1 sm:p-2 whitespace-nowrap">{m.date}</td>
-              <td className="p-1 sm:p-2">{team(m, "home")} – {team(m, "away")}</td>
-              <td className="p-1 sm:p-2">{score(m)}</td>
-              <td className="p-1 sm:p-2">{cardTot(m, "yellow")}</td>
-              <td className="p-1 sm:p-2">{cardTot(m, "red")}</td>
-              <td className="p-1 sm:p-2">{pens(m)}</td>
-              <td className="p-1 sm:p-2">{m.referee}</td>
-              <td className="p-1 sm:p-2">{m.season}</td>
+    <>
+      <div className="mt-4 rounded-2xl border overflow-auto">
+        <table className="w-full text-xs sm:text-sm min-w-[720px]">
+          <thead className="bg-black/5 dark:bg-white/5">
+            <tr>
+              <th className="text-left p-1 sm:p-2">Datum</th>
+              <th className="text-left p-1 sm:p-2">Match</th>
+              <th className="text-left p-1 sm:p-2">Resultat</th>
+              <th className="text-left p-1 sm:p-2">Gula</th>
+              <th className="text-left p-1 sm:p-2">Röda</th>
+              <th className="text-left p-1 sm:p-2">Straffar</th>
+              <th className="text-left p-1 sm:p-2">Domare</th>
+              <th className="text-left p-1 sm:p-2">Säsong</th>
             </tr>
-          ))}
-          {ordered.length === 0 && <tr><td colSpan={8} className="p-4 opacity-70">Inga matcher för filtret.</td></tr>}
-        </tbody>
-      </table>
-    </div>
+          </thead>
+          <tbody>
+            {ordered.map((m: any) => (
+              <tr 
+                key={m.match_id} 
+                className="border-t hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer transition-colors"
+                onClick={() => handleMatchClick(m)}
+              >
+                <td className="p-1 sm:p-2 whitespace-nowrap">{m.date}</td>
+                <td className="p-1 sm:p-2">{team(m, "home")} – {team(m, "away")}</td>
+                <td className="p-1 sm:p-2">{score(m)}</td>
+                <td className="p-1 sm:p-2">{cardTot(m, "yellow")}</td>
+                <td className="p-1 sm:p-2">{cardTot(m, "red")}</td>
+                <td className="p-1 sm:p-2">{pens(m)}</td>
+                <td className="p-1 sm:p-2">{m.referee}</td>
+                <td className="p-1 sm:p-2">{m.season}</td>
+              </tr>
+            ))}
+            {ordered.length === 0 && <tr><td colSpan={8} className="p-4 opacity-70">Inga matcher för filtret.</td></tr>}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Match Details Modal */}
+      {selectedMatch && (
+        <MatchDetailsModal
+          isOpen={showModal}
+          onClose={() => setShowModal(false)}
+          matches={[selectedMatch]}
+          referee={selectedMatch.referee}
+          teamName={`${selectedMatch.home} vs ${selectedMatch.away}`}
+        />
+      )}
+    </>
   );
 }
