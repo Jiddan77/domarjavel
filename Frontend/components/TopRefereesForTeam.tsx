@@ -63,7 +63,6 @@ export default function TopRefereesForTeam({
     // Parse cards for this team
     const yellowStr = match.yellow || "0-0";
     const redStr = match.red || "0-0";
-    const penaltyStr = match.penalty || "0-0";
 
     const parseCardString = (cardStr: string, isHome: boolean) => {
       const parts = cardStr.split(/[–-]/);
