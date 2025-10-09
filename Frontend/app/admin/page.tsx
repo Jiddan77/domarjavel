@@ -209,7 +209,7 @@ export default function AdminPage() {
               <h3 className="font-semibold text-slate-900 dark:text-slate-100">Suspicious</h3>
             </div>
             <div className="text-3xl font-bold text-red-600">{suspiciousReferees.length}</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400">Extreme ratings (>50 votes)</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Extreme ratings (&gt;50 votes)</div>
           </div>
         </div>
 
