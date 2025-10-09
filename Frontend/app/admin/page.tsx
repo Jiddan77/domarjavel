@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Shield, Users, Trash2, Eye, AlertTriangle, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import TelemetrySummary from "@/components/TelemetrySummary";
 
 type VoteData = {
   up: number;
@@ -243,6 +244,12 @@ export default function AdminPage() {
             </div>
           </div>
         )}
+
+        {/* Usage Analytics */}
+        <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 mb-8">
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-4">Usage Analytics</h3>
+          <TelemetrySummary />
+        </div>
 
         {/* All Referees List */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700">

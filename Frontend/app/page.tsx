@@ -16,7 +16,6 @@ import TopRefereesForTeam from "@/components/TopRefereesForTeam";
 import EnhancedTeamStats from "@/components/EnhancedTeamStats";
 import TeamPreference from "@/components/TeamPreference";
 import HistoricalTrends from "@/components/HistoricalTrends";
-import TelemetrySummary from "@/components/TelemetrySummary";
 import MatchTable from "@/components/MatchTable";
 import Leaderboard from "@/components/Leaderboard";
 import { trackFilterChange, trackPageView } from "@/lib/telemetry";
@@ -337,8 +336,7 @@ export default function Home() {
               />
             )}
 
-            {/* Telemetry Summary */}
-            <TelemetrySummary />
+
 
             {/* Advanced Statistics Section */}
             {advancedStatsLoading ? (
