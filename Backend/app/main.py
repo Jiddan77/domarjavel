@@ -118,7 +118,7 @@ def normalize_team_name(team_name):
     return normalizations.get(team_name, team_name)
 
 def normalize_referee_name(referee_name):
-    """Clean and normalize referee names"""
+    """STRICT: Clean and normalize referee names - REJECT ALL GARBAGE"""
     if not referee_name:
         return None
     
@@ -127,26 +127,29 @@ def normalize_referee_name(referee_name):
     if not cleaned or cleaned.lower() in ['', 'null', 'none', 'unknown', 'tbd', 'n/a']:
         return None
     
-    # Remove problematic characters and corrupt names
-    cleaned = cleaned.replace('�', '').replace('♦', '').replace('◊', '')
+    # AGGRESSIVE: Remove ALL problematic characters
+    cleaned = cleaned.replace('�', '').replace('♦', '').replace('◊', '').replace('!', '').replace('@', '').replace('#', '').replace('$', '').replace('%', '').replace('^', '').replace('&', '').replace('*', '').replace('(', '').replace(')', '').replace('{', '').replace('}', '').replace('[', '').replace(']', '').replace('|', '').replace('\\', '').replace('/', '').replace('<', '').replace('>', '').replace('?', '').replace('=', '').replace('+', '')
     cleaned = ' '.join(cleaned.split())  # Normalize whitespace
     
-    # Filter out corrupt referee names (common patterns from unplayed games)
+    # STRICT: Must be at least 3 characters and contain letters
+    if len(cleaned) < 3 or not any(c.isalpha() for c in cleaned):
+        return None
+    
+    # STRICT: Filter out referee names containing ANY numbers
+    import re
+    if re.search(r'\d', cleaned):
+        return None
+    
+    # STRICT: Filter out names with ANY special characters except spaces and hyphens
+    allowed_chars = set('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZåäöÅÄÖ -')
+    if not all(c in allowed_chars for c in cleaned):
+        return None
+    
+    # STRICT: Filter out corrupt patterns (case insensitive)
     corrupt_patterns = [
-        'domare ej utsedd',
-        'ej utsedd',
-        'not assigned',
-        'tbd',
-        'pending',
-        'unknown',
-        'n/a',
-        'null',
-        'undefined',
-        '---',
-        '???',
-        'domare saknas',
-        'ingen domare',
-        'no referee'
+        'domare ej utsedd', 'ej utsedd', 'not assigned', 'tbd', 'pending',
+        'unknown', 'n/a', 'null', 'undefined', '---', '???', 'domare saknas',
+        'ingen domare', 'no referee', 'referee', 'ref', 'domare', 'dom'
     ]
     
     cleaned_lower = cleaned.lower()
@@ -154,20 +157,15 @@ def normalize_referee_name(referee_name):
         if pattern in cleaned_lower:
             return None
     
-    # Filter out names that are too short or contain only numbers/symbols
-    if len(cleaned) < 3 or cleaned.isdigit() or not any(c.isalpha() for c in cleaned):
+    # STRICT: Must look like a real Swedish name (at least 2 words or hyphenated)
+    words = cleaned.split()
+    if len(words) < 2 and '-' not in cleaned:
         return None
     
-    # NEW: Filter out referee names containing numbers (indicates unplayed games)
-    # Numbers in referee names typically mean placeholder/unassigned referees
-    import re
-    if re.search(r'\d', cleaned):
-        return None
-    
-    # Filter out names with excessive special characters (corrupted data)
-    special_char_count = sum(1 for c in cleaned if not c.isalnum() and not c.isspace())
-    if special_char_count > len(cleaned) * 0.3:  # More than 30% special characters
-        return None
+    # STRICT: Each word must be at least 2 characters
+    for word in words:
+        if len(word.replace('-', '')) < 2:
+            return None
     
     return cleaned if cleaned else None
 
@@ -176,18 +174,24 @@ def is_valid_match(match):
     """Check if a match is valid (has been played with a real referee)"""
     referee = match.get("referee", "")
     
-    # Filter out matches with invalid referees
-    if not normalize_referee_name(referee):
+    # STRICT: Filter out matches with invalid referees
+    normalized_referee = normalize_referee_name(referee)
+    if not normalized_referee:
         return False
     
-    # Additional validation: check if match has realistic data
-    # Matches with 0-0 scores and no cards might be unplayed
+    # STRICT: Additional validation for realistic match data
     score = match.get("score", "")
     yellow = match.get("yellow", "0-0")
     red = match.get("red", "0-0")
     
     # If score is 0-0 AND no cards, it's likely unplayed
     if score in ["0-0", "0–0", "-", ""] and yellow in ["0-0", "0–0", "-", ""] and red in ["0-0", "0–0", "-", ""]:
+        return False
+    
+    # STRICT: Ensure teams have valid names too
+    home = match.get("home", "")
+    away = match.get("away", "")
+    if not home or not away or len(home) < 2 or len(away) < 2:
         return False
     
     return True
@@ -376,9 +380,12 @@ async def get_teams(
     season: Optional[List[int]] = Query(None),
     min_matches: int = Query(1, alias="minMatches")
 ):
-    """Get teams with match counts"""
+    """Get teams with match counts - ONLY VALID MATCHES"""
     data = load_data()
-    matches = data.get("matches", [])
+    all_matches = data.get("matches", [])
+    
+    # CRITICAL: Start with ONLY valid matches
+    matches = [match for match in all_matches if is_valid_match(match)]
     
     # Filter by season if provided
     if season:
@@ -407,11 +414,14 @@ async def get_stats(
     team: Optional[List[str]] = Query(None),
     side: Optional[str] = Query(None)
 ):
-    """Get statistics for filtered matches"""
+    """Get statistics for filtered matches - ONLY VALID MATCHES"""
     data = load_data()
-    matches = data.get("matches", [])
+    all_matches = data.get("matches", [])
     
-    # Apply same filters as matches endpoint
+    # CRITICAL: Start with ONLY valid matches (this filters out garbage referees)
+    matches = [match for match in all_matches if is_valid_match(match)]
+    
+    # Apply user filters on the already-clean data
     filtered_matches = matches
     
     if season:
@@ -455,9 +465,12 @@ async def get_advanced_stats(
     limit: int = Query(10),
     min_matches: int = Query(5, alias="minMatches")
 ):
-    """Get advanced referee statistics including home/away bias and team-specific performance"""
+    """Get advanced referee statistics including home/away bias and team-specific performance - ONLY VALID MATCHES"""
     data = load_data()
-    matches = data.get("matches", [])
+    all_matches = data.get("matches", [])
+    
+    # CRITICAL: Start with ONLY valid matches
+    matches = [match for match in all_matches if is_valid_match(match)]
     
     # Filter matches
     filtered_matches = matches
@@ -671,9 +684,12 @@ async def get_leaderboard(
     min_matches: int = Query(1, alias="minMatches"),
     min_team_matches: int = Query(1, alias="minTeamMatches")
 ):
-    """Get referee leaderboard by cards per match"""
+    """Get referee leaderboard by cards per match - ONLY VALID MATCHES"""
     data = load_data()
-    matches = data.get("matches", [])
+    all_matches = data.get("matches", [])
+    
+    # CRITICAL: Start with ONLY valid matches
+    matches = [match for match in all_matches if is_valid_match(match)]
     
     # Filter matches
     filtered_matches = matches
