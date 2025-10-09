@@ -244,6 +244,35 @@ async def health_check():
         "version": "1.0.0"
     }
 
+@app.get("/debug/referees")
+async def debug_referees():
+    """Debug endpoint to check referee filtering"""
+    data = load_data()
+    matches = data.get("matches", [])
+    
+    # Get all referee names before filtering
+    all_referees = set()
+    valid_referees = set()
+    invalid_referees = set()
+    
+    for match in matches:
+        ref = match.get("referee", "")
+        if ref:
+            all_referees.add(ref)
+            normalized = normalize_referee_name(ref)
+            if normalized:
+                valid_referees.add(normalized)
+            else:
+                invalid_referees.add(ref)
+    
+    return {
+        "total_referees": len(all_referees),
+        "valid_referees": len(valid_referees),
+        "invalid_referees": len(invalid_referees),
+        "sample_invalid": list(invalid_referees)[:10],  # First 10 invalid
+        "sample_valid": list(valid_referees)[:10]       # First 10 valid
+    }
+
 @app.get("/debug")
 async def debug_info():
     """Debug endpoint to check file paths and data loading"""

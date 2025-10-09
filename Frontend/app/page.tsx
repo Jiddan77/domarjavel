@@ -383,22 +383,12 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                   <Calendar className="w-5 h-5 text-green-600" />
                   <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-                    {showUpcoming ? "Upcoming Matches" : "Match Results"}
+                    Match Results
                   </h2>
                   {matchesLoading && <LoadingSpinner size="sm" />}
                 </div>
                 <div className="flex items-center gap-4">
-                  <button
-                    onClick={() => setShowUpcoming(!showUpcoming)}
-                    className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                      showUpcoming
-                        ? "bg-purple-100 text-purple-700 border border-purple-200 dark:bg-purple-900/30 dark:text-purple-300 dark:border-purple-700"
-                        : "bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-300 dark:border-slate-600 dark:hover:bg-slate-600"
-                    }`}
-                  >
-                    <Calendar className="w-4 h-4" />
-                    {showUpcoming ? "Show Results" : "Show Upcoming"}
-                  </button>
+
                   <div className="flex items-center gap-4">
                     <div className="text-sm text-slate-600 dark:text-slate-400">
                       <span>Total: {total || 0} matches</span>

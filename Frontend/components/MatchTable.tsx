@@ -80,33 +80,11 @@ export default function MatchTable({ items, showUpcoming = false }: { items: Mat
   const [selectedMatch, setSelectedMatch] = useState<any | null>(null);
   const [showModal, setShowModal] = useState(false);
 
-  // Filter items based on showUpcoming flag
-  const filtered = items.filter((item: any) => {
-    const matchDate = pDate(item.date);
-    const now = Date.now();
-    const isUpcoming = matchDate > now;
-    
-    // For upcoming matches, show if date is in future
-    // For past matches, show if they have a valid score or are clearly finished
-    if (showUpcoming) {
-      return isUpcoming;
-    } else {
-      // Show past matches (either with scores or past dates)
-      const hasValidScore = score(item) !== "–";
-      return !isUpcoming || hasValidScore;
-    }
-  });
+  // Show all matches (no upcoming/past filtering needed since data is historical)
+  const filtered = items;
   
-  // Sort matches based on whether we're showing upcoming or past games
-  const ordered = [...filtered].sort((a: any, b: any) => {
-    if (showUpcoming) {
-      // For upcoming games: sort ascending (soonest first)
-      return pDate(a.date) - pDate(b.date);
-    } else {
-      // For past games: sort descending (most recent first)
-      return pDate(b.date) - pDate(a.date);
-    }
-  });
+  // Sort matches by date (most recent first)
+  const ordered = [...filtered].sort((a: any, b: any) => pDate(b.date) - pDate(a.date));
 
   const handleMatchClick = (match: any) => {
     setSelectedMatch(match);
