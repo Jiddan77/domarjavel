@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Shield, Users, Trash2, Eye, AlertTriangle, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 

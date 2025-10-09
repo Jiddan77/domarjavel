@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { BarChart3, Activity, Clock, Trash2, Eye, EyeOff } from "lucide-react";
 import { telemetry } from "@/lib/telemetry";
-import Card from "./ui/Card";
-import Button from "./ui/Button";
+import Card from "@/components/ui/Card";
+import Button from "@/components/ui/Button";
 
 const formatTime = (timestamp: number) => {
   return new Date(timestamp).toLocaleString();

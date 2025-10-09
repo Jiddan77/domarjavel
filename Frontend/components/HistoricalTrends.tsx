@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { TrendingUp, Calendar, BarChart3, Users, Target } from "lucide-react";
-import Card from "./ui/Card";
+import Card from "@/components/ui/Card";
 
 type TrendData = {
   season: number;
