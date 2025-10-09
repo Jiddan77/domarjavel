@@ -97,7 +97,16 @@ export default function MatchTable({ items, showUpcoming = false }: { items: Mat
     }
   });
   
-  const ordered = [...filtered].sort((a: any, b: any) => pDate(b.date) - pDate(a.date));
+  // Sort matches based on whether we're showing upcoming or past games
+  const ordered = [...filtered].sort((a: any, b: any) => {
+    if (showUpcoming) {
+      // For upcoming games: sort ascending (soonest first)
+      return pDate(a.date) - pDate(b.date);
+    } else {
+      // For past games: sort descending (most recent first)
+      return pDate(b.date) - pDate(a.date);
+    }
+  });
 
   const handleMatchClick = (match: any) => {
     setSelectedMatch(match);
