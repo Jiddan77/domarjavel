@@ -76,7 +76,7 @@ function pens(m: any) {
   return 0;
 }
 
-export default function MatchTable({ items, showUpcoming = false }: { items: Match[]; showUpcoming?: boolean }) {
+export default function MatchTable({ items }: { items: Match[] }) {
   const [selectedMatch, setSelectedMatch] = useState<any | null>(null);
   const [showModal, setShowModal] = useState(false);
 

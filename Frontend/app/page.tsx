@@ -35,7 +35,7 @@ export default function Home() {
   const [side, setSide] = useState<"" | "home" | "away">("");
   const [currentPage, setCurrentPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
-  const [showUpcoming, setShowUpcoming] = useState(false);
+
   const [itemsPerPage, setItemsPerPage] = useState(50);
 
   const { seasons, error: seasonsError, isLoading: seasonsLoading } = useSeasons();
@@ -421,7 +421,7 @@ export default function Home() {
                 <ErrorMessage error={matchesError} />
               ) : (
                 <>
-                  <MatchTable items={matches} showUpcoming={showUpcoming} />
+                  <MatchTable items={matches} />
                   {totalPages > 1 && (
                     <div className="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700">
                       <Pagination
