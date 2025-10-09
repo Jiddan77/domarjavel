@@ -158,9 +158,40 @@ def normalize_referee_name(referee_name):
     if len(cleaned) < 3 or cleaned.isdigit() or not any(c.isalpha() for c in cleaned):
         return None
     
+    # NEW: Filter out referee names containing numbers (indicates unplayed games)
+    # Numbers in referee names typically mean placeholder/unassigned referees
+    import re
+    if re.search(r'\d', cleaned):
+        return None
+    
+    # Filter out names with excessive special characters (corrupted data)
+    special_char_count = sum(1 for c in cleaned if not c.isalnum() and not c.isspace())
+    if special_char_count > len(cleaned) * 0.3:  # More than 30% special characters
+        return None
+    
     return cleaned if cleaned else None
 
 # Data loading
+def is_valid_match(match):
+    """Check if a match is valid (has been played with a real referee)"""
+    referee = match.get("referee", "")
+    
+    # Filter out matches with invalid referees
+    if not normalize_referee_name(referee):
+        return False
+    
+    # Additional validation: check if match has realistic data
+    # Matches with 0-0 scores and no cards might be unplayed
+    score = match.get("score", "")
+    yellow = match.get("yellow", "0-0")
+    red = match.get("red", "0-0")
+    
+    # If score is 0-0 AND no cards, it's likely unplayed
+    if score in ["0-0", "0–0", "-", ""] and yellow in ["0-0", "0–0", "-", ""] and red in ["0-0", "0–0", "-", ""]:
+        return False
+    
+    return True
+
 def load_data():
     # Try multiple possible paths for the data file
     possible_paths = [
@@ -177,8 +208,16 @@ def load_data():
                 
                 # Ensure data has matches key
                 if isinstance(data, list):
-                    return {"matches": data}
-                return data
+                    raw_matches = data
+                else:
+                    raw_matches = data.get("matches", [])
+                
+                # Filter out invalid matches (unplayed games)
+                valid_matches = [match for match in raw_matches if is_valid_match(match)]
+                
+                print(f"✅ Loaded {len(valid_matches)} valid matches (filtered out {len(raw_matches) - len(valid_matches)} unplayed games)")
+                
+                return {"matches": valid_matches}
             except Exception as e:
                 print(f"❌ Error loading data from {data_path}: {e}")
                 continue

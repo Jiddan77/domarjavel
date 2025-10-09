@@ -25,6 +25,25 @@ def normalize_team_name(team_name):
     
     return normalizations.get(team_name, team_name)
 
+def is_valid_match(match):
+    """Check if a match is valid (has been played with a real referee)"""
+    referee = match.get("referee", "")
+    
+    # Filter out matches with invalid referees
+    if not normalize_referee_name(referee):
+        return False
+    
+    # Additional validation: check if match has realistic data
+    score = match.get("score", "")
+    yellow = match.get("yellow", "0-0")
+    red = match.get("red", "0-0")
+    
+    # If score is 0-0 AND no cards, it's likely unplayed
+    if score in ["0-0", "0–0", "-", ""] and yellow in ["0-0", "0–0", "-", ""] and red in ["0-0", "0–0", "-", ""]:
+        return False
+    
+    return True
+
 def normalize_referee_name(referee_name):
     """Clean and normalize referee names"""
     if not referee_name:
@@ -36,6 +55,16 @@ def normalize_referee_name(referee_name):
     
     cleaned = cleaned.replace('�', '').replace('♦', '').replace('◊', '')
     cleaned = ' '.join(cleaned.split())
+    
+    # Filter out referee names containing numbers (indicates unplayed games)
+    import re
+    if re.search(r'\d', cleaned):
+        return None
+    
+    # Filter out names with excessive special characters
+    special_char_count = sum(1 for c in cleaned if not c.isalnum() and not c.isspace())
+    if special_char_count > len(cleaned) * 0.3:
+        return None
     
     return cleaned if cleaned else None
 
@@ -219,9 +248,12 @@ class DatabaseManager:
     
     async def _get_matches_json(self, season, referee, team, side, limit, offset, include_total):
         """Fallback method using JSON data."""
-        matches = self._load_json_data()
+        all_matches = self._load_json_data()
         
-        # Apply filters
+        # First filter: Remove invalid matches (unplayed games with number referees)
+        matches = [m for m in all_matches if is_valid_match(m)]
+        
+        # Apply user filters
         if season:
             matches = [m for m in matches if m.get("season") in season]
         
@@ -275,7 +307,10 @@ class DatabaseManager:
         """Get referees with match counts."""
         
         if self.json_fallback:
-            matches = self._load_json_data()
+            all_matches = self._load_json_data()
+            
+            # Filter out invalid matches first
+            matches = [m for m in all_matches if is_valid_match(m)]
             
             if season:
                 matches = [m for m in matches if m.get("season") in season]
@@ -283,8 +318,9 @@ class DatabaseManager:
             referees = {}
             for match in matches:
                 ref = match.get("referee")
-                if ref:
-                    referees[ref] = referees.get(ref, 0) + 1
+                normalized_ref = normalize_referee_name(ref)
+                if normalized_ref:
+                    referees[normalized_ref] = referees.get(normalized_ref, 0) + 1
             
             return [{"name": name, "matches": count} 
                    for name, count in referees.items() 
