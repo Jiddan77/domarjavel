@@ -131,7 +131,7 @@ export default function TelemetrySummary() {
               </span>
             </div>
             <span className="text-sm font-bold text-slate-600 dark:text-slate-400">
-              {count}
+              {String(count)}
             </span>
           </div>
         ))}

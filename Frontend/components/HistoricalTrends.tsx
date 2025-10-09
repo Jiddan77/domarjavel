@@ -168,7 +168,7 @@ export default function HistoricalTrends({
 
       {/* Trend Visualization */}
       <div className="space-y-4">
-        {trends.map((trend, index) => {
+        {trends.map((trend) => {
           let value, displayValue;
           switch (activeMetric) {
             case "cards":

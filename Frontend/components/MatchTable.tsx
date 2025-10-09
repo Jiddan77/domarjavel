@@ -82,8 +82,19 @@ export default function MatchTable({ items, showUpcoming = false }: { items: Mat
 
   // Filter items based on showUpcoming flag
   const filtered = items.filter((item: any) => {
-    const hasScore = score(item) !== "–" && score(item) !== "0–0";
-    return showUpcoming ? !hasScore : hasScore;
+    const matchDate = pDate(item.date);
+    const now = Date.now();
+    const isUpcoming = matchDate > now;
+    
+    // For upcoming matches, show if date is in future
+    // For past matches, show if they have a valid score or are clearly finished
+    if (showUpcoming) {
+      return isUpcoming;
+    } else {
+      // Show past matches (either with scores or past dates)
+      const hasValidScore = score(item) !== "–";
+      return !isUpcoming || hasValidScore;
+    }
   });
   
   const ordered = [...filtered].sort((a: any, b: any) => pDate(b.date) - pDate(a.date));

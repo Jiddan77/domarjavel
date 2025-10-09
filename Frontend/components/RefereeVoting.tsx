@@ -33,9 +33,14 @@ export default function RefereeVoting({
   const [userVote, setUserVote] = useState<"up" | "down" | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Load existing votes
+  // Load existing votes and user vote state
   useEffect(() => {
     fetchVotes();
+    // Load user vote from localStorage
+    const savedVote = localStorage.getItem(`vote_${refereeName}`);
+    if (savedVote === "up" || savedVote === "down") {
+      setUserVote(savedVote);
+    }
   }, [refereeName]);
 
   const fetchVotes = async () => {
@@ -71,6 +76,8 @@ export default function RefereeVoting({
 
       if (response.ok) {
         setUserVote(vote);
+        // Save vote to localStorage
+        localStorage.setItem(`vote_${refereeName}`, vote);
         await fetchVotes(); // Refresh vote counts
       }
     } catch (error) {

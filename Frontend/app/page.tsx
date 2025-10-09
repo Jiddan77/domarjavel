@@ -24,9 +24,10 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import ErrorMessage from "@/components/ErrorMessage";
 import Pagination from "@/components/Pagination";
-import { BarChart3, TrendingUp, Users, Calendar, Filter, Search, Trophy } from "lucide-react";
+import { BarChart3, TrendingUp, Users, Calendar, Filter, Search, Trophy, Shield } from "lucide-react";
 import Link from "next/link";
 import { useEffect } from "react";
+import Card from "@/components/ui/Card";
 
 export default function Home() {
   const [seasonSel, setSeasonSel] = useState<number[]>([]);
@@ -36,7 +37,7 @@ export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
   const [showUpcoming, setShowUpcoming] = useState(false);
-  const itemsPerPage = 50;
+  const [itemsPerPage, setItemsPerPage] = useState(50);
 
   const { seasons, error: seasonsError, isLoading: seasonsLoading } = useSeasons();
   const { referees, error: refereesError, isLoading: refereesLoading } = useReferees({ season: seasonSel, minMatches: 1 });
@@ -143,6 +144,14 @@ export default function Home() {
                 >
                   <Trophy className="w-4 h-4" />
                   <span className="hidden sm:inline">Rankings</span>
+                </Link>
+                
+                <Link
+                  href="/admin"
+                  className="flex items-center gap-2 px-3 py-2 rounded-lg border border-red-200 text-red-700 hover:bg-red-50 dark:bg-red-900/20 dark:border-red-700 dark:text-red-300 dark:hover:bg-red-900/30 transition-colors"
+                >
+                  <Shield className="w-4 h-4" />
+                  <span className="hidden sm:inline">Admin</span>
                 </Link>
                 
                 <button
@@ -321,7 +330,7 @@ export default function Home() {
             )}
 
             {/* Historical Trends for Selected Referee */}
-            {refSel.length === 1 && matches.length > 0 && (
+            {refSel.length === 1 && (
               <HistoricalTrends 
                 refereeName={refSel[0]} 
                 matches={matches}
@@ -392,13 +401,28 @@ export default function Home() {
                     <Calendar className="w-4 h-4" />
                     {showUpcoming ? "Show Results" : "Show Upcoming"}
                   </button>
-                  <div className="text-sm text-slate-600 dark:text-slate-400">
-                    <span>Total: {total || 0} matches</span>
-                    {hasActiveFilters && (
-                      <span className="ml-2 px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs dark:bg-blue-900/30 dark:text-blue-300">
-                        Filtered
-                      </span>
-                    )}
+                  <div className="flex items-center gap-4">
+                    <div className="text-sm text-slate-600 dark:text-slate-400">
+                      <span>Total: {total || 0} matches</span>
+                      {hasActiveFilters && (
+                        <span className="ml-2 px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs dark:bg-blue-900/30 dark:text-blue-300">
+                          Filtered
+                        </span>
+                      )}
+                    </div>
+                    <select
+                      value={itemsPerPage}
+                      onChange={(e) => {
+                        setItemsPerPage(Number(e.target.value));
+                        setCurrentPage(1);
+                      }}
+                      className="text-sm px-2 py-1 border border-slate-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
+                    >
+                      <option value={25}>25 per page</option>
+                      <option value={50}>50 per page</option>
+                      <option value={100}>100 per page</option>
+                      <option value={200}>200 per page</option>
+                    </select>
                   </div>
                 </div>
               </div>

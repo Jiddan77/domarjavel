@@ -127,9 +127,36 @@ def normalize_referee_name(referee_name):
     if not cleaned or cleaned.lower() in ['', 'null', 'none', 'unknown', 'tbd', 'n/a']:
         return None
     
-    # Remove problematic characters that might have been missed
+    # Remove problematic characters and corrupt names
     cleaned = cleaned.replace('�', '').replace('♦', '').replace('◊', '')
     cleaned = ' '.join(cleaned.split())  # Normalize whitespace
+    
+    # Filter out corrupt referee names (common patterns from unplayed games)
+    corrupt_patterns = [
+        'domare ej utsedd',
+        'ej utsedd',
+        'not assigned',
+        'tbd',
+        'pending',
+        'unknown',
+        'n/a',
+        'null',
+        'undefined',
+        '---',
+        '???',
+        'domare saknas',
+        'ingen domare',
+        'no referee'
+    ]
+    
+    cleaned_lower = cleaned.lower()
+    for pattern in corrupt_patterns:
+        if pattern in cleaned_lower:
+            return None
+    
+    # Filter out names that are too short or contain only numbers/symbols
+    if len(cleaned) < 3 or cleaned.isdigit() or not any(c.isalpha() for c in cleaned):
+        return None
     
     return cleaned if cleaned else None
 
@@ -264,7 +291,17 @@ async def get_referees(
     min_matches: int = Query(1, alias="minMatches")
 ):
     """Get referees with match counts"""
-    return await db_manager.get_referees(season=season, min_matches=min_matches)
+    referees = await db_manager.get_referees(season=season, min_matches=min_matches)
+    
+    # Filter out corrupt referee names
+    filtered_referees = []
+    for referee in referees:
+        normalized_name = normalize_referee_name(referee.get("name", ""))
+        if normalized_name:
+            referee["name"] = normalized_name
+            filtered_referees.append(referee)
+    
+    return filtered_referees
 
 @app.get("/api/teams")
 async def get_teams(
@@ -535,6 +572,28 @@ async def get_referee_votes(referee: str = None):
         return app.state.votes.get(referee, {"up": 0, "down": 0, "total": 0, "by_team": {}})
     
     return app.state.votes
+
+@app.post("/api/referee-votes/clear")
+async def clear_referee_votes(clear_data: dict):
+    """Clear votes for a specific referee (admin only)"""
+    referee_name = clear_data.get("referee")
+    
+    if not referee_name:
+        raise HTTPException(status_code=400, detail="Referee name required")
+    
+    if not hasattr(app.state, "votes"):
+        app.state.votes = {}
+    
+    if referee_name in app.state.votes:
+        del app.state.votes[referee_name]
+    
+    return {"success": True, "message": f"Votes cleared for {referee_name}"}
+
+@app.post("/api/referee-votes/clear-all")
+async def clear_all_votes():
+    """Clear all votes (admin only)"""
+    app.state.votes = {}
+    return {"success": True, "message": "All votes cleared"}
 
 @app.get("/api/leaderboard")
 async def get_leaderboard(
