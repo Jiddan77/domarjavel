@@ -67,7 +67,7 @@ def get_compare(
             if (m.get("referee") or "").upper() == found.referee.upper()
         ]
         total_pen = sum(
-            parse_cards(m.get("penalty", ""))[0] + parse_cards(m.get("penalty", ""))[1]
+            sum(parse_cards(m.get("penalty", "")))
             for m in ref_matches
         )
         penalties_per_game = round(total_pen / len(ref_matches), 2) if ref_matches else 0.0
@@ -96,7 +96,7 @@ def get_compare(
     all_cpg = [r.cards_per_game for r in bias_results.values()]
     all_delta = [r.home_away_delta for r in bias_results.values()]
     total_pen = sum(
-        parse_cards(m.get("penalty", ""))[0] + parse_cards(m.get("penalty", ""))[1]
+        sum(parse_cards(m.get("penalty", "")))
         for m in matches if (m.get("referee") or "").strip()
     )
     total_pen_matches = sum(1 for m in matches if (m.get("referee") or "").strip())
