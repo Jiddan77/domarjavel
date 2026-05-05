@@ -23,7 +23,7 @@ export default function RefereeSelector({ selected, allReferees, onChange }: Pro
     .slice(0, 20);
 
   const add = (ref: string) => {
-    if (selected.length < MAX_REFEREES) {
+    if (selected.length < MAX_REFEREES && !selected.includes(ref)) {
       onChange([...selected, ref]);
     }
     setQuery("");
