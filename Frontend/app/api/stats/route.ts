@@ -1,37 +1,21 @@
 import { NextResponse } from 'next/server';
+import { loadMatches, filterMatches, computeStats } from '@/lib/data';
 
-// Force dynamic rendering for this route
 export const dynamic = 'force-dynamic';
 
-// Mock statistics data
-const mockStats = {
-  totalMatches: 208,
-  totalYellow: 805,
-  totalRed: 21,
-  totalPenalty: 36,
-  avgYellow: 3.87,
-  avgRed: 0.10,
-  avgPenalty: 0.17
-};
-
-export async function GET() {
+export async function GET(request: Request) {
   try {
-    // Parameters available for future filtering implementation
-    // const { searchParams } = new URL(request.url);
-    // const season = searchParams.getAll('season');
-    // const referee = searchParams.getAll('referee');
-    // const team = searchParams.getAll('team');
-    // const side = searchParams.get('side');
-    
-    // In a real implementation, you would filter the stats based on these parameters
-    // For now, return mock data
-    
-    return NextResponse.json(mockStats);
+    const { searchParams } = new URL(request.url);
+    const seasons = searchParams.getAll('season').map(Number).filter(Boolean);
+    const referees = searchParams.getAll('referee').filter(Boolean);
+    const teams = searchParams.getAll('team').filter(Boolean);
+    const side = searchParams.get('side') ?? undefined;
+
+    const all = loadMatches();
+    const filtered = filterMatches(all, { seasons, referees, teams, side, finishedOnly: true });
+    return NextResponse.json(computeStats(filtered));
   } catch (error) {
     console.error('Error fetching stats:', error);
-    return NextResponse.json(
-      { error: 'Failed to fetch stats' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Failed to fetch stats' }, { status: 500 });
   }
 }

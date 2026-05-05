@@ -1,26 +1,22 @@
 import { NextResponse } from 'next/server';
+import { loadMatches } from '@/lib/data';
 
-// Force dynamic rendering for this route
 export const dynamic = 'force-dynamic';
-
-// Mock data for now - replace with actual data source
-const mockSeasons = [
-  { season: 2025, matches: 240 },
-  { season: 2024, matches: 240 },
-  { season: 2023, matches: 240 },
-  { season: 2022, matches: 240 },
-  { season: 2021, matches: 240 },
-  { season: 2020, matches: 240 }
-];
 
 export async function GET() {
   try {
-    return NextResponse.json(mockSeasons);
+    const matches = loadMatches();
+    const seasonMap: Record<number, number> = {};
+    for (const m of matches) {
+      if (!m.referee && m.status === 'UPCOMING') continue;
+      seasonMap[m.season] = (seasonMap[m.season] ?? 0) + 1;
+    }
+    const result = Object.entries(seasonMap)
+      .map(([season, count]) => ({ season: parseInt(season), matches: count }))
+      .sort((a, b) => b.season - a.season);
+    return NextResponse.json(result);
   } catch (error) {
     console.error('Error fetching seasons:', error);
-    return NextResponse.json(
-      { error: 'Failed to fetch seasons' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Failed to fetch seasons' }, { status: 500 });
   }
 }

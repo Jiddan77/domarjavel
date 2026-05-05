@@ -1,42 +1,28 @@
 import { NextResponse } from 'next/server';
+import { loadMatches } from '@/lib/data';
 
-// Force dynamic rendering for this route
 export const dynamic = 'force-dynamic';
-
-// Mock team data
-const mockTeams = [
-  { name: 'Malmö FF', matches: 30 },
-  { name: 'AIK', matches: 30 },
-  { name: 'Djurgården', matches: 30 },
-  { name: 'Hammarby', matches: 30 },
-  { name: 'IFK Göteborg', matches: 30 },
-  { name: 'BK Häcken', matches: 30 },
-  { name: 'IF Elfsborg', matches: 30 },
-  { name: 'IFK Norrköping', matches: 30 },
-  { name: 'Kalmar FF', matches: 30 },
-  { name: 'Örebro SK', matches: 30 },
-  { name: 'Varbergs BoIS', matches: 30 },
-  { name: 'Helsingborg', matches: 30 },
-  { name: 'GAIS', matches: 30 },
-  { name: 'Halmstads BK', matches: 30 },
-  { name: 'IK Sirius', matches: 30 },
-  { name: 'Degerfors IF', matches: 30 }
-];
 
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
+    const seasons = searchParams.getAll('season').map(Number).filter(Boolean);
     const minMatches = parseInt(searchParams.get('minMatches') || '1');
-    
-    // Filter teams by minimum matches
-    const filteredTeams = mockTeams.filter(team => team.matches >= minMatches);
-    
-    return NextResponse.json(filteredTeams);
+
+    const matches = loadMatches();
+    const teamMap: Record<string, number> = {};
+    for (const m of matches) {
+      if (seasons.length && !seasons.includes(m.season)) continue;
+      teamMap[m.home] = (teamMap[m.home] ?? 0) + 1;
+      teamMap[m.away] = (teamMap[m.away] ?? 0) + 1;
+    }
+    const result = Object.entries(teamMap)
+      .map(([name, count]) => ({ name, matches: count }))
+      .filter(t => t.matches >= minMatches)
+      .sort((a, b) => a.name.localeCompare(b.name, 'sv'));
+    return NextResponse.json(result);
   } catch (error) {
     console.error('Error fetching teams:', error);
-    return NextResponse.json(
-      { error: 'Failed to fetch teams' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Failed to fetch teams' }, { status: 500 });
   }
 }
