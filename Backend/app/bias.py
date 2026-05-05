@@ -117,12 +117,15 @@ def compute_bias_scores(
             if away:
                 ref_team.setdefault(away, []).append(float(ya + ra))
 
-        flagged = [
-            team for team, vals in ref_team.items()
-            if len(vals) >= 3
-            and abs(sum(vals) / len(vals) - team_mean.get(team, sum(vals) / len(vals)))
-            / team_std.get(team, 1.0) > 1.4
-        ]
+        flagged = []
+        for team, vals in ref_team.items():
+            if len(vals) < 3:
+                continue
+            ref_avg = sum(vals) / len(vals)
+            league_avg = team_mean.get(team, ref_avg)
+            league_s = team_std.get(team, 1.0)
+            if abs(ref_avg - league_avg) / league_s > 1.4:
+                flagged.append(team)
 
         s3 = min(10.0, len(flagged) * 2.5)
         composite = round(s1 * 0.4 + s2 * 0.35 + s3 * 0.25, 1)

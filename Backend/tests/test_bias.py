@@ -94,6 +94,8 @@ def test_compute_bias_flagged_teams():
         matches.append(_make_match("REF_NEUTRAL", 1, 1, home="OtherA", away="OtherB"))
     results = compute_bias_scores(matches, min_matches=10)
     assert "TeamX" in results["REF_BIAS"].flagged_teams
+    # TeamZ is the away team in 20 matches with normal card counts — should NOT be flagged
+    assert "TeamZ" not in results["REF_BIAS"].flagged_teams
 
 def test_compute_bias_empty_input():
     assert compute_bias_scores([], min_matches=1) == {}
