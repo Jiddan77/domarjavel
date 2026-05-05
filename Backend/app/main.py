@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 from .chunks_api import router as chunks_router
+from .compare import router as compare_router
 from .database import db_manager
 import time
 from collections import defaultdict
@@ -64,6 +65,9 @@ app.add_middleware(
 
 # Include chunks API router
 app.include_router(chunks_router, prefix="/api", tags=["chunks"])
+
+# Include compare/bias router
+app.include_router(compare_router, prefix="/api", tags=["compare"])
 
 # Database lifecycle
 @app.on_event("startup")
