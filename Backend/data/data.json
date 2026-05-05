@@ -17729,7 +17729,7 @@
       "penalty": "1–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IFK Norrköping",
       "away": "Malmö FF",
@@ -17739,13 +17739,13 @@
       "date_iso": "2025-10-18T13:00:00.000Z",
       "datetime": "2025-10-18 13:00",
       "date": "18 oktober 2025",
-      "referee": "��F ��Կ���`XB�1@��GE*?;Y�G��������L` �7���-�-��������WK�)�ZZA�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "ADAM LADEBÄCK",
+      "yellow": "2–0",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "BK Häcken",
       "away": "IK Sirius",
@@ -17755,13 +17755,13 @@
       "date_iso": "2025-10-18T15:30:00.000Z",
       "datetime": "2025-10-18 15:30",
       "date": "18 oktober 2025",
-      "referee": "�F ��Վ:N*~�� A�#�2��O��Q�V&;���@�%� �GM�[�[TO�V�&��?-�\r`Q�� ���I�L��H�*����.${\nS!�\\�}���A���<(�G�H{H(CA۴���\n`U�S����F�M����R�~���K5\"�����^��Ӥ����^`����B�U�IN���\\�C���@�8�X0F\\����\"� ����-EE���:�����НHДI�\r��J����Ϛ��֤\"��D���}�X���Ǟ?�G���1���V��U�B��QN��$O\"�(�[Q�V��G+AP]P�@��=腞��[~�O��H�Q%��[0�������H4{&^S�� ������WZ�CW���Z�2ŜH�GPB(Ƕ�VV��D�T������LJF�=���\\�%H�ˡ�H4���5 ���+�N��~VQ6�B�J�O���BJ�G�I������_�._@�N;��WT+�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "GLENN NYBERG",
+      "yellow": "2–0",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Hammarby",
       "away": "AIK",
@@ -17771,13 +17771,13 @@
       "date_iso": "2025-10-19T12:00:00.000Z",
       "datetime": "2025-10-19 12:00",
       "date": "19 oktober 2025",
-      "referee": "��F ��ՎZ�T0�B�1@��GE*�Ď'3V����Γ�>YI�& �E[���{E�E��ߟ��L��.E��H�UN�D������O(���",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "GRANIT MAQEDONCI",
+      "yellow": "3–3",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "GAIS",
       "away": "Djurgårdens IF",
@@ -17787,13 +17787,13 @@
       "date_iso": "2025-10-19T12:00:00.000Z",
       "datetime": "2025-10-19 12:00",
       "date": "19 oktober 2025",
-      "referee": "�FDT�~P�S����WGM�/$~$Q����;��3�Y��\"/)�$� �OM�[�[T��V�&��?-���M��\nU9�%[��D�W�\r�4�B��0X�{�����7�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "MOHAMMED AL-HAKIM",
+      "yellow": "3–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IF Elfsborg",
       "away": "Östers IF",
@@ -17803,13 +17803,13 @@
       "date_iso": "2025-10-19T14:30:00.000Z",
       "datetime": "2025-10-19 14:30",
       "date": "19 oktober 2025",
-      "referee": "�FD�!���_}��7�XD� ��D��Ώ�3V����Γ�>YI�& �E[��+���V�&��?-�� E�>��V9钭�I_�7�؅�=V���3�����_��<(�'� {H(CA/B�6� H�]R��R����}F\n��J��PM��Ң� J\"��:�5��T�V���LW�C�Nځ;X�>��8�0D�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "FREDRIK KLITTE",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IFK Värnamo",
       "away": "IF Brommapojkarna",
@@ -17819,13 +17819,13 @@
       "date_iso": "2025-10-19T14:30:00.000Z",
       "datetime": "2025-10-19 14:30",
       "date": "19 oktober 2025",
-      "referee": "G ��ՎZ�T0�B�1@��GE*?;����|';���@�% ����V�V��M�N������9[N �.M�*�R�K��Ή���\nY<�!`*�����}�$;� ��9��3�S���-���\"J���N������NC�\"2�ON�}��U�?���6��>VN�G��#�쵣�9�_�<�\t�A��NY=��!���EMEⱤ�[VO���X5��]�BҨJW�FXQ%V`G/F����R4�=F�V��\nF���U��Q(}]Ǜ�&����E׿� 0.���FG�Q�6\n�^�#I�9�:���\".@S�ZО$�(Y�D���5ͧ��_���S�B���R7A(��X��߿�����V�ޠ�X��-ZMMߋ�<>\t���RN\r�=\t=�]֣�G�\\�Q������KΒL�\"!`�>]��\\���?�!>F?�[���J�&�S�M�=\\��/�#�F��?\\�AK�N�Y`{��ERE:C{����GD19�WVA�����K�1G<��$K�B�����?/���S��E蘾7���D4�-�W`� R5���ΝM��\r�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "RICHARD SUNDELL",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Degerfors IF",
       "away": "Halmstads BK",
@@ -17835,13 +17835,13 @@
       "date_iso": "2025-10-20T17:00:00.000Z",
       "datetime": "2025-10-20 17:00",
       "date": "20 oktober 2025",
-      "referee": "C �N@�W_��㦂���I}(S����GLG��L�D^R�A���(�J�H����M�L�O�C��A� �S`�\\���@���WO/` ��T������IϢ��P\\�E��#�+W*��#E���Q�����GV� ���EMI�C�{�H��\\����BR�R��ZXQ)�`OǪ��B0�>GO��V\t���٪�W;������Z�D���ޕ�0Ο��.'�V�&\n�V�3I�)9���PW!���HO���\\�\\�]�|�������8�+_��BF���K�`V-��X�>B���7�:�E�Ї�E�R+��E����:}��0����>G윳��R�4�����~�뫋_������N���)� MR��\\��摃X��D!��J�@�KP�A����$U�5�/��1}V�/��SI6ױ�Z��9�Y �;�7�$Й�}��Z��5+��X'M��:�I�淢��'�T��H��V*K�?�E����V�[ �PD#O�ޚF* ��G�B��MDLO'E:(ϨQ�����T5F{�G:(�\\\r\n���H�R�A8�K����OK�\"G�ܦ�~_��O�H����O������|[ɳNZ�{R����=��C���QR��?]����1Z�Ũ��9CE+U��ѤXV�\t�Z��O-�*�1��̀B�GK��PP |A�~���X��10;LK-����L%�\n��$��2VQ��/�+M\nT4�Ǣ]��(�����%O��Iވ�%O�%�L>I/O�?Q��!LO-�(�Q2IӠ��~.��ښ�R�Ӌ�VL��OJJP��}���V��/���ݘ;HƬ�����#�Q4�_TĀ��F�QĆ�]�6B���^|�@����G�N�ZQ�6�������\\IF4BE� Ų�W쮃��B��>K]F",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "VICTOR WOLF",
+      "yellow": "1–3",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IFK Göteborg",
       "away": "Mjällby AIF",
@@ -17851,13 +17851,13 @@
       "date_iso": "2025-10-20T17:10:00.000Z",
       "datetime": "2025-10-20 17:10",
       "date": "20 oktober 2025",
-      "referee": "��F ��Կ���`XB�\t@��GE*?;~�G��������L` �7���-�-�����ɕ���ΠA���N�#S�RF_��F�� �LV��RA�EP��KQWU@>�CJѤ1��UTHڤQJE����:�*��ې�8����[U_MN��Ϟ���ͭ����[�Q���C��QI���%O}KО�7�����¢�����-�'�7�X5���BҨJW�FXQ%V`G/G���P�H4{�&^T��\nF���U��V(-]Ǜ�&��T�E�?�\t\r��K�T��E�FM��͂G҆3RLT��E��4�^��=\t�ARYDT�����O��/�G�T���}��Ѝ\n�?^Z����@����AAL�Z����)�ء���!�^+�֠ݓУץ=B;}��(���]�V�YV��� `۾��OTS}���>\\\">F?Ѥ�@ߔ��D@M\"�M\\���#�F��B\n���T��V��O��@�LGH^�C��]�PE6��^��9�Y\\$Y�Y",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "1–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Djurgårdens IF",
       "away": "IFK Värnamo",
@@ -17867,13 +17867,13 @@
       "date_iso": "2025-10-25T13:00:00.000Z",
       "datetime": "2025-10-25 13:00",
       "date": "25 oktober 2025",
-      "referee": "��FD�!���_�V_<$��)��LY�T�W��F��ZFG���K���ܒ\\�W]���{A�A��W?GNJE0�:��\tK�[F����\r$۠�\n���{�{O��E���",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "ADAM LADEBÄCK",
+      "yellow": "0–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Östers IF",
       "away": "Degerfors IF",
@@ -17883,13 +17883,13 @@
       "date_iso": "2025-10-25T15:30:00.000Z",
       "datetime": "2025-10-25 15:30",
       "date": "25 oktober 2025",
-      "referee": "G ��[��DBLSV#ٲ��*��A3�@��̛GE_�����LU�� � �\r�$�����-W�T)��] �BU�V�V��9��U|C!���LX�P��}����Y����!-���=�ڴ�9Z���B�N� ��NS��R���{T�-\r!@� �����88]�������+ZW��!��6<���",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "JOAKIM SARS",
+      "yellow": "4–2",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Mjällby AIF",
       "away": "IFK Norrköping",
@@ -17899,13 +17899,13 @@
       "date_iso": "2025-10-26T13:00:00.000Z",
       "datetime": "2025-10-26 13:00",
       "date": "26 oktober 2025",
-      "referee": "�G ��}�F�Ⅲ�D˲]�\t��5�4���GE_���H�߫ԬF�Y��[LG����O�~إK��HV9�%[��D�W�\r�4�B0XX O׏�9�N���\"�썃�9�[K��V�}A��^�`NW¢����#{&��U�|��ԪT��^\\�-�����*'�����Ī.�]��5R�*�UVŠ�+�X�^G-��^��:���� �RP\"OJ5M�����&��C�}�.�\"�6Ղ�I2��� �ˇ�O~����|�O�\n�W���������+�ݼ���R�-:���:������C�����NEGJ�H�&��U9\"�:N�C����]P��C;� ����@�7�?���%�C��{+T�J�FG�WB�6٘��8��9��=5&�B�@�KP\\�S�WH�I\r����Z9;���Z���\n��}'|� S��X�DI:���U(5�R!�OE�F������Y��*N���!��\n0SBC\"ZZڹ��P6AG�ΩX�SH�K�=آ�ƾ�[V��ۗ]����M���\r�|�?B�FN�J� ��BJ�$�IAX�⍷!���\nG��B!UC�7�V�� C�N����ݪ=�T��5��ݺ��T@�\t�$�'U`AW'�\t��5�\\K��W@�YV�-%J�}��O$��I��׺����@N�邍��ŬT�L�E��QC�\n���#I��5�T��M׷��M�IT��� Ǉ\t�ݠ�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "RICHARD SUNDELL",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IK Sirius",
       "away": "IF Elfsborg",
@@ -17915,13 +17915,13 @@
       "date_iso": "2025-10-26T13:00:00.000Z",
       "datetime": "2025-10-26 13:00",
       "date": "26 oktober 2025",
-      "referee": "��F ��Վ:J*~�� A�#�2�����QƟ�Γ�>YI�&�~�H�ݢݢZ[�[4���I�O �2M��*�R�K�ZTN$}�PH�)${\nS!C���}���>\"˞� ������\"H��S�H}�*䠳��TF�M����R������>��DAF.N���D�V��'.�]�۳A)���I�`��-�ǀ��B%:(P�\tA̤B�H�EA:�ף�-8��P�ΕNZ@W�A�&M5�R'=�S?:�*��[��X�����S�~H�~�|X��ڧ�_څ�6��7S��_�<�V�\\�OU���ޟ��AUAɃ��D�O饨������J���VK�3|? �Q���U1<��U;����罐ڟ�C���.�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "VICTOR WOLF",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "AIK",
       "away": "BK Häcken",
@@ -17931,13 +17931,13 @@
       "date_iso": "2025-10-26T15:30:00.000Z",
       "datetime": "2025-10-26 15:30",
       "date": "26 oktober 2025",
-      "referee": "�F ��ՎZ�T0�B�1@��GE*�Ď�3V��G��L�D^R�I���(�J�H���+�-�������(���U���.��>8'���O(D{\nC�T`�����\"˃���È���",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "OSCAR JOHNSON",
+      "yellow": "4–0",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Halmstads BK",
       "away": "IFK Göteborg",
@@ -17947,13 +17947,13 @@
       "date_iso": "2025-10-26T15:30:00.000Z",
       "datetime": "2025-10-26 15:30",
       "date": "26 oktober 2025",
-      "referee": "�F ��ՎZ�T0�B�1@��GE*?;��Q�N&;���@�%� �GM�[����+�-������W7���S���U��I�LU�I_�7�؅DOA�]`���}�����<`�'�J<�4�\"VN��S�HU*����ޭ��F��L_��1�J����� \"��L>���6�K׵�W�]`��W�\"�%��W���\\�9 P`���O3ѠZJ�E��|_��R�PD� ��9�]Hݴ���M��� J�TL�����_�5��%-��N}�>����Ǐ�����}��.�ݨQ]�1{�(�N�֒�)�(��[T�V��G+AP]PR[��=�#=��|Z�TM��J8Q%�`FOF�M1:I��H�L��FΡ5E��R(�M���:HȔT���\t\r`�Y�YR��:��6�3��9�����\"�@*](G�A�\\� ]|����OGG�V*@W��U��������������E�G�V��������;XH� �޵�]��/B�^�����Q���?~�\nG윳���A ��}K�������}�@|�~���2�BY��H[�&Q�V6C���B��I��O&5MA4X��S`H[�Hځ���W~�0U��Q0-6W��\\�\t9�I�EI��P��������~�����T-���3_5�\\\"�D L��Y��>�6�&�K�7��!VK������Y��U�L���3�^�@�L��A��}K�%�%�N���VE�7�:F�֔.^L��ŤD���6�P��`��A�R+(��OF+�2�X�Z�Q�{C�N0C�V��\nM�9�T�/\t;EֹH�4�M�&�RҨ(�ʖV�\r��5� L��KETO��A������4�.�V*���O�-6FT��Q+�2�MX\rAY�;��`��\"�GI�Ɠ�G�L�֢M�|Q\r)H7�?�UCQVCD�I����4��ׇD��� �4F��GI��������LJP������4�&�|B+��򲴭�A�AC�\n\"��X��>Q�� �TOI���1YƜ��$H|4�I��'~\tO�{E0-������Q��P.��拒!��R���\r|5-*^��T�%�V��Ύ\n5�NL����B��S�-F(��\"�:ȮꞍ���)��4F򑠵����#�G��?0!����",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "GLENN NYBERG",
+      "yellow": "2–0",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IF Brommapojkarna",
       "away": "GAIS",
@@ -17963,13 +17963,13 @@
       "date_iso": "2025-10-27T18:00:00.000Z",
       "datetime": "2025-10-27 18:00",
       "date": "27 oktober 2025",
-      "referee": "C N@�W��I$�K�N$[����P��A���W��}�ؒ[R�^UM��DO�T�D�Z���Pק] �BUN�D����H�*����.$ۅ=V���3�����_`G�=1�Z<�4�P�M�H�� V�<�.;M�K��UNÔ����J\"\"*�Ɥ;����T�V��Sح��Y'�Z�Xځ?X�&��8��F�\n�7��P=��\"��1߷���-�|\"���C�НLВIK",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "ADI AGANOVIC",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Malmö FF",
       "away": "Hammarby",
@@ -17979,13 +17979,13 @@
       "date_iso": "2025-10-27T18:10:00.000Z",
       "datetime": "2025-10-27 18:10",
       "date": "27 oktober 2025",
-      "referee": "�F ��ՎZ�T0�B�1@��GE*?;���Q�V&;���@�%� �GM�[�[T��+���{��[:@{X \r�R:JC9˒E��S\"�| ��� 7P��;�����_RYY�㦩��I�R݀GKE)��Z�HKC)Y�WӜ�`�%0�D��IVM�-KL",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "3–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "BK Häcken",
       "away": "Malmö FF",
@@ -17995,13 +17995,13 @@
       "date_iso": "2025-11-01T14:00:00.000Z",
       "datetime": "2025-11-01 14:00",
       "date": "1 november 2025",
-      "referee": "��F ��ՎZ�T0�B�1@��GE*?;��QƟ�Γ�>YI�&�~�H�ݢݢZ�H_�����E��\tE�>��V9�%[���K_�7�X\nC�TȖ�G���2D�=9^� ��T�A�ڴ�9Z�*�U!���2�M��UN�����M��Y�!\"�0S���\rN�K��Z���=�D�۞T���ǂ+P��(�A��MC&��",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "MOHAMMED AL-HAKIM",
+      "yellow": "2–0",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IFK Norrköping",
       "away": "IK Sirius",
@@ -18011,13 +18011,13 @@
       "date_iso": "2025-11-01T16:30:00.000Z",
       "datetime": "2025-11-01 16:30",
       "date": "1 november 2025",
-      "referee": "�F ��[��DBLSV#ٲ��*��A3�@��̛GE_�����LU�� }A��$���ӲPQ���: XA��.���9��U|C!�]H��B����}��/V�E��Q MIM�@L�J�H��PU�AG+��V�2}����������AH/���.�K׵�W���VE��9D�������WZP��JTP�X��I��YY�|�GM)Z(\"P�-9�]Hݴ��E��M�L�N:V�~����WNM*BIK��[?�O���}����I�~H��~�KO7J\\(FO��ɿ$YR\t�@��NE���ޟ��AUA�#��D�{)�`�>�>�ڢ=",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "FREDRIK KLITTE",
+      "yellow": "5–0",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IF Elfsborg",
       "away": "AIK",
@@ -18027,13 +18027,13 @@
       "date_iso": "2025-11-02T13:00:00.000Z",
       "datetime": "2025-11-02 13:00",
       "date": "2 november 2025",
-      "referee": "��F ��}�F�Ⅲ�D˲]�\t��5�4���GE_���H�߫ԬF�Y��[LG����O�S�� 6]�\"�P�R�K��Ή���\nI<���B�\\��}����Y�����KZ@S�Y�*�MZ�-R�����V\nB��6E�*'˰���G���H/��Y��Ӆ���U'.�[���N\t���I~G��������",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "JOAKIM SARS",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–1"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Halmstads BK",
       "away": "IF Brommapojkarna",
@@ -18043,13 +18043,13 @@
       "date_iso": "2025-11-02T13:00:00.000Z",
       "datetime": "2025-11-02 13:00",
       "date": "2 november 2025",
-      "referee": "��F ��ՎZ�T0�B�1@��GE*?;���Q�3;���@�% ����V���{E�E��ߟ��N��>�P�R�%[��D�W�\r�4R!�.�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "OSCAR JOHNSON",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Djurgårdens IF",
       "away": "IFK Göteborg",
@@ -18059,13 +18059,13 @@
       "date_iso": "2025-11-02T15:30:00.000Z",
       "datetime": "2025-11-02 15:30",
       "date": "2 november 2025",
-      "referee": "��F ��[��DBLSV#ٲ��*��A3�@��̛GE_�����LU�� }A��$���Ӳ� V�Ҧ)���*G�D����H�*����S��W����D�YN�!�XHH*�E�ܦ���\"�>ᦔ��V\nB��6E�*'���U���~K�R��^��G]N��K��:}��ޝWR��������ZP�������&�1\n�3",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "GRANIT MAQEDONCI",
+      "yellow": "2–1",
+      "red": "0–1",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "GAIS",
       "away": "Östers IF",
@@ -18075,13 +18075,13 @@
       "date_iso": "2025-11-02T15:30:00.000Z",
       "datetime": "2025-11-02 15:30",
       "date": "2 november 2025",
-      "referee": "�FD�!���_�V}<$�۔�H�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "VICTOR WOLF",
+      "yellow": "2–1",
+      "red": "0–1",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Degerfors IF",
       "away": "Hammarby",
@@ -18091,13 +18091,13 @@
       "date_iso": "2025-11-03T18:00:00.000Z",
       "datetime": "2025-11-03 18:00",
       "date": "3 november 2025",
-      "referee": "��F ��[}�DB���F�Eٮ�W���@��������]YRK��T�F�A�A�6H7H����'�ݤ�2�[JGI(�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "ADAM LADEBÄCK",
+      "yellow": "1–0",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IFK Värnamo",
       "away": "Mjällby AIF",
@@ -18107,13 +18107,13 @@
       "date_iso": "2025-11-03T18:00:00.000Z",
       "datetime": "2025-11-03 18:00",
       "date": "3 november 2025",
-      "referee": "�GD�!���_�V_<$��)��LY�����?H�7�� =����K�@�ܒ�7Յ�N�N�\r�\r����J�7�B����PNX��RN$}�����LPX�S߽���%��EO�ЄҴ��OJ�4�3�����S�ENM0�60�DSMW�\nY�Q(�Q�?��|��\\S=N�S�W��݊ޝ7RH���O;�'�����X\"�I�A��&�)S�G�T����R�UBA����RTAL� ݋\r���\"JQZ�O��١�_�5��#��P�~PO��A=����4]?���_�E����:F���_V<\t�@�\"NY���>���EM)���D��ꥬ���Ѕ�V�:",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "ADI AGANOVIC",
+      "yellow": "1–1",
+      "red": "1–0",
+      "penalty": "0–2"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "AIK",
       "away": "Halmstads BK",
@@ -18123,13 +18123,13 @@
       "date_iso": "2025-11-09T14:00:00.000Z",
       "datetime": "2025-11-09 14:00",
       "date": "9 november 2025",
-      "referee": "��F ��}�F�Ⅲ�D˲]�\t��5�4�������]YR$Կ+5���V���V�����򜕻2.F��B��.YU����%~����$PT�����\r���I� P-`��YD`�3�Ɇ��\t��� �]���*'˰UZ�<:�;�4� ڋ;X���T�;5}Ճ�ح��E'��������|�C@��@7-:(Q�\tĀB�H�EA:�נ�\n���?���KCZ�A�Hڤ�QJ��T�GGM�~KRG��N������Z����Y�~T�Q�T�`7H})F�։���%��MK��\r��T%",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "RICHARD SUNDELL",
+      "yellow": "2–2",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Hammarby",
       "away": "IF Elfsborg",
@@ -18139,13 +18139,13 @@
       "date_iso": "2025-11-09T14:00:00.000Z",
       "datetime": "2025-11-09 14:00",
       "date": "9 november 2025",
-      "referee": "��FQT�~�F�����O�S�RB�-��%��)���I�B�DX��툒���L<���U�����߿��(���T���;�2YVL�L",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "ADI AGANOVIC",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IF Brommapojkarna",
       "away": "Degerfors IF",
@@ -18155,13 +18155,13 @@
       "date_iso": "2025-11-09T14:00:00.000Z",
       "datetime": "2025-11-09 14:00",
       "date": "9 november 2025",
-      "referee": "��F ��ՎZ�T0�B�\t@�GE*?;��Q�3;���@�%� �=E[���ۢݢ��ߟ����Ӧ] �BUN�D����H�*����.$ۅ=V���3�����_Y4$��XHH*��\nP�֞H��T@M)O��R��2}���0����AH/�Ѭ^GGK�W�W-]B��_/9D��س���W8�%��#=����&�1\n�SJ",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "GRANIT MAQEDONCI",
+      "yellow": "4–2",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IFK Göteborg",
       "away": "IFK Norrköping",
@@ -18171,13 +18171,13 @@
       "date_iso": "2025-11-09T14:00:00.000Z",
       "datetime": "2025-11-09 14:00",
       "date": "9 november 2025",
-      "referee": "��F ��Կ���`XB�\t@��GE*?;Ϳ�|��7��\"/)� � �OM�[�[T�E;E����|7��C�R*�('",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "MOHAMMED AL-HAKIM",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Östers IF",
       "away": "Djurgårdens IF",
@@ -18187,13 +18187,13 @@
       "date_iso": "2025-11-09T14:00:00.000Z",
       "datetime": "2025-11-09 14:00",
       "date": "9 november 2025",
-      "referee": "�G ��ՎZ�T0�B�1@��GE*?;��Q�N&;���@�%� �GM�[����+�-������WTT9}N��P�R�%[��D�W�\r�4V!�S�CXX��޽���%�ʲ'�YMI M�\\�*�MZY��􁪐��VA",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "3–2",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Malmö FF",
       "away": "GAIS",
@@ -18203,13 +18203,13 @@
       "date_iso": "2025-11-09T14:00:00.000Z",
       "datetime": "2025-11-09 14:00",
       "date": "9 november 2025",
-      "referee": "�F ��[��DBLSV#ٲL�Ǆ��;�� =�F��Q��.�",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "JOAKIM SARS",
+      "yellow": "1–4",
+      "red": "0–0",
+      "penalty": "0–1"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "Mjällby AIF",
       "away": "BK Häcken",
@@ -18219,13 +18219,13 @@
       "date_iso": "2025-11-09T14:00:00.000Z",
       "datetime": "2025-11-09 14:00",
       "date": "9 november 2025",
-      "referee": "��F ��}�F�Ⅲ�D˲]�\t��B�������]YR$Կ+5���V���YL���Ւ�4�RX \r�R:JC9Aɢ��9������=�TPF����D�}�-�L-��IK���V��I��HK�IȂ�R̲���<�Z��ٿ&���P�����PP��Z���%V+Z1�!��6=��",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "FREDRIK KLITTE",
+      "yellow": "0–1",
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
+      "status": "FINISHED",
       "extendedStatus": "UPCOMING",
       "home": "IK Sirius",
       "away": "IFK Värnamo",
@@ -18235,10 +18235,2286 @@
       "date_iso": "2025-11-09T14:00:00.000Z",
       "datetime": "2025-11-09 14:00",
       "date": "9 november 2025",
-      "referee": "�F ��[}�DB���F�E�SU.\\��F���虝",
-      "yellow": null,
-      "red": null,
-      "penalty": null
+      "referee": "ERIK MATTSSON",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "Mjällby AIF",
+      "match_id": 6529830,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "2–4",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Degerfors IF",
+      "away": "IK Sirius",
+      "match_id": 6529835,
+      "season": 2026,
+      "referee": "FREDRIK KLITTE",
+      "yellow": "1–0",
+      "red": "0–0",
+      "penalty": "0–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "AIK",
+      "away": "Halmstads BK",
+      "match_id": 6529829,
+      "season": 2026,
+      "referee": "ADAM LADEBÄCK",
+      "yellow": "3–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Kalmar FF",
+      "away": "Västerås SK",
+      "match_id": 6529836,
+      "season": 2026,
+      "referee": "GRANIT MAQEDONCI",
+      "yellow": "1–2",
+      "red": "0–1",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Örgryte IS",
+      "away": "Malmö FF",
+      "match_id": 6529832,
+      "season": 2026,
+      "referee": "JOAKIM SARS",
+      "yellow": "1–4",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "BK Häcken",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529833,
+      "season": 2026,
+      "referee": "OSCAR JOHNSON",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Elfsborg",
+      "away": "IFK Göteborg",
+      "match_id": 6529834,
+      "season": 2026,
+      "referee": "VICTOR WOLF",
+      "yellow": "1–4",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "GAIS",
+      "away": "Djurgårdens IF",
+      "match_id": 6529831,
+      "season": 2026,
+      "referee": "MOHAMMED AL-HAKIM",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IFK Göteborg",
+      "away": "BK Häcken",
+      "match_id": 6529838,
+      "season": 2026,
+      "referee": "JOAKIM SARS",
+      "yellow": "3–6",
+      "red": "1–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Mjällby AIF",
+      "away": "Örgryte IS",
+      "match_id": 6529839,
+      "season": 2026,
+      "referee": "ADI AGANOVIC",
+      "yellow": "1–3",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Västerås SK",
+      "away": "IF Elfsborg",
+      "match_id": 6529843,
+      "season": 2026,
+      "referee": "TESS OLOFSSON",
+      "yellow": "0–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Djurgårdens IF",
+      "away": "Kalmar FF",
+      "match_id": 6529837,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "yellow": "1–0",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Halmstads BK",
+      "away": "Degerfors IF",
+      "match_id": 6529844,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "yellow": "2–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Malmö FF",
+      "away": "GAIS",
+      "match_id": 6529840,
+      "season": 2026,
+      "referee": "VICTOR WOLF",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Brommapojkarna",
+      "away": "AIK",
+      "match_id": 6529841,
+      "season": 2026,
+      "referee": "MOHAMMED AL-HAKIM",
+      "yellow": "2–3",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IK Sirius",
+      "away": "Hammarby",
+      "match_id": 6529842,
+      "season": 2026,
+      "referee": "GLENN NYBERG",
+      "yellow": "0–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Djurgårdens IF",
+      "away": "Malmö FF",
+      "match_id": 6529846,
+      "season": 2026,
+      "referee": "FREDRIK KLITTE",
+      "yellow": "5–4",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Degerfors IF",
+      "away": "IF Elfsborg",
+      "match_id": 6529850,
+      "season": 2026,
+      "referee": "GLENN NYBERG",
+      "yellow": "5–3",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "Örgryte IS",
+      "match_id": 6529847,
+      "season": 2026,
+      "referee": "GRANIT MAQEDONCI",
+      "yellow": "0–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Mjällby AIF",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529849,
+      "season": 2026,
+      "referee": "ADAM LADEBÄCK",
+      "yellow": "0–4",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IK Sirius",
+      "away": "Västerås SK",
+      "match_id": 6529851,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "yellow": "1–0",
+      "red": "0–0",
+      "penalty": "2–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Halmstads BK",
+      "away": "IFK Göteborg",
+      "match_id": 6529852,
+      "season": 2026,
+      "referee": "OSCAR JOHNSON",
+      "yellow": "1–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "AIK",
+      "away": "Kalmar FF",
+      "match_id": 6529845,
+      "season": 2026,
+      "referee": "ADI AGANOVIC",
+      "yellow": "3–2",
+      "red": "0–0",
+      "penalty": "1–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "BK Häcken",
+      "away": "GAIS",
+      "match_id": 6529848,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "4–5",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "Halmstads BK",
+      "match_id": 6529853,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "yellow": "2–3",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Örgryte IS",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529855,
+      "season": 2026,
+      "referee": "TESS OLOFSSON",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Elfsborg",
+      "away": "Djurgårdens IF",
+      "match_id": 6529857,
+      "season": 2026,
+      "referee": "GRANIT MAQEDONCI",
+      "yellow": "3–2",
+      "red": "0–0",
+      "penalty": "1–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Västerås SK",
+      "away": "BK Häcken",
+      "match_id": 6529859,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "yellow": "3–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "GAIS",
+      "away": "Mjällby AIF",
+      "match_id": 6529854,
+      "season": 2026,
+      "referee": "OSCAR JOHNSON",
+      "yellow": "0–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Malmö FF",
+      "away": "IK Sirius",
+      "match_id": 6529856,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "2–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Degerfors IF",
+      "away": "AIK",
+      "match_id": 6529858,
+      "season": 2026,
+      "referee": "VICTOR WOLF",
+      "yellow": "3–4",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Kalmar FF",
+      "away": "IFK Göteborg",
+      "match_id": 6529860,
+      "season": 2026,
+      "referee": "ADAM LADEBÄCK",
+      "yellow": "0–3",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Djurgårdens IF",
+      "away": "Hammarby",
+      "match_id": 6529862,
+      "season": 2026,
+      "referee": "GLENN NYBERG",
+      "yellow": "1–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IFK Göteborg",
+      "away": "GAIS",
+      "match_id": 6529863,
+      "season": 2026,
+      "referee": "FREDRIK KLITTE",
+      "yellow": "2–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Brommapojkarna",
+      "away": "Västerås SK",
+      "match_id": 6529867,
+      "season": 2026,
+      "referee": "VICTOR WOLF",
+      "yellow": "0–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "AIK",
+      "away": "Malmö FF",
+      "match_id": 6529861,
+      "season": 2026,
+      "referee": "GRANIT MAQEDONCI",
+      "yellow": "3–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Örgryte IS",
+      "away": "Degerfors IF",
+      "match_id": 6529864,
+      "season": 2026,
+      "referee": "ADI AGANOVIC",
+      "yellow": "2–3",
+      "red": "0–0",
+      "penalty": "1–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "BK Häcken",
+      "away": "IK Sirius",
+      "match_id": 6529865,
+      "season": 2026,
+      "referee": "MOHAMMED AL-HAKIM",
+      "yellow": "0–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Mjällby AIF",
+      "away": "Halmstads BK",
+      "match_id": 6529866,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "yellow": "1–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Kalmar FF",
+      "away": "IF Elfsborg",
+      "match_id": 6529868,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "yellow": "3–4",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Degerfors IF",
+      "away": "BK Häcken",
+      "match_id": 6529874,
+      "season": 2026,
+      "referee": "JOAKIM SARS",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IK Sirius",
+      "away": "Kalmar FF",
+      "match_id": 6529875,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "yellow": "1–3",
+      "red": "0–0",
+      "penalty": "1–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "Västerås SK",
+      "match_id": 6529870,
+      "season": 2026,
+      "referee": "FREDRIK KLITTE",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Malmö FF",
+      "away": "Mjällby AIF",
+      "match_id": 6529872,
+      "season": 2026,
+      "referee": "MOHAMMED AL-HAKIM",
+      "yellow": "0–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "GAIS",
+      "away": "Örgryte IS",
+      "match_id": 6529871,
+      "season": 2026,
+      "referee": "ADAM LADEBÄCK",
+      "yellow": "0–1",
+      "red": "0–0",
+      "penalty": "1–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Elfsborg",
+      "away": "AIK",
+      "match_id": 6529873,
+      "season": 2026,
+      "referee": "OSCAR JOHNSON",
+      "yellow": "0–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED_RECENTLY",
+      "home": "Djurgårdens IF",
+      "away": "IFK Göteborg",
+      "match_id": 6529869,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED_RECENTLY",
+      "home": "Halmstads BK",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529876,
+      "season": 2026,
+      "referee": "ADI AGANOVIC",
+      "yellow": "2–2",
+      "red": "0–1",
+      "penalty": "0–0"
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529880,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "Hammarby",
+      "match_id": 6529878,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "Mjällby AIF",
+      "match_id": 6529881,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "GAIS",
+      "match_id": 6529883,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "Djurgårdens IF",
+      "match_id": 6529877,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "Halmstads BK",
+      "match_id": 6529884,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "Malmö FF",
+      "match_id": 6529879,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "Örgryte IS",
+      "match_id": 6529882,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "Degerfors IF",
+      "match_id": 6529887,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "IF Elfsborg",
+      "match_id": 6529892,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "Malmö FF",
+      "match_id": 6529886,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "Kalmar FF",
+      "match_id": 6529890,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "BK Häcken",
+      "match_id": 6529889,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "AIK",
+      "match_id": 6529891,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "IK Sirius",
+      "match_id": 6529885,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "IFK Göteborg",
+      "match_id": 6529888,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "Hammarby",
+      "match_id": 6529944,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "Mjällby AIF",
+      "match_id": 6529946,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529893,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "Degerfors IF",
+      "match_id": 6529899,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "Örgryte IS",
+      "match_id": 6529900,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "AIK",
+      "match_id": 6529894,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "GAIS",
+      "match_id": 6529898,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "Västerås SK",
+      "match_id": 6529896,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "Mjällby AIF",
+      "match_id": 6529895,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "BK Häcken",
+      "match_id": 6529897,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "IF Elfsborg",
+      "match_id": 6529903,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "IK Sirius",
+      "match_id": 6529901,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "Kalmar FF",
+      "match_id": 6529902,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "Halmstads BK",
+      "match_id": 6529906,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "Hammarby",
+      "match_id": 6529904,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529907,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "IFK Göteborg",
+      "match_id": 6529908,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "Djurgårdens IF",
+      "match_id": 6529905,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "AIK",
+      "match_id": 6529909,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "Djurgårdens IF",
+      "match_id": 6529910,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "Hammarby",
+      "match_id": 6529911,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "GAIS",
+      "match_id": 6529912,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "Malmö FF",
+      "match_id": 6529913,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "Mjällby AIF",
+      "match_id": 6529914,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "Örgryte IS",
+      "match_id": 6529915,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "Västerås SK",
+      "match_id": 6529916,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "Halmstads BK",
+      "match_id": 6529917,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "Kalmar FF",
+      "match_id": 6529918,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "IF Elfsborg",
+      "match_id": 6529919,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "BK Häcken",
+      "match_id": 6529920,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "AIK",
+      "match_id": 6529921,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "IFK Göteborg",
+      "match_id": 6529922,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "IK Sirius",
+      "match_id": 6529923,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "Degerfors IF",
+      "match_id": 6529924,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "GAIS",
+      "match_id": 6529925,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "Degerfors IF",
+      "match_id": 6529926,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529927,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "Djurgårdens IF",
+      "match_id": 6529928,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "Västerås SK",
+      "match_id": 6529929,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "IK Sirius",
+      "match_id": 6529930,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "Malmö FF",
+      "match_id": 6529931,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "BK Häcken",
+      "match_id": 6529932,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "Halmstads BK",
+      "match_id": 6529933,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "AIK",
+      "match_id": 6529934,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "IF Elfsborg",
+      "match_id": 6529935,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "Hammarby",
+      "match_id": 6529936,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "Djurgårdens IF",
+      "match_id": 6529937,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "IFK Göteborg",
+      "match_id": 6529938,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "Örgryte IS",
+      "match_id": 6529939,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "Mjällby AIF",
+      "match_id": 6529940,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "Örgryte IS",
+      "match_id": 6529941,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "Västerås SK",
+      "match_id": 6529942,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "Degerfors IF",
+      "match_id": 6529943,
+      "season": 2026
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "Kalmar FF",
+      "match_id": 6529945,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "Malmö FF",
+      "match_id": 6529947,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "IK Sirius",
+      "match_id": 6529948,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "BK Häcken",
+      "match_id": 6529949,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "Kalmar FF",
+      "match_id": 6529950,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "AIK",
+      "match_id": 6529951,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "IF Elfsborg",
+      "match_id": 6529952,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "Degerfors IF",
+      "match_id": 6529953,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529954,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "Djurgårdens IF",
+      "match_id": 6529955,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "GAIS",
+      "match_id": 6529956,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "AIK",
+      "match_id": 6529957,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "Malmö FF",
+      "match_id": 6529958,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "Halmstads BK",
+      "match_id": 6529959,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "IK Sirius",
+      "match_id": 6529960,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "Västerås SK",
+      "match_id": 6529961,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "Örgryte IS",
+      "match_id": 6529962,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "IFK Göteborg",
+      "match_id": 6529963,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "Hammarby",
+      "match_id": 6529964,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "Mjällby AIF",
+      "match_id": 6529965,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "GAIS",
+      "match_id": 6529966,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "IF Elfsborg",
+      "match_id": 6529967,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "Halmstads BK",
+      "match_id": 6529968,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "Djurgårdens IF",
+      "match_id": 6529969,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "Degerfors IF",
+      "match_id": 6529970,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "BK Häcken",
+      "match_id": 6529971,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "Kalmar FF",
+      "match_id": 6529972,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "Hammarby",
+      "match_id": 6529973,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "Mjällby AIF",
+      "match_id": 6529974,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "Örgryte IS",
+      "match_id": 6529975,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529976,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "Västerås SK",
+      "match_id": 6529977,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "Degerfors IF",
+      "match_id": 6529978,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "Malmö FF",
+      "match_id": 6529979,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "Kalmar FF",
+      "match_id": 6529980,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "BK Häcken",
+      "match_id": 6529981,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "Hammarby",
+      "match_id": 6529982,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "IFK Göteborg",
+      "match_id": 6529983,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "AIK",
+      "match_id": 6529984,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "IF Elfsborg",
+      "match_id": 6529985,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "Halmstads BK",
+      "match_id": 6529986,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "IK Sirius",
+      "match_id": 6529987,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "Djurgårdens IF",
+      "match_id": 6529988,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "Västerås SK",
+      "match_id": 6529989,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "GAIS",
+      "match_id": 6529990,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529991,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "Halmstads BK",
+      "match_id": 6529992,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "Mjällby AIF",
+      "match_id": 6529993,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "Örgryte IS",
+      "match_id": 6529994,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "Kalmar FF",
+      "match_id": 6529995,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "Degerfors IF",
+      "match_id": 6529996,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "IF Elfsborg",
+      "match_id": 6529997,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "IK Sirius",
+      "match_id": 6529998,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "GAIS",
+      "match_id": 6529999,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "IFK Göteborg",
+      "match_id": 6530000,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "Hammarby",
+      "match_id": 6530001,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "Malmö FF",
+      "match_id": 6530002,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "BK Häcken",
+      "match_id": 6530003,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "AIK",
+      "match_id": 6530004,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "IF Brommapojkarna",
+      "match_id": 6530005,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "Djurgårdens IF",
+      "match_id": 6530006,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "Västerås SK",
+      "match_id": 6530007,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "IK Sirius",
+      "match_id": 6530008,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "Örgryte IS",
+      "match_id": 6530009,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "Degerfors IF",
+      "match_id": 6530010,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "Kalmar FF",
+      "match_id": 6530011,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "Halmstads BK",
+      "match_id": 6530012,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "IFK Göteborg",
+      "match_id": 6530013,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "GAIS",
+      "match_id": 6530014,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "BK Häcken",
+      "match_id": 6530015,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "Djurgårdens IF",
+      "match_id": 6530016,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "Kalmar FF",
+      "match_id": 6530017,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "IF Elfsborg",
+      "match_id": 6530018,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "Mjällby AIF",
+      "match_id": 6530019,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "Hammarby",
+      "match_id": 6530020,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "Örgryte IS",
+      "match_id": 6530021,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "IFK Göteborg",
+      "match_id": 6530022,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "Degerfors IF",
+      "match_id": 6530023,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "Hammarby",
+      "match_id": 6530024,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "Malmö FF",
+      "match_id": 6530025,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "AIK",
+      "match_id": 6530026,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "Halmstads BK",
+      "match_id": 6530027,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "IF Brommapojkarna",
+      "match_id": 6530028,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "IF Elfsborg",
+      "match_id": 6530029,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "IK Sirius",
+      "match_id": 6530030,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "Djurgårdens IF",
+      "match_id": 6530031,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "Mjällby AIF",
+      "match_id": 6530032,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "BK Häcken",
+      "match_id": 6530033,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "Västerås SK",
+      "match_id": 6530034,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "GAIS",
+      "match_id": 6530035,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "Malmö FF",
+      "match_id": 6530036,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "Degerfors IF",
+      "match_id": 6530037,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "AIK",
+      "match_id": 6530038,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "IFK Göteborg",
+      "match_id": 6530039,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "Kalmar FF",
+      "match_id": 6530040,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "Hammarby",
+      "match_id": 6530041,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "Örgryte IS",
+      "match_id": 6530042,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "Halmstads BK",
+      "match_id": 6530043,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "IF Brommapojkarna",
+      "match_id": 6530044,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "BK Häcken",
+      "match_id": 6530045,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "IF Elfsborg",
+      "match_id": 6530046,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "Malmö FF",
+      "match_id": 6530047,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "Västerås SK",
+      "match_id": 6530048,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "Mjällby AIF",
+      "match_id": 6530049,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "GAIS",
+      "match_id": 6530050,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "IK Sirius",
+      "match_id": 6530051,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "Djurgårdens IF",
+      "match_id": 6530052,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "AIK",
+      "away": "Degerfors IF",
+      "match_id": 6530053,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Hammarby",
+      "away": "IFK Göteborg",
+      "match_id": 6530054,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "Västerås SK",
+      "match_id": 6530055,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Örgryte IS",
+      "away": "Kalmar FF",
+      "match_id": 6530056,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "BK Häcken",
+      "away": "IF Elfsborg",
+      "match_id": 6530057,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Mjällby AIF",
+      "away": "Malmö FF",
+      "match_id": 6530058,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Brommapojkarna",
+      "away": "Halmstads BK",
+      "match_id": 6530059,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IK Sirius",
+      "away": "Djurgårdens IF",
+      "match_id": 6530060,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Djurgårdens IF",
+      "away": "BK Häcken",
+      "match_id": 6530061,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IFK Göteborg",
+      "away": "IK Sirius",
+      "match_id": 6530062,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Malmö FF",
+      "away": "IF Brommapojkarna",
+      "match_id": 6530063,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "IF Elfsborg",
+      "away": "GAIS",
+      "match_id": 6530064,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Degerfors IF",
+      "away": "Örgryte IS",
+      "match_id": 6530065,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Västerås SK",
+      "away": "Hammarby",
+      "match_id": 6530066,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Kalmar FF",
+      "away": "AIK",
+      "match_id": 6530067,
+      "season": 2026,
+      "referee": ""
+    },
+    {
+      "status": "UPCOMING",
+      "extendedStatus": "UPCOMING",
+      "home": "Halmstads BK",
+      "away": "Mjällby AIF",
+      "match_id": 6530068,
+      "season": 2026,
+      "referee": ""
     }
   ]
 }
