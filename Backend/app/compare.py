@@ -64,7 +64,7 @@ def get_compare(
 
         ref_matches = [
             m for m in matches
-            if (m.get("referee") or "").upper() == req.upper()
+            if (m.get("referee") or "").upper() == found.referee.upper()
         ]
         total_pen = sum(
             parse_cards(m.get("penalty", ""))[0] + parse_cards(m.get("penalty", ""))[1]
