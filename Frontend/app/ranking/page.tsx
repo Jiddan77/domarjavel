@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useAdvancedStats } from "@/hooks/useAdvancedStats";
+import { useBiasScores } from "@/hooks/useBiasScores";
 import { Trophy, Users, TrendingUp, TrendingDown, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import RefereeVoting from "@/components/RefereeVoting";
@@ -21,6 +22,7 @@ export default function RankingPage() {
   const [audienceVotes, setAudienceVotes] = useState<any>({});
 
   const { advancedStats, error, isLoading } = useAdvancedStats({ minMatches: 5, limit: 50 });
+  const { biasScores } = useBiasScores({ minMatches: 5 });
 
   // Load team preference and audience votes
   useEffect(() => {
@@ -43,19 +45,21 @@ export default function RankingPage() {
     }
   };
 
+  const biasMap = Object.fromEntries((biasScores ?? []).map(b => [b.referee, b.composite_score]));
+
   const getRankedReferees = () => {
     if (!advancedStats?.referees) return [];
 
     const referees = advancedStats.referees.map(ref => ({
       ...ref,
-      audienceScore: audienceVotes[ref.name] ? 
+      audienceScore: audienceVotes[ref.name] ?
         (audienceVotes[ref.name].up / Math.max(audienceVotes[ref.name].total, 1)) * 100 : 0,
       audienceVotes: audienceVotes[ref.name]?.total || 0
     }));
 
     return referees.sort((a, b) => {
       let aValue, bValue;
-      
+
       switch (rankingType) {
         case "audience":
           aValue = a.audienceScore;
@@ -70,8 +74,8 @@ export default function RankingPage() {
           bValue = b.avg_penalties_per_match;
           break;
         case "bias":
-          aValue = Math.abs(a.home_bias_score - 0.5); // Distance from neutral
-          bValue = Math.abs(b.home_bias_score - 0.5);
+          aValue = biasMap[a.name] ?? 0;
+          bValue = biasMap[b.name] ?? 0;
           break;
         default:
           return 0;
@@ -269,12 +273,21 @@ export default function RankingPage() {
                     </div>
                   )}
                   {rankingType === "bias" && (
-                    <div>
-                      <div className="text-2xl font-bold text-green-600">
-                        {fmt(Math.abs(referee.home_bias_score - 0.5), 3)}
+                    <Link
+                      href={`/compare?referees=${encodeURIComponent(referee.name)}`}
+                      className="hover:opacity-80 transition-opacity"
+                    >
+                      <div className={`text-2xl font-bold ${
+                        biasMap[referee.name] !== undefined ? (
+                          biasMap[referee.name] >= 7 ? "text-red-600" :
+                          biasMap[referee.name] >= 4 ? "text-amber-600" :
+                          "text-green-600"
+                        ) : "text-slate-600"
+                      }`}>
+                        {biasMap[referee.name]?.toFixed(1) ?? "—"}
                       </div>
-                      <div className="text-xs text-slate-500">bias score</div>
-                    </div>
+                      <div className="text-xs text-slate-500">composite score</div>
+                    </Link>
                   )}
                 </div>
               </div>
