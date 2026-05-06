@@ -1,453 +1,191 @@
-"use client";
+'use client';
 
-import { useMemo, useState } from "react";
-import { useSeasons } from "@/hooks/useSeasons";
-import { useReferees } from "@/hooks/useReferees";
-import { useTeams } from "@/hooks/useTeams";
-import { useMatches } from "@/hooks/useMatches";
-import { useStats } from "@/hooks/useStats";
-import { useLeaderboard } from "@/hooks/useLeaderboard";
-import { useAdvancedStats } from "@/hooks/useAdvancedStats";
-import MultiSelect from "@/components/filters/MultiSelect";
-import StatsPanel from "@/components/StatsPanel";
-import FactsPanel from "@/components/FactsPanel";
-import AdvancedStatsPanel from "@/components/AdvancedStatsPanel";
-import TopRefereesForTeam from "@/components/TopRefereesForTeam";
-import EnhancedTeamStats from "@/components/EnhancedTeamStats";
-import TeamPreference from "@/components/TeamPreference";
-import HistoricalTrends from "@/components/HistoricalTrends";
-import MatchTable from "@/components/MatchTable";
-import Leaderboard from "@/components/Leaderboard";
-import { trackFilterChange, trackPageView } from "@/lib/telemetry";
-import { ErrorBoundary } from "@/components/ErrorBoundary";
-import LoadingSpinner from "@/components/LoadingSpinner";
-import ErrorMessage from "@/components/ErrorMessage";
-import Pagination from "@/components/Pagination";
-import { BarChart3, TrendingUp, Users, Calendar, Filter, Search, Trophy, Shield } from "lucide-react";
-import Link from "next/link";
-import { useEffect } from "react";
-import Card from "@/components/ui/Card";
+import { useState, useEffect } from 'react';
+import { DesignData, Filters, Tweaks } from '@/components/design/types';
+import { Masthead, HeroLede, FiltersBar } from '@/components/design/layout';
+import { LeagueStory, LeaderboardSection } from '@/components/design/sections1';
+import { BiasLab, MatchLedger, Footer } from '@/components/design/sections2';
+import { RankingPage, ComparePage } from '@/components/design/pages';
+import { SpotlightPage } from '@/components/design/spotlight';
+import { useTweaks, TweaksPanel, TweakSection, TweakRadio, TweakSelect, TweakToggle } from '@/components/design/tweaks-panel';
 
-export default function Home() {
-  const [seasonSel, setSeasonSel] = useState<number[]>([]);
-  const [refSel, setRefSel] = useState<string[]>([]);
-  const [teamSel, setTeamSel] = useState<string[]>([]);
-  const [side, setSide] = useState<"" | "home" | "away">("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [showFilters, setShowFilters] = useState(false);
+const DEFAULTS: Tweaks = {
+  theme: 'light',
+  density: 'comfortable',
+  accent: 'terracotta',
+  displayFont: 'source',
+  showSparklines: true,
+  showLede: true,
+};
 
-  const [itemsPerPage, setItemsPerPage] = useState(50);
+function applyTheme(t: Tweaks) {
+  const root = document.documentElement;
+  root.dataset.theme = t.theme;
+  root.dataset.density = t.density;
 
-  const { seasons, error: seasonsError, isLoading: seasonsLoading } = useSeasons();
-  const { referees, error: refereesError, isLoading: refereesLoading } = useReferees({ season: seasonSel, minMatches: 1 });
-  const { teams, error: teamsError, isLoading: teamsLoading } = useTeams({ season: seasonSel, minMatches: 1 });
+  const accentMap: Record<string, { accent: string; deep: string }> = {
+    terracotta: { accent: '#c8553d', deep: '#a8412c' },
+    forest: { accent: '#2d4a3e', deep: '#1f3329' },
+    cobalt: { accent: '#2a4d8b', deep: '#1f3a6b' },
+    rust: { accent: '#a8451c', deep: '#7a3214' },
+  };
+  const a = accentMap[t.accent] || accentMap.terracotta;
+  root.style.setProperty('--terracotta', a.accent);
+  root.style.setProperty('--terracotta-deep', a.deep);
 
-  const { matches, total, error: matchesError, isLoading: matchesLoading } = useMatches({
-    season: seasonSel, 
-    referee: refSel, 
-    team: teamSel, 
-    side: side || undefined, 
-    limit: itemsPerPage,
-    offset: (currentPage - 1) * itemsPerPage,
-    includeTotal: true
-  });
-  const { stats, error: statsError, isLoading: statsLoading } = useStats({ season: seasonSel, referee: refSel, team: teamSel, side: side || undefined });
-  const { leaderboard, error: leaderboardError, isLoading: leaderboardLoading } = useLeaderboard({ season: seasonSel, team: teamSel, limit: 5, minMatches: 8, minTeamMatches: 5 });
-  const { advancedStats, error: advancedStatsError, isLoading: advancedStatsLoading } = useAdvancedStats({ season: seasonSel, team: teamSel, minMatches: 5, limit: 20 });
+  const fontMap: Record<string, string> = {
+    source: '"Source Serif 4", "Source Serif Pro", Georgia, serif',
+    playfair: '"Playfair Display", Georgia, serif',
+    fraunces: '"Fraunces", Georgia, serif',
+    dm: '"DM Serif Display", Georgia, serif',
+  };
+  root.style.setProperty('--font-display', fontMap[t.displayFont] || fontMap.source);
+}
 
-  const seasonOpts = useMemo(() => seasons.map(s => ({ value: String(s.season), label: String(s.season) })), [seasons]);
-  const refOpts = useMemo(() => referees.map(r => ({ value: r.name, label: r.name })), [referees]);
-  const teamOpts = useMemo(() => teams.map(t => ({ value: t.name, label: t.name })), [teams]);
-  
-  const totalPages = Math.ceil((total || 0) / itemsPerPage);
-  
-  // Check if any filters are active
-  const hasActiveFilters = seasonSel.length > 0 || refSel.length > 0 || teamSel.length > 0 || side !== "";
-  
-  // Reset to page 1 when filters change
-  const resetPage = () => setCurrentPage(1);
+type Page = 'dashboard' | 'ranking' | 'compare' | 'spotlight' | 'matches';
 
-  // Track page view and filter changes
-  useEffect(() => {
-    trackPageView('main');
-  }, []);
+function App({ data }: { data: DesignData }) {
+  const [page, setPage] = useState<Page>('dashboard');
+  const [filters, setFilters] = useState<Filters>({ season: null, side: null, team: null, referee: null });
+  const [selectedRef, setSelectedRef] = useState<string | null>(null);
+  const [tweaks, setTweak] = useTweaks(DEFAULTS);
 
-  useEffect(() => {
-    if (hasActiveFilters) {
-      trackFilterChange({
-        seasons: seasonSel,
-        referees: refSel,
-        teams: teamSel,
-        side: side
-      });
-    }
-  }, [seasonSel, refSel, teamSel, side, hasActiveFilters]);
+  useEffect(() => { applyTheme(tweaks); }, [tweaks]);
 
-  // Show loading state for initial data
-  if (seasonsLoading) {
-    return (
-      <main className="p-6 max-w-7xl mx-auto">
-        <div className="flex items-center justify-center min-h-[200px]">
-          <div className="text-center">
-            <LoadingSpinner size="lg" className="mx-auto mb-4" />
-            <p className="text-gray-600 dark:text-gray-400">Loading application...</p>
-          </div>
-        </div>
-      </main>
-    );
-  }
-
-  // Show error for critical failures
-  if (seasonsError) {
-    return (
-      <main className="p-6 max-w-7xl mx-auto">
-        <ErrorMessage error={seasonsError} />
-      </main>
-    );
-  }
+  const handleSelectRef = (name: string) => {
+    setSelectedRef(name);
+    setPage('spotlight');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
-    <ErrorBoundary>
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
-        {/* Professional Header */}
-        <header className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2 sm:gap-4">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-                    <BarChart3 className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
-                  </div>
-                  <div>
-                    <h1 className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                      Dommarjävel
-                    </h1>
-                    <p className="hidden sm:block text-sm text-slate-600 dark:text-slate-400">Swedish Football Referee Analytics</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-2 sm:gap-4">
-                <div className="hidden md:flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
-                  <Calendar className="w-4 h-4" />
-                  <span>Seasons 2020-2025</span>
-                </div>
-                
-                <TeamPreference 
-                  teams={teams.map(t => t.name)}
-                />
-                
-                <Link
-                  href="/ranking"
-                  className="flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 dark:bg-slate-800 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-700 transition-colors"
-                >
-                  <Trophy className="w-4 h-4" />
-                  <span className="hidden sm:inline">Rankings</span>
-                </Link>
+    <div data-screen-label={`Page · ${page}`}>
+      <Masthead data={data} onNav={p => setPage(p as Page)} page={page} tweaks={tweaks} />
 
-                <Link
-                  href="/compare"
-                  className="flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 dark:bg-slate-800 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-700 transition-colors"
-                >
-                  <Users className="w-4 h-4" />
-                  <span className="hidden sm:inline">Compare</span>
-                </Link>
+      {page === 'dashboard' && (
+        <>
+          {tweaks.showLede && <HeroLede data={data} />}
+          <FiltersBar data={data} filters={filters} setFilters={setFilters} />
+          <LeagueStory data={data} filters={filters} />
+          <LeaderboardSection data={data} onSelectRef={handleSelectRef} />
+          <BiasLab data={data} onSelectRef={handleSelectRef} />
+          <MatchLedger data={data} filters={filters} onSelectRef={handleSelectRef} />
+        </>
+      )}
 
-                <Link
-                  href="/admin"
-                  className="flex items-center gap-2 px-3 py-2 rounded-lg border border-red-200 text-red-700 hover:bg-red-50 dark:bg-red-900/20 dark:border-red-700 dark:text-red-300 dark:hover:bg-red-900/30 transition-colors"
-                >
-                  <Shield className="w-4 h-4" />
-                  <span className="hidden sm:inline">Admin</span>
-                </Link>
-                
-                <button
-                  onClick={() => setShowFilters(!showFilters)}
-                  className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border transition-all ${
-                    showFilters || hasActiveFilters
-                      ? "bg-blue-50 border-blue-200 text-blue-700 dark:bg-blue-900/20 dark:border-blue-700 dark:text-blue-300"
-                      : "bg-white border-slate-200 text-slate-700 hover:bg-slate-50 dark:bg-slate-800 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-700"
-                  }`}
-                >
-                  <Filter className="w-4 h-4" />
-                  <span className="hidden sm:inline">Filters</span>
-                  {hasActiveFilters && (
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-        </header>
+      {page === 'ranking' && <RankingPage data={data} onSelectRef={handleSelectRef} />}
 
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-8 space-y-4 sm:space-y-8">
-          {/* Advanced Filters Panel */}
-          {showFilters && (
-            <section className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-4 sm:p-6 shadow-sm">
-              <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                <Search className="w-5 h-5 text-slate-600 dark:text-slate-400" />
-                <h2 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100">Advanced Filters</h2>
-              </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-                <div className="space-y-2">
-                  <MultiSelect 
-                    label="Säsong" 
-                    options={seasonOpts} 
-                    values={seasonSel.map(String)} 
-                    onChange={(vals) => {
-                      setSeasonSel(vals.map(v => Number(v)));
-                      resetPage();
-                    }} 
-                  />
-                </div>
-                
-                <div className="relative space-y-2">
-                  <MultiSelect 
-                    label="Domare" 
-                    options={refOpts} 
-                    values={refSel} 
-                    onChange={(vals) => {
-                      setRefSel(vals);
-                      resetPage();
-                    }}
-                    disabled={refereesLoading}
-                  />
-                  {refereesLoading && (
-                    <div className="absolute right-2 top-8">
-                      <LoadingSpinner size="sm" />
-                    </div>
-                  )}
-                </div>
-                
-                <div className="relative space-y-2">
-                  <MultiSelect 
-                    label="Lag" 
-                    options={teamOpts} 
-                    values={teamSel} 
-                    onChange={(vals) => {
-                      setTeamSel(vals);
-                      resetPage();
-                    }}
-                    disabled={teamsLoading}
-                  />
-                  {teamsLoading && (
-                    <div className="absolute right-2 top-8">
-                      <LoadingSpinner size="sm" />
-                    </div>
-                  )}
-                </div>
-                
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-slate-700 dark:text-slate-300">Hemma/Borta</label>
-                  <div className="flex gap-2">
-                    {[
-                      { value: "", label: "Alla" },
-                      { value: "home", label: "Hemma" },
-                      { value: "away", label: "Borta" }
-                    ].map(option => (
-                      <button
-                        key={option.value}
-                        onClick={() => {
-                          setSide(option.value as any);
-                          resetPage();
-                        }}
-                        className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                          side === option.value
-                            ? "bg-blue-100 text-blue-700 border-2 border-blue-200 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-700"
-                            : "bg-slate-100 text-slate-600 border-2 border-transparent hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-300 dark:hover:bg-slate-600"
-                        }`}
-                      >
-                        {option.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              
-              {hasActiveFilters && (
-                <div className="mt-6 pt-4 border-t border-slate-200 dark:border-slate-700">
-                  <button
-                    onClick={() => {
-                      setSeasonSel([]);
-                      setRefSel([]);
-                      setTeamSel([]);
-                      setSide("");
-                      resetPage();
-                    }}
-                    className="text-sm text-slate-600 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 underline"
-                  >
-                    Clear all filters
-                  </button>
-                </div>
-              )}
-            </section>
-          )}
+      {page === 'compare' && <ComparePage data={data} onSelectRef={handleSelectRef} />}
 
-          {/* Error messages */}
-          {refereesError && <ErrorMessage error={refereesError} />}
-          {teamsError && <ErrorMessage error={teamsError} />}
+      {page === 'spotlight' && (
+        <SpotlightPage
+          data={data}
+          refereeName={selectedRef}
+          onSelectRef={handleSelectRef}
+          onBack={() => setPage('dashboard')}
+        />
+      )}
 
-          {/* Professional Stats Dashboard */}
-          <section className="space-y-8">
-            {/* Main Stats Panel */}
-            {statsLoading ? (
-              <Card padding="lg">
-                <div className="flex items-center justify-center">
-                  <LoadingSpinner size="md" className="mr-3" />
-                  <span className="text-slate-600 dark:text-slate-400">Loading statistics...</span>
-                </div>
-              </Card>
-            ) : statsError ? (
-              <ErrorMessage error={statsError} />
-            ) : (
-              <Card hover gradient>
-                <div className="flex items-center gap-3 mb-6">
-                  <TrendingUp className="w-5 h-5 text-blue-600" />
-                  <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-                    {hasActiveFilters ? "Filtered Statistics" : "Overall Statistics"}
-                  </h2>
-                </div>
-                <StatsPanel stats={stats} />
-              </Card>
-            )}
+      {page === 'matches' && (
+        <>
+          <FiltersBar data={data} filters={filters} setFilters={setFilters} />
+          <MatchLedger data={data} filters={filters} onSelectRef={handleSelectRef} />
+        </>
+      )}
 
-            {/* Facts Panel */}
-            {stats && !statsLoading && (
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl border border-blue-200 dark:border-blue-800 p-4 sm:p-6">
-                <FactsPanel stats={stats} />
-              </div>
-            )}
+      <Footer />
 
-            {/* Top Referees for Selected Team */}
-            {teamSel.length === 1 && matches.length > 0 && (
-              <TopRefereesForTeam 
-                teamName={teamSel[0]} 
-                matches={matches}
-              />
-            )}
+      <TweaksPanel title="Tweaks">
+        <TweakSection label="Tema">
+          <TweakRadio
+            label="Färgschema"
+            value={tweaks.theme}
+            onChange={v => setTweak('theme', v as Tweaks['theme'])}
+            options={[{ value: 'light', label: 'Ljust' }, { value: 'dark', label: 'Mörkt' }]}
+          />
+          <TweakSelect
+            label="Accentfärg"
+            value={tweaks.accent}
+            onChange={v => setTweak('accent', v as Tweaks['accent'])}
+            options={[
+              { value: 'terracotta', label: 'Terracotta' },
+              { value: 'forest', label: 'Skogsgrön' },
+              { value: 'cobalt', label: 'Kobolt' },
+              { value: 'rust', label: 'Rost' },
+            ]}
+          />
+        </TweakSection>
 
-            {/* Enhanced Team Statistics */}
-            {teamSel.length === 1 && matches.length > 0 && (
-              <EnhancedTeamStats 
-                teamName={teamSel[0]} 
-                matches={matches}
-                season={seasonSel}
-              />
-            )}
+        <TweakSection label="Typografi">
+          <TweakSelect
+            label="Display-font"
+            value={tweaks.displayFont}
+            onChange={v => setTweak('displayFont', v as Tweaks['displayFont'])}
+            options={[
+              { value: 'source', label: 'Source Serif' },
+              { value: 'playfair', label: 'Playfair Display' },
+              { value: 'fraunces', label: 'Fraunces' },
+              { value: 'dm', label: 'DM Serif Display' },
+            ]}
+          />
+        </TweakSection>
 
-            {/* Historical Trends for Selected Referee */}
-            {refSel.length === 1 && (
-              <HistoricalTrends 
-                refereeName={refSel[0]} 
-                matches={matches}
-              />
-            )}
+        <TweakSection label="Densitet">
+          <TweakRadio
+            label="Layout"
+            value={tweaks.density}
+            onChange={v => setTweak('density', v as Tweaks['density'])}
+            options={[{ value: 'comfortable', label: 'Bekväm' }, { value: 'compact', label: 'Kompakt' }]}
+          />
+        </TweakSection>
 
-
-
-            {/* Advanced Statistics Section */}
-            {advancedStatsLoading ? (
-              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
-                <div className="flex items-center justify-center">
-                  <LoadingSpinner size="md" className="mr-3" />
-                  <span className="text-slate-600 dark:text-slate-400">Loading advanced analytics...</span>
-                </div>
-              </div>
-            ) : advancedStatsError ? (
-              <ErrorMessage error={advancedStatsError} />
-            ) : (
-              <AdvancedStatsPanel 
-                data={advancedStats} 
-                selectedTeam={teamSel.length === 1 ? teamSel[0] : undefined}
-              />
-            )}
-
-            {/* Top Referees Section - Now under Advanced Stats */}
-            {leaderboardLoading ? (
-              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
-                <div className="flex items-center justify-center">
-                  <LoadingSpinner size="md" className="mr-3" />
-                  <span className="text-slate-600 dark:text-slate-400">Loading referee rankings...</span>
-                </div>
-              </div>
-            ) : leaderboardError ? (
-              <ErrorMessage error={leaderboardError} />
-            ) : (
-              <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
-                <div className="flex items-center gap-3 mb-6">
-                  <Users className="w-5 h-5 text-purple-600" />
-                  <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Top Referees by Cards</h2>
-                </div>
-                <Leaderboard data={leaderboard} />
-              </div>
-            )}
-          </section>
-
-          {/* Professional Matches Section */}
-          <section className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
-            <div className="p-6 border-b border-slate-200 dark:border-slate-700">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <Calendar className="w-5 h-5 text-green-600" />
-                  <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-                    Match Results
-                  </h2>
-                  {matchesLoading && <LoadingSpinner size="sm" />}
-                </div>
-                <div className="flex items-center gap-4">
-
-                  <div className="flex items-center gap-4">
-                    <div className="text-sm text-slate-600 dark:text-slate-400">
-                      <span>Total: {total || 0} matches</span>
-                      {hasActiveFilters && (
-                        <span className="ml-2 px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs dark:bg-blue-900/30 dark:text-blue-300">
-                          Filtered
-                        </span>
-                      )}
-                    </div>
-                    <select
-                      value={itemsPerPage}
-                      onChange={(e) => {
-                        setItemsPerPage(Number(e.target.value));
-                        setCurrentPage(1);
-                      }}
-                      className="text-sm px-2 py-1 border border-slate-300 dark:border-slate-600 rounded bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100"
-                    >
-                      <option value={25}>25 per page</option>
-                      <option value={50}>50 per page</option>
-                      <option value={100}>100 per page</option>
-                      <option value={200}>200 per page</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="p-6">
-              {matchesError ? (
-                <ErrorMessage error={matchesError} />
-              ) : (
-                <>
-                  <MatchTable items={matches} />
-                  {totalPages > 1 && (
-                    <div className="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700">
-                      <Pagination
-                        currentPage={currentPage}
-                        totalPages={totalPages}
-                        onPageChange={setCurrentPage}
-                        totalItems={total}
-                        itemsPerPage={itemsPerPage}
-                      />
-                    </div>
-                  )}
-                </>
-              )}
-            </div>
-          </section>
-
-        </main>
-      </div>
-    </ErrorBoundary>
+        <TweakSection label="Sektioner">
+          <TweakToggle
+            label="Visa lede"
+            value={tweaks.showLede}
+            onChange={v => setTweak('showLede', v)}
+          />
+          <TweakToggle
+            label="Visa sparklines"
+            value={tweaks.showSparklines}
+            onChange={v => setTweak('showSparklines', v)}
+          />
+        </TweakSection>
+      </TweaksPanel>
+    </div>
   );
+}
+
+export default function Home() {
+  const [data, setData] = useState<DesignData | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch('/api/design-data')
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then((raw: DesignData) => {
+        const cleanRefs = (raw.referees || []).filter(r => r.name && r.name !== 'undefined' && r.name.trim().length > 0);
+        const cleanRecent = (raw.recent || []).map(m => ({ ...m, referee: m.referee && m.referee !== 'undefined' ? m.referee : '' }));
+        setData({ ...raw, referees: cleanRefs, recent: cleanRecent });
+      })
+      .catch(err => setError(err.message));
+  }, []);
+
+  if (error) {
+    return (
+      <div style={{ padding: '3rem', fontFamily: 'monospace', color: '#c1392b' }}>
+        Kunde inte ladda data: {error}
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', fontFamily: 'var(--font-display)', fontSize: 24, color: 'var(--ink-faded)' }}>
+        Laddar…
+      </div>
+    );
+  }
+
+  return <App data={data} />;
 }
