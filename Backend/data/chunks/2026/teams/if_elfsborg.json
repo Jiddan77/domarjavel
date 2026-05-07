@@ -281,6 +281,222 @@
       "home": "IF Elfsborg",
       "away": "GAIS",
       "datetime": "2026-11-28 23:00"
+    },
+    {
+      "match_id": 6529880,
+      "season": 2026,
+      "date": "8 maj 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Elfsborg",
+      "away": "IF Brommapojkarna",
+      "datetime": "2026-05-08 17:00"
+    },
+    {
+      "match_id": 6529892,
+      "season": 2026,
+      "date": "16 maj 2026",
+      "referee": "",
+      "home": "Halmstads BK",
+      "away": "IF Elfsborg",
+      "datetime": "2026-05-16 13:00"
+    },
+    {
+      "match_id": 6529946,
+      "season": 2026,
+      "date": "21 maj 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "Mjällby AIF",
+      "datetime": "2026-05-21 17:00"
+    },
+    {
+      "match_id": 6529897,
+      "season": 2026,
+      "date": "25 maj 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "BK Häcken",
+      "datetime": "2026-05-25 17:00"
+    },
+    {
+      "match_id": 6529903,
+      "season": 2026,
+      "date": "29 maj 2026",
+      "referee": "",
+      "home": "Örgryte IS",
+      "away": "IF Elfsborg",
+      "datetime": "2026-05-29 17:00"
+    },
+    {
+      "match_id": 6529911,
+      "season": 2026,
+      "date": "4 juli 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "Hammarby",
+      "datetime": "2026-07-04 22:00"
+    },
+    {
+      "match_id": 6529919,
+      "season": 2026,
+      "date": "11 juli 2026",
+      "referee": "",
+      "home": "GAIS",
+      "away": "IF Elfsborg",
+      "datetime": "2026-07-11 22:00"
+    },
+    {
+      "match_id": 6529930,
+      "season": 2026,
+      "date": "18 juli 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "IK Sirius",
+      "datetime": "2026-07-18 22:00"
+    },
+    {
+      "match_id": 6529935,
+      "season": 2026,
+      "date": "25 juli 2026",
+      "referee": "",
+      "home": "Malmö FF",
+      "away": "IF Elfsborg",
+      "datetime": "2026-07-25 22:00"
+    },
+    {
+      "match_id": 6529952,
+      "season": 2026,
+      "date": "8 augusti 2026",
+      "referee": "",
+      "home": "Mjällby AIF",
+      "away": "IF Elfsborg",
+      "datetime": "2026-08-08 22:00"
+    },
+    {
+      "match_id": 6529961,
+      "season": 2026,
+      "date": "15 augusti 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "Västerås SK",
+      "datetime": "2026-08-15 22:00"
+    },
+    {
+      "match_id": 6529967,
+      "season": 2026,
+      "date": "22 augusti 2026",
+      "referee": "",
+      "home": "IFK Göteborg",
+      "away": "IF Elfsborg",
+      "datetime": "2026-08-22 22:00"
+    },
+    {
+      "match_id": 6529978,
+      "season": 2026,
+      "date": "29 augusti 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "Degerfors IF",
+      "datetime": "2026-08-29 22:00"
+    },
+    {
+      "match_id": 6529985,
+      "season": 2026,
+      "date": "5 september 2026",
+      "referee": "",
+      "home": "IF Brommapojkarna",
+      "away": "IF Elfsborg",
+      "datetime": "2026-09-05 22:00"
+    },
+    {
+      "match_id": 6529995,
+      "season": 2026,
+      "date": "12 september 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "Kalmar FF",
+      "datetime": "2026-09-12 22:00"
+    },
+    {
+      "match_id": 6529997,
+      "season": 2026,
+      "date": "19 september 2026",
+      "referee": "",
+      "home": "Djurgårdens IF",
+      "away": "IF Elfsborg",
+      "datetime": "2026-09-19 22:00"
+    },
+    {
+      "match_id": 6530012,
+      "season": 2026,
+      "date": "10 oktober 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "Halmstads BK",
+      "datetime": "2026-10-10 22:00"
+    },
+    {
+      "match_id": 6530018,
+      "season": 2026,
+      "date": "17 oktober 2026",
+      "referee": "",
+      "home": "IK Sirius",
+      "away": "IF Elfsborg",
+      "datetime": "2026-10-17 22:00"
+    },
+    {
+      "match_id": 6530025,
+      "season": 2026,
+      "date": "24 oktober 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "Malmö FF",
+      "datetime": "2026-10-24 22:00"
+    },
+    {
+      "match_id": 6530029,
+      "season": 2026,
+      "date": "27 oktober 2026",
+      "referee": "",
+      "home": "AIK",
+      "away": "IF Elfsborg",
+      "datetime": "2026-10-27 23:00"
+    },
+    {
+      "match_id": 6530042,
+      "season": 2026,
+      "date": "31 oktober 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "Örgryte IS",
+      "datetime": "2026-10-31 23:00"
+    },
+    {
+      "match_id": 6530046,
+      "season": 2026,
+      "date": "7 november 2026",
+      "referee": "",
+      "home": "Hammarby",
+      "away": "IF Elfsborg",
+      "datetime": "2026-11-07 23:00"
+    },
+    {
+      "match_id": 6530057,
+      "season": 2026,
+      "date": "21 november 2026",
+      "referee": "",
+      "home": "BK Häcken",
+      "away": "IF Elfsborg",
+      "datetime": "2026-11-21 23:00"
+    },
+    {
+      "match_id": 6530064,
+      "season": 2026,
+      "date": "28 november 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "GAIS",
+      "datetime": "2026-11-28 23:00"
     }
   ]
 }

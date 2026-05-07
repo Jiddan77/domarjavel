@@ -281,6 +281,222 @@
       "home": "Degerfors IF",
       "away": "Örgryte IS",
       "datetime": "2026-11-28 23:00"
+    },
+    {
+      "match_id": 6529881,
+      "season": 2026,
+      "date": "9 maj 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "Degerfors IF",
+      "away": "Mjällby AIF",
+      "datetime": "2026-05-09 13:00"
+    },
+    {
+      "match_id": 6529887,
+      "season": 2026,
+      "date": "16 maj 2026",
+      "referee": "",
+      "home": "GAIS",
+      "away": "Degerfors IF",
+      "datetime": "2026-05-16 13:00"
+    },
+    {
+      "match_id": 6529899,
+      "season": 2026,
+      "date": "23 maj 2026",
+      "referee": "",
+      "home": "Kalmar FF",
+      "away": "Degerfors IF",
+      "datetime": "2026-05-23 13:00"
+    },
+    {
+      "match_id": 6529907,
+      "season": 2026,
+      "date": "31 maj 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "IF Brommapojkarna",
+      "datetime": "2026-05-31 12:00"
+    },
+    {
+      "match_id": 6529913,
+      "season": 2026,
+      "date": "4 juli 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "Malmö FF",
+      "datetime": "2026-07-04 22:00"
+    },
+    {
+      "match_id": 6529924,
+      "season": 2026,
+      "date": "11 juli 2026",
+      "referee": "",
+      "home": "Västerås SK",
+      "away": "Degerfors IF",
+      "datetime": "2026-07-11 22:00"
+    },
+    {
+      "match_id": 6529926,
+      "season": 2026,
+      "date": "18 juli 2026",
+      "referee": "",
+      "home": "Hammarby",
+      "away": "Degerfors IF",
+      "datetime": "2026-07-18 22:00"
+    },
+    {
+      "match_id": 6529937,
+      "season": 2026,
+      "date": "25 juli 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "Djurgårdens IF",
+      "datetime": "2026-07-25 22:00"
+    },
+    {
+      "match_id": 6529943,
+      "season": 2026,
+      "date": "1 augusti 2026",
+      "referee": "",
+      "home": "IFK Göteborg",
+      "away": "Degerfors IF",
+      "datetime": "2026-08-01 22:00"
+    },
+    {
+      "match_id": 6529953,
+      "season": 2026,
+      "date": "8 augusti 2026",
+      "referee": "",
+      "home": "Malmö FF",
+      "away": "Degerfors IF",
+      "datetime": "2026-08-08 22:00"
+    },
+    {
+      "match_id": 6529963,
+      "season": 2026,
+      "date": "15 augusti 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "IFK Göteborg",
+      "datetime": "2026-08-15 22:00"
+    },
+    {
+      "match_id": 6529970,
+      "season": 2026,
+      "date": "22 augusti 2026",
+      "referee": "",
+      "home": "IF Brommapojkarna",
+      "away": "Degerfors IF",
+      "datetime": "2026-08-22 22:00"
+    },
+    {
+      "match_id": 6529978,
+      "season": 2026,
+      "date": "29 augusti 2026",
+      "referee": "",
+      "home": "IF Elfsborg",
+      "away": "Degerfors IF",
+      "datetime": "2026-08-29 22:00"
+    },
+    {
+      "match_id": 6529986,
+      "season": 2026,
+      "date": "5 september 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "Halmstads BK",
+      "datetime": "2026-09-05 22:00"
+    },
+    {
+      "match_id": 6529996,
+      "season": 2026,
+      "date": "12 september 2026",
+      "referee": "",
+      "home": "IK Sirius",
+      "away": "Degerfors IF",
+      "datetime": "2026-09-12 22:00"
+    },
+    {
+      "match_id": 6530001,
+      "season": 2026,
+      "date": "19 september 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "Hammarby",
+      "datetime": "2026-09-19 22:00"
+    },
+    {
+      "match_id": 6530010,
+      "season": 2026,
+      "date": "10 oktober 2026",
+      "referee": "",
+      "home": "Mjällby AIF",
+      "away": "Degerfors IF",
+      "datetime": "2026-10-10 22:00"
+    },
+    {
+      "match_id": 6530017,
+      "season": 2026,
+      "date": "17 oktober 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "Kalmar FF",
+      "datetime": "2026-10-17 22:00"
+    },
+    {
+      "match_id": 6530023,
+      "season": 2026,
+      "date": "24 oktober 2026",
+      "referee": "",
+      "home": "BK Häcken",
+      "away": "Degerfors IF",
+      "datetime": "2026-10-24 22:00"
+    },
+    {
+      "match_id": 6530034,
+      "season": 2026,
+      "date": "27 oktober 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "Västerås SK",
+      "datetime": "2026-10-27 23:00"
+    },
+    {
+      "match_id": 6530037,
+      "season": 2026,
+      "date": "31 oktober 2026",
+      "referee": "",
+      "home": "Djurgårdens IF",
+      "away": "Degerfors IF",
+      "datetime": "2026-10-31 23:00"
+    },
+    {
+      "match_id": 6530050,
+      "season": 2026,
+      "date": "7 november 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "GAIS",
+      "datetime": "2026-11-07 23:00"
+    },
+    {
+      "match_id": 6530053,
+      "season": 2026,
+      "date": "21 november 2026",
+      "referee": "",
+      "home": "AIK",
+      "away": "Degerfors IF",
+      "datetime": "2026-11-21 23:00"
+    },
+    {
+      "match_id": 6530065,
+      "season": 2026,
+      "date": "28 november 2026",
+      "referee": "",
+      "home": "Degerfors IF",
+      "away": "Örgryte IS",
+      "datetime": "2026-11-28 23:00"
     }
   ]
 }

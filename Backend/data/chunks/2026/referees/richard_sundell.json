@@ -1,0 +1,73 @@
+{
+  "matches": [
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Djurgårdens IF",
+      "away": "Kalmar FF",
+      "match_id": 6529837,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "yellow": "1–0",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-12T12:00:00.000Z",
+      "datetime": "2026-04-12 12:00",
+      "date": "12 april 2026",
+      "round": 2,
+      "score": "3–2"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Västerås SK",
+      "away": "BK Häcken",
+      "match_id": 6529859,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "yellow": "3–2",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-22T17:00:00.000Z",
+      "datetime": "2026-04-22 17:00",
+      "date": "22 april 2026",
+      "round": 4,
+      "score": "3–3"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Mjällby AIF",
+      "away": "Halmstads BK",
+      "match_id": 6529866,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "yellow": "1–1",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-27T17:00:00.000Z",
+      "datetime": "2026-04-27 17:00",
+      "date": "27 april 2026",
+      "round": 5,
+      "score": "2–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IK Sirius",
+      "away": "Kalmar FF",
+      "match_id": 6529875,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "yellow": "1–3",
+      "red": "0–0",
+      "penalty": "1–0",
+      "date_iso": "2026-05-02T13:00:00.000Z",
+      "datetime": "2026-05-02 13:00",
+      "date": "2 maj 2026",
+      "round": 6,
+      "score": "3–2"
+    }
+  ],
+  "total": 4
+}

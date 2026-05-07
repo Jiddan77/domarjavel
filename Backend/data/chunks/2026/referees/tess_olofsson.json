@@ -1,0 +1,39 @@
+{
+  "matches": [
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Västerås SK",
+      "away": "IF Elfsborg",
+      "match_id": 6529843,
+      "season": 2026,
+      "referee": "TESS OLOFSSON",
+      "yellow": "0–2",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-11T13:00:00.000Z",
+      "datetime": "2026-04-11 13:00",
+      "date": "11 april 2026",
+      "round": 2,
+      "score": "2–2"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Örgryte IS",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529855,
+      "season": 2026,
+      "referee": "TESS OLOFSSON",
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-22T17:00:00.000Z",
+      "datetime": "2026-04-22 17:00",
+      "date": "22 april 2026",
+      "round": 4,
+      "score": "1–2"
+    }
+  ],
+  "total": 2
+}
