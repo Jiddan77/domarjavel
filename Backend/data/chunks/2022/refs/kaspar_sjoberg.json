@@ -1,0 +1,213 @@
+{
+  "matches": [
+    {
+      "match_id": 3873959,
+      "season": 2022,
+      "date": "24 april 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Helsingborg",
+      "away": "BK Häcken",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2022-04-24 12:00"
+    },
+    {
+      "match_id": 3874087,
+      "season": 2022,
+      "date": "4 september 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "BK Häcken",
+      "away": "Degerfors IF",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2022-09-04 12:00"
+    },
+    {
+      "match_id": 3874159,
+      "season": 2022,
+      "date": "6 november 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "BK Häcken",
+      "away": "IFK Norrköping",
+      "score": "3–3",
+      "penalty": "0–0",
+      "datetime": "2022-11-06 12:00"
+    },
+    {
+      "match_id": 3873992,
+      "season": 2022,
+      "date": "22 maj 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Hammarby",
+      "away": "IFK Norrköping",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2022-05-22 12:00"
+    },
+    {
+      "match_id": 3874001,
+      "season": 2022,
+      "date": "29 maj 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Helsingborg",
+      "away": "AIK",
+      "score": "1–2",
+      "penalty": "1–1",
+      "datetime": "2022-05-29 12:00"
+    },
+    {
+      "match_id": 3874076,
+      "season": 2022,
+      "date": "21 augusti 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "GIF Sundsvall",
+      "away": "Helsingborg",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2022-08-21 12:00"
+    },
+    {
+      "match_id": 3874118,
+      "season": 2022,
+      "date": "9 oktober 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "AIK",
+      "away": "Helsingborg",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2022-10-09 12:00"
+    },
+    {
+      "match_id": 3873981,
+      "season": 2022,
+      "date": "8 maj 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Varbergs BOIS",
+      "away": "IK Sirius",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2022-05-08 12:00"
+    },
+    {
+      "match_id": 3874018,
+      "season": 2022,
+      "date": "4 juli 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IFK Göteborg",
+      "away": "Degerfors IF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2022-07-04 12:00"
+    },
+    {
+      "match_id": 3874040,
+      "season": 2022,
+      "date": "25 juli 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IFK Norrköping",
+      "away": "IFK Göteborg",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2022-07-25 12:00"
+    },
+    {
+      "match_id": 3871935,
+      "season": 2022,
+      "date": "4 april 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IF Elfsborg",
+      "away": "Mjällby AIF",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2022-04-04 12:00"
+    },
+    {
+      "match_id": 3874100,
+      "season": 2022,
+      "date": "11 september 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "GIF Sundsvall",
+      "away": "IF Elfsborg",
+      "score": "0–2",
+      "penalty": "0–1",
+      "datetime": "2022-09-11 12:00"
+    },
+    {
+      "match_id": 3873943,
+      "season": 2022,
+      "date": "16 april 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Djurgården",
+      "away": "IFK Norrköping",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2022-04-16 12:00"
+    },
+    {
+      "match_id": 3873957,
+      "season": 2022,
+      "date": "20 april 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "GIF Sundsvall",
+      "away": "Kalmar FF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2022-04-20 12:00"
+    },
+    {
+      "match_id": 3874052,
+      "season": 2022,
+      "date": "31 juli 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IK Sirius",
+      "away": "Mjällby AIF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2022-07-31 12:00"
+    },
+    {
+      "match_id": 3873989,
+      "season": 2022,
+      "date": "14 maj 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Mjällby AIF",
+      "away": "IFK Värnamo",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2022-05-14 12:00"
+    },
+    {
+      "match_id": 3874062,
+      "season": 2022,
+      "date": "14 augusti 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "AIK",
+      "away": "IFK Värnamo",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2022-08-14 12:00"
+    },
+    {
+      "match_id": 3874150,
+      "season": 2022,
+      "date": "29 oktober 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Degerfors IF",
+      "away": "IFK Värnamo",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2022-10-29 12:00"
+    },
+    {
+      "match_id": 3874026,
+      "season": 2022,
+      "date": "11 juli 2022",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IFK Värnamo",
+      "away": "GIF Sundsvall",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2022-07-11 12:00"
+    }
+  ]
+}

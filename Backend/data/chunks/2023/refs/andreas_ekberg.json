@@ -1,0 +1,147 @@
+{
+  "matches": [
+    {
+      "match_id": 4098109,
+      "season": 2023,
+      "date": "29 april 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "BK Häcken",
+      "away": "IFK Värnamo",
+      "score": "3–1",
+      "penalty": "1–0",
+      "datetime": "2023-04-29 12:00"
+    },
+    {
+      "match_id": 4098174,
+      "season": 2023,
+      "date": "2 juli 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "IFK Norrköping",
+      "away": "BK Häcken",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2023-07-02 12:00"
+    },
+    {
+      "match_id": 4098206,
+      "season": 2023,
+      "date": "29 juli 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "BK Häcken",
+      "away": "IF Elfsborg",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2023-07-29 12:00"
+    },
+    {
+      "match_id": 4098126,
+      "season": 2023,
+      "date": "8 maj 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "IF Brommapojkarna",
+      "away": "IFK Göteborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-05-08 12:00"
+    },
+    {
+      "match_id": 4098197,
+      "season": 2023,
+      "date": "23 juli 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "IFK Göteborg",
+      "away": "Halmstads BK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-07-23 12:00"
+    },
+    {
+      "match_id": 4098221,
+      "season": 2023,
+      "date": "13 augusti 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "IFK Göteborg",
+      "away": "Djurgården",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2023-08-13 12:00"
+    },
+    {
+      "match_id": 4098146,
+      "season": 2023,
+      "date": "22 maj 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "IFK Norrköping",
+      "away": "IF Elfsborg",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-05-22 12:00"
+    },
+    {
+      "match_id": 4098117,
+      "season": 2023,
+      "date": "3 maj 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "Kalmar FF",
+      "away": "IK Sirius",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2023-05-03 12:00"
+    },
+    {
+      "match_id": 4098149,
+      "season": 2023,
+      "date": "28 maj 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "Djurgården",
+      "away": "AIK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-05-28 12:00"
+    },
+    {
+      "match_id": 4098315,
+      "season": 2023,
+      "date": "1 april 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "Djurgården",
+      "away": "IF Brommapojkarna",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2023-04-01 12:00"
+    },
+    {
+      "match_id": 4098136,
+      "season": 2023,
+      "date": "14 maj 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "Halmstads BK",
+      "away": "Malmö FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-05-14 12:00"
+    },
+    {
+      "match_id": 4098165,
+      "season": 2023,
+      "date": "10 juni 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "IFK Värnamo",
+      "away": "Malmö FF",
+      "score": "1–3",
+      "penalty": "0–0",
+      "datetime": "2023-06-10 12:00"
+    },
+    {
+      "match_id": 4098096,
+      "season": 2023,
+      "date": "16 april 2023",
+      "referee": "ANDREAS EKBERG",
+      "home": "Mjällby AIF",
+      "away": "Degerfors IF",
+      "score": "2–0",
+      "penalty": "1–0",
+      "datetime": "2023-04-16 12:00"
+    }
+  ]
+}

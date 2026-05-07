@@ -1,0 +1,21 @@
+{
+  "matches": [
+    {
+      "status": "FINISHED",
+      "extendedStatus": "UPCOMING",
+      "home": "GAIS",
+      "away": "Djurgårdens IF",
+      "match_id": 6143363,
+      "season": 2025,
+      "score": "0–0",
+      "date_iso": "2025-10-19T12:00:00.000Z",
+      "datetime": "2025-10-19 12:00",
+      "date": "19 oktober 2025",
+      "referee": "�FDT�~P�S����WGM�/$~$Q����;��3�Y��\"/)�$� �OM�[�[T��V�&��?-���M��\nU9�%[��D�W�\r�4�B��0X�{�����7�",
+      "yellow": "3–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    }
+  ],
+  "total": 1
+}

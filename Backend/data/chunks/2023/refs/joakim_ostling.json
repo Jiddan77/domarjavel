@@ -1,0 +1,279 @@
+{
+  "matches": [
+    {
+      "match_id": 4098170,
+      "season": 2023,
+      "date": "11 juni 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "BK Häcken",
+      "away": "Mjällby AIF",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2023-06-11 12:00"
+    },
+    {
+      "match_id": 4098211,
+      "season": 2023,
+      "date": "24 maj 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Djurgården",
+      "away": "BK Häcken",
+      "score": "1–0",
+      "penalty": "1–0",
+      "datetime": "2023-05-24 12:00"
+    },
+    {
+      "match_id": 4098099,
+      "season": 2023,
+      "date": "22 april 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Hammarby",
+      "away": "Varbergs BOIS",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2023-04-22 12:00"
+    },
+    {
+      "match_id": 4098194,
+      "season": 2023,
+      "date": "17 juli 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Varbergs BOIS",
+      "away": "AIK",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-07-17 12:00"
+    },
+    {
+      "match_id": 4098250,
+      "season": 2023,
+      "date": "3 september 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Varbergs BOIS",
+      "away": "IF Brommapojkarna",
+      "score": "4–3",
+      "penalty": "0–0",
+      "datetime": "2023-09-03 12:00"
+    },
+    {
+      "match_id": 4098283,
+      "season": 2023,
+      "date": "22 oktober 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Malmö FF",
+      "away": "Varbergs BOIS",
+      "score": "5–0",
+      "penalty": "0–0",
+      "datetime": "2023-10-22 12:00"
+    },
+    {
+      "match_id": 4098175,
+      "season": 2023,
+      "date": "2 juli 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Halmstads BK",
+      "away": "IFK Göteborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-07-02 12:00"
+    },
+    {
+      "match_id": 4098204,
+      "season": 2023,
+      "date": "30 juli 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IFK Göteborg",
+      "away": "Kalmar FF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2023-07-30 12:00"
+    },
+    {
+      "match_id": 4098108,
+      "season": 2023,
+      "date": "29 april 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Mjällby AIF",
+      "away": "IF Elfsborg",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-04-29 12:00"
+    },
+    {
+      "match_id": 4098151,
+      "season": 2023,
+      "date": "28 maj 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IF Elfsborg",
+      "away": "Malmö FF",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2023-05-28 12:00"
+    },
+    {
+      "match_id": 4098238,
+      "season": 2023,
+      "date": "28 augusti 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IF Elfsborg",
+      "away": "IFK Norrköping",
+      "score": "3–2",
+      "penalty": "0–0",
+      "datetime": "2023-08-28 12:00"
+    },
+    {
+      "match_id": 4098260,
+      "season": 2023,
+      "date": "25 september 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Halmstads BK",
+      "away": "IF Elfsborg",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-09-25 12:00"
+    },
+    {
+      "match_id": 4098127,
+      "season": 2023,
+      "date": "8 maj 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Degerfors IF",
+      "away": "IFK Norrköping",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2023-05-08 12:00"
+    },
+    {
+      "match_id": 4098137,
+      "season": 2023,
+      "date": "14 maj 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Kalmar FF",
+      "away": "IF Brommapojkarna",
+      "score": "1–3",
+      "penalty": "0–0",
+      "datetime": "2023-05-14 12:00"
+    },
+    {
+      "match_id": 4098157,
+      "season": 2023,
+      "date": "4 juni 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "AIK",
+      "away": "Kalmar FF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2023-06-04 12:00"
+    },
+    {
+      "match_id": 4098310,
+      "season": 2023,
+      "date": "12 november 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Kalmar FF",
+      "away": "Djurgården",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2023-11-12 12:00"
+    },
+    {
+      "match_id": 4098086,
+      "season": 2023,
+      "date": "9 april 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IK Sirius",
+      "away": "Djurgården",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-04-09 12:00"
+    },
+    {
+      "match_id": 4098199,
+      "season": 2023,
+      "date": "24 juli 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IK Sirius",
+      "away": "Mjällby AIF",
+      "score": "2–3",
+      "penalty": "0–1",
+      "datetime": "2023-07-24 12:00"
+    },
+    {
+      "match_id": 4098273,
+      "season": 2023,
+      "date": "1 oktober 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IK Sirius",
+      "away": "Degerfors IF",
+      "score": "3–2",
+      "penalty": "0–0",
+      "datetime": "2023-10-01 12:00"
+    },
+    {
+      "match_id": 4098213,
+      "season": 2023,
+      "date": "7 augusti 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Malmö FF",
+      "away": "Halmstads BK",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2023-08-07 12:00"
+    },
+    {
+      "match_id": 4098275,
+      "season": 2023,
+      "date": "7 oktober 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "AIK",
+      "away": "Mjällby AIF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-10-07 12:00"
+    },
+    {
+      "match_id": 4098304,
+      "season": 2023,
+      "date": "5 november 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Mjällby AIF",
+      "away": "IF Brommapojkarna",
+      "score": "1–2",
+      "penalty": "0–1",
+      "datetime": "2023-11-05 12:00"
+    },
+    {
+      "match_id": 4098219,
+      "season": 2023,
+      "date": "12 augusti 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "AIK",
+      "away": "IF Brommapojkarna",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2023-08-12 12:00"
+    },
+    {
+      "match_id": 4098319,
+      "season": 2023,
+      "date": "2 april 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Halmstads BK",
+      "away": "AIK",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2023-04-02 12:00"
+    },
+    {
+      "match_id": 4098121,
+      "season": 2023,
+      "date": "4 maj 2023",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IFK Värnamo",
+      "away": "IF Brommapojkarna",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-05-04 12:00"
+    }
+  ]
+}

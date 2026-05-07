@@ -1,0 +1,81 @@
+{
+  "matches": [
+    {
+      "match_id": 4456741,
+      "season": 2024,
+      "date": "24 maj 2024",
+      "referee": "TESS OLOFSSON",
+      "home": "IF Elfsborg",
+      "away": "Halmstads BK",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-05-24 12:00"
+    },
+    {
+      "match_id": 4456831,
+      "season": 2024,
+      "date": "15 september 2024",
+      "referee": "TESS OLOFSSON",
+      "home": "Kalmar FF",
+      "away": "IFK Värnamo",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2024-09-15 12:00"
+    },
+    {
+      "match_id": 4456758,
+      "season": 2024,
+      "date": "6 juli 2024",
+      "referee": "TESS OLOFSSON",
+      "home": "Mjällby AIF",
+      "away": "IK Sirius",
+      "score": "3–2",
+      "penalty": "1–0",
+      "datetime": "2024-07-06 12:00"
+    },
+    {
+      "match_id": 4456891,
+      "season": 2024,
+      "date": "10 november 2024",
+      "referee": "TESS OLOFSSON",
+      "home": "Malmö FF",
+      "away": "IF Brommapojkarna",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2024-11-10 12:00"
+    },
+    {
+      "match_id": 4456689,
+      "season": 2024,
+      "date": "24 april 2024",
+      "referee": "TESS OLOFSSON",
+      "home": "AIK",
+      "away": "IFK Värnamo",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-04-24 12:00"
+    },
+    {
+      "match_id": 4456859,
+      "season": 2024,
+      "date": "5 oktober 2024",
+      "referee": "TESS OLOFSSON",
+      "home": "Hammarby IF",
+      "away": "Halmstads BK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2024-10-05 12:00"
+    },
+    {
+      "match_id": 4456717,
+      "season": 2024,
+      "date": "11 maj 2024",
+      "referee": "TESS OLOFSSON",
+      "home": "GAIS",
+      "away": "Västerås SK",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-05-11 12:00"
+    }
+  ]
+}

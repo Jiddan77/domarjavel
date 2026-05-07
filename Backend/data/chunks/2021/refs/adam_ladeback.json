@@ -1,0 +1,290 @@
+{
+  "matches": [
+    {
+      "match_id": 3645117,
+      "season": 2021,
+      "date": "25 juli 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "BK Häcken",
+      "away": "IF Elfsborg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-07-25 12:00"
+    },
+    {
+      "match_id": 3645158,
+      "season": 2021,
+      "date": "29 augusti 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "BK Häcken",
+      "away": "IFK Göteborg",
+      "score": "3–2",
+      "penalty": "1–1",
+      "datetime": "2021-08-29 12:00"
+    },
+    {
+      "match_id": 3645214,
+      "season": 2021,
+      "date": "23 oktober 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "BK Häcken",
+      "away": "Halmstads BK",
+      "score": "2–3",
+      "penalty": "0–1",
+      "datetime": "2021-10-23 12:00"
+    },
+    {
+      "match_id": 3645249,
+      "season": 2021,
+      "date": "20 november 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Malmö FF",
+      "away": "BK Häcken",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2021-11-20 12:00"
+    },
+    {
+      "match_id": 3645040,
+      "season": 2021,
+      "date": "17 april 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Hammarby",
+      "away": "Mjällby AIF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2021-04-17 12:00"
+    },
+    {
+      "match_id": 3645132,
+      "season": 2021,
+      "date": "1 augusti 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Östersunds FK",
+      "away": "Hammarby",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-08-01 12:00"
+    },
+    {
+      "match_id": 3645263,
+      "season": 2021,
+      "date": "4 december 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Hammarby",
+      "away": "Kalmar FF",
+      "score": "5–3",
+      "penalty": "0–0",
+      "datetime": "2021-12-04 12:00"
+    },
+    {
+      "match_id": 3645084,
+      "season": 2021,
+      "date": "17 maj 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Östersunds FK",
+      "away": "AIK",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2021-05-17 12:00"
+    },
+    {
+      "match_id": 3645188,
+      "season": 2021,
+      "date": "22 september 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Örebro SK",
+      "away": "Östersunds FK",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2021-09-22 12:00"
+    },
+    {
+      "match_id": 3645100,
+      "season": 2021,
+      "date": "4 juli 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Varbergs BOIS",
+      "away": "Kalmar FF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-07-04 12:00"
+    },
+    {
+      "match_id": 3645139,
+      "season": 2021,
+      "date": "9 augusti 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Varbergs BOIS",
+      "away": "IK Sirius",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2021-08-09 12:00"
+    },
+    {
+      "match_id": 3645173,
+      "season": 2021,
+      "date": "20 september 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "AIK",
+      "away": "IFK Göteborg",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2021-09-20 12:00"
+    },
+    {
+      "match_id": 3645230,
+      "season": 2021,
+      "date": "1 november 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Degerfors IF",
+      "away": "IFK Göteborg",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-11-01 12:00"
+    },
+    {
+      "match_id": 3645031,
+      "season": 2021,
+      "date": "11 april 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IF Elfsborg",
+      "away": "Djurgården",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2021-04-11 12:00"
+    },
+    {
+      "match_id": 3645063,
+      "season": 2021,
+      "date": "8 maj 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IF Elfsborg",
+      "away": "Kalmar FF",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2021-05-08 12:00"
+    },
+    {
+      "match_id": 3645131,
+      "season": 2021,
+      "date": "20 maj 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Malmö FF",
+      "away": "IF Elfsborg",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2021-05-20 12:00"
+    },
+    {
+      "match_id": 3645195,
+      "season": 2021,
+      "date": "26 september 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Mjällby AIF",
+      "away": "IF Elfsborg",
+      "score": "4–0",
+      "penalty": "1–0",
+      "datetime": "2021-09-26 12:00"
+    },
+    {
+      "match_id": 3645059,
+      "season": 2021,
+      "date": "2 maj 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Örebro SK",
+      "away": "IFK Norrköping",
+      "score": "0–3",
+      "penalty": "0–0",
+      "datetime": "2021-05-02 12:00"
+    },
+    {
+      "match_id": 3645107,
+      "season": 2021,
+      "date": "11 juli 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Mjällby AIF",
+      "away": "IFK Norrköping",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-07-11 12:00"
+    },
+    {
+      "match_id": 3645151,
+      "season": 2021,
+      "date": "22 augusti 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Halmstads BK",
+      "away": "IFK Norrköping",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2021-08-22 12:00"
+    },
+    {
+      "match_id": 3645170,
+      "season": 2021,
+      "date": "11 september 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Malmö FF",
+      "away": "IFK Norrköping",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-09-11 12:00"
+    },
+    {
+      "match_id": 3645224,
+      "season": 2021,
+      "date": "28 oktober 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IFK Norrköping",
+      "away": "Mjällby AIF",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2021-10-28 12:00"
+    },
+    {
+      "match_id": 3645201,
+      "season": 2021,
+      "date": "3 oktober 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Kalmar FF",
+      "away": "IK Sirius",
+      "score": "3–1",
+      "penalty": "1–0",
+      "datetime": "2021-10-03 12:00"
+    },
+    {
+      "match_id": 3645146,
+      "season": 2021,
+      "date": "15 augusti 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Mjällby AIF",
+      "away": "Djurgården",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-08-15 12:00"
+    },
+    {
+      "match_id": 3645110,
+      "season": 2021,
+      "date": "17 juli 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Degerfors IF",
+      "away": "Malmö FF",
+      "score": "0–5",
+      "penalty": "0–0",
+      "datetime": "2021-07-17 12:00"
+    },
+    {
+      "match_id": 3645260,
+      "season": 2021,
+      "date": "29 november 2021",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Mjällby AIF",
+      "away": "Örebro SK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2021-11-29 12:00"
+    }
+  ]
+}

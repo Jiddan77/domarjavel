@@ -1,0 +1,202 @@
+{
+  "matches": [
+    {
+      "match_id": 4098116,
+      "season": 2023,
+      "date": "3 maj 2023",
+      "referee": "GLENN NYBERG",
+      "home": "BK Häcken",
+      "away": "Djurgården",
+      "score": "4–1",
+      "penalty": "0–0",
+      "datetime": "2023-05-03 12:00"
+    },
+    {
+      "match_id": 4098179,
+      "season": 2023,
+      "date": "8 juli 2023",
+      "referee": "GLENN NYBERG",
+      "home": "AIK",
+      "away": "BK Häcken",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-07-08 12:00"
+    },
+    {
+      "match_id": 4098237,
+      "season": 2023,
+      "date": "27 augusti 2023",
+      "referee": "GLENN NYBERG",
+      "home": "IFK Göteborg",
+      "away": "BK Häcken",
+      "score": "4–2",
+      "penalty": "0–0",
+      "datetime": "2023-08-27 12:00"
+    },
+    {
+      "match_id": 4098276,
+      "season": 2023,
+      "date": "8 oktober 2023",
+      "referee": "GLENN NYBERG",
+      "home": "Hammarby",
+      "away": "BK Häcken",
+      "score": "2–2",
+      "penalty": "1–0",
+      "datetime": "2023-10-08 12:00"
+    },
+    {
+      "match_id": 4098321,
+      "season": 2023,
+      "date": "3 april 2023",
+      "referee": "GLENN NYBERG",
+      "home": "IF Elfsborg",
+      "away": "BK Häcken",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2023-04-03 12:00"
+    },
+    {
+      "match_id": 4098093,
+      "season": 2023,
+      "date": "16 april 2023",
+      "referee": "GLENN NYBERG",
+      "home": "AIK",
+      "away": "Hammarby",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2023-04-16 12:00"
+    },
+    {
+      "match_id": 4098202,
+      "season": 2023,
+      "date": "21 juli 2023",
+      "referee": "GLENN NYBERG",
+      "home": "IF Brommapojkarna",
+      "away": "Hammarby",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-07-21 12:00"
+    },
+    {
+      "match_id": 4098231,
+      "season": 2023,
+      "date": "20 augusti 2023",
+      "referee": "GLENN NYBERG",
+      "home": "Kalmar FF",
+      "away": "Hammarby",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-08-20 12:00"
+    },
+    {
+      "match_id": 4098305,
+      "season": 2023,
+      "date": "4 november 2023",
+      "referee": "GLENN NYBERG",
+      "home": "IFK Värnamo",
+      "away": "Hammarby",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-11-04 12:00"
+    },
+    {
+      "match_id": 4098258,
+      "season": 2023,
+      "date": "16 september 2023",
+      "referee": "GLENN NYBERG",
+      "home": "IK Sirius",
+      "away": "Varbergs BOIS",
+      "score": "7–0",
+      "penalty": "0–0",
+      "datetime": "2023-09-16 12:00"
+    },
+    {
+      "match_id": 4098191,
+      "season": 2023,
+      "date": "16 juli 2023",
+      "referee": "GLENN NYBERG",
+      "home": "IF Elfsborg",
+      "away": "IFK Göteborg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2023-07-16 12:00"
+    },
+    {
+      "match_id": 4098308,
+      "season": 2023,
+      "date": "12 november 2023",
+      "referee": "GLENN NYBERG",
+      "home": "Malmö FF",
+      "away": "IF Elfsborg",
+      "score": "1–0",
+      "penalty": "1–0",
+      "datetime": "2023-11-12 12:00"
+    },
+    {
+      "match_id": 4098287,
+      "season": 2023,
+      "date": "21 oktober 2023",
+      "referee": "GLENN NYBERG",
+      "home": "IK Sirius",
+      "away": "IF Brommapojkarna",
+      "score": "3–2",
+      "penalty": "1–0",
+      "datetime": "2023-10-21 12:00"
+    },
+    {
+      "match_id": 4098123,
+      "season": 2023,
+      "date": "7 maj 2023",
+      "referee": "GLENN NYBERG",
+      "home": "Malmö FF",
+      "away": "AIK",
+      "score": "3–1",
+      "penalty": "0–1",
+      "datetime": "2023-05-07 12:00"
+    },
+    {
+      "match_id": 4098265,
+      "season": 2023,
+      "date": "23 september 2023",
+      "referee": "GLENN NYBERG",
+      "home": "Degerfors IF",
+      "away": "Malmö FF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-09-23 12:00"
+    },
+    {
+      "match_id": 4098105,
+      "season": 2023,
+      "date": "24 april 2023",
+      "referee": "GLENN NYBERG",
+      "home": "IF Brommapojkarna",
+      "away": "Mjällby AIF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2023-04-24 12:00"
+    },
+    {
+      "match_id": 4098290,
+      "season": 2023,
+      "date": "29 oktober 2023",
+      "referee": "GLENN NYBERG",
+      "home": "AIK",
+      "away": "Halmstads BK",
+      "score": "1–1",
+      "penalty": "1–0",
+      "datetime": "2023-10-29 12:00"
+    },
+    {
+      "match_id": 4098226,
+      "season": 2023,
+      "date": "14 augusti 2023",
+      "referee": "GLENN NYBERG",
+      "home": "IFK Värnamo",
+      "away": "Degerfors IF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-08-14 12:00"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "matches": [
+    {
+      "match_id": 6529830,
+      "season": 2026,
+      "date": "4 april 2026",
+      "referee": "KRISTOFFER KARLSSON",
+      "home": "Hammarby",
+      "away": "Mjällby AIF",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2026-04-04 13:00"
+    },
+    {
+      "match_id": 6529848,
+      "season": 2026,
+      "date": "19 april 2026",
+      "referee": "KRISTOFFER KARLSSON",
+      "home": "BK Häcken",
+      "away": "GAIS",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-19 14:30"
+    },
+    {
+      "match_id": 6529856,
+      "season": 2026,
+      "date": "23 april 2026",
+      "referee": "KRISTOFFER KARLSSON",
+      "home": "Malmö FF",
+      "away": "IK Sirius",
+      "score": "2–3",
+      "penalty": "0–0",
+      "datetime": "2026-04-23 17:00"
+    },
+    {
+      "match_id": 6529869,
+      "season": 2026,
+      "date": "4 maj 2026",
+      "referee": "KRISTOFFER KARLSSON",
+      "home": "Djurgårdens IF",
+      "away": "IFK Göteborg",
+      "score": "6–0",
+      "penalty": "0–0",
+      "datetime": "2026-05-04 17:00"
+    },
+    {
+      "match_id": 6529883,
+      "season": 2026,
+      "date": "9 maj 2026",
+      "referee": "KRISTOFFER KARLSSON",
+      "home": "Västerås SK",
+      "away": "GAIS",
+      "datetime": "2026-05-09 13:00"
+    }
+  ]
+}

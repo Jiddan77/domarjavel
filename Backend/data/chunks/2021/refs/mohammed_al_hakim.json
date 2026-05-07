@@ -1,0 +1,312 @@
+{
+  "matches": [
+    {
+      "match_id": 3645046,
+      "season": 2021,
+      "date": "24 april 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "IK Sirius",
+      "score": "1–2",
+      "penalty": "1–0",
+      "datetime": "2021-04-24 12:00"
+    },
+    {
+      "match_id": 3645086,
+      "season": 2021,
+      "date": "23 maj 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "Varbergs BOIS",
+      "score": "3–1",
+      "penalty": "1–1",
+      "datetime": "2021-05-23 12:00"
+    },
+    {
+      "match_id": 3645115,
+      "season": 2021,
+      "date": "18 juli 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Norrköping",
+      "away": "BK Häcken",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-07-18 12:00"
+    },
+    {
+      "match_id": 3645189,
+      "season": 2021,
+      "date": "26 september 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "Hammarby",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-09-26 12:00"
+    },
+    {
+      "match_id": 3645229,
+      "season": 2021,
+      "date": "30 oktober 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "Kalmar FF",
+      "score": "1–4",
+      "penalty": "0–0",
+      "datetime": "2021-10-30 12:00"
+    },
+    {
+      "match_id": 3645034,
+      "season": 2021,
+      "date": "10 april 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Malmö FF",
+      "away": "Hammarby",
+      "score": "3–2",
+      "penalty": "1–0",
+      "datetime": "2021-04-10 12:00"
+    },
+    {
+      "match_id": 3645096,
+      "season": 2021,
+      "date": "4 juli 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Hammarby",
+      "away": "Halmstads BK",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-07-04 12:00"
+    },
+    {
+      "match_id": 3645160,
+      "season": 2021,
+      "date": "29 augusti 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Hammarby",
+      "away": "Malmö FF",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2021-08-29 12:00"
+    },
+    {
+      "match_id": 3645240,
+      "season": 2021,
+      "date": "7 november 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Hammarby",
+      "away": "Örebro SK",
+      "score": "3–2",
+      "penalty": "0–0",
+      "datetime": "2021-11-07 12:00"
+    },
+    {
+      "match_id": 3645156,
+      "season": 2021,
+      "date": "23 augusti 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Östersunds FK",
+      "away": "Kalmar FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-08-23 12:00"
+    },
+    {
+      "match_id": 3645168,
+      "season": 2021,
+      "date": "11 september 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IK Sirius",
+      "away": "Östersunds FK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2021-09-11 12:00"
+    },
+    {
+      "match_id": 3645101,
+      "season": 2021,
+      "date": "10 juli 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "AIK",
+      "away": "Varbergs BOIS",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2021-07-10 12:00"
+    },
+    {
+      "match_id": 3645147,
+      "season": 2021,
+      "date": "16 augusti 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Varbergs BOIS",
+      "away": "Örebro SK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2021-08-16 12:00"
+    },
+    {
+      "match_id": 3645080,
+      "season": 2021,
+      "date": "17 maj 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Göteborg",
+      "away": "IK Sirius",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2021-05-17 12:00"
+    },
+    {
+      "match_id": 3645128,
+      "season": 2021,
+      "date": "2 augusti 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Göteborg",
+      "away": "IFK Norrköping",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2021-08-02 12:00"
+    },
+    {
+      "match_id": 3645218,
+      "season": 2021,
+      "date": "24 oktober 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Mjällby AIF",
+      "away": "IFK Göteborg",
+      "score": "1–3",
+      "penalty": "0–0",
+      "datetime": "2021-10-24 12:00"
+    },
+    {
+      "match_id": 3645053,
+      "season": 2021,
+      "date": "2 maj 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "AIK",
+      "away": "IF Elfsborg",
+      "score": "1–0",
+      "penalty": "1–0",
+      "datetime": "2021-05-02 12:00"
+    },
+    {
+      "match_id": 3645207,
+      "season": 2021,
+      "date": "18 oktober 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "IF Elfsborg",
+      "score": "0–3",
+      "penalty": "0–0",
+      "datetime": "2021-10-18 12:00"
+    },
+    {
+      "match_id": 3645039,
+      "season": 2021,
+      "date": "18 april 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "IFK Norrköping",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2021-04-18 12:00"
+    },
+    {
+      "match_id": 3645247,
+      "season": 2021,
+      "date": "22 november 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Norrköping",
+      "away": "Djurgården",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-11-22 12:00"
+    },
+    {
+      "match_id": 3645259,
+      "season": 2021,
+      "date": "28 november 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Kalmar FF",
+      "away": "Malmö FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-11-28 12:00"
+    },
+    {
+      "match_id": 3645261,
+      "season": 2021,
+      "date": "4 december 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "AIK",
+      "away": "IK Sirius",
+      "score": "4–2",
+      "penalty": "0–0",
+      "datetime": "2021-12-04 12:00"
+    },
+    {
+      "match_id": 3645061,
+      "season": 2021,
+      "date": "9 maj 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Degerfors IF",
+      "away": "Djurgården",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2021-05-09 12:00"
+    },
+    {
+      "match_id": 3645134,
+      "season": 2021,
+      "date": "8 augusti 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "AIK",
+      "score": "1–4",
+      "penalty": "0–0",
+      "datetime": "2021-08-08 12:00"
+    },
+    {
+      "match_id": 3645179,
+      "season": 2021,
+      "date": "18 september 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Malmö FF",
+      "away": "Djurgården",
+      "score": "1–1",
+      "penalty": "1–0",
+      "datetime": "2021-09-18 12:00"
+    },
+    {
+      "match_id": 3645227,
+      "season": 2021,
+      "date": "27 oktober 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Malmö FF",
+      "away": "AIK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2021-10-27 12:00"
+    },
+    {
+      "match_id": 3645072,
+      "season": 2021,
+      "date": "13 maj 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Halmstads BK",
+      "away": "Mjällby AIF",
+      "score": "1–1",
+      "penalty": "1–0",
+      "datetime": "2021-05-13 12:00"
+    },
+    {
+      "match_id": 3645186,
+      "season": 2021,
+      "date": "23 september 2021",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Mjällby AIF",
+      "away": "Halmstads BK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2021-09-23 12:00"
+    }
+  ]
+}

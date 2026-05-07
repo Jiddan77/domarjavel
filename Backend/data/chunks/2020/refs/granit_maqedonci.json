@@ -1,0 +1,147 @@
+{
+  "matches": [
+    {
+      "match_id": 3544509,
+      "season": 2020,
+      "date": "26 juli 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Falkenberg",
+      "away": "IFK Norrköping",
+      "score": "3–3",
+      "penalty": "0–1",
+      "datetime": "2020-07-26 12:00"
+    },
+    {
+      "match_id": 3544602,
+      "season": 2020,
+      "date": "3 oktober 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "BK Häcken",
+      "away": "Falkenberg",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2020-10-03 12:00"
+    },
+    {
+      "match_id": 3544610,
+      "season": 2020,
+      "date": "18 oktober 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Hammarby",
+      "away": "Mjällby AIF",
+      "score": "4–2",
+      "penalty": "0–0",
+      "datetime": "2020-10-18 12:00"
+    },
+    {
+      "match_id": 3544487,
+      "season": 2020,
+      "date": "16 juli 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Östersunds FK",
+      "away": "Malmö FF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2020-07-16 12:00"
+    },
+    {
+      "match_id": 3544590,
+      "season": 2020,
+      "date": "20 september 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Östersunds FK",
+      "away": "Djurgården",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-09-20 12:00"
+    },
+    {
+      "match_id": 3544565,
+      "season": 2020,
+      "date": "30 augusti 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Helsingborg",
+      "away": "Djurgården",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2020-08-30 12:00"
+    },
+    {
+      "match_id": 3544643,
+      "season": 2020,
+      "date": "22 november 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Elfsborg",
+      "away": "Helsingborg",
+      "score": "2–1",
+      "penalty": "1–0",
+      "datetime": "2020-11-22 12:00"
+    },
+    {
+      "match_id": 3536603,
+      "season": 2020,
+      "date": "6 juli 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Varbergs BOIS",
+      "away": "Kalmar FF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2020-07-06 12:00"
+    },
+    {
+      "match_id": 3544624,
+      "season": 2020,
+      "date": "26 oktober 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Varbergs BOIS",
+      "away": "IF Elfsborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2020-10-26 12:00"
+    },
+    {
+      "match_id": 3544656,
+      "season": 2020,
+      "date": "29 november 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Varbergs BOIS",
+      "away": "Malmö FF",
+      "score": "3–2",
+      "penalty": "0–0",
+      "datetime": "2020-11-29 12:00"
+    },
+    {
+      "match_id": 3544570,
+      "season": 2020,
+      "date": "17 september 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Elfsborg",
+      "away": "Mjällby AIF",
+      "score": "2–2",
+      "penalty": "1–0",
+      "datetime": "2020-09-17 12:00"
+    },
+    {
+      "match_id": 3544636,
+      "season": 2020,
+      "date": "8 november 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Örebro SK",
+      "away": "Kalmar FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2020-11-08 12:00"
+    },
+    {
+      "match_id": 3544527,
+      "season": 2020,
+      "date": "6 augusti 2020",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Mjällby AIF",
+      "away": "IK Sirius",
+      "score": "1–1",
+      "penalty": "0–1",
+      "datetime": "2020-08-06 12:00"
+    }
+  ]
+}

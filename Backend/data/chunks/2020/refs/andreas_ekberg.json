@@ -1,0 +1,246 @@
+{
+  "matches": [
+    {
+      "match_id": 3536587,
+      "season": 2020,
+      "date": "29 juni 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Varbergs BOIS",
+      "away": "Falkenberg",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2020-06-29 12:00"
+    },
+    {
+      "match_id": 3544613,
+      "season": 2020,
+      "date": "17 oktober 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Falkenberg",
+      "away": "Örebro SK",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2020-10-17 12:00"
+    },
+    {
+      "match_id": 3508511,
+      "season": 2020,
+      "date": "18 juni 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "BK Häcken",
+      "away": "Malmö FF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-06-18 12:00"
+    },
+    {
+      "match_id": 3536598,
+      "season": 2020,
+      "date": "5 juli 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "BK Häcken",
+      "away": "Hammarby",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2020-07-05 12:00"
+    },
+    {
+      "match_id": 3544508,
+      "season": 2020,
+      "date": "26 juli 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "BK Häcken",
+      "away": "IFK Göteborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2020-07-26 12:00"
+    },
+    {
+      "match_id": 3544562,
+      "season": 2020,
+      "date": "30 augusti 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "AIK",
+      "away": "BK Häcken",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2020-08-30 12:00"
+    },
+    {
+      "match_id": 3508519,
+      "season": 2020,
+      "date": "21 juni 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Hammarby",
+      "away": "AIK",
+      "score": "0–2",
+      "penalty": "0–1",
+      "datetime": "2020-06-21 12:00"
+    },
+    {
+      "match_id": 3544503,
+      "season": 2020,
+      "date": "23 juli 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Malmö FF",
+      "away": "Hammarby",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2020-07-23 12:00"
+    },
+    {
+      "match_id": 3544531,
+      "season": 2020,
+      "date": "9 augusti 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Djurgården",
+      "away": "Hammarby",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2020-08-09 12:00"
+    },
+    {
+      "match_id": 3544642,
+      "season": 2020,
+      "date": "22 november 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Hammarby",
+      "away": "Malmö FF",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2020-11-22 12:00"
+    },
+    {
+      "match_id": 3508504,
+      "season": 2020,
+      "date": "15 juni 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Helsingborg",
+      "away": "Varbergs BOIS",
+      "score": "0–3",
+      "penalty": "0–1",
+      "datetime": "2020-06-15 12:00"
+    },
+    {
+      "match_id": 3544483,
+      "season": 2020,
+      "date": "15 juli 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "IFK Göteborg",
+      "away": "Helsingborg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-07-15 12:00"
+    },
+    {
+      "match_id": 3544526,
+      "season": 2020,
+      "date": "5 augusti 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Malmö FF",
+      "away": "Helsingborg",
+      "score": "4–1",
+      "penalty": "1–1",
+      "datetime": "2020-08-05 12:00"
+    },
+    {
+      "match_id": 3544576,
+      "season": 2020,
+      "date": "9 september 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Helsingborg",
+      "away": "Kalmar FF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-09-09 12:00"
+    },
+    {
+      "match_id": 3544630,
+      "season": 2020,
+      "date": "2 november 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "AIK",
+      "away": "Varbergs BOIS",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2020-11-02 12:00"
+    },
+    {
+      "match_id": 3544593,
+      "season": 2020,
+      "date": "27 september 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "IF Elfsborg",
+      "away": "IFK Göteborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2020-09-27 12:00"
+    },
+    {
+      "match_id": 3536589,
+      "season": 2020,
+      "date": "1 juli 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "IFK Norrköping",
+      "away": "IF Elfsborg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-07-01 12:00"
+    },
+    {
+      "match_id": 3544489,
+      "season": 2020,
+      "date": "19 juli 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "IK Sirius",
+      "away": "IFK Norrköping",
+      "score": "4–2",
+      "penalty": "2–0",
+      "datetime": "2020-07-19 12:00"
+    },
+    {
+      "match_id": 3544514,
+      "season": 2020,
+      "date": "3 augusti 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "IFK Norrköping",
+      "away": "Mjällby AIF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-08-03 12:00"
+    },
+    {
+      "match_id": 3544587,
+      "season": 2020,
+      "date": "20 september 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "IFK Norrköping",
+      "away": "Malmö FF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-09-20 12:00"
+    },
+    {
+      "match_id": 3544557,
+      "season": 2020,
+      "date": "24 augusti 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Kalmar FF",
+      "away": "Mjällby AIF",
+      "score": "1–4",
+      "penalty": "0–0",
+      "datetime": "2020-08-24 12:00"
+    },
+    {
+      "match_id": 3544619,
+      "season": 2020,
+      "date": "24 oktober 2020",
+      "referee": "ANDREAS EKBERG",
+      "home": "Djurgården",
+      "away": "IK Sirius",
+      "score": "4–0",
+      "penalty": "0–0",
+      "datetime": "2020-10-24 12:00"
+    }
+  ]
+}

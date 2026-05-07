@@ -1,0 +1,257 @@
+{
+  "matches": [
+    {
+      "match_id": 3645090,
+      "season": 2021,
+      "date": "23 maj 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Kalmar FF",
+      "away": "Hammarby",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2021-05-23 12:00"
+    },
+    {
+      "match_id": 3645234,
+      "season": 2021,
+      "date": "1 november 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Mjällby AIF",
+      "away": "Hammarby",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2021-11-01 12:00"
+    },
+    {
+      "match_id": 3645033,
+      "season": 2021,
+      "date": "12 april 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Kalmar FF",
+      "away": "Östersunds FK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2021-04-12 12:00"
+    },
+    {
+      "match_id": 3645060,
+      "season": 2021,
+      "date": "2 maj 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Östersunds FK",
+      "away": "Varbergs BOIS",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2021-05-02 12:00"
+    },
+    {
+      "match_id": 3645148,
+      "season": 2021,
+      "date": "15 augusti 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Östersunds FK",
+      "away": "IFK Norrköping",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2021-08-15 12:00"
+    },
+    {
+      "match_id": 3645212,
+      "season": 2021,
+      "date": "16 oktober 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Östersunds FK",
+      "away": "Malmö FF",
+      "score": "0–3",
+      "penalty": "0–1",
+      "datetime": "2021-10-16 12:00"
+    },
+    {
+      "match_id": 3645237,
+      "season": 2021,
+      "date": "7 november 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "AIK",
+      "away": "Östersunds FK",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2021-11-07 12:00"
+    },
+    {
+      "match_id": 3645257,
+      "season": 2021,
+      "date": "28 november 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Göteborg",
+      "away": "Östersunds FK",
+      "score": "4–0",
+      "penalty": "0–0",
+      "datetime": "2021-11-28 12:00"
+    },
+    {
+      "match_id": 3645126,
+      "season": 2021,
+      "date": "31 juli 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Degerfors IF",
+      "away": "Varbergs BOIS",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-07-31 12:00"
+    },
+    {
+      "match_id": 3645047,
+      "season": 2021,
+      "date": "26 april 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Elfsborg",
+      "away": "Mjällby AIF",
+      "score": "1–0",
+      "penalty": "1–0",
+      "datetime": "2021-04-26 12:00"
+    },
+    {
+      "match_id": 3645163,
+      "season": 2021,
+      "date": "29 augusti 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Kalmar FF",
+      "away": "IF Elfsborg",
+      "score": "0–3",
+      "penalty": "0–0",
+      "datetime": "2021-08-29 12:00"
+    },
+    {
+      "match_id": 3645217,
+      "season": 2021,
+      "date": "24 oktober 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Elfsborg",
+      "away": "IK Sirius",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2021-10-24 12:00"
+    },
+    {
+      "match_id": 3645073,
+      "season": 2021,
+      "date": "13 maj 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Norrköping",
+      "away": "Degerfors IF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-05-13 12:00"
+    },
+    {
+      "match_id": 3645178,
+      "season": 2021,
+      "date": "19 september 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Norrköping",
+      "away": "Örebro SK",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2021-09-19 12:00"
+    },
+    {
+      "match_id": 3645251,
+      "season": 2021,
+      "date": "22 november 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Örebro SK",
+      "away": "Kalmar FF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2021-11-22 12:00"
+    },
+    {
+      "match_id": 3645106,
+      "season": 2021,
+      "date": "10 juli 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Malmö FF",
+      "away": "IK Sirius",
+      "score": "4–0",
+      "penalty": "0–0",
+      "datetime": "2021-07-10 12:00"
+    },
+    {
+      "match_id": 3645191,
+      "season": 2021,
+      "date": "27 september 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Halmstads BK",
+      "away": "IK Sirius",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-09-27 12:00"
+    },
+    {
+      "match_id": 3645095,
+      "season": 2021,
+      "date": "5 juli 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Djurgården",
+      "away": "Örebro SK",
+      "score": "3–0",
+      "penalty": "1–0",
+      "datetime": "2021-07-05 12:00"
+    },
+    {
+      "match_id": 3645181,
+      "season": 2021,
+      "date": "22 september 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Djurgården",
+      "away": "Degerfors IF",
+      "score": "3–2",
+      "penalty": "0–0",
+      "datetime": "2021-09-22 12:00"
+    },
+    {
+      "match_id": 3645135,
+      "season": 2021,
+      "date": "7 augusti 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Halmstads BK",
+      "away": "Malmö FF",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2021-08-07 12:00"
+    },
+    {
+      "match_id": 3645171,
+      "season": 2021,
+      "date": "13 september 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Mjällby AIF",
+      "away": "AIK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2021-09-13 12:00"
+    },
+    {
+      "match_id": 3645068,
+      "season": 2021,
+      "date": "8 maj 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Örebro SK",
+      "away": "Halmstads BK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2021-05-08 12:00"
+    },
+    {
+      "match_id": 3645123,
+      "season": 2021,
+      "date": "26 juli 2021",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Örebro SK",
+      "away": "AIK",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-07-26 12:00"
+    }
+  ]
+}

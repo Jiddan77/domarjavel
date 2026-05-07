@@ -1,0 +1,202 @@
+{
+  "matches": [
+    {
+      "match_id": 3874070,
+      "season": 2022,
+      "date": "22 augusti 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Hammarby",
+      "away": "Degerfors IF",
+      "score": "5–1",
+      "penalty": "0–0",
+      "datetime": "2022-08-22 12:00"
+    },
+    {
+      "match_id": 3874017,
+      "season": 2022,
+      "date": "2 juli 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Helsingborg",
+      "away": "Kalmar FF",
+      "score": "1–1",
+      "penalty": "1–0",
+      "datetime": "2022-07-02 12:00"
+    },
+    {
+      "match_id": 3874037,
+      "season": 2022,
+      "date": "18 juli 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Varbergs BOIS",
+      "away": "Helsingborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2022-07-18 12:00"
+    },
+    {
+      "match_id": 3874039,
+      "season": 2022,
+      "date": "24 juli 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Helsingborg",
+      "away": "GIF Sundsvall",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2022-07-24 12:00"
+    },
+    {
+      "match_id": 3873986,
+      "season": 2022,
+      "date": "15 maj 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "IFK Göteborg",
+      "away": "Varbergs BOIS",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2022-05-15 12:00"
+    },
+    {
+      "match_id": 3874108,
+      "season": 2022,
+      "date": "17 september 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "IFK Värnamo",
+      "away": "Varbergs BOIS",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2022-09-17 12:00"
+    },
+    {
+      "match_id": 3874163,
+      "season": 2022,
+      "date": "6 november 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "IK Sirius",
+      "away": "Varbergs BOIS",
+      "score": "2–3",
+      "penalty": "1–0",
+      "datetime": "2022-11-06 12:00"
+    },
+    {
+      "match_id": 3874081,
+      "season": 2022,
+      "date": "29 augusti 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Djurgården",
+      "away": "IF Elfsborg",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2022-08-29 12:00"
+    },
+    {
+      "match_id": 3874022,
+      "season": 2022,
+      "date": "9 juli 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Degerfors IF",
+      "away": "IFK Norrköping",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2022-07-09 12:00"
+    },
+    {
+      "match_id": 3874099,
+      "season": 2022,
+      "date": "11 september 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Malmö FF",
+      "away": "IFK Norrköping",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2022-09-11 12:00"
+    },
+    {
+      "match_id": 3874147,
+      "season": 2022,
+      "date": "24 oktober 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "IFK Värnamo",
+      "away": "IFK Norrköping",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2022-10-24 12:00"
+    },
+    {
+      "match_id": 3874005,
+      "season": 2022,
+      "date": "28 maj 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Mjällby AIF",
+      "away": "Kalmar FF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2022-05-28 12:00"
+    },
+    {
+      "match_id": 3874058,
+      "season": 2022,
+      "date": "7 augusti 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "IK Sirius",
+      "away": "Malmö FF",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2022-08-07 12:00"
+    },
+    {
+      "match_id": 3871933,
+      "season": 2022,
+      "date": "4 april 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Djurgården",
+      "away": "Degerfors IF",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2022-04-04 12:00"
+    },
+    {
+      "match_id": 3874013,
+      "season": 2022,
+      "date": "26 juni 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "GIF Sundsvall",
+      "away": "Djurgården",
+      "score": "2–5",
+      "penalty": "0–0",
+      "datetime": "2022-06-26 12:00"
+    },
+    {
+      "match_id": 3874110,
+      "season": 2022,
+      "date": "1 oktober 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Degerfors IF",
+      "away": "Djurgården",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2022-10-01 12:00"
+    },
+    {
+      "match_id": 3873979,
+      "season": 2022,
+      "date": "7 maj 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Malmö FF",
+      "away": "Mjällby AIF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2022-05-07 12:00"
+    },
+    {
+      "match_id": 3874155,
+      "season": 2022,
+      "date": "30 oktober 2022",
+      "referee": "BOJAN PANDZIC",
+      "home": "Mjällby AIF",
+      "away": "AIK",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2022-10-30 12:00"
+    }
+  ]
+}

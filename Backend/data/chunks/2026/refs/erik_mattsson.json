@@ -1,0 +1,48 @@
+{
+  "matches": [
+    {
+      "match_id": 6529844,
+      "season": 2026,
+      "date": "12 april 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "Halmstads BK",
+      "away": "Degerfors IF",
+      "score": "0–3",
+      "penalty": "0–0",
+      "datetime": "2026-04-12 12:00"
+    },
+    {
+      "match_id": 6529851,
+      "season": 2026,
+      "date": "18 april 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "IK Sirius",
+      "away": "Västerås SK",
+      "score": "4–1",
+      "penalty": "2–0",
+      "datetime": "2026-04-18 13:00"
+    },
+    {
+      "match_id": 6529853,
+      "season": 2026,
+      "date": "22 april 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "Hammarby",
+      "away": "Halmstads BK",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-22 17:00"
+    },
+    {
+      "match_id": 6529868,
+      "season": 2026,
+      "date": "27 april 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "Kalmar FF",
+      "away": "IF Elfsborg",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-27 17:00"
+    }
+  ]
+}

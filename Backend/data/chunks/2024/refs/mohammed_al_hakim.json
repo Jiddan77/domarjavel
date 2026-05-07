@@ -1,0 +1,268 @@
+{
+  "matches": [
+    {
+      "match_id": 4456665,
+      "season": 2024,
+      "date": "8 april 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "BK Häcken",
+      "score": "3–3",
+      "penalty": "1–0",
+      "datetime": "2024-04-08 12:00"
+    },
+    {
+      "match_id": 4456701,
+      "season": 2024,
+      "date": "28 april 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "IFK Norrköping",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2024-04-28 12:00"
+    },
+    {
+      "match_id": 4456742,
+      "season": 2024,
+      "date": "25 maj 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "GAIS",
+      "away": "BK Häcken",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2024-05-25 12:00"
+    },
+    {
+      "match_id": 4456763,
+      "season": 2024,
+      "date": "14 juli 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "IF Elfsborg",
+      "score": "3–5",
+      "penalty": "0–0",
+      "datetime": "2024-07-14 12:00"
+    },
+    {
+      "match_id": 4456876,
+      "season": 2024,
+      "date": "27 oktober 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "Halmstads BK",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2024-10-27 12:00"
+    },
+    {
+      "match_id": 4456715,
+      "season": 2024,
+      "date": "13 maj 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Göteborg",
+      "away": "Malmö FF",
+      "score": "0–3",
+      "penalty": "0–0",
+      "datetime": "2024-05-13 12:00"
+    },
+    {
+      "match_id": 4456759,
+      "season": 2024,
+      "date": "7 juli 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Värnamo",
+      "away": "IFK Göteborg",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-07-07 12:00"
+    },
+    {
+      "match_id": 4456848,
+      "season": 2024,
+      "date": "26 september 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Västerås SK",
+      "away": "IFK Göteborg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-09-26 12:00"
+    },
+    {
+      "match_id": 4456684,
+      "season": 2024,
+      "date": "22 april 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IF Elfsborg",
+      "away": "Kalmar FF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2024-04-22 12:00"
+    },
+    {
+      "match_id": 4456805,
+      "season": 2024,
+      "date": "18 augusti 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Mjällby AIF",
+      "away": "IF Elfsborg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-08-18 12:00"
+    },
+    {
+      "match_id": 4456660,
+      "season": 2024,
+      "date": "30 mars 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Norrköping",
+      "away": "Malmö FF",
+      "score": "1–5",
+      "penalty": "0–0",
+      "datetime": "2024-03-30 12:00"
+    },
+    {
+      "match_id": 4456725,
+      "season": 2024,
+      "date": "16 maj 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Kalmar FF",
+      "away": "IFK Norrköping",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-05-16 12:00"
+    },
+    {
+      "match_id": 4456780,
+      "season": 2024,
+      "date": "27 juli 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Norrköping",
+      "away": "Kalmar FF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-07-27 12:00"
+    },
+    {
+      "match_id": 4456871,
+      "season": 2024,
+      "date": "20 oktober 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Kalmar FF",
+      "away": "Mjällby AIF",
+      "score": "0–3",
+      "penalty": "0–0",
+      "datetime": "2024-10-20 12:00"
+    },
+    {
+      "match_id": 4456690,
+      "season": 2024,
+      "date": "25 april 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "Malmö FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2024-04-25 12:00"
+    },
+    {
+      "match_id": 4456745,
+      "season": 2024,
+      "date": "2 juni 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "Hammarby IF",
+      "score": "0–3",
+      "penalty": "0–1",
+      "datetime": "2024-06-02 12:00"
+    },
+    {
+      "match_id": 4456825,
+      "season": 2024,
+      "date": "15 september 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "AIK",
+      "away": "Malmö FF",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2024-09-15 12:00"
+    },
+    {
+      "match_id": 4456851,
+      "season": 2024,
+      "date": "29 september 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Malmö FF",
+      "away": "Mjällby AIF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-09-29 12:00"
+    },
+    {
+      "match_id": 4456881,
+      "season": 2024,
+      "date": "2 november 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Hammarby IF",
+      "away": "Malmö FF",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2024-11-02 12:00"
+    },
+    {
+      "match_id": 4456711,
+      "season": 2024,
+      "date": "4 maj 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Mjällby AIF",
+      "away": "IF Brommapojkarna",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-05-04 12:00"
+    },
+    {
+      "match_id": 4456792,
+      "season": 2024,
+      "date": "3 augusti 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Västerås SK",
+      "away": "AIK",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2024-08-03 12:00"
+    },
+    {
+      "match_id": 4456776,
+      "season": 2024,
+      "date": "20 juli 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IF Brommapojkarna",
+      "away": "Hammarby IF",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2024-07-20 12:00"
+    },
+    {
+      "match_id": 4456864,
+      "season": 2024,
+      "date": "5 oktober 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IF Brommapojkarna",
+      "away": "GAIS",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-10-05 12:00"
+    },
+    {
+      "match_id": 4456810,
+      "season": 2024,
+      "date": "26 augusti 2024",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Hammarby IF",
+      "away": "GAIS",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2024-08-26 12:00"
+    }
+  ]
+}

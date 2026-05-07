@@ -1,0 +1,268 @@
+{
+  "matches": [
+    {
+      "match_id": 4456760,
+      "season": 2024,
+      "date": "8 juli 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Västerås SK",
+      "away": "BK Häcken",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2024-07-08 12:00"
+    },
+    {
+      "match_id": 4456842,
+      "season": 2024,
+      "date": "26 september 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Hammarby IF",
+      "away": "BK Häcken",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-09-26 12:00"
+    },
+    {
+      "match_id": 4456682,
+      "season": 2024,
+      "date": "20 april 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IFK Göteborg",
+      "away": "IFK Norrköping",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-04-20 12:00"
+    },
+    {
+      "match_id": 4456746,
+      "season": 2024,
+      "date": "1 juni 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IFK Göteborg",
+      "away": "IF Elfsborg",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2024-06-01 12:00"
+    },
+    {
+      "match_id": 4456795,
+      "season": 2024,
+      "date": "10 augusti 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IFK Göteborg",
+      "away": "IFK Värnamo",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2024-08-10 12:00"
+    },
+    {
+      "match_id": 4456873,
+      "season": 2024,
+      "date": "27 oktober 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "AIK",
+      "away": "IF Elfsborg",
+      "score": "2–1",
+      "penalty": "0–1",
+      "datetime": "2024-10-27 12:00"
+    },
+    {
+      "match_id": 4456811,
+      "season": 2024,
+      "date": "26 augusti 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IFK Norrköping",
+      "away": "Mjällby AIF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2024-08-26 12:00"
+    },
+    {
+      "match_id": 4456890,
+      "season": 2024,
+      "date": "10 november 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Djurgården",
+      "away": "IFK Norrköping",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2024-11-10 12:00"
+    },
+    {
+      "match_id": 4456694,
+      "season": 2024,
+      "date": "25 april 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Kalmar FF",
+      "away": "GAIS",
+      "score": "2–3",
+      "penalty": "0–0",
+      "datetime": "2024-04-25 12:00"
+    },
+    {
+      "match_id": 4456739,
+      "season": 2024,
+      "date": "24 maj 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Malmö FF",
+      "away": "Kalmar FF",
+      "score": "5–0",
+      "penalty": "0–0",
+      "datetime": "2024-05-24 12:00"
+    },
+    {
+      "match_id": 4456766,
+      "season": 2024,
+      "date": "14 juli 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Kalmar FF",
+      "away": "IF Brommapojkarna",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2024-07-14 12:00"
+    },
+    {
+      "match_id": 4456838,
+      "season": 2024,
+      "date": "21 september 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Kalmar FF",
+      "away": "AIK",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2024-09-21 12:00"
+    },
+    {
+      "match_id": 4456664,
+      "season": 2024,
+      "date": "1 april 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IK Sirius",
+      "away": "Halmstads BK",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2024-04-01 12:00"
+    },
+    {
+      "match_id": 4456713,
+      "season": 2024,
+      "date": "11 maj 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "AIK",
+      "away": "IK Sirius",
+      "score": "1–3",
+      "penalty": "0–0",
+      "datetime": "2024-05-11 12:00"
+    },
+    {
+      "match_id": 4456770,
+      "season": 2024,
+      "date": "19 juli 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IK Sirius",
+      "away": "Malmö FF",
+      "score": "3–4",
+      "penalty": "0–0",
+      "datetime": "2024-07-19 12:00"
+    },
+    {
+      "match_id": 4456870,
+      "season": 2024,
+      "date": "19 oktober 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Halmstads BK",
+      "away": "IK Sirius",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2024-10-19 12:00"
+    },
+    {
+      "match_id": 4456729,
+      "season": 2024,
+      "date": "20 maj 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Djurgården",
+      "away": "Halmstads BK",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-05-20 12:00"
+    },
+    {
+      "match_id": 4456826,
+      "season": 2024,
+      "date": "15 september 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Djurgården",
+      "away": "Mjällby AIF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-09-15 12:00"
+    },
+    {
+      "match_id": 4456666,
+      "season": 2024,
+      "date": "7 april 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Malmö FF",
+      "away": "Hammarby IF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-04-07 12:00"
+    },
+    {
+      "match_id": 4456863,
+      "season": 2024,
+      "date": "5 oktober 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Mjällby AIF",
+      "away": "Västerås SK",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2024-10-05 12:00"
+    },
+    {
+      "match_id": 4456777,
+      "season": 2024,
+      "date": "29 juli 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "AIK",
+      "away": "GAIS",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2024-07-29 12:00"
+    },
+    {
+      "match_id": 4456703,
+      "season": 2024,
+      "date": "28 april 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IFK Värnamo",
+      "away": "Halmstads BK",
+      "score": "1–3",
+      "penalty": "0–0",
+      "datetime": "2024-04-28 12:00"
+    },
+    {
+      "match_id": 4456804,
+      "season": 2024,
+      "date": "18 augusti 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "GAIS",
+      "away": "Halmstads BK",
+      "score": "3–1",
+      "penalty": "0–1",
+      "datetime": "2024-08-18 12:00"
+    },
+    {
+      "match_id": 4456728,
+      "season": 2024,
+      "date": "15 maj 2024",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Västerås SK",
+      "away": "IFK Värnamo",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2024-05-15 12:00"
+    }
+  ]
+}

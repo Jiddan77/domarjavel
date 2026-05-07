@@ -1,0 +1,57 @@
+{
+  "matches": [
+    {
+      "match_id": 6529833,
+      "season": 2026,
+      "date": "6 april 2026",
+      "referee": "OSCAR JOHNSON",
+      "home": "BK Häcken",
+      "away": "IF Brommapojkarna",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2026-04-06 12:00"
+    },
+    {
+      "match_id": 6529852,
+      "season": 2026,
+      "date": "18 april 2026",
+      "referee": "OSCAR JOHNSON",
+      "home": "Halmstads BK",
+      "away": "IFK Göteborg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-18 13:00"
+    },
+    {
+      "match_id": 6529854,
+      "season": 2026,
+      "date": "23 april 2026",
+      "referee": "OSCAR JOHNSON",
+      "home": "GAIS",
+      "away": "Mjällby AIF",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2026-04-23 17:00"
+    },
+    {
+      "match_id": 6529873,
+      "season": 2026,
+      "date": "3 maj 2026",
+      "referee": "OSCAR JOHNSON",
+      "home": "IF Elfsborg",
+      "away": "AIK",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2026-05-03 14:30"
+    },
+    {
+      "match_id": 6529884,
+      "season": 2026,
+      "date": "10 maj 2026",
+      "referee": "OSCAR JOHNSON",
+      "home": "Kalmar FF",
+      "away": "Halmstads BK",
+      "datetime": "2026-05-10 12:00"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "matches": [
+    {
+      "match_id": 4098124,
+      "season": 2023,
+      "date": "7 maj 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Halmstads BK",
+      "away": "BK Häcken",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-05-07 12:00"
+    },
+    {
+      "match_id": 4098261,
+      "season": 2023,
+      "date": "24 september 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Kalmar FF",
+      "away": "BK Häcken",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-09-24 12:00"
+    },
+    {
+      "match_id": 4098311,
+      "season": 2023,
+      "date": "12 november 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IF Brommapojkarna",
+      "away": "BK Häcken",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2023-11-12 12:00"
+    },
+    {
+      "match_id": 4098158,
+      "season": 2023,
+      "date": "4 juni 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Halmstads BK",
+      "away": "Hammarby",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-06-04 12:00"
+    },
+    {
+      "match_id": 4098190,
+      "season": 2023,
+      "date": "16 juli 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Hammarby",
+      "away": "Kalmar FF",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2023-07-16 12:00"
+    },
+    {
+      "match_id": 4098122,
+      "season": 2023,
+      "date": "4 maj 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Varbergs BOIS",
+      "away": "Malmö FF",
+      "score": "0–6",
+      "penalty": "0–1",
+      "datetime": "2023-05-04 12:00"
+    },
+    {
+      "match_id": 4098153,
+      "season": 2023,
+      "date": "29 maj 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Degerfors IF",
+      "away": "Varbergs BOIS",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2023-05-29 12:00"
+    },
+    {
+      "match_id": 4098207,
+      "season": 2023,
+      "date": "29 juli 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Halmstads BK",
+      "away": "Varbergs BOIS",
+      "score": "0–5",
+      "penalty": "0–0",
+      "datetime": "2023-07-29 12:00"
+    },
+    {
+      "match_id": 4098218,
+      "season": 2023,
+      "date": "7 augusti 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Varbergs BOIS",
+      "away": "Mjällby AIF",
+      "score": "0–3",
+      "penalty": "0–1",
+      "datetime": "2023-08-07 12:00"
+    },
+    {
+      "match_id": 4098271,
+      "season": 2023,
+      "date": "2 oktober 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IF Elfsborg",
+      "away": "Varbergs BOIS",
+      "score": "2–1",
+      "penalty": "1–0",
+      "datetime": "2023-10-02 12:00"
+    },
+    {
+      "match_id": 4098320,
+      "season": 2023,
+      "date": "3 april 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Mjällby AIF",
+      "away": "Varbergs BOIS",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2023-04-03 12:00"
+    },
+    {
+      "match_id": 4098114,
+      "season": 2023,
+      "date": "1 maj 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IFK Göteborg",
+      "away": "IFK Norrköping",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2023-05-01 12:00"
+    },
+    {
+      "match_id": 4098138,
+      "season": 2023,
+      "date": "15 maj 2023",
+      "referee": "VICTOR WOLF",
+      "home": "AIK",
+      "away": "IFK Göteborg",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2023-05-15 12:00"
+    },
+    {
+      "match_id": 4098277,
+      "season": 2023,
+      "date": "7 oktober 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IFK Göteborg",
+      "away": "IK Sirius",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-10-07 12:00"
+    },
+    {
+      "match_id": 4098284,
+      "season": 2023,
+      "date": "23 oktober 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IF Elfsborg",
+      "away": "AIK",
+      "score": "3–0",
+      "penalty": "1–0",
+      "datetime": "2023-10-23 12:00"
+    },
+    {
+      "match_id": 4098198,
+      "season": 2023,
+      "date": "23 juli 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IFK Norrköping",
+      "away": "Degerfors IF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-07-23 12:00"
+    },
+    {
+      "match_id": 4098255,
+      "season": 2023,
+      "date": "18 september 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IFK Norrköping",
+      "away": "Mjällby AIF",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2023-09-18 12:00"
+    },
+    {
+      "match_id": 4098293,
+      "season": 2023,
+      "date": "29 oktober 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IFK Norrköping",
+      "away": "Malmö FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-10-29 12:00"
+    },
+    {
+      "match_id": 4098173,
+      "season": 2023,
+      "date": "1 juli 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Malmö FF",
+      "away": "IK Sirius",
+      "score": "3–0",
+      "penalty": "1–0",
+      "datetime": "2023-07-01 12:00"
+    },
+    {
+      "match_id": 4098095,
+      "season": 2023,
+      "date": "16 april 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Halmstads BK",
+      "away": "Djurgården",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2023-04-16 12:00"
+    },
+    {
+      "match_id": 4098227,
+      "season": 2023,
+      "date": "20 augusti 2023",
+      "referee": "VICTOR WOLF",
+      "home": "Malmö FF",
+      "away": "Djurgården",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-08-20 12:00"
+    },
+    {
+      "match_id": 4098083,
+      "season": 2023,
+      "date": "8 april 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IF Brommapojkarna",
+      "away": "Malmö FF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-04-08 12:00"
+    },
+    {
+      "match_id": 4098241,
+      "season": 2023,
+      "date": "27 augusti 2023",
+      "referee": "VICTOR WOLF",
+      "home": "IFK Värnamo",
+      "away": "Halmstads BK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-08-27 12:00"
+    }
+  ]
+}

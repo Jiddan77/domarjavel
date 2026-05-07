@@ -1,0 +1,48 @@
+{
+  "matches": [
+    {
+      "match_id": 6529837,
+      "season": 2026,
+      "date": "12 april 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "Djurgårdens IF",
+      "away": "Kalmar FF",
+      "score": "3–2",
+      "penalty": "0–0",
+      "datetime": "2026-04-12 12:00"
+    },
+    {
+      "match_id": 6529859,
+      "season": 2026,
+      "date": "22 april 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "Västerås SK",
+      "away": "BK Häcken",
+      "score": "3–3",
+      "penalty": "0–0",
+      "datetime": "2026-04-22 17:00"
+    },
+    {
+      "match_id": 6529866,
+      "season": 2026,
+      "date": "27 april 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "Mjällby AIF",
+      "away": "Halmstads BK",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2026-04-27 17:00"
+    },
+    {
+      "match_id": 6529875,
+      "season": 2026,
+      "date": "2 maj 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "IK Sirius",
+      "away": "Kalmar FF",
+      "score": "3–2",
+      "penalty": "1–0",
+      "datetime": "2026-05-02 13:00"
+    }
+  ]
+}

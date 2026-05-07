@@ -1,0 +1,57 @@
+{
+  "matches": [
+    {
+      "match_id": 6529835,
+      "season": 2026,
+      "date": "4 april 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "Degerfors IF",
+      "away": "IK Sirius",
+      "score": "0–3",
+      "penalty": "0–1",
+      "datetime": "2026-04-04 13:00"
+    },
+    {
+      "match_id": 6529846,
+      "season": 2026,
+      "date": "17 april 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "Djurgårdens IF",
+      "away": "Malmö FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-17 17:00"
+    },
+    {
+      "match_id": 6529863,
+      "season": 2026,
+      "date": "26 april 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "IFK Göteborg",
+      "away": "GAIS",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2026-04-26 14:30"
+    },
+    {
+      "match_id": 6529870,
+      "season": 2026,
+      "date": "3 maj 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "Hammarby",
+      "away": "Västerås SK",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2026-05-03 12:00"
+    },
+    {
+      "match_id": 6529881,
+      "season": 2026,
+      "date": "9 maj 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "Degerfors IF",
+      "away": "Mjällby AIF",
+      "datetime": "2026-05-09 13:00"
+    }
+  ]
+}

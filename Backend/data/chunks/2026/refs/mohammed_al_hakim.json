@@ -1,0 +1,57 @@
+{
+  "matches": [
+    {
+      "match_id": 6529831,
+      "season": 2026,
+      "date": "6 april 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "GAIS",
+      "away": "Djurgårdens IF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-06 14:30"
+    },
+    {
+      "match_id": 6529841,
+      "season": 2026,
+      "date": "13 april 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IF Brommapojkarna",
+      "away": "AIK",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2026-04-13 17:00"
+    },
+    {
+      "match_id": 6529865,
+      "season": 2026,
+      "date": "27 april 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "IK Sirius",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2026-04-27 17:00"
+    },
+    {
+      "match_id": 6529872,
+      "season": 2026,
+      "date": "3 maj 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Malmö FF",
+      "away": "Mjällby AIF",
+      "score": "2–3",
+      "penalty": "0–0",
+      "datetime": "2026-05-03 12:00"
+    },
+    {
+      "match_id": 6529877,
+      "season": 2026,
+      "date": "10 maj 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "AIK",
+      "away": "Djurgårdens IF",
+      "datetime": "2026-05-10 12:00"
+    }
+  ]
+}

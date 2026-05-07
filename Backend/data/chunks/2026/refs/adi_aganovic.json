@@ -1,0 +1,48 @@
+{
+  "matches": [
+    {
+      "match_id": 6529839,
+      "season": 2026,
+      "date": "11 april 2026",
+      "referee": "ADI AGANOVIC",
+      "home": "Mjällby AIF",
+      "away": "Örgryte IS",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2026-04-11 13:00"
+    },
+    {
+      "match_id": 6529845,
+      "season": 2026,
+      "date": "19 april 2026",
+      "referee": "ADI AGANOVIC",
+      "home": "AIK",
+      "away": "Kalmar FF",
+      "score": "1–0",
+      "penalty": "1–0",
+      "datetime": "2026-04-19 12:00"
+    },
+    {
+      "match_id": 6529864,
+      "season": 2026,
+      "date": "27 april 2026",
+      "referee": "ADI AGANOVIC",
+      "home": "Örgryte IS",
+      "away": "Degerfors IF",
+      "score": "1–1",
+      "penalty": "1–0",
+      "datetime": "2026-04-27 17:00"
+    },
+    {
+      "match_id": 6529876,
+      "season": 2026,
+      "date": "4 maj 2026",
+      "referee": "ADI AGANOVIC",
+      "home": "Halmstads BK",
+      "away": "IF Brommapojkarna",
+      "score": "1–3",
+      "penalty": "0–0",
+      "datetime": "2026-05-04 17:00"
+    }
+  ]
+}

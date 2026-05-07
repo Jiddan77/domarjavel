@@ -1,0 +1,290 @@
+{
+  "matches": [
+    {
+      "match_id": 4098085,
+      "season": 2023,
+      "date": "9 april 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "Hammarby",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2023-04-09 12:00"
+    },
+    {
+      "match_id": 4098230,
+      "season": 2023,
+      "date": "20 augusti 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "IK Sirius",
+      "score": "3–2",
+      "penalty": "0–0",
+      "datetime": "2023-08-20 12:00"
+    },
+    {
+      "match_id": 4098302,
+      "season": 2023,
+      "date": "5 november 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "BK Häcken",
+      "away": "Malmö FF",
+      "score": "4–2",
+      "penalty": "0–0",
+      "datetime": "2023-11-05 12:00"
+    },
+    {
+      "match_id": 4098111,
+      "season": 2023,
+      "date": "30 april 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Malmö FF",
+      "away": "Hammarby",
+      "score": "4–2",
+      "penalty": "0–0",
+      "datetime": "2023-04-30 12:00"
+    },
+    {
+      "match_id": 4098134,
+      "season": 2023,
+      "date": "14 maj 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Hammarby",
+      "away": "Djurgården",
+      "score": "4–3",
+      "penalty": "2–1",
+      "datetime": "2023-05-14 12:00"
+    },
+    {
+      "match_id": 4098152,
+      "season": 2023,
+      "date": "29 maj 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Hammarby",
+      "away": "IFK Värnamo",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2023-05-29 12:00"
+    },
+    {
+      "match_id": 4098253,
+      "season": 2023,
+      "date": "17 september 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Hammarby",
+      "away": "Malmö FF",
+      "score": "1–3",
+      "penalty": "0–0",
+      "datetime": "2023-09-17 12:00"
+    },
+    {
+      "match_id": 4098282,
+      "season": 2023,
+      "date": "22 oktober 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "Hammarby",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-10-22 12:00"
+    },
+    {
+      "match_id": 4098185,
+      "season": 2023,
+      "date": "10 juli 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Göteborg",
+      "away": "Varbergs BOIS",
+      "score": "1–2",
+      "penalty": "1–0",
+      "datetime": "2023-07-10 12:00"
+    },
+    {
+      "match_id": 4098297,
+      "season": 2023,
+      "date": "28 oktober 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Varbergs BOIS",
+      "away": "Degerfors IF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2023-10-28 12:00"
+    },
+    {
+      "match_id": 4098101,
+      "season": 2023,
+      "date": "23 april 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "IFK Göteborg",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-04-23 12:00"
+    },
+    {
+      "match_id": 4098119,
+      "season": 2023,
+      "date": "4 maj 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Göteborg",
+      "away": "Degerfors IF",
+      "score": "6–0",
+      "penalty": "0–0",
+      "datetime": "2023-05-04 12:00"
+    },
+    {
+      "match_id": 4098214,
+      "season": 2023,
+      "date": "7 augusti 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Norrköping",
+      "away": "IFK Göteborg",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2023-08-07 12:00"
+    },
+    {
+      "match_id": 4098125,
+      "season": 2023,
+      "date": "8 maj 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IK Sirius",
+      "away": "IF Elfsborg",
+      "score": "3–4",
+      "penalty": "0–0",
+      "datetime": "2023-05-08 12:00"
+    },
+    {
+      "match_id": 4098167,
+      "season": 2023,
+      "date": "11 juni 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "AIK",
+      "away": "IF Elfsborg",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-06-11 12:00"
+    },
+    {
+      "match_id": 4098248,
+      "season": 2023,
+      "date": "2 september 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Värnamo",
+      "away": "IF Elfsborg",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-09-02 12:00"
+    },
+    {
+      "match_id": 4098280,
+      "season": 2023,
+      "date": "8 oktober 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IF Brommapojkarna",
+      "away": "IF Elfsborg",
+      "score": "0–3",
+      "penalty": "0–0",
+      "datetime": "2023-10-08 12:00"
+    },
+    {
+      "match_id": 4098156,
+      "season": 2023,
+      "date": "3 juni 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IFK Norrköping",
+      "away": "IF Brommapojkarna",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2023-06-03 12:00"
+    },
+    {
+      "match_id": 4098264,
+      "season": 2023,
+      "date": "23 september 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IF Brommapojkarna",
+      "away": "IFK Norrköping",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2023-09-23 12:00"
+    },
+    {
+      "match_id": 4098314,
+      "season": 2023,
+      "date": "1 april 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Malmö FF",
+      "away": "Kalmar FF",
+      "score": "1–0",
+      "penalty": "1–0",
+      "datetime": "2023-04-01 12:00"
+    },
+    {
+      "match_id": 4098144,
+      "season": 2023,
+      "date": "21 maj 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IK Sirius",
+      "away": "Halmstads BK",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-05-21 12:00"
+    },
+    {
+      "match_id": 4098208,
+      "season": 2023,
+      "date": "31 juli 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "IK Sirius",
+      "away": "AIK",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-07-31 12:00"
+    },
+    {
+      "match_id": 4098193,
+      "season": 2023,
+      "date": "17 juli 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "Malmö FF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2023-07-17 12:00"
+    },
+    {
+      "match_id": 4098267,
+      "season": 2023,
+      "date": "30 september 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Djurgården",
+      "away": "Halmstads BK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-09-30 12:00"
+    },
+    {
+      "match_id": 4098225,
+      "season": 2023,
+      "date": "14 augusti 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Mjällby AIF",
+      "away": "Malmö FF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-08-14 12:00"
+    },
+    {
+      "match_id": 4098306,
+      "season": 2023,
+      "date": "12 november 2023",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "AIK",
+      "away": "IFK Värnamo",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2023-11-12 12:00"
+    }
+  ]
+}

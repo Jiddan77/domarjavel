@@ -1,0 +1,103 @@
+{
+  "matches": [
+    {
+      "match_id": 4098166,
+      "season": 2023,
+      "date": "10 juni 2023",
+      "referee": "ADI AGANOVIC",
+      "home": "Varbergs BOIS",
+      "away": "Halmstads BK",
+      "score": "1–2",
+      "penalty": "0–1",
+      "datetime": "2023-06-10 12:00"
+    },
+    {
+      "match_id": 4098281,
+      "season": 2023,
+      "date": "8 oktober 2023",
+      "referee": "ADI AGANOVIC",
+      "home": "Varbergs BOIS",
+      "away": "Djurgården",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-10-08 12:00"
+    },
+    {
+      "match_id": 4098150,
+      "season": 2023,
+      "date": "28 maj 2023",
+      "referee": "ADI AGANOVIC",
+      "home": "Kalmar FF",
+      "away": "IFK Norrköping",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2023-05-28 12:00"
+    },
+    {
+      "match_id": 4098242,
+      "season": 2023,
+      "date": "27 augusti 2023",
+      "referee": "ADI AGANOVIC",
+      "home": "IF Brommapojkarna",
+      "away": "Kalmar FF",
+      "score": "2–3",
+      "penalty": "0–0",
+      "datetime": "2023-08-27 12:00"
+    },
+    {
+      "match_id": 4098303,
+      "season": 2023,
+      "date": "5 november 2023",
+      "referee": "ADI AGANOVIC",
+      "home": "Halmstads BK",
+      "away": "Kalmar FF",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2023-11-05 12:00"
+    },
+    {
+      "match_id": 4098263,
+      "season": 2023,
+      "date": "25 september 2023",
+      "referee": "ADI AGANOVIC",
+      "home": "IFK Värnamo",
+      "away": "IK Sirius",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-09-25 12:00"
+    },
+    {
+      "match_id": 4098252,
+      "season": 2023,
+      "date": "16 september 2023",
+      "referee": "ADI AGANOVIC",
+      "home": "Djurgården",
+      "away": "IFK Värnamo",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-09-16 12:00"
+    },
+    {
+      "match_id": 4098205,
+      "season": 2023,
+      "date": "31 juli 2023",
+      "referee": "ADI AGANOVIC",
+      "home": "Malmö FF",
+      "away": "IFK Värnamo",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2023-07-31 12:00"
+    },
+    {
+      "match_id": 4098181,
+      "season": 2023,
+      "date": "8 juli 2023",
+      "referee": "ADI AGANOVIC",
+      "home": "IF Brommapojkarna",
+      "away": "Degerfors IF",
+      "score": "1–2",
+      "penalty": "1–0",
+      "datetime": "2023-07-08 12:00"
+    }
+  ]
+}

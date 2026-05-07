@@ -1,0 +1,235 @@
+{
+  "matches": [
+    {
+      "match_id": 6143156,
+      "season": 2025,
+      "date": "29 mars 2025",
+      "referee": "VICTOR WOLF",
+      "home": "BK Häcken",
+      "away": "IF Brommapojkarna",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2025-03-29 16:30"
+    },
+    {
+      "match_id": 6143226,
+      "season": 2025,
+      "date": "18 maj 2025",
+      "referee": "VICTOR WOLF",
+      "home": "BK Häcken",
+      "away": "IFK Värnamo",
+      "score": "2–0",
+      "penalty": "1–0",
+      "datetime": "2025-05-18 12:00"
+    },
+    {
+      "match_id": 6143209,
+      "season": 2025,
+      "date": "11 maj 2025",
+      "referee": "VICTOR WOLF",
+      "home": "Hammarby",
+      "away": "IFK Norrköping",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2025-05-11 12:00"
+    },
+    {
+      "match_id": 6143241,
+      "season": 2025,
+      "date": "31 maj 2025",
+      "referee": "VICTOR WOLF",
+      "home": "IF Elfsborg",
+      "away": "Hammarby",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2025-05-31 13:00"
+    },
+    {
+      "match_id": 6143236,
+      "season": 2025,
+      "date": "25 maj 2025",
+      "referee": "VICTOR WOLF",
+      "home": "IFK Göteborg",
+      "away": "Malmö FF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2025-05-25 12:00"
+    },
+    {
+      "match_id": 6143201,
+      "season": 2025,
+      "date": "5 maj 2025",
+      "referee": "VICTOR WOLF",
+      "home": "IF Elfsborg",
+      "away": "GAIS",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2025-05-05 17:10"
+    },
+    {
+      "match_id": 6143249,
+      "season": 2025,
+      "date": "30 juni 2025",
+      "referee": "VICTOR WOLF",
+      "home": "Djurgårdens IF",
+      "away": "IFK Norrköping",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2025-06-30 17:00"
+    },
+    {
+      "match_id": 6143180,
+      "season": 2025,
+      "date": "18 april 2025",
+      "referee": "VICTOR WOLF",
+      "home": "Malmö FF",
+      "away": "IK Sirius",
+      "score": "1–1",
+      "penalty": "1–0",
+      "datetime": "2025-04-18 13:00"
+    },
+    {
+      "match_id": 6143270,
+      "season": 2025,
+      "date": "14 juli 2025",
+      "referee": "VICTOR WOLF",
+      "home": "IK Sirius",
+      "away": "Mjällby AIF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2025-07-14 17:00"
+    },
+    {
+      "match_id": 6143259,
+      "season": 2025,
+      "date": "5 juli 2025",
+      "referee": "VICTOR WOLF",
+      "home": "GAIS",
+      "away": "Malmö FF",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2025-07-05 13:00"
+    },
+    {
+      "match_id": 6143174,
+      "season": 2025,
+      "date": "14 april 2025",
+      "referee": "VICTOR WOLF",
+      "home": "Halmstads BK",
+      "away": "Östers IF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2025-04-14 17:00"
+    },
+    {
+      "match_id": 6143280,
+      "season": 2025,
+      "date": "27 juli 2025",
+      "referee": "VICTOR WOLF",
+      "home": "AIK",
+      "away": "Östers IF",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2025-07-27 12:00"
+    },
+    {
+      "match_id": 6143290,
+      "season": 2025,
+      "date": "2 augusti 2025",
+      "referee": "VICTOR WOLF",
+      "home": "IF Brommapojkarna",
+      "away": "IFK Norrköping",
+      "score": "6–4",
+      "penalty": "0–0",
+      "datetime": "2025-08-02 13:00"
+    },
+    {
+      "match_id": 6143309,
+      "season": 2025,
+      "date": "17 augusti 2025",
+      "referee": "VICTOR WOLF",
+      "home": "Mjällby AIF",
+      "away": "Djurgårdens IF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2025-08-17 14:30"
+    },
+    {
+      "match_id": 6143314,
+      "season": 2025,
+      "date": "24 augusti 2025",
+      "referee": "VICTOR WOLF",
+      "home": "IF Elfsborg",
+      "away": "Halmstads BK",
+      "score": "1–2",
+      "penalty": "0–1",
+      "datetime": "2025-08-24 14:30"
+    },
+    {
+      "match_id": 6143324,
+      "season": 2025,
+      "date": "31 augusti 2025",
+      "referee": "VICTOR WOLF",
+      "home": "GAIS",
+      "away": "BK Häcken",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2025-08-31 14:30"
+    },
+    {
+      "match_id": 6143344,
+      "season": 2025,
+      "date": "22 september 2025",
+      "referee": "VICTOR WOLF",
+      "home": "IFK Värnamo",
+      "away": "Halmstads BK",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2025-09-22 17:00"
+    },
+    {
+      "match_id": 6143349,
+      "season": 2025,
+      "date": "27 september 2025",
+      "referee": "VICTOR WOLF",
+      "home": "BK Häcken",
+      "away": "IFK Norrköping",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2025-09-27 15:30"
+    },
+    {
+      "match_id": 6143367,
+      "season": 2025,
+      "date": "20 oktober 2025",
+      "referee": "VICTOR WOLF",
+      "home": "Degerfors IF",
+      "away": "Halmstads BK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2025-10-20 17:00"
+    },
+    {
+      "match_id": 6143375,
+      "season": 2025,
+      "date": "26 oktober 2025",
+      "referee": "VICTOR WOLF",
+      "home": "IK Sirius",
+      "away": "IF Elfsborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2025-10-26 13:00"
+    },
+    {
+      "match_id": 6143379,
+      "season": 2025,
+      "date": "2 november 2025",
+      "referee": "VICTOR WOLF",
+      "home": "GAIS",
+      "away": "Östers IF",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2025-11-02 15:30"
+    }
+  ]
+}

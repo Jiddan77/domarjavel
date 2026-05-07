@@ -1,0 +1,56 @@
+{
+  "matches": [
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Örgryte IS",
+      "away": "Malmö FF",
+      "match_id": 6529832,
+      "season": 2026,
+      "referee": "JOAKIM SARS",
+      "yellow": "1–4",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-05T14:30:00.000Z",
+      "datetime": "2026-04-05 14:30",
+      "date": "5 april 2026",
+      "round": 1,
+      "score": "1–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IFK Göteborg",
+      "away": "BK Häcken",
+      "match_id": 6529838,
+      "season": 2026,
+      "referee": "JOAKIM SARS",
+      "yellow": "3–6",
+      "red": "1–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-11T13:00:00.000Z",
+      "datetime": "2026-04-11 13:00",
+      "date": "11 april 2026",
+      "round": 2,
+      "score": "0–2"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Degerfors IF",
+      "away": "BK Häcken",
+      "match_id": 6529874,
+      "season": 2026,
+      "referee": "JOAKIM SARS",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–1",
+      "date_iso": "2026-05-02T13:00:00.000Z",
+      "datetime": "2026-05-02 13:00",
+      "date": "2 maj 2026",
+      "round": 6,
+      "score": "1–1"
+    }
+  ],
+  "total": 3
+}

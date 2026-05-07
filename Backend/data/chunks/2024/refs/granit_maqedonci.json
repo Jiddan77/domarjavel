@@ -1,0 +1,235 @@
+{
+  "matches": [
+    {
+      "match_id": 4456676,
+      "season": 2024,
+      "date": "15 april 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "BK Häcken",
+      "away": "IF Brommapojkarna",
+      "score": "4–3",
+      "penalty": "0–0",
+      "datetime": "2024-04-15 12:00"
+    },
+    {
+      "match_id": 4456718,
+      "season": 2024,
+      "date": "12 maj 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "BK Häcken",
+      "away": "Kalmar FF",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2024-05-12 12:00"
+    },
+    {
+      "match_id": 4456779,
+      "season": 2024,
+      "date": "27 juli 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Göteborg",
+      "away": "IF Brommapojkarna",
+      "score": "3–4",
+      "penalty": "0–0",
+      "datetime": "2024-07-27 12:00"
+    },
+    {
+      "match_id": 4456833,
+      "season": 2024,
+      "date": "23 september 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Göteborg",
+      "away": "Halmstads BK",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-09-23 12:00"
+    },
+    {
+      "match_id": 4456692,
+      "season": 2024,
+      "date": "25 april 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Norrköping",
+      "away": "IF Elfsborg",
+      "score": "4–2",
+      "penalty": "0–0",
+      "datetime": "2024-04-25 12:00"
+    },
+    {
+      "match_id": 4456722,
+      "season": 2024,
+      "date": "15 maj 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Elfsborg",
+      "away": "AIK",
+      "score": "6–1",
+      "penalty": "1–0",
+      "datetime": "2024-05-15 12:00"
+    },
+    {
+      "match_id": 4456772,
+      "season": 2024,
+      "date": "21 juli 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Elfsborg",
+      "away": "Mjällby AIF",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2024-07-21 12:00"
+    },
+    {
+      "match_id": 4456796,
+      "season": 2024,
+      "date": "10 augusti 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Norrköping",
+      "away": "Västerås SK",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2024-08-10 12:00"
+    },
+    {
+      "match_id": 4456835,
+      "season": 2024,
+      "date": "3 oktober 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Norrköping",
+      "away": "IK Sirius",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2024-10-03 12:00"
+    },
+    {
+      "match_id": 4456750,
+      "season": 2024,
+      "date": "2 juni 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Kalmar FF",
+      "away": "Västerås SK",
+      "score": "0–4",
+      "penalty": "0–0",
+      "datetime": "2024-06-02 12:00"
+    },
+    {
+      "match_id": 4456788,
+      "season": 2024,
+      "date": "4 augusti 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Kalmar FF",
+      "away": "Hammarby IF",
+      "score": "1–4",
+      "penalty": "0–0",
+      "datetime": "2024-08-04 12:00"
+    },
+    {
+      "match_id": 4456815,
+      "season": 2024,
+      "date": "25 augusti 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IK Sirius",
+      "away": "Djurgården",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2024-08-25 12:00"
+    },
+    {
+      "match_id": 4456743,
+      "season": 2024,
+      "date": "25 maj 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Mjällby AIF",
+      "away": "Djurgården",
+      "score": "1–3",
+      "penalty": "0–0",
+      "datetime": "2024-05-25 12:00"
+    },
+    {
+      "match_id": 4456855,
+      "season": 2024,
+      "date": "29 september 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Värnamo",
+      "away": "Djurgården",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-09-29 12:00"
+    },
+    {
+      "match_id": 4456754,
+      "season": 2024,
+      "date": "7 juli 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Malmö FF",
+      "away": "Halmstads BK",
+      "score": "5–1",
+      "penalty": "0–0",
+      "datetime": "2024-07-07 12:00"
+    },
+    {
+      "match_id": 4456872,
+      "season": 2024,
+      "date": "19 oktober 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Västerås SK",
+      "away": "Malmö FF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-10-19 12:00"
+    },
+    {
+      "match_id": 4456685,
+      "season": 2024,
+      "date": "21 april 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "GAIS",
+      "away": "Mjällby AIF",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2024-04-21 12:00"
+    },
+    {
+      "match_id": 4456657,
+      "season": 2024,
+      "date": "1 april 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "AIK",
+      "away": "Västerås SK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2024-04-01 12:00"
+    },
+    {
+      "match_id": 4456822,
+      "season": 2024,
+      "date": "31 augusti 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IFK Värnamo",
+      "away": "AIK",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2024-08-31 12:00"
+    },
+    {
+      "match_id": 4456706,
+      "season": 2024,
+      "date": "5 maj 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Hammarby IF",
+      "away": "IFK Värnamo",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2024-05-05 12:00"
+    },
+    {
+      "match_id": 4456888,
+      "season": 2024,
+      "date": "3 november 2024",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Brommapojkarna",
+      "away": "IFK Värnamo",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2024-11-03 12:00"
+    }
+  ]
+}

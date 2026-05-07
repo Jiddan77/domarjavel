@@ -1,0 +1,158 @@
+{
+  "matches": [
+    {
+      "match_id": 4456828,
+      "season": 2024,
+      "date": "15 september 2024",
+      "referee": "GLENN NYBERG",
+      "home": "BK Häcken",
+      "away": "IFK Göteborg",
+      "score": "3–3",
+      "penalty": "0–0",
+      "datetime": "2024-09-15 12:00"
+    },
+    {
+      "match_id": 4456659,
+      "season": 2024,
+      "date": "1 april 2024",
+      "referee": "GLENN NYBERG",
+      "home": "IFK Göteborg",
+      "away": "Djurgården",
+      "score": "1–4",
+      "penalty": "0–1",
+      "datetime": "2024-04-01 12:00"
+    },
+    {
+      "match_id": 4456731,
+      "season": 2024,
+      "date": "21 maj 2024",
+      "referee": "GLENN NYBERG",
+      "home": "IFK Göteborg",
+      "away": "Mjällby AIF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2024-05-21 12:00"
+    },
+    {
+      "match_id": 4456875,
+      "season": 2024,
+      "date": "28 oktober 2024",
+      "referee": "GLENN NYBERG",
+      "home": "Malmö FF",
+      "away": "IFK Göteborg",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2024-10-28 12:00"
+    },
+    {
+      "match_id": 4456674,
+      "season": 2024,
+      "date": "15 april 2024",
+      "referee": "GLENN NYBERG",
+      "home": "Hammarby IF",
+      "away": "IF Elfsborg",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2024-04-15 12:00"
+    },
+    {
+      "match_id": 4456895,
+      "season": 2024,
+      "date": "10 november 2024",
+      "referee": "GLENN NYBERG",
+      "home": "IFK Värnamo",
+      "away": "IF Elfsborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2024-11-10 12:00"
+    },
+    {
+      "match_id": 4456883,
+      "season": 2024,
+      "date": "4 november 2024",
+      "referee": "GLENN NYBERG",
+      "home": "IFK Norrköping",
+      "away": "AIK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2024-11-04 12:00"
+    },
+    {
+      "match_id": 4456710,
+      "season": 2024,
+      "date": "4 maj 2024",
+      "referee": "GLENN NYBERG",
+      "home": "Kalmar FF",
+      "away": "Halmstads BK",
+      "score": "5–2",
+      "penalty": "0–0",
+      "datetime": "2024-05-04 12:00"
+    },
+    {
+      "match_id": 4456824,
+      "season": 2024,
+      "date": "31 augusti 2024",
+      "referee": "GLENN NYBERG",
+      "home": "Västerås SK",
+      "away": "IK Sirius",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2024-08-31 12:00"
+    },
+    {
+      "match_id": 4456681,
+      "season": 2024,
+      "date": "21 april 2024",
+      "referee": "GLENN NYBERG",
+      "home": "AIK",
+      "away": "Djurgården",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2024-04-21 12:00"
+    },
+    {
+      "match_id": 4456837,
+      "season": 2024,
+      "date": "22 september 2024",
+      "referee": "GLENN NYBERG",
+      "home": "GAIS",
+      "away": "Djurgården",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2024-09-22 12:00"
+    },
+    {
+      "match_id": 4456752,
+      "season": 2024,
+      "date": "1 juni 2024",
+      "referee": "GLENN NYBERG",
+      "home": "IF Brommapojkarna",
+      "away": "Malmö FF",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2024-06-01 12:00"
+    },
+    {
+      "match_id": 4456696,
+      "season": 2024,
+      "date": "25 april 2024",
+      "referee": "GLENN NYBERG",
+      "home": "Västerås SK",
+      "away": "Mjällby AIF",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2024-04-25 12:00"
+    },
+    {
+      "match_id": 4456849,
+      "season": 2024,
+      "date": "29 september 2024",
+      "referee": "GLENN NYBERG",
+      "home": "AIK",
+      "away": "Hammarby IF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2024-09-29 12:00"
+    }
+  ]
+}

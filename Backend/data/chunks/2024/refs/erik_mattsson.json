@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "match_id": 4456813,
+      "season": 2024,
+      "date": "25 augusti 2024",
+      "referee": "ERIK MATTSSON",
+      "home": "BK Häcken",
+      "away": "IFK Värnamo",
+      "score": "1–1",
+      "penalty": "0–1",
+      "datetime": "2024-08-25 12:00"
+    },
+    {
+      "match_id": 4456771,
+      "season": 2024,
+      "date": "21 juli 2024",
+      "referee": "ERIK MATTSSON",
+      "home": "IFK Norrköping",
+      "away": "Halmstads BK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2024-07-21 12:00"
+    }
+  ]
+}

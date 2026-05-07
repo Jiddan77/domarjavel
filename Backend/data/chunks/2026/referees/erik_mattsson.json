@@ -1,0 +1,73 @@
+{
+  "matches": [
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Halmstads BK",
+      "away": "Degerfors IF",
+      "match_id": 6529844,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "yellow": "2–2",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-12T12:00:00.000Z",
+      "datetime": "2026-04-12 12:00",
+      "date": "12 april 2026",
+      "round": 2,
+      "score": "0–3"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IK Sirius",
+      "away": "Västerås SK",
+      "match_id": 6529851,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "yellow": "1–0",
+      "red": "0–0",
+      "penalty": "2–0",
+      "date_iso": "2026-04-18T13:00:00.000Z",
+      "datetime": "2026-04-18 13:00",
+      "date": "18 april 2026",
+      "round": 3,
+      "score": "4–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "Halmstads BK",
+      "match_id": 6529853,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "yellow": "2–3",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-22T17:00:00.000Z",
+      "datetime": "2026-04-22 17:00",
+      "date": "22 april 2026",
+      "round": 4,
+      "score": "1–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Kalmar FF",
+      "away": "IF Elfsborg",
+      "match_id": 6529868,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "yellow": "3–4",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-27T17:00:00.000Z",
+      "datetime": "2026-04-27 17:00",
+      "date": "27 april 2026",
+      "round": 5,
+      "score": "2–1"
+    }
+  ],
+  "total": 4
+}

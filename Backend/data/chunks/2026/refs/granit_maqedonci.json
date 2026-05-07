@@ -1,0 +1,57 @@
+{
+  "matches": [
+    {
+      "match_id": 6529836,
+      "season": 2026,
+      "date": "5 april 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Kalmar FF",
+      "away": "Västerås SK",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-05 12:00"
+    },
+    {
+      "match_id": 6529847,
+      "season": 2026,
+      "date": "18 april 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Hammarby",
+      "away": "Örgryte IS",
+      "score": "8–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-18 13:00"
+    },
+    {
+      "match_id": 6529857,
+      "season": 2026,
+      "date": "22 april 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Elfsborg",
+      "away": "Djurgårdens IF",
+      "score": "2–1",
+      "penalty": "1–0",
+      "datetime": "2026-04-22 17:00"
+    },
+    {
+      "match_id": 6529861,
+      "season": 2026,
+      "date": "27 april 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "AIK",
+      "away": "Malmö FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-27 17:00"
+    },
+    {
+      "match_id": 6529880,
+      "season": 2026,
+      "date": "8 maj 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "IF Elfsborg",
+      "away": "IF Brommapojkarna",
+      "datetime": "2026-05-08 17:00"
+    }
+  ]
+}

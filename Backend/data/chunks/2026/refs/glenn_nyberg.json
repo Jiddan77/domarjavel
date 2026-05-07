@@ -1,0 +1,37 @@
+{
+  "matches": [
+    {
+      "match_id": 6529842,
+      "season": 2026,
+      "date": "13 april 2026",
+      "referee": "GLENN NYBERG",
+      "home": "IK Sirius",
+      "away": "Hammarby",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2026-04-13 17:00"
+    },
+    {
+      "match_id": 6529850,
+      "season": 2026,
+      "date": "17 april 2026",
+      "referee": "GLENN NYBERG",
+      "home": "Degerfors IF",
+      "away": "IF Elfsborg",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-17 17:00"
+    },
+    {
+      "match_id": 6529862,
+      "season": 2026,
+      "date": "26 april 2026",
+      "referee": "GLENN NYBERG",
+      "home": "Djurgårdens IF",
+      "away": "Hammarby",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-26 12:00"
+    }
+  ]
+}

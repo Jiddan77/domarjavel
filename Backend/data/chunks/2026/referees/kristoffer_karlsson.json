@@ -1,0 +1,73 @@
+{
+  "matches": [
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "Mjällby AIF",
+      "match_id": 6529830,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "2–4",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-04T13:00:00.000Z",
+      "datetime": "2026-04-04 13:00",
+      "date": "4 april 2026",
+      "round": 1,
+      "score": "3–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "BK Häcken",
+      "away": "GAIS",
+      "match_id": 6529848,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "4–5",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-19T14:30:00.000Z",
+      "datetime": "2026-04-19 14:30",
+      "date": "19 april 2026",
+      "round": 3,
+      "score": "2–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Malmö FF",
+      "away": "IK Sirius",
+      "match_id": 6529856,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "2–2",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-04-23T17:00:00.000Z",
+      "datetime": "2026-04-23 17:00",
+      "date": "23 april 2026",
+      "round": 4,
+      "score": "2–3"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Djurgårdens IF",
+      "away": "IFK Göteborg",
+      "match_id": 6529869,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "yellow": "1–2",
+      "red": "0–0",
+      "penalty": "0–0",
+      "date_iso": "2026-05-04T17:00:00.000Z",
+      "datetime": "2026-05-04 17:00",
+      "date": "4 maj 2026",
+      "round": 6,
+      "score": "6–0"
+    }
+  ],
+  "total": 4
+}

@@ -1,0 +1,37 @@
+{
+  "matches": [
+    {
+      "match_id": 6529832,
+      "season": 2026,
+      "date": "5 april 2026",
+      "referee": "JOAKIM SARS",
+      "home": "Örgryte IS",
+      "away": "Malmö FF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2026-04-05 14:30"
+    },
+    {
+      "match_id": 6529838,
+      "season": 2026,
+      "date": "11 april 2026",
+      "referee": "JOAKIM SARS",
+      "home": "IFK Göteborg",
+      "away": "BK Häcken",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2026-04-11 13:00"
+    },
+    {
+      "match_id": 6529874,
+      "season": 2026,
+      "date": "2 maj 2026",
+      "referee": "JOAKIM SARS",
+      "home": "Degerfors IF",
+      "away": "BK Häcken",
+      "score": "1–1",
+      "penalty": "0–1",
+      "datetime": "2026-05-02 13:00"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "match_id": 6529843,
+      "season": 2026,
+      "date": "11 april 2026",
+      "referee": "TESS OLOFSSON",
+      "home": "Västerås SK",
+      "away": "IF Elfsborg",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2026-04-11 13:00"
+    },
+    {
+      "match_id": 6529855,
+      "season": 2026,
+      "date": "22 april 2026",
+      "referee": "TESS OLOFSSON",
+      "home": "Örgryte IS",
+      "away": "IF Brommapojkarna",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2026-04-22 17:00"
+    }
+  ]
+}

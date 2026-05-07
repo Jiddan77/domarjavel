@@ -1,0 +1,59 @@
+{
+  "matches": [
+    {
+      "match_id": 3645228,
+      "season": 2021,
+      "date": "27 oktober 2021",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Östersunds FK",
+      "away": "BK Häcken",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-10-27 12:00"
+    },
+    {
+      "match_id": 3645266,
+      "season": 2021,
+      "date": "4 december 2021",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Varbergs BOIS",
+      "away": "Mjällby AIF",
+      "score": "0–3",
+      "penalty": "0–1",
+      "datetime": "2021-12-04 12:00"
+    },
+    {
+      "match_id": 3645136,
+      "season": 2021,
+      "date": "8 augusti 2021",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IF Elfsborg",
+      "away": "Degerfors IF",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2021-08-08 12:00"
+    },
+    {
+      "match_id": 3645176,
+      "season": 2021,
+      "date": "19 september 2021",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Halmstads BK",
+      "away": "Kalmar FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-09-19 12:00"
+    },
+    {
+      "match_id": 3645155,
+      "season": 2021,
+      "date": "22 augusti 2021",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Örebro SK",
+      "away": "IK Sirius",
+      "score": "1–1",
+      "penalty": "0–1",
+      "datetime": "2021-08-22 12:00"
+    }
+  ]
+}

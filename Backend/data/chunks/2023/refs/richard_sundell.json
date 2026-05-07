@@ -1,0 +1,103 @@
+{
+  "matches": [
+    {
+      "match_id": 4098201,
+      "season": 2023,
+      "date": "22 juli 2023",
+      "referee": "RICHARD SUNDELL",
+      "home": "IFK Värnamo",
+      "away": "BK Häcken",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2023-07-22 12:00"
+    },
+    {
+      "match_id": 4098142,
+      "season": 2023,
+      "date": "21 maj 2023",
+      "referee": "RICHARD SUNDELL",
+      "home": "IF Brommapojkarna",
+      "away": "Varbergs BOIS",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2023-05-21 12:00"
+    },
+    {
+      "match_id": 4098300,
+      "season": 2023,
+      "date": "6 november 2023",
+      "referee": "RICHARD SUNDELL",
+      "home": "IFK Norrköping",
+      "away": "Varbergs BOIS",
+      "score": "4–3",
+      "penalty": "0–0",
+      "datetime": "2023-11-06 12:00"
+    },
+    {
+      "match_id": 4098155,
+      "season": 2023,
+      "date": "3 juni 2023",
+      "referee": "RICHARD SUNDELL",
+      "home": "IFK Göteborg",
+      "away": "Mjällby AIF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2023-06-03 12:00"
+    },
+    {
+      "match_id": 4098279,
+      "season": 2023,
+      "date": "8 oktober 2023",
+      "referee": "RICHARD SUNDELL",
+      "home": "IFK Värnamo",
+      "away": "IFK Norrköping",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2023-10-08 12:00"
+    },
+    {
+      "match_id": 4098247,
+      "season": 2023,
+      "date": "3 september 2023",
+      "referee": "RICHARD SUNDELL",
+      "home": "Kalmar FF",
+      "away": "Mjällby AIF",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2023-09-03 12:00"
+    },
+    {
+      "match_id": 4098182,
+      "season": 2023,
+      "date": "9 juli 2023",
+      "referee": "RICHARD SUNDELL",
+      "home": "Malmö FF",
+      "away": "Mjällby AIF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-07-09 12:00"
+    },
+    {
+      "match_id": 4098312,
+      "season": 2023,
+      "date": "12 november 2023",
+      "referee": "RICHARD SUNDELL",
+      "home": "Degerfors IF",
+      "away": "Mjällby AIF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2023-11-12 12:00"
+    },
+    {
+      "match_id": 4098232,
+      "season": 2023,
+      "date": "19 augusti 2023",
+      "referee": "RICHARD SUNDELL",
+      "home": "IF Brommapojkarna",
+      "away": "Halmstads BK",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2023-08-19 12:00"
+    }
+  ]
+}

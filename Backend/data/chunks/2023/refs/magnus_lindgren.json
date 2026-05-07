@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "match_id": 4098164,
+      "season": 2023,
+      "date": "10 juni 2023",
+      "referee": "MAGNUS LINDGREN",
+      "home": "Kalmar FF",
+      "away": "Degerfors IF",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2023-06-10 12:00"
+    },
+    {
+      "match_id": 4098180,
+      "season": 2023,
+      "date": "8 juli 2023",
+      "referee": "MAGNUS LINDGREN",
+      "home": "IFK Värnamo",
+      "away": "Djurgården",
+      "score": "1–2",
+      "penalty": "0–1",
+      "datetime": "2023-07-08 12:00"
+    }
+  ]
+}

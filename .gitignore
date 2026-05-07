@@ -126,7 +126,6 @@ temp/
 
 # Local data files (keep structure but ignore content)
 Backend/data/*.json
-Backend/data/chunks/
 Backend/backups/
 Backend/tmp/
 !Backend/data/.gitkeep

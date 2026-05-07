@@ -1,0 +1,81 @@
+{
+  "matches": [
+    {
+      "match_id": 4098103,
+      "season": 2023,
+      "date": "23 april 2023",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IK Sirius",
+      "away": "BK Häcken",
+      "score": "1–4",
+      "penalty": "0–1",
+      "datetime": "2023-04-23 12:00"
+    },
+    {
+      "match_id": 4098212,
+      "season": 2023,
+      "date": "25 maj 2023",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Degerfors IF",
+      "away": "Hammarby",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2023-05-25 12:00"
+    },
+    {
+      "match_id": 4098090,
+      "season": 2023,
+      "date": "10 april 2023",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Varbergs BOIS",
+      "away": "IF Elfsborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-04-10 12:00"
+    },
+    {
+      "match_id": 4098130,
+      "season": 2023,
+      "date": "9 maj 2023",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IFK Värnamo",
+      "away": "Varbergs BOIS",
+      "score": "3–1",
+      "penalty": "1–0",
+      "datetime": "2023-05-09 12:00"
+    },
+    {
+      "match_id": 4098094,
+      "season": 2023,
+      "date": "16 april 2023",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IFK Norrköping",
+      "away": "IFK Värnamo",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2023-04-16 12:00"
+    },
+    {
+      "match_id": 4098140,
+      "season": 2023,
+      "date": "21 maj 2023",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Djurgården",
+      "away": "Mjällby AIF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2023-05-21 12:00"
+    },
+    {
+      "match_id": 4098118,
+      "season": 2023,
+      "date": "3 maj 2023",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Mjällby AIF",
+      "away": "AIK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2023-05-03 12:00"
+    }
+  ]
+}

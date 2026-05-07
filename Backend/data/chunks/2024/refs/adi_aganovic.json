@@ -1,0 +1,147 @@
+{
+  "matches": [
+    {
+      "match_id": 4456823,
+      "season": 2024,
+      "date": "1 september 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "IF Brommapojkarna",
+      "away": "IF Elfsborg",
+      "score": "3–3",
+      "penalty": "0–1",
+      "datetime": "2024-09-01 12:00"
+    },
+    {
+      "match_id": 4456843,
+      "season": 2024,
+      "date": "19 september 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "IF Elfsborg",
+      "away": "IFK Norrköping",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2024-09-19 12:00"
+    },
+    {
+      "match_id": 4456884,
+      "season": 2024,
+      "date": "2 november 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "IF Elfsborg",
+      "away": "Västerås SK",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2024-11-02 12:00"
+    },
+    {
+      "match_id": 4456675,
+      "season": 2024,
+      "date": "14 april 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "IFK Norrköping",
+      "away": "GAIS",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2024-04-14 12:00"
+    },
+    {
+      "match_id": 4456803,
+      "season": 2024,
+      "date": "17 augusti 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "Malmö FF",
+      "away": "IFK Norrköping",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2024-08-17 12:00"
+    },
+    {
+      "match_id": 4456668,
+      "season": 2024,
+      "date": "8 april 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "Kalmar FF",
+      "away": "IK Sirius",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2024-04-08 12:00"
+    },
+    {
+      "match_id": 4456800,
+      "season": 2024,
+      "date": "11 augusti 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "IK Sirius",
+      "away": "Kalmar FF",
+      "score": "3–1",
+      "penalty": "0–1",
+      "datetime": "2024-08-11 12:00"
+    },
+    {
+      "match_id": 4456841,
+      "season": 2024,
+      "date": "25 september 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "Djurgården",
+      "away": "IF Brommapojkarna",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2024-09-25 12:00"
+    },
+    {
+      "match_id": 4456860,
+      "season": 2024,
+      "date": "6 oktober 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "Malmö FF",
+      "away": "IFK Värnamo",
+      "score": "1–1",
+      "penalty": "0–1",
+      "datetime": "2024-10-06 12:00"
+    },
+    {
+      "match_id": 4456878,
+      "season": 2024,
+      "date": "26 oktober 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "Mjällby AIF",
+      "away": "GAIS",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2024-10-26 12:00"
+    },
+    {
+      "match_id": 4456687,
+      "season": 2024,
+      "date": "21 april 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "Halmstads BK",
+      "away": "IF Brommapojkarna",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2024-04-21 12:00"
+    },
+    {
+      "match_id": 4456698,
+      "season": 2024,
+      "date": "29 april 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "Hammarby IF",
+      "away": "Västerås SK",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2024-04-29 12:00"
+    },
+    {
+      "match_id": 4456832,
+      "season": 2024,
+      "date": "14 september 2024",
+      "referee": "ADI AGANOVIC",
+      "home": "Västerås SK",
+      "away": "GAIS",
+      "score": "2–3",
+      "penalty": "1–0",
+      "datetime": "2024-09-14 12:00"
+    }
+  ]
+}

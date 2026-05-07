@@ -1,0 +1,202 @@
+{
+  "matches": [
+    {
+      "match_id": 3645105,
+      "season": 2021,
+      "date": "12 juli 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Kalmar FF",
+      "away": "BK Häcken",
+      "score": "2–3",
+      "penalty": "0–0",
+      "datetime": "2021-07-12 12:00"
+    },
+    {
+      "match_id": 3645076,
+      "season": 2021,
+      "date": "12 maj 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Varbergs BOIS",
+      "away": "Hammarby",
+      "score": "1–3",
+      "penalty": "0–0",
+      "datetime": "2021-05-12 12:00"
+    },
+    {
+      "match_id": 3645116,
+      "season": 2021,
+      "date": "18 juli 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Örebro SK",
+      "away": "Hammarby",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2021-07-18 12:00"
+    },
+    {
+      "match_id": 3645044,
+      "season": 2021,
+      "date": "18 april 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Östersunds FK",
+      "away": "Örebro SK",
+      "score": "5–0",
+      "penalty": "0–0",
+      "datetime": "2021-04-18 12:00"
+    },
+    {
+      "match_id": 3645092,
+      "season": 2021,
+      "date": "22 maj 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Östersunds FK",
+      "away": "IK Sirius",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2021-05-22 12:00"
+    },
+    {
+      "match_id": 3645268,
+      "season": 2021,
+      "date": "4 december 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Östersunds FK",
+      "away": "Degerfors IF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-12-04 12:00"
+    },
+    {
+      "match_id": 3645210,
+      "season": 2021,
+      "date": "16 oktober 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "IK Sirius",
+      "away": "Varbergs BOIS",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2021-10-16 12:00"
+    },
+    {
+      "match_id": 3645250,
+      "season": 2021,
+      "date": "21 november 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Varbergs BOIS",
+      "away": "AIK",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-11-21 12:00"
+    },
+    {
+      "match_id": 3645049,
+      "season": 2021,
+      "date": "25 april 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "IFK Norrköping",
+      "away": "Halmstads BK",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2021-04-25 12:00"
+    },
+    {
+      "match_id": 3645243,
+      "season": 2021,
+      "date": "7 november 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Kalmar FF",
+      "away": "IFK Norrköping",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2021-11-07 12:00"
+    },
+    {
+      "match_id": 3645215,
+      "season": 2021,
+      "date": "23 oktober 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Djurgården",
+      "away": "Kalmar FF",
+      "score": "3–2",
+      "penalty": "0–0",
+      "datetime": "2021-10-23 12:00"
+    },
+    {
+      "match_id": 3645233,
+      "season": 2021,
+      "date": "30 oktober 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "IK Sirius",
+      "away": "Malmö FF",
+      "score": "2–3",
+      "penalty": "0–1",
+      "datetime": "2021-10-30 12:00"
+    },
+    {
+      "match_id": 3645054,
+      "season": 2021,
+      "date": "3 maj 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Djurgården",
+      "away": "Malmö FF",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2021-05-03 12:00"
+    },
+    {
+      "match_id": 3645121,
+      "season": 2021,
+      "date": "24 juli 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Mjällby AIF",
+      "away": "Malmö FF",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2021-07-24 12:00"
+    },
+    {
+      "match_id": 3645202,
+      "season": 2021,
+      "date": "3 oktober 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Malmö FF",
+      "away": "Mjällby AIF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2021-10-03 12:00"
+    },
+    {
+      "match_id": 3645077,
+      "season": 2021,
+      "date": "18 maj 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Degerfors IF",
+      "away": "Örebro SK",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2021-05-18 12:00"
+    },
+    {
+      "match_id": 3645222,
+      "season": 2021,
+      "date": "28 oktober 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "Halmstads BK",
+      "away": "Örebro SK",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2021-10-28 12:00"
+    },
+    {
+      "match_id": 3645029,
+      "season": 2021,
+      "date": "12 april 2021",
+      "referee": "BOJAN PANDZIC",
+      "home": "AIK",
+      "away": "Degerfors IF",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2021-04-12 12:00"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "matches": [
+    {
+      "match_id": 6143188,
+      "season": 2025,
+      "date": "23 april 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "BK Häcken",
+      "away": "Degerfors IF",
+      "score": "3–4",
+      "penalty": "1–0",
+      "datetime": "2025-04-23 17:00"
+    },
+    {
+      "match_id": 6143194,
+      "season": 2025,
+      "date": "28 april 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IFK Göteborg",
+      "away": "GAIS",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2025-04-28 17:10"
+    },
+    {
+      "match_id": 6143218,
+      "season": 2025,
+      "date": "15 maj 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IF Elfsborg",
+      "away": "IF Brommapojkarna",
+      "score": "4–3",
+      "penalty": "0–0",
+      "datetime": "2025-05-15 17:00"
+    },
+    {
+      "match_id": 6143272,
+      "season": 2025,
+      "date": "19 juli 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Djurgårdens IF",
+      "away": "IF Elfsborg",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2025-07-19 13:00"
+    },
+    {
+      "match_id": 6143157,
+      "season": 2025,
+      "date": "30 mars 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IFK Norrköping",
+      "away": "Östers IF",
+      "score": "4–3",
+      "penalty": "0–0",
+      "datetime": "2025-03-30 14:30"
+    },
+    {
+      "match_id": 6143230,
+      "season": 2025,
+      "date": "19 maj 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IK Sirius",
+      "away": "IFK Norrköping",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2025-05-19 17:00"
+    },
+    {
+      "match_id": 6143168,
+      "season": 2025,
+      "date": "14 april 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "AIK",
+      "away": "Malmö FF",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2025-04-14 17:10"
+    },
+    {
+      "match_id": 6143215,
+      "season": 2025,
+      "date": "11 maj 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Degerfors IF",
+      "away": "Malmö FF",
+      "score": "1–4",
+      "penalty": "1–1",
+      "datetime": "2025-05-11 14:30"
+    },
+    {
+      "match_id": 6143253,
+      "season": 2025,
+      "date": "30 juni 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Mjällby AIF",
+      "away": "Malmö FF",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2025-06-30 17:00"
+    },
+    {
+      "match_id": 6143165,
+      "season": 2025,
+      "date": "6 april 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Mjällby AIF",
+      "away": "GAIS",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2025-04-06 14:30"
+    },
+    {
+      "match_id": 6143246,
+      "season": 2025,
+      "date": "1 juni 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Halmstads BK",
+      "away": "Djurgårdens IF",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2025-06-01 12:00"
+    },
+    {
+      "match_id": 6143287,
+      "season": 2025,
+      "date": "27 juli 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "IFK Värnamo",
+      "away": "Hammarby",
+      "score": "2–3",
+      "penalty": "0–1",
+      "datetime": "2025-07-27 14:30"
+    },
+    {
+      "match_id": 6143303,
+      "season": 2025,
+      "date": "10 augusti 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Degerfors IF",
+      "away": "BK Häcken",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2025-08-10 12:00"
+    },
+    {
+      "match_id": 6143308,
+      "season": 2025,
+      "date": "17 augusti 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "BK Häcken",
+      "away": "Östers IF",
+      "score": "0–2",
+      "penalty": "0–0",
+      "datetime": "2025-08-17 14:30"
+    },
+    {
+      "match_id": 6143327,
+      "season": 2025,
+      "date": "30 augusti 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Mjällby AIF",
+      "away": "Halmstads BK",
+      "score": "1–0",
+      "penalty": "1–0",
+      "datetime": "2025-08-30 15:30"
+    },
+    {
+      "match_id": 6143330,
+      "season": 2025,
+      "date": "14 september 2025",
+      "referee": "JOAKIM ÖSTLING",
+      "home": "Djurgårdens IF",
+      "away": "Hammarby",
+      "score": "3–3",
+      "penalty": "0–0",
+      "datetime": "2025-09-14 12:00"
+    }
+  ]
+}

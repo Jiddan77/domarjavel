@@ -1,0 +1,235 @@
+{
+  "matches": [
+    {
+      "match_id": 3544499,
+      "season": 2020,
+      "date": "23 juli 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "IFK Göteborg",
+      "away": "Falkenberg",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2020-07-23 12:00"
+    },
+    {
+      "match_id": 3544559,
+      "season": 2020,
+      "date": "23 augusti 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Malmö FF",
+      "away": "Falkenberg",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2020-08-23 12:00"
+    },
+    {
+      "match_id": 3544516,
+      "season": 2020,
+      "date": "1 augusti 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Djurgården",
+      "away": "BK Häcken",
+      "score": "3–1",
+      "penalty": "0–0",
+      "datetime": "2020-08-01 12:00"
+    },
+    {
+      "match_id": 3544626,
+      "season": 2020,
+      "date": "1 november 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Hammarby",
+      "away": "BK Häcken",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-11-01 12:00"
+    },
+    {
+      "match_id": 3508503,
+      "season": 2020,
+      "date": "14 juni 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Hammarby",
+      "away": "Östersunds FK",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2020-06-14 12:00"
+    },
+    {
+      "match_id": 3544539,
+      "season": 2020,
+      "date": "13 augusti 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "IFK Norrköping",
+      "away": "Hammarby",
+      "score": "1–2",
+      "penalty": "1–0",
+      "datetime": "2020-08-13 12:00"
+    },
+    {
+      "match_id": 3544511,
+      "season": 2020,
+      "date": "27 juli 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Östersunds FK",
+      "away": "Helsingborg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2020-07-27 12:00"
+    },
+    {
+      "match_id": 3544599,
+      "season": 2020,
+      "date": "27 september 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Helsingborg",
+      "away": "Östersunds FK",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2020-09-27 12:00"
+    },
+    {
+      "match_id": 3536600,
+      "season": 2020,
+      "date": "6 juli 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Djurgården",
+      "away": "Helsingborg",
+      "score": "2–2",
+      "penalty": "1–0",
+      "datetime": "2020-07-06 12:00"
+    },
+    {
+      "match_id": 3544551,
+      "season": 2020,
+      "date": "17 augusti 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Helsingborg",
+      "away": "IK Sirius",
+      "score": "1–2",
+      "penalty": "0–1",
+      "datetime": "2020-08-17 12:00"
+    },
+    {
+      "match_id": 3544621,
+      "season": 2020,
+      "date": "25 oktober 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Örebro SK",
+      "away": "Helsingborg",
+      "score": "3–2",
+      "penalty": "1–0",
+      "datetime": "2020-10-25 12:00"
+    },
+    {
+      "match_id": 3508517,
+      "season": 2020,
+      "date": "18 juni 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Varbergs BOIS",
+      "away": "IFK Göteborg",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2020-06-18 12:00"
+    },
+    {
+      "match_id": 3544659,
+      "season": 2020,
+      "date": "6 december 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "IFK Göteborg",
+      "away": "IK Sirius",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2020-12-06 12:00"
+    },
+    {
+      "match_id": 3536581,
+      "season": 2020,
+      "date": "28 juni 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "IF Elfsborg",
+      "away": "Örebro SK",
+      "score": "1–1",
+      "penalty": "1–0",
+      "datetime": "2020-06-28 12:00"
+    },
+    {
+      "match_id": 3544525,
+      "season": 2020,
+      "date": "6 augusti 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "AIK",
+      "away": "IF Elfsborg",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2020-08-06 12:00"
+    },
+    {
+      "match_id": 3508520,
+      "season": 2020,
+      "date": "21 juni 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "IFK Norrköping",
+      "away": "Djurgården",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2020-06-21 12:00"
+    },
+    {
+      "match_id": 3544479,
+      "season": 2020,
+      "date": "13 juli 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Malmö FF",
+      "away": "IFK Norrköping",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-07-13 12:00"
+    },
+    {
+      "match_id": 3544605,
+      "season": 2020,
+      "date": "4 oktober 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Kalmar FF",
+      "away": "Malmö FF",
+      "score": "0–4",
+      "penalty": "0–0",
+      "datetime": "2020-10-04 12:00"
+    },
+    {
+      "match_id": 3544651,
+      "season": 2020,
+      "date": "30 november 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "AIK",
+      "away": "Kalmar FF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2020-11-30 12:00"
+    },
+    {
+      "match_id": 3544486,
+      "season": 2020,
+      "date": "15 juli 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "AIK",
+      "away": "IK Sirius",
+      "score": "1–0",
+      "penalty": "0–0",
+      "datetime": "2020-07-15 12:00"
+    },
+    {
+      "match_id": 3544493,
+      "season": 2020,
+      "date": "20 juli 2020",
+      "referee": "BOJAN PANDZIC",
+      "home": "Örebro SK",
+      "away": "Mjällby AIF",
+      "score": "3–1",
+      "penalty": "0–1",
+      "datetime": "2020-07-20 12:00"
+    }
+  ]
+}

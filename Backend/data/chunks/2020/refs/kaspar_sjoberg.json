@@ -1,0 +1,279 @@
+{
+  "matches": [
+    {
+      "match_id": 3508502,
+      "season": 2020,
+      "date": "15 juni 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Falkenberg",
+      "away": "BK Häcken",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-06-15 12:00"
+    },
+    {
+      "match_id": 3536601,
+      "season": 2020,
+      "date": "5 juli 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "AIK",
+      "away": "Falkenberg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-07-05 12:00"
+    },
+    {
+      "match_id": 3544492,
+      "season": 2020,
+      "date": "19 juli 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Falkenberg",
+      "away": "Helsingborg",
+      "score": "2–2",
+      "penalty": "0–0",
+      "datetime": "2020-07-19 12:00"
+    },
+    {
+      "match_id": 3544574,
+      "season": 2020,
+      "date": "17 september 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Falkenberg",
+      "away": "Varbergs BOIS",
+      "score": "2–0",
+      "penalty": "0–0",
+      "datetime": "2020-09-17 12:00"
+    },
+    {
+      "match_id": 3544620,
+      "season": 2020,
+      "date": "25 oktober 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Kalmar FF",
+      "away": "Falkenberg",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2020-10-25 12:00"
+    },
+    {
+      "match_id": 3544546,
+      "season": 2020,
+      "date": "17 augusti 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "BK Häcken",
+      "away": "Varbergs BOIS",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2020-08-17 12:00"
+    },
+    {
+      "match_id": 3544506,
+      "season": 2020,
+      "date": "27 juli 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Hammarby",
+      "away": "Örebro SK",
+      "score": "3–0",
+      "penalty": "0–0",
+      "datetime": "2020-07-27 12:00"
+    },
+    {
+      "match_id": 3544553,
+      "season": 2020,
+      "date": "22 augusti 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IK Sirius",
+      "away": "Hammarby",
+      "score": "3–1",
+      "penalty": "2–0",
+      "datetime": "2020-08-22 12:00"
+    },
+    {
+      "match_id": 3508523,
+      "season": 2020,
+      "date": "21 juni 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Örebro SK",
+      "away": "Östersunds FK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2020-06-21 12:00"
+    },
+    {
+      "match_id": 3544542,
+      "season": 2020,
+      "date": "13 augusti 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "AIK",
+      "away": "Östersunds FK",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2020-08-13 12:00"
+    },
+    {
+      "match_id": 3544607,
+      "season": 2020,
+      "date": "4 oktober 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Östersunds FK",
+      "away": "AIK",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2020-10-04 12:00"
+    },
+    {
+      "match_id": 3544632,
+      "season": 2020,
+      "date": "1 november 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Mjällby AIF",
+      "away": "Östersunds FK",
+      "score": "3–0",
+      "penalty": "1–0",
+      "datetime": "2020-11-01 12:00"
+    },
+    {
+      "match_id": 3508513,
+      "season": 2020,
+      "date": "18 juni 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Kalmar FF",
+      "away": "Helsingborg",
+      "score": "4–0",
+      "penalty": "0–0",
+      "datetime": "2020-06-18 12:00"
+    },
+    {
+      "match_id": 3536594,
+      "season": 2020,
+      "date": "2 juli 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Helsingborg",
+      "away": "Mjällby AIF",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2020-07-02 12:00"
+    },
+    {
+      "match_id": 3544658,
+      "season": 2020,
+      "date": "6 december 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IFK Norrköping",
+      "away": "Helsingborg",
+      "score": "3–4",
+      "penalty": "0–0",
+      "datetime": "2020-12-06 12:00"
+    },
+    {
+      "match_id": 3544529,
+      "season": 2020,
+      "date": "10 augusti 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IK Sirius",
+      "away": "Varbergs BOIS",
+      "score": "3–3",
+      "penalty": "0–0",
+      "datetime": "2020-08-10 12:00"
+    },
+    {
+      "match_id": 3544474,
+      "season": 2020,
+      "date": "12 juli 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IFK Göteborg",
+      "away": "Djurgården",
+      "score": "1–2",
+      "penalty": "1–1",
+      "datetime": "2020-07-12 12:00"
+    },
+    {
+      "match_id": 3544588,
+      "season": 2020,
+      "date": "20 september 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IFK Göteborg",
+      "away": "Kalmar FF",
+      "score": "1–2",
+      "penalty": "0–0",
+      "datetime": "2020-09-20 12:00"
+    },
+    {
+      "match_id": 3544504,
+      "season": 2020,
+      "date": "23 juli 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Mjällby AIF",
+      "away": "IF Elfsborg",
+      "score": "0–5",
+      "penalty": "0–0",
+      "datetime": "2020-07-23 12:00"
+    },
+    {
+      "match_id": 3544579,
+      "season": 2020,
+      "date": "12 september 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Djurgården",
+      "away": "IF Elfsborg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-09-12 12:00"
+    },
+    {
+      "match_id": 3544649,
+      "season": 2020,
+      "date": "29 november 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "IK Sirius",
+      "away": "IF Elfsborg",
+      "score": "1–1",
+      "penalty": "0–0",
+      "datetime": "2020-11-29 12:00"
+    },
+    {
+      "match_id": 3536583,
+      "season": 2020,
+      "date": "28 juni 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Djurgården",
+      "away": "Kalmar FF",
+      "score": "5–0",
+      "penalty": "1–0",
+      "datetime": "2020-06-28 12:00"
+    },
+    {
+      "match_id": 3544517,
+      "season": 2020,
+      "date": "2 augusti 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Kalmar FF",
+      "away": "AIK",
+      "score": "0–0",
+      "penalty": "0–0",
+      "datetime": "2020-08-02 12:00"
+    },
+    {
+      "match_id": 3544598,
+      "season": 2020,
+      "date": "26 september 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Örebro SK",
+      "away": "IK Sirius",
+      "score": "2–1",
+      "penalty": "0–0",
+      "datetime": "2020-09-26 12:00"
+    },
+    {
+      "match_id": 3544634,
+      "season": 2020,
+      "date": "8 november 2020",
+      "referee": "KASPAR SJÖBERG",
+      "home": "Djurgården",
+      "away": "AIK",
+      "score": "0–1",
+      "penalty": "0–0",
+      "datetime": "2020-11-08 12:00"
+    }
+  ]
+}
