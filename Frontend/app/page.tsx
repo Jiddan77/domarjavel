@@ -5,7 +5,7 @@ import { DesignData, Filters, Tweaks } from '@/components/design/types';
 import { Masthead, HeroLede, FiltersBar } from '@/components/design/layout';
 import { LeagueStory, LeaderboardSection } from '@/components/design/sections1';
 import { BiasLab, MatchLedger, Footer } from '@/components/design/sections2';
-import { RankingPage, ComparePage } from '@/components/design/pages';
+import { RankingPage, ComparePage, TeamBiasPage } from '@/components/design/pages';
 import { SpotlightPage } from '@/components/design/spotlight';
 import { useTweaks, TweaksPanel, TweakSection, TweakRadio, TweakSelect, TweakToggle } from '@/components/design/tweaks-panel';
 
@@ -42,7 +42,7 @@ function applyTheme(t: Tweaks) {
   root.style.setProperty('--font-display', fontMap[t.displayFont] || fontMap.source);
 }
 
-type Page = 'dashboard' | 'ranking' | 'compare' | 'spotlight' | 'matches';
+type Page = 'dashboard' | 'ranking' | 'compare' | 'bias' | 'spotlight' | 'matches';
 
 function App({ data }: { data: DesignData }) {
   const [page, setPage] = useState<Page>('dashboard');
@@ -76,6 +76,8 @@ function App({ data }: { data: DesignData }) {
       {page === 'ranking' && <RankingPage data={data} onSelectRef={handleSelectRef} />}
 
       {page === 'compare' && <ComparePage data={data} onSelectRef={handleSelectRef} />}
+
+      {page === 'bias' && <TeamBiasPage data={data} onSelectRef={handleSelectRef} />}
 
       {page === 'spotlight' && (
         <SpotlightPage

@@ -43,10 +43,9 @@ export function SpotlightPage({ data, refereeName, onSelectRef, onBack }: Spotli
     return [Number(a) || 0, Number(b) || 0];
   };
 
-  let h = 0;
-  for (const c of r.name) h = (h * 31 + c.charCodeAt(0)) | 0;
-  const audienceScore = 30 + Math.abs(h % 60);
-  const audienceVotes = 50 + Math.abs(h % 800);
+  const totalYellow = Math.round(r.avgYellow * r.matches);
+  const totalRed = Math.round(r.avgRed * r.matches);
+  const totalPen = Math.round(r.avgPen * r.matches);
 
   return (
     <div style={{ background: 'var(--paper)', minHeight: '100vh' }}>
@@ -72,11 +71,20 @@ export function SpotlightPage({ data, refereeName, onSelectRef, onBack }: Spotli
           </div>
 
           <div style={{ aspectRatio: '3/4', border: '1px solid var(--ink)', background: 'var(--paper)', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden' }}>
-            <div className="placeholder-stripes" style={{ flex: 1 }}>
-              {'{ porträttfoto }'}
+            <div style={{ flex: 1, background: 'var(--ink)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <span style={{
+                fontFamily: 'var(--font-display)',
+                fontSize: 'clamp(48px, 8vw, 96px)',
+                fontWeight: 700,
+                color: 'var(--terracotta)',
+                letterSpacing: '-0.04em',
+                userSelect: 'none',
+              }}>
+                {r.name.split(' ').map((w: string) => w[0]).join('')}
+              </span>
             </div>
             <div style={{ padding: '1rem', borderTop: '1px solid var(--ink)' }}>
-              <div className="label-mono">Domare № {String(refs.findIndex(x => x.name === r.name) + 1).padStart(2, '0')}</div>
+              <div className="label-mono" style={{ color: 'var(--ink-faded)' }}>Allsvenskan · Domare</div>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 18, fontWeight: 600, marginTop: 4 }}>{r.name}</div>
               <div className="label-mono" style={{ marginTop: 4, color: 'var(--ink-faded)' }}>
                 {r.matches} matcher · {r.seasons[0]}–{r.seasons[r.seasons.length - 1]}
@@ -151,8 +159,8 @@ export function SpotlightPage({ data, refereeName, onSelectRef, onBack }: Spotli
                 <LineChart
                   height={220}
                   series={[
-                    { color: 'var(--terracotta)', thick: true, points: trend.filter(t => t.season < 2026).map(t => ({ x: t.season, y: t.avgCards })) },
-                    { color: 'var(--ink-quiet)', dash: '4,3', points: data.leagueTrends.filter(t => t.season < 2026).map(t => ({ x: t.season, y: t.avgYellow + t.avgRed })) },
+                    { color: 'var(--terracotta)', thick: true, points: trend.map(t => ({ x: t.season, y: t.avgCards })) },
+                    { color: 'var(--ink-quiet)', dash: '4,3', points: data.leagueTrends.map(t => ({ x: t.season, y: t.avgYellow + t.avgRed })) },
                   ]}
                 />
               </div>
@@ -223,18 +231,21 @@ export function SpotlightPage({ data, refereeName, onSelectRef, onBack }: Spotli
             </div>
 
             <div style={{ background: 'var(--paper-bright)', border: '1px solid var(--rule)', padding: '1.5rem' }}>
-              <div className="eyebrow" style={{ color: 'var(--terracotta)' }}>Folkets dom</div>
-              <div className="numeral" style={{ fontSize: 72, fontWeight: 600, lineHeight: 0.9, marginTop: 12, letterSpacing: '-0.04em' }}>
-                {audienceScore}
-                <span style={{ fontSize: 24, color: 'var(--ink-faded)' }}>/100</span>
-              </div>
-              <div className="label-mono" style={{ marginTop: 6 }}>Baserat på {audienceVotes} röster</div>
-              <div style={{ height: 8, background: 'var(--paper-deep)', marginTop: 16 }}>
-                <div style={{ height: '100%', width: audienceScore + '%', background: audienceScore > 60 ? 'var(--forest)' : audienceScore > 40 ? 'var(--gold)' : 'var(--terracotta)' }} />
-              </div>
-              <div style={{ display: 'flex', gap: 8, marginTop: 16 }}>
-                <button className="btn btn-ghost" style={{ flex: 1 }}>👍 Bra</button>
-                <button className="btn btn-ghost" style={{ flex: 1 }}>👎 Dålig</button>
+              <div className="eyebrow" style={{ color: 'var(--terracotta)' }}>Karriärtotaler</div>
+              <hr style={{ border: 0, borderTop: '1px solid var(--rule)', margin: '0.75rem 0' }} />
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem', marginTop: 4 }}>
+                <div>
+                  <div className="numeral" style={{ fontSize: 32, fontWeight: 600, color: 'var(--yellow-card)', lineHeight: 1 }}>{totalYellow}</div>
+                  <div className="label-mono" style={{ marginTop: 4, color: 'var(--ink-faded)' }}>Gula kort</div>
+                </div>
+                <div>
+                  <div className="numeral" style={{ fontSize: 32, fontWeight: 600, color: 'var(--red-card)', lineHeight: 1 }}>{totalRed}</div>
+                  <div className="label-mono" style={{ marginTop: 4, color: 'var(--ink-faded)' }}>Röda kort</div>
+                </div>
+                <div>
+                  <div className="numeral" style={{ fontSize: 32, fontWeight: 600, color: 'var(--terracotta)', lineHeight: 1 }}>{totalPen}</div>
+                  <div className="label-mono" style={{ marginTop: 4, color: 'var(--ink-faded)' }}>Straffar</div>
+                </div>
               </div>
             </div>
 

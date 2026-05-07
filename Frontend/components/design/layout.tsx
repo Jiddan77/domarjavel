@@ -56,6 +56,7 @@ export function Masthead({ data, onNav, page }: MastheadProps) {
           { id: 'dashboard', label: 'Översikt' },
           { id: 'ranking', label: 'Rankning' },
           { id: 'compare', label: 'Jämför' },
+          { id: 'bias', label: 'Lagbias' },
           { id: 'spotlight', label: 'Domarporträtt' },
           { id: 'matches', label: 'Matcher' },
         ].map(n => (

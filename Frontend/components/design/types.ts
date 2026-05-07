@@ -1,3 +1,10 @@
+export interface TeamBiasEntry {
+  wins: number;
+  matches: number;
+  winRate: number;
+  delta: number;
+}
+
 export interface Referee {
   name: string;
   matches: number;
@@ -10,6 +17,7 @@ export interface Referee {
   drawRate: number;
   homeBiasScore: number;
   seasons: number[];
+  teamBias: Record<string, TeamBiasEntry>;
 }
 
 export interface LeagueTrend {

@@ -63,9 +63,11 @@ function buildData() {
     draws: number;
     seasonsSet: Set<number>;
     seasonStats: Map<number, { matches: number; yellowTotal: number }>;
+    teamStats: Map<string, { wins: number; matches: number }>;
   };
 
   const refMap = new Map<string, RefData>();
+  const teamOverall = new Map<string, { wins: number; matches: number }>();
 
   matches.forEach(m => {
     const ref = m.referee!;
@@ -81,6 +83,7 @@ function buildData() {
         draws: 0,
         seasonsSet: new Set(),
         seasonStats: new Map(),
+        teamStats: new Map(),
       });
     }
     const r = refMap.get(ref)!;
@@ -93,9 +96,23 @@ function buildData() {
     r.penTotal += ph + pa;
 
     const [sh, sa] = parsePair(m.score);
-    if (sh > sa) r.homeWins++;
-    else if (sa > sh) r.awayWins++;
+    const homeWon = sh > sa;
+    const awayWon = sa > sh;
+    if (homeWon) r.homeWins++;
+    else if (awayWon) r.awayWins++;
     else r.draws++;
+
+    for (const [team, won] of [[m.home, homeWon], [m.away, awayWon]] as [string, boolean][]) {
+      const ts = r.teamStats.get(team) || { wins: 0, matches: 0 };
+      ts.matches++;
+      if (won) ts.wins++;
+      r.teamStats.set(team, ts);
+
+      const tot = teamOverall.get(team) || { wins: 0, matches: 0 };
+      tot.matches++;
+      if (won) tot.wins++;
+      teamOverall.set(team, tot);
+    }
 
     r.seasonsSet.add(m.season);
 
@@ -113,7 +130,18 @@ function buildData() {
     const homeWinRate = r.homeWins / n;
     const awayWinRate = r.awayWins / n;
     const drawRate = r.draws / n;
-    const homeBiasScore = homeWinRate - 0.435; // vs avg ~43.5% home win rate
+    const homeBiasScore = homeWinRate - 0.435;
+
+    const teamBias: Record<string, { wins: number; matches: number; winRate: number; delta: number }> = {};
+    r.teamStats.forEach((ts, team) => {
+      if (ts.matches < 3) return;
+      const tot = teamOverall.get(team);
+      if (!tot || tot.matches === 0) return;
+      const winRate = ts.wins / ts.matches;
+      const overallRate = tot.wins / tot.matches;
+      teamBias[team] = { wins: ts.wins, matches: ts.matches, winRate, delta: winRate - overallRate };
+    });
+
     return {
       name: r.name,
       matches: r.matchCount,
@@ -126,6 +154,7 @@ function buildData() {
       drawRate,
       homeBiasScore,
       seasons: Array.from(r.seasonsSet).sort(),
+      teamBias,
     };
   });
 

@@ -3,12 +3,6 @@
 import { useMemo, useState } from 'react';
 import { DesignData, Referee } from './types';
 
-function audienceFor(name: string) {
-  let h = 0;
-  for (const c of name) h = (h * 31 + c.charCodeAt(0)) | 0;
-  return { score: 30 + Math.abs(h % 60), votes: 50 + Math.abs(h % 800) };
-}
-
 function PodiumCard({ referee: r, rank, value, unit, accent, onClick, height, winner }: {
   referee: Referee; rank: number; value: string; unit: string; accent: string;
   onClick: () => void; height: number; winner?: boolean;
@@ -51,7 +45,7 @@ function PodiumCard({ referee: r, rank, value, unit, accent, onClick, height, wi
   );
 }
 
-type Criterion = 'yellow' | 'red' | 'pen' | 'bias' | 'audience';
+type Criterion = 'yellow' | 'red' | 'pen' | 'bias';
 
 interface RankingPageProps { data: DesignData; onSelectRef: (name: string) => void; }
 export function RankingPage({ data, onSelectRef }: RankingPageProps) {
@@ -59,14 +53,12 @@ export function RankingPage({ data, onSelectRef }: RankingPageProps) {
   const [order, setOrder] = useState<'asc' | 'desc'>('desc');
 
   const refs = data.referees.filter(r => r.name && r.matches >= 8);
-  const audMap = Object.fromEntries(refs.map(r => [r.name, audienceFor(r.name)]));
 
   const config: Record<Criterion, { label: string; value: (r: Referee) => number; format: (v: number) => string; unit: string; accent: string }> = {
     yellow: { label: 'Gula kort', value: r => r.avgYellow, format: v => v.toFixed(2), unit: '/match', accent: 'var(--yellow-card)' },
     red: { label: 'Röda kort', value: r => r.avgRed, format: v => v.toFixed(3), unit: '/match', accent: 'var(--red-card)' },
     pen: { label: 'Straffar', value: r => r.avgPen, format: v => v.toFixed(2), unit: '/match', accent: 'var(--terracotta)' },
     bias: { label: 'Hemmafördel', value: r => r.homeWinRate, format: v => (v * 100).toFixed(1) + '%', unit: 'hemmavinster', accent: 'var(--forest)' },
-    audience: { label: 'Publikens omdöme', value: r => audMap[r.name]?.score || 0, format: v => v.toFixed(0), unit: '/100', accent: 'var(--ink)' },
   };
   const c = config[criterion];
 
@@ -159,7 +151,7 @@ export function RankingPage({ data, onSelectRef }: RankingPageProps) {
                 <div>
                   <div style={{ fontFamily: 'var(--font-display)', fontSize: 18, fontWeight: 600 }}>{r.name}</div>
                   <div className="label-mono" style={{ marginTop: 2 }}>
-                    {r.seasons[0]}–{r.seasons[r.seasons.length - 1]} · {audMap[r.name]?.votes} röster
+                    {r.seasons[0]}–{r.seasons[r.seasons.length - 1]}
                   </div>
                 </div>
                 <div className="mono-num" style={{ fontSize: 16, fontWeight: 500 }}>{r.matches}</div>
@@ -178,6 +170,184 @@ export function RankingPage({ data, onSelectRef }: RankingPageProps) {
               </div>
             );
           })}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+type BiasMode = 'referee' | 'team';
+
+interface TeamBiasPageProps { data: DesignData; onSelectRef: (name: string) => void; }
+export function TeamBiasPage({ data, onSelectRef }: TeamBiasPageProps) {
+  const refs = data.referees.filter(r => r.name && r.matches >= 8);
+  const [mode, setMode] = useState<BiasMode>('referee');
+  const [selectedRef, setSelectedRef] = useState(refs[0]?.name || '');
+  const [selectedTeam, setSelectedTeam] = useState(data.teams[0] || '');
+
+  const refData = refs.find(r => r.name === selectedRef);
+
+  const teamEntries = useMemo(() => {
+    if (!refData?.teamBias) return [];
+    return Object.entries(refData.teamBias)
+      .map(([team, entry]) => ({ team, ...entry }))
+      .sort((a, b) => b.delta - a.delta);
+  }, [refData]);
+
+  const teamRefEntries = useMemo(() => {
+    return refs
+      .filter(r => r.teamBias?.[selectedTeam])
+      .map(r => ({ ref: r, entry: r.teamBias[selectedTeam] }))
+      .sort((a, b) => b.entry.delta - a.entry.delta);
+  }, [refs, selectedTeam]);
+
+  const maxAbsDelta = useMemo(() => {
+    const entries = mode === 'referee' ? teamEntries.map(e => Math.abs(e.delta)) : teamRefEntries.map(e => Math.abs(e.entry.delta));
+    return Math.max(...entries, 0.01);
+  }, [mode, teamEntries, teamRefEntries]);
+
+  function DeltaBar({ delta }: { delta: number }) {
+    const pct = Math.abs(delta) / maxAbsDelta * 50;
+    const positive = delta >= 0;
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+        <div style={{ width: 100, height: 16, background: 'var(--paper-deep)', position: 'relative', flexShrink: 0 }}>
+          <div style={{
+            position: 'absolute',
+            top: 0, bottom: 0,
+            left: positive ? '50%' : `calc(50% - ${pct}%)`,
+            width: pct + '%',
+            background: positive ? 'var(--forest)' : 'var(--terracotta)',
+            opacity: 0.85,
+          }} />
+          <div style={{ position: 'absolute', top: 0, bottom: 0, left: '50%', width: 1, background: 'var(--rule)' }} />
+        </div>
+        <span className="mono-num" style={{ fontSize: 14, color: positive ? 'var(--forest)' : 'var(--terracotta)', minWidth: 56 }}>
+          {positive ? '+' : ''}{(delta * 100).toFixed(1)}%
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <div style={{ background: 'var(--paper)', minHeight: '100vh' }}>
+      <section style={{ padding: '3rem 2rem 2rem', borderBottom: '2px solid var(--ink)', textAlign: 'center' }}>
+        <div className="eyebrow" style={{ color: 'var(--terracotta)' }}>Lagfavoritism</div>
+        <h1 className="display" style={{ fontSize: 'clamp(48px, 7vw, 88px)', margin: '0.5rem 0', lineHeight: 0.95, letterSpacing: '-0.035em' }}>
+          Vilka lag <em>gynnas</em>?
+        </h1>
+        <p style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 18, color: 'var(--ink-faded)', maxWidth: 720, margin: '1rem auto 0' }}>
+          Delta = lagets vinstfrekvens med domaren minus lagets totala vinstfrekvens. Kräver minst 3 matcher.
+        </p>
+      </section>
+
+      <section style={{ padding: '1.5rem 2rem', borderBottom: '1px solid var(--ink)', background: 'var(--paper-bright)', position: 'sticky', top: 0, zIndex: 20 }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: 6 }}>
+            <button className="chip" data-active={mode === 'referee'} onClick={() => setMode('referee')}>Välj domare</button>
+            <button className="chip" data-active={mode === 'team'} onClick={() => setMode('team')}>Välj lag</button>
+          </div>
+          <div style={{ width: 1, alignSelf: 'stretch', background: 'var(--rule)' }} />
+          {mode === 'referee' ? (
+            <select
+              value={selectedRef}
+              onChange={e => setSelectedRef(e.target.value)}
+              style={{ border: '1px solid var(--rule)', background: 'var(--paper)', padding: '0.4em 0.75em', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--ink)', letterSpacing: '0.06em', textTransform: 'uppercase', minWidth: 220 }}
+            >
+              {refs.map(r => <option key={r.name} value={r.name}>{r.name}</option>)}
+            </select>
+          ) : (
+            <select
+              value={selectedTeam}
+              onChange={e => setSelectedTeam(e.target.value)}
+              style={{ border: '1px solid var(--rule)', background: 'var(--paper)', padding: '0.4em 0.75em', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--ink)', letterSpacing: '0.06em', textTransform: 'uppercase', minWidth: 220 }}
+            >
+              {data.teams.map(t => <option key={t} value={t}>{t}</option>)}
+            </select>
+          )}
+          {mode === 'referee' && refData && (
+            <span className="label-mono" style={{ color: 'var(--ink-faded)' }}>
+              {refData.matches} matcher · {teamEntries.length} lag med tillräcklig data
+            </span>
+          )}
+          {mode === 'team' && (
+            <span className="label-mono" style={{ color: 'var(--ink-faded)' }}>
+              {teamRefEntries.length} domare med tillräcklig data
+            </span>
+          )}
+        </div>
+      </section>
+
+      <section style={{ padding: '2.5rem 2rem' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          {mode === 'referee' && (
+            <>
+              {teamEntries.length === 0 ? (
+                <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--ink-faded)', fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 20 }}>
+                  Ingen lagdata tillgänglig för vald domare.
+                </div>
+              ) : (
+                <>
+                  <div style={{ display: 'grid', gridTemplateColumns: '2fr 80px 90px 90px 1fr', gap: '1rem', padding: '0.6rem 0', borderBottom: '1px solid var(--ink)' }}>
+                    {['Lag', 'Matcher', 'Vinster', 'Vinstfrekvens', 'Delta vs. snittet'].map(h => (
+                      <div key={h} className="label-mono" style={{ fontSize: 10 }}>{h}</div>
+                    ))}
+                  </div>
+                  {teamEntries.map((e, i) => (
+                    <div key={e.team} style={{
+                      display: 'grid', gridTemplateColumns: '2fr 80px 90px 90px 1fr', gap: '1rem',
+                      padding: '1rem 0', borderTop: '1px solid var(--rule-soft)', alignItems: 'center',
+                    }}>
+                      <div>
+                        <div style={{ fontFamily: 'var(--font-display)', fontSize: 18, fontWeight: 600 }}>{e.team}</div>
+                        {i === 0 && <div className="label-mono" style={{ color: 'var(--forest)', marginTop: 2 }}>Mest gynnat lag ↑</div>}
+                        {i === teamEntries.length - 1 && <div className="label-mono" style={{ color: 'var(--terracotta)', marginTop: 2 }}>Minst gynnat lag ↓</div>}
+                      </div>
+                      <div className="mono-num" style={{ fontSize: 16 }}>{e.matches}</div>
+                      <div className="mono-num" style={{ fontSize: 16 }}>{e.wins}</div>
+                      <div className="mono-num" style={{ fontSize: 16 }}>{(e.winRate * 100).toFixed(1)}%</div>
+                      <DeltaBar delta={e.delta} />
+                    </div>
+                  ))}
+                </>
+              )}
+            </>
+          )}
+
+          {mode === 'team' && (
+            <>
+              {teamRefEntries.length === 0 ? (
+                <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--ink-faded)', fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 20 }}>
+                  Ingen domardata tillgänglig för valt lag.
+                </div>
+              ) : (
+                <>
+                  <div style={{ display: 'grid', gridTemplateColumns: '2fr 80px 90px 90px 1fr 100px', gap: '1rem', padding: '0.6rem 0', borderBottom: '1px solid var(--ink)' }}>
+                    {['Domare', 'Matcher', 'Vinster', 'Vinstfrekvens', 'Delta vs. snittet', ''].map(h => (
+                      <div key={h} className="label-mono" style={{ fontSize: 10 }}>{h}</div>
+                    ))}
+                  </div>
+                  {teamRefEntries.map((e, i) => (
+                    <div key={e.ref.name} style={{
+                      display: 'grid', gridTemplateColumns: '2fr 80px 90px 90px 1fr 100px', gap: '1rem',
+                      padding: '1rem 0', borderTop: '1px solid var(--rule-soft)', alignItems: 'center',
+                    }}>
+                      <div>
+                        <div style={{ fontFamily: 'var(--font-display)', fontSize: 18, fontWeight: 600 }}>{e.ref.name}</div>
+                        {i === 0 && <div className="label-mono" style={{ color: 'var(--forest)', marginTop: 2 }}>Bästa domare för laget ↑</div>}
+                        {i === teamRefEntries.length - 1 && <div className="label-mono" style={{ color: 'var(--terracotta)', marginTop: 2 }}>Sämsta domare för laget ↓</div>}
+                      </div>
+                      <div className="mono-num" style={{ fontSize: 16 }}>{e.entry.matches}</div>
+                      <div className="mono-num" style={{ fontSize: 16 }}>{e.entry.wins}</div>
+                      <div className="mono-num" style={{ fontSize: 16 }}>{(e.entry.winRate * 100).toFixed(1)}%</div>
+                      <DeltaBar delta={e.entry.delta} />
+                      <button onClick={() => onSelectRef(e.ref.name)} className="chip" style={{ fontSize: 11 }}>Porträtt →</button>
+                    </div>
+                  ))}
+                </>
+              )}
+            </>
+          )}
         </div>
       </section>
     </div>
