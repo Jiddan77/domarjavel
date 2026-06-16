@@ -1,10 +1,10 @@
 {
   "total_matches": 48,
   "upcoming_matches": 192,
-  "total_yellow_cards": 179,
+  "total_yellow_cards": 180,
   "total_red_cards": 3,
   "total_penalties": 9,
-  "avg_yellow_per_match": 3.73,
+  "avg_yellow_per_match": 3.75,
   "avg_red_per_match": 0.06,
   "avg_penalties_per_match": 0.19,
   "unique_referees": 13,
@@ -12,5 +12,5 @@
     "KRISTOFFER KARLSSON",
     4
   ],
-  "last_updated": "2026-06-16 18:02:19"
+  "last_updated": "2026-06-16 17:37:59"
 }

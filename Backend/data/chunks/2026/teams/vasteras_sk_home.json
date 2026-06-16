@@ -45,7 +45,8 @@
       "date_iso": "2026-05-09T13:00:00.000Z",
       "datetime": "2026-05-09 13:00",
       "date": "9 maj 2026",
-      "round": 7
+      "round": 7,
+      "penalty": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -54,11 +55,14 @@
       "away": "AIK",
       "match_id": 6529891,
       "season": 2026,
-      "referee": "",
+      "referee": "ADI AGANOVIC",
       "date_iso": "2026-05-17T14:30:00.000Z",
       "datetime": "2026-05-17 14:30",
       "date": "17 maj 2026",
-      "round": 8
+      "round": 8,
+      "penalty": "0–0",
+      "yellow": "2–6",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -67,11 +71,13 @@
       "away": "IFK Göteborg",
       "match_id": 6529908,
       "season": 2026,
-      "referee": "",
+      "referee": "GRANIT MAQEDONCI",
       "date_iso": "2026-05-31T12:00:00.000Z",
       "datetime": "2026-05-31 12:00",
       "date": "31 maj 2026",
-      "round": 10
+      "round": 10,
+      "yellow": "0–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -80,7 +86,7 @@
       "away": "Degerfors IF",
       "match_id": 6529924,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !�������㦂���?�(S������IV���@�% ����V�V�꽢ݢ���O�~WCܔI�E*��BU�V�V��9��B^��L��B�Q�3|�}�/6X�YM\rIE��\tBѦ�",
       "date_iso": "2026-07-11T22:00:00.000Z",
       "datetime": "2026-07-11 22:00",
       "date": "11 juli 2026",
@@ -106,7 +112,7 @@
       "away": "Djurgårdens IF",
       "match_id": 6529955,
       "season": 2026,
-      "referee": "",
+      "referee": ".�DT�Z !�������㦂���?�(S������IV���@�% ����V�V�꽢ݢ���O�>�E�HE�U���.��>8'_P�+��B�]`�����{��/Y��G�!�Y([.�'�E�V@�E�RZS)�V���R�Y�Ә^����Κ=ƪ����PQ1\t��2����|�{5���Wح�����{ރ�",
       "date_iso": "2026-08-08T22:00:00.000Z",
       "datetime": "2026-08-08 22:00",
       "date": "8 augusti 2026",
@@ -145,7 +151,7 @@
       "away": "Malmö FF",
       "match_id": 6530002,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !�����~��M���?�(S�:Y��|�?ɾQ�>YI��~�H�ݢݢ�)�)������C�I���T����.��>8'_�\nY�B�\\X�",
       "date_iso": "2026-09-19T22:00:00.000Z",
       "datetime": "2026-09-19 22:00",
       "date": "19 september 2026",
@@ -171,7 +177,7 @@
       "away": "Halmstads BK",
       "match_id": 6530027,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !�������㦂���?�(S�:��Q>�O����\"/)� � �OM�[�[T��M�Z���L�",
       "date_iso": "2026-10-24T22:00:00.000Z",
       "datetime": "2026-10-24 22:00",
       "date": "24 oktober 2026",
