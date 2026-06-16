@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { DesignData, Filters } from './types';
 import { ScatterPlot } from './charts';
+import { useStatus } from '@/hooks/useStatus';
 
 function BiasFact({ dot, label, name, value, onClick }: { dot: string; label: string; name: string; value: string; onClick: () => void }) {
   return (
@@ -246,6 +247,18 @@ function FooterCol({ title, items }: { title: string; items: string[] }) {
 }
 
 export function Footer() {
+  const status = useStatus();
+
+  const lastUpdatedLabel = (() => {
+    if (!status?.last_updated) return new Date().toLocaleDateString('sv-SE');
+    const d = new Date(status.last_updated);
+    const diffMs = Date.now() - d.getTime();
+    const diffDays = Math.floor(diffMs / 86_400_000);
+    if (diffDays === 0) return 'Idag';
+    if (diffDays === 1) return 'Igår';
+    return `${diffDays} dagar sedan`;
+  })();
+
   return (
     <footer style={{ background: 'var(--ink)', color: 'var(--paper)', padding: '3rem 2rem 2rem', marginTop: '3rem' }}>
       <div style={{ maxWidth: 1400, margin: '0 auto' }}>
@@ -268,7 +281,7 @@ export function Footer() {
         <div style={{ display: 'flex', justifyContent: 'space-between', paddingTop: '1.5rem', fontFamily: 'var(--font-mono)', fontSize: 11, color: 'rgba(255,255,255,0.5)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
           <span>© 2026 Domarjävel</span>
           <span>Editorial · Independent · Sverige</span>
-          <span>Senast uppdaterad: {new Date().toLocaleDateString('sv-SE')}</span>
+          <span title={status?.last_updated}>Senast uppdaterad: {lastUpdatedLabel}</span>
         </div>
       </div>
     </footer>
