@@ -41,22 +41,19 @@ function transformChunkToLeaderboard(data: Record<string, ChunkRefereeStats>): L
 
 export function useLeaderboard(params: { season?: number[]; team?: string[]; minMatches?: number; minTeamMatches?: number; limit?: number }) {
   const hasOtherFilters = params.team?.length ? true : false;
-  const q = new URLSearchParams();
-
-  // For dynamic API, add all parameters
-  if (params.season?.length) {
-    params.season.forEach(s => q.append("season", s.toString()));
-  }
-  if (params.team?.length) {
-    params.team.forEach(t => q.append("team", t));
-  }
-  if (params.minMatches) q.set("minMatches", String(params.minMatches));
-  if (params.minTeamMatches) q.set("minTeamMatches", String(params.minTeamMatches));
-  if (params.limit) q.set("limit", String(params.limit));
 
   const url = leaderboardUrl(params.season, hasOtherFilters);
-  // For dynamic API, append the extra query params to the key
-  const key = hasOtherFilters && params.season?.length ? `${url}&${q.toString()}` : url;
+
+  // Only append non-season params since leaderboardUrl() already includes season
+  const extraParams = new URLSearchParams();
+  if (params.team?.length) {
+    params.team.forEach(t => extraParams.append("team", t));
+  }
+  if (params.minMatches) extraParams.set("minMatches", String(params.minMatches));
+  if (params.minTeamMatches) extraParams.set("minTeamMatches", String(params.minTeamMatches));
+  if (params.limit) extraParams.set("limit", String(params.limit));
+
+  const key = hasOtherFilters && extraParams.size > 0 ? `${url}&${extraParams}` : url;
 
   const { data, error, isLoading } = useSWR<any>(key, fetcher, { revalidateOnFocus: false });
 
