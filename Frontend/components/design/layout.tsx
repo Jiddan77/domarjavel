@@ -107,7 +107,9 @@ export function HeroLede({ data }: HeroLedeProps) {
             lineHeight: 0.98,
             letterSpacing: '-0.025em',
           }}>
-            Domarna delade ut <span style={{ color: 'var(--terracotta)' }}>{last?.avgYellow?.toFixed(1)}</span> gula kort per match förra säsongen — det <span style={{ fontStyle: 'italic' }}>högsta</span> snittet sedan 2022.
+            {data.editorial?.headline ?? (
+              <>Domarna delade ut <span style={{ color: 'var(--terracotta)' }}>{last?.avgYellow?.toFixed(1)}</span> gula kort per match förra säsongen — det <span style={{ fontStyle: 'italic' }}>högsta</span> snittet sedan 2022.</>
+            )}
           </h2>
           <p style={{
             marginTop: '2.5rem',
@@ -117,7 +119,9 @@ export function HeroLede({ data }: HeroLedeProps) {
             color: 'var(--ink-soft)',
             maxWidth: '58ch',
           }}>
-            Efter två säsonger av nedåtgående kortstatistik har Allsvenskans domare återigen blivit strängare med plasten. Av {totalRefs} aktiva domare med minst åtta matcher är <strong>{topCarder?.name || '—'}</strong> strängast i klassen, medan <strong>{calmest?.name || '—'}</strong> styr matcherna med snällast hand.
+            {data.editorial?.lede ?? (
+              <>Efter två säsonger av nedåtgående kortstatistik har Allsvenskans domare återigen blivit strängare med plasten. Av {totalRefs} aktiva domare med minst åtta matcher är <strong>{topCarder?.name || '—'}</strong> strängast i klassen, medan <strong>{calmest?.name || '—'}</strong> styr matcherna med snällast hand.</>
+            )}
           </p>
         </div>
 

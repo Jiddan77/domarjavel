@@ -47,6 +47,14 @@ export interface RefTrend {
   matches: number;
 }
 
+export interface Editorial {
+  headline: string;
+  lede: string;
+  trend_analysis: string;
+  generated_at: string;
+  season: number;
+}
+
 export interface DesignData {
   referees: Referee[];
   leagueTrends: LeagueTrend[];
@@ -55,6 +63,7 @@ export interface DesignData {
   teams: string[];
   seasons: number[];
   totalMatches: number;
+  editorial?: Editorial;
 }
 
 export interface Filters {

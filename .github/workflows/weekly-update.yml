@@ -65,21 +65,34 @@ jobs:
         run: |
           python3 Backend/scripts/lib/create_optimized_chunks.py
 
+      - name: Generate editorial copy
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 Backend/scripts/lib/generate_editorial.py
+
       - name: Fix historical status (idempotent)
         run: |
           python3 Backend/scripts/lib/fix_historical_status.py
 
+      - name: Sync data to Frontend
+        run: |
+          cp Backend/data/data.json Frontend/data/data.json
+          if [ -f Backend/data/chunks/editorial.json ]; then
+            cp Backend/data/chunks/editorial.json Frontend/data/editorial.json
+          fi
+
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet Backend/data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet Backend/data/ Frontend/data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push if data changed
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add Backend/data/data.json Backend/data/chunks/
+          git add Backend/data/data.json Backend/data/chunks/ Frontend/data/
           git commit -m "data: daily update $(date +%Y-%m-%d) — season ${{ steps.season.outputs.season }}"
           git push
 

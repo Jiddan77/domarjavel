@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+import path from 'path';
+import fs from 'fs';
 import { loadMatches } from '@/lib/data';
 
 const SWEDISH_MONTHS: Record<string, string> = {
@@ -216,6 +218,14 @@ function buildData() {
     penalty: m.penalty || '0–0',
   }));
 
+  let editorial: object | undefined;
+  try {
+    const editorialPath = path.join(process.cwd(), 'data', 'editorial.json');
+    editorial = JSON.parse(fs.readFileSync(editorialPath, 'utf-8'));
+  } catch {
+    editorial = undefined;
+  }
+
   return {
     referees,
     leagueTrends,
@@ -224,6 +234,7 @@ function buildData() {
     teams,
     seasons,
     totalMatches: matches.length,
+    editorial,
   };
 }
 

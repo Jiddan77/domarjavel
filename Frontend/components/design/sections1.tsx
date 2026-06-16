@@ -29,7 +29,7 @@ function KeyFact({ label, value, year }: { label: string; value: string; year: n
 
 interface LeagueStoryProps { data: DesignData; filters: Filters; }
 export function LeagueStory({ data }: LeagueStoryProps) {
-  const trends = data.leagueTrends.filter(t => t.season < 2026);
+  const trends = data.leagueTrends.filter(t => t.matches >= 150);
 
   return (
     <section style={{ padding: '2.5rem 2rem', borderBottom: '1px solid var(--rule)' }}>
@@ -76,7 +76,7 @@ export function LeagueStory({ data }: LeagueStoryProps) {
               Tre <em>kurvor</em>, en historia.
             </h3>
             <p style={{ fontFamily: 'var(--font-display)', fontSize: 16, lineHeight: 1.55, color: 'var(--ink-soft)', margin: 0 }}>
-              Mellan 2022 och 2024 mjuknade Allsvenskans domarkår — gula kort föll med över tio procent. Den senaste säsongen vände trenden tvärt; man ser en återgång till hårdare bedömningar samtidigt som straffarna minskar.
+              {data.editorial?.trend_analysis ?? 'Mellan 2022 och 2024 mjuknade Allsvenskans domarkår — gula kort föll med över tio procent. Den senaste säsongen vände trenden tvärt; man ser en återgång till hårdare bedömningar samtidigt som straffarna minskar.'}
             </p>
             <hr className="rule" style={{ margin: '1.5rem 0' }} />
             <div style={{ display: 'grid', gap: '0.75rem' }}>
