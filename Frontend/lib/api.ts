@@ -31,3 +31,40 @@ export async function fetchMatches(params: {
   if (!res.ok) throw new Error("Failed to fetch matches");
   return res.json() as Promise<{ items: Match[]; nextCursor?: string }>;
 }
+
+const API = process.env.NEXT_PUBLIC_API_URL || '';
+
+/** Returns chunk URL for seasons summary. */
+export function seasonsUrl(): string {
+  return `${API}/api/chunks/seasons`;
+}
+
+/** Returns chunk URL for single-season stats, or dynamic API URL for multi-filter queries. */
+export function statsUrl(seasons: number[] | undefined, hasOtherFilters: boolean): string {
+  if (seasons?.length === 1 && !hasOtherFilters) {
+    return `${API}/api/chunks/season/${seasons[0]}/stats`;
+  }
+  const q = new URLSearchParams();
+  seasons?.forEach(s => q.append('season', String(s)));
+  return `${API}/api/stats?${q}`;
+}
+
+/** Returns chunk URL for single-season referee leaderboard, or dynamic API URL for multi-filter queries. */
+export function leaderboardUrl(seasons: number[] | undefined, hasOtherFilters: boolean): string {
+  if (seasons?.length === 1 && !hasOtherFilters) {
+    return `${API}/api/chunks/season/${seasons[0]}/referees`;
+  }
+  const q = new URLSearchParams();
+  seasons?.forEach(s => q.append('season', String(s)));
+  return `${API}/api/leaderboard?${q}`;
+}
+
+/** Returns chunk URL for single-season teams, or dynamic API URL otherwise. */
+export function teamsUrl(seasons: number[] | undefined): string {
+  if (seasons?.length === 1) {
+    return `${API}/api/chunks/season/${seasons[0]}/teams`;
+  }
+  const q = new URLSearchParams();
+  seasons?.forEach(s => q.append('season', String(s)));
+  return `${API}/api/teams?${q}`;
+}
