@@ -246,10 +246,48 @@ async def root():
 async def health_check():
     db_status = "connected" if db_manager.pool and not db_manager.json_fallback else "json_fallback"
     return {
-        "status": "healthy", 
+        "status": "healthy",
         "service": "dommarjavel-api",
         "database": db_status,
         "version": "1.0.0"
+    }
+
+@app.get("/api/status")
+async def get_status():
+    """Return data freshness information."""
+    from datetime import datetime, timezone
+
+    possible_paths = [
+        Path(os.getenv("DATA_DIR", "data")) / "data.json",
+        Path("Backend/data/data.json"),
+        Path(__file__).parent.parent / "data" / "data.json",
+    ]
+
+    data_path = next((p for p in possible_paths if p.exists()), None)
+
+    if data_path is None:
+        return {"status": "error", "message": "data.json not found"}
+
+    mtime = data_path.stat().st_mtime
+    last_updated = datetime.fromtimestamp(mtime, tz=timezone.utc).isoformat()
+
+    data = load_data()
+    matches = data.get("matches", [])
+
+    season_counts: dict = {}
+    for m in matches:
+        s = str(m.get("season", "unknown"))
+        season_counts.setdefault(s, {"total": 0, "finished": 0})
+        season_counts[s]["total"] += 1
+        if m.get("status") == "FINISHED":
+            season_counts[s]["finished"] += 1
+
+    return {
+        "status": "ok",
+        "last_updated": last_updated,
+        "total_matches": len(matches),
+        "seasons": season_counts,
+        "data_file": str(data_path),
     }
 
 @app.get("/debug/referees")
