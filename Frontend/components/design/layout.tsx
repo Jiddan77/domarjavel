@@ -166,7 +166,7 @@ export function FiltersBar({ data, filters, setFilters }: FiltersBarProps) {
 
       <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
         <span className="label-mono">Säsong</span>
-        {data.seasons.filter(s => s < 2026).map(s => (
+        {data.seasons.map(s => (
           <button
             key={s}
             className="chip"
