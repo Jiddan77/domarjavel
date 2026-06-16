@@ -31,11 +31,11 @@ jobs:
         with:
           python-version: '3.13'
           cache: 'pip'
-          cache-dependency-path: Backend/requirements.txt
+          cache-dependency-path: Backend/requirements-workflow.txt
 
       - name: Install Python dependencies
         run: |
-          pip install -r Backend/requirements.txt
+          pip install -r Backend/requirements-workflow.txt
 
       - name: Determine season
         id: season

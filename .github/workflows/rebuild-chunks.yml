@@ -24,10 +24,10 @@ jobs:
         with:
           python-version: '3.13'
           cache: 'pip'
-          cache-dependency-path: Backend/requirements.txt
+          cache-dependency-path: Backend/requirements-workflow.txt
 
       - name: Install Python dependencies
-        run: pip install -r Backend/requirements.txt
+        run: pip install -r Backend/requirements-workflow.txt
 
       - name: Rebuild chunks
         run: python3 Backend/scripts/lib/create_optimized_chunks.py
