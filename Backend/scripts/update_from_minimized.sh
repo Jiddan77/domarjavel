@@ -52,7 +52,10 @@ echo "Rate:          $RATE   Early-stop: $EARLY_STOP"
 [[ ${NO_DATE:-0} == 1 ]] && echo "NO_DATE:       enabled"
 
 if [[ $SKIP_DEPS -eq 0 ]]; then
-  if [[ -f "$ROOT/requirements.txt" ]]; then
+  if [[ -f "$ROOT/requirements-workflow.txt" ]]; then
+    echo "➡️  Installerar beroenden via requirements-workflow.txt …"
+    "$PY" -m pip install -r "$ROOT/requirements-workflow.txt"
+  elif [[ -f "$ROOT/requirements.txt" ]]; then
     echo "➡️  Installerar beroenden via requirements.txt …"
     "$PY" -m pip install -r "$ROOT/requirements.txt"
   else
