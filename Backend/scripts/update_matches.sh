@@ -53,12 +53,16 @@ echo "=========================="
 echo "Season: $SEASON"
 echo "Root: $ROOT_DIR"
 
-# Check if minimized file exists
+# Auto-fetch schedule if minimized file is missing
 MINIMIZED_FILE="$ROOT_DIR/tmp/minimized_${SEASON}.json"
 if [[ ! -f "$MINIMIZED_FILE" ]]; then
-  echo "❌ Minimized file not found: $MINIMIZED_FILE"
-  echo "   Please ensure you have the minimized data file for season $SEASON"
-  exit 1
+  echo "📥 Minimized file not found — fetching schedule from allsvenskan.se..."
+  python3 "$SCRIPT_DIR/lib/fetch_schedule.py" --season "$SEASON"
+  if [[ ! -f "$MINIMIZED_FILE" ]]; then
+    echo "❌ Failed to fetch schedule for season $SEASON"
+    exit 1
+  fi
+  echo "✅ Schedule fetched"
 fi
 
 echo "Minimized file: ${MINIMIZED_FILE#$ROOT_DIR/}"
