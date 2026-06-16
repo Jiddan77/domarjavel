@@ -187,8 +187,8 @@ def main():
     # Determine ID range to probe
     if existing_range:
         min_id, max_id = existing_range
-        start_id = max(min_id - 50, min_id)  # Probe back 50 IDs
-        end_id = min(max_id + 50, max_id + 100)  # Probe forward up to 100 IDs
+        start_id = min_id - 50  # Probe back 50 IDs
+        end_id = max_id + 100  # Probe forward up to 100 IDs
         if args.verbose:
             print(f"[range] Found existing data: {min_id}-{max_id}")
             print(f"[range] Expanding search to: {start_id}-{end_id}")
