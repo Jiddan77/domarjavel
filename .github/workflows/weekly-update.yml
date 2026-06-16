@@ -1,0 +1,83 @@
+name: Weekly Data Update
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC
+    - cron: '0 6 * * 1'
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'Season to update (e.g. 2026)'
+        required: false
+        default: ''
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to push commits
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+          cache-dependency-path: Backend/requirements.txt
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r Backend/requirements.txt
+
+      - name: Determine season
+        id: season
+        run: |
+          INPUT="${{ github.event.inputs.season }}"
+          if [ -n "$INPUT" ]; then
+            echo "season=$INPUT" >> $GITHUB_OUTPUT
+          else
+            echo "season=$(date +%Y)" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Fetch match schedule
+        run: |
+          python3 Backend/scripts/lib/fetch_schedule.py --season ${{ steps.season.outputs.season }}
+
+      - name: Run backfill pipeline
+        run: |
+          python3 Backend/scripts/update_and_backfill.py \
+            --season ${{ steps.season.outputs.season }} \
+            --verbose
+
+      - name: Rebuild chunks
+        run: |
+          python3 Backend/scripts/lib/create_optimized_chunks.py
+
+      - name: Fix historical status (idempotent)
+        run: |
+          python3 Backend/scripts/lib/fix_historical_status.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet Backend/data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if data changed
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Backend/data/data.json Backend/data/chunks/
+          git commit -m "data: weekly update $(date +%Y-%m-%d) — season ${{ steps.season.outputs.season }}"
+          git push
+
+      - name: No changes found
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "No new data — nothing to commit"
