@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA_FILE = ROOT / "data" / "data.json"
 OUT_FILE = ROOT / "data" / "chunks" / "editorial.json"
 
-MODEL = "google/gemini-flash-1.5"
+MODEL = "google/gemini-2.0-flash-exp:free"
 
 
 def parse_pair(s):

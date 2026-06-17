@@ -66,6 +66,7 @@ jobs:
           python3 Backend/scripts/lib/create_optimized_chunks.py
 
       - name: Generate editorial copy
+        continue-on-error: true
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
