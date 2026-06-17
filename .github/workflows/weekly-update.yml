@@ -68,7 +68,7 @@ jobs:
       - name: Generate editorial copy
         continue-on-error: true
         env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python3 Backend/scripts/lib/generate_editorial.py
 

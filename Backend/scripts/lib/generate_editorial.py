@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Generate AI editorial copy for the site's hero texts.
-Reads Backend/data/data.json, calls an LLM via OpenRouter, writes Backend/data/chunks/editorial.json.
-Requires OPENROUTER_API_KEY environment variable.
+Reads Backend/data/data.json, calls Gemini API, writes Backend/data/chunks/editorial.json.
+Requires GEMINI_API_KEY environment variable.
 """
 
 import json
@@ -13,17 +13,14 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-try:
-    from openai import OpenAI
-except ImportError:
-    print("openai not installed — skipping editorial generation", file=sys.stderr)
-    sys.exit(0)
+import requests
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_FILE = ROOT / "data" / "data.json"
 OUT_FILE = ROOT / "data" / "chunks" / "editorial.json"
 
-MODEL = "google/gemini-2.0-flash-exp:free"
+GEMINI_MODEL = "gemini-1.5-flash"
+GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
 
 def parse_pair(s):
@@ -139,9 +136,9 @@ PRODUCERA EXAKT DETTA JSON (ingen annan text, inga kommentarer):
 
 
 def main():
-    api_key = os.environ.get("OPENROUTER_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        print("OPENROUTER_API_KEY not set — skipping editorial generation", file=sys.stderr)
+        print("GEMINI_API_KEY not set — skipping editorial generation", file=sys.stderr)
         sys.exit(0)
 
     print("📰 Generating editorial copy …")
@@ -153,17 +150,14 @@ def main():
     stats = compute_stats(matches)
     prompt = build_prompt(stats)
 
-    client = OpenAI(
-        api_key=api_key,
-        base_url="https://openrouter.ai/api/v1",
+    resp = requests.post(
+        GEMINI_URL,
+        params={"key": api_key},
+        json={"contents": [{"parts": [{"text": prompt}]}]},
+        timeout=30,
     )
-    response = client.chat.completions.create(
-        model=MODEL,
-        max_tokens=512,
-        messages=[{"role": "user", "content": prompt}],
-    )
-
-    text = response.choices[0].message.content.strip()
+    resp.raise_for_status()
+    text = resp.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
     m = re.search(r"\{[\s\S]*\}", text)
     if not m:
         print(f"Could not parse JSON from response:\n{text}", file=sys.stderr)
