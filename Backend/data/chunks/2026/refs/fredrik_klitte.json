@@ -51,7 +51,27 @@
       "referee": "FREDRIK KLITTE",
       "home": "Degerfors IF",
       "away": "Mjällby AIF",
+      "penalty": "0–0",
       "datetime": "2026-05-09 13:00"
+    },
+    {
+      "match_id": 6529897,
+      "season": 2026,
+      "date": "25 maj 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "IF Elfsborg",
+      "away": "BK Häcken",
+      "datetime": "2026-05-25 17:00"
+    },
+    {
+      "match_id": 6529901,
+      "season": 2026,
+      "date": "30 maj 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "AIK",
+      "away": "IK Sirius",
+      "penalty": "0–0",
+      "datetime": "2026-05-30 13:00"
     }
   ]
 }

@@ -52,6 +52,26 @@
       "home": "AIK",
       "away": "Djurgårdens IF",
       "datetime": "2026-05-10 12:00"
+    },
+    {
+      "match_id": 6529944,
+      "season": 2026,
+      "date": "20 maj 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "GAIS",
+      "away": "Hammarby",
+      "penalty": "0–0",
+      "datetime": "2026-05-20 17:00"
+    },
+    {
+      "match_id": 6529907,
+      "season": 2026,
+      "date": "31 maj 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Degerfors IF",
+      "away": "IF Brommapojkarna",
+      "penalty": "0–0",
+      "datetime": "2026-05-31 12:00"
     }
   ]
 }

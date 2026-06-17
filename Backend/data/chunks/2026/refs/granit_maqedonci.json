@@ -51,7 +51,27 @@
       "referee": "GRANIT MAQEDONCI",
       "home": "IF Elfsborg",
       "away": "IF Brommapojkarna",
+      "penalty": "0–0",
       "datetime": "2026-05-08 17:00"
+    },
+    {
+      "match_id": 6529900,
+      "season": 2026,
+      "date": "23 maj 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Halmstads BK",
+      "away": "Örgryte IS",
+      "penalty": "0–0",
+      "datetime": "2026-05-23 13:00"
+    },
+    {
+      "match_id": 6529908,
+      "season": 2026,
+      "date": "31 maj 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Västerås SK",
+      "away": "IFK Göteborg",
+      "datetime": "2026-05-31 12:00"
     }
   ]
 }

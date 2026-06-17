@@ -51,7 +51,27 @@
       "referee": "ADAM LADEBÄCK",
       "home": "BK Häcken",
       "away": "Malmö FF",
+      "penalty": "0–0",
       "datetime": "2026-05-10 14:30"
+    },
+    {
+      "match_id": 6529890,
+      "season": 2026,
+      "date": "17 maj 2026",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IF Brommapojkarna",
+      "away": "Kalmar FF",
+      "datetime": "2026-05-17 12:00"
+    },
+    {
+      "match_id": 6529894,
+      "season": 2026,
+      "date": "24 maj 2026",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Hammarby",
+      "away": "AIK",
+      "penalty": "0–0",
+      "datetime": "2026-05-24 12:00"
     }
   ]
 }

@@ -51,7 +51,27 @@
       "referee": "VICTOR WOLF",
       "home": "IFK Göteborg",
       "away": "Hammarby",
+      "penalty": "0–0",
       "datetime": "2026-05-09 13:00"
+    },
+    {
+      "match_id": 6529885,
+      "season": 2026,
+      "date": "18 maj 2026",
+      "referee": "VICTOR WOLF",
+      "home": "Djurgårdens IF",
+      "away": "IK Sirius",
+      "penalty": "0–0",
+      "datetime": "2026-05-18 17:00"
+    },
+    {
+      "match_id": 6529906,
+      "season": 2026,
+      "date": "30 maj 2026",
+      "referee": "VICTOR WOLF",
+      "home": "Malmö FF",
+      "away": "Halmstads BK",
+      "datetime": "2026-05-30 13:00"
     }
   ]
 }

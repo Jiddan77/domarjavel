@@ -43,6 +43,36 @@
       "score": "1–3",
       "penalty": "0–0",
       "datetime": "2026-05-04 17:00"
+    },
+    {
+      "match_id": 6529891,
+      "season": 2026,
+      "date": "17 maj 2026",
+      "referee": "ADI AGANOVIC",
+      "home": "Västerås SK",
+      "away": "AIK",
+      "penalty": "0–0",
+      "datetime": "2026-05-17 14:30"
+    },
+    {
+      "match_id": 6529946,
+      "season": 2026,
+      "date": "21 maj 2026",
+      "referee": "ADI AGANOVIC",
+      "home": "IF Elfsborg",
+      "away": "Mjällby AIF",
+      "penalty": "0–0",
+      "datetime": "2026-05-21 17:00"
+    },
+    {
+      "match_id": 6529902,
+      "season": 2026,
+      "date": "30 maj 2026",
+      "referee": "ADI AGANOVIC",
+      "home": "GAIS",
+      "away": "Kalmar FF",
+      "penalty": "0–0",
+      "datetime": "2026-05-30 13:00"
     }
   ]
 }

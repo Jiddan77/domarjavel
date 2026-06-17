@@ -43,6 +43,25 @@
       "score": "3–2",
       "penalty": "1–0",
       "datetime": "2026-05-02 13:00"
+    },
+    {
+      "match_id": 6529892,
+      "season": 2026,
+      "date": "16 maj 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "Halmstads BK",
+      "away": "IF Elfsborg",
+      "penalty": "0–0",
+      "datetime": "2026-05-16 13:00"
+    },
+    {
+      "match_id": 6529896,
+      "season": 2026,
+      "date": "24 maj 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "Malmö FF",
+      "away": "Västerås SK",
+      "datetime": "2026-05-24 14:30"
     }
   ]
 }

@@ -43,6 +43,35 @@
       "score": "2–1",
       "penalty": "0–0",
       "datetime": "2026-04-27 17:00"
+    },
+    {
+      "match_id": 6529882,
+      "season": 2026,
+      "date": "11 maj 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "IK Sirius",
+      "away": "Örgryte IS",
+      "penalty": "0–0",
+      "datetime": "2026-05-11 17:00"
+    },
+    {
+      "match_id": 6529893,
+      "season": 2026,
+      "date": "22 maj 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "Djurgårdens IF",
+      "away": "IF Brommapojkarna",
+      "datetime": "2026-05-22 17:00"
+    },
+    {
+      "match_id": 6529903,
+      "season": 2026,
+      "date": "29 maj 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "Örgryte IS",
+      "away": "IF Elfsborg",
+      "penalty": "0–1",
+      "datetime": "2026-05-29 17:00"
     }
   ]
 }

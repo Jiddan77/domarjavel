@@ -79,7 +79,9 @@
       "date_iso": "2026-05-24T14:30:00.000Z",
       "datetime": "2026-05-24 14:30",
       "date": "24 maj 2026",
-      "round": 9
+      "round": 9,
+      "yellow": "3–1",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -88,7 +90,7 @@
       "away": "Västerås SK",
       "match_id": 6529916,
       "season": 2026,
-      "referee": "",
+      "referee": "��DT�Z !�����~��M���?�(SY������<�I������K\n60 �E[���L�N�����E��E�]�XBI��]��}PN���W.$ۅD��G��A������D�+Ӏ�>�����P���A",
       "date_iso": "2026-07-04T22:00:00.000Z",
       "datetime": "2026-07-04 22:00",
       "date": "4 juli 2026",
@@ -127,7 +129,7 @@
       "away": "Västerås SK",
       "match_id": 6529961,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !�����~��M���?�(SY;Q�2��<�I������K\n60 �E[���L�N���߫%ߴ�SBX���",
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
@@ -192,7 +194,7 @@
       "away": "Västerås SK",
       "match_id": 6530048,
       "season": 2026,
-      "referee": "",
+      "referee": "��DT�Z !�����~��M���?�(S�:Y��|�?ɾQ�>YI��~�H�ݢ���)�-������W7�}�J��D�P��.��>8'�B^��",
       "date_iso": "2026-11-07T23:00:00.000Z",
       "datetime": "2026-11-07 23:00",
       "date": "7 november 2026",

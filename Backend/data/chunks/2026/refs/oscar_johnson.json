@@ -52,6 +52,26 @@
       "home": "Kalmar FF",
       "away": "Halmstads BK",
       "datetime": "2026-05-10 12:00"
+    },
+    {
+      "match_id": 6529886,
+      "season": 2026,
+      "date": "17 maj 2026",
+      "referee": "OSCAR JOHNSON",
+      "home": "Hammarby",
+      "away": "Malmö FF",
+      "penalty": "1–0",
+      "datetime": "2026-05-17 12:00"
+    },
+    {
+      "match_id": 6529895,
+      "season": 2026,
+      "date": "25 maj 2026",
+      "referee": "OSCAR JOHNSON",
+      "home": "IFK Göteborg",
+      "away": "Mjällby AIF",
+      "penalty": "0–1",
+      "datetime": "2026-05-25 17:00"
     }
   ]
 }
