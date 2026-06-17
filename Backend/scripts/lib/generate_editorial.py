@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA_FILE = ROOT / "data" / "data.json"
 OUT_FILE = ROOT / "data" / "chunks" / "editorial.json"
 
-GEMINI_MODEL = "gemini-1.5-flash"
+GEMINI_MODEL = "gemini-2.0-flash"
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
 
