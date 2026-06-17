@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Generate AI editorial copy for the site's hero texts.
-Reads Backend/data/data.json, calls Claude, writes Backend/data/chunks/editorial.json.
-Requires ANTHROPIC_API_KEY environment variable.
+Reads Backend/data/data.json, calls an LLM via OpenRouter, writes Backend/data/chunks/editorial.json.
+Requires OPENROUTER_API_KEY environment variable.
 """
 
 import json
@@ -14,14 +14,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 try:
-    import anthropic
+    from openai import OpenAI
 except ImportError:
-    print("anthropic not installed — skipping editorial generation", file=sys.stderr)
+    print("openai not installed — skipping editorial generation", file=sys.stderr)
     sys.exit(0)
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_FILE = ROOT / "data" / "data.json"
 OUT_FILE = ROOT / "data" / "chunks" / "editorial.json"
+
+MODEL = "google/gemini-flash-1.5"
 
 
 def parse_pair(s):
@@ -137,8 +139,9 @@ PRODUCERA EXAKT DETTA JSON (ingen annan text, inga kommentarer):
 
 
 def main():
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("ANTHROPIC_API_KEY not set — skipping editorial generation", file=sys.stderr)
+    api_key = os.environ.get("OPENROUTER_API_KEY")
+    if not api_key:
+        print("OPENROUTER_API_KEY not set — skipping editorial generation", file=sys.stderr)
         sys.exit(0)
 
     print("📰 Generating editorial copy …")
@@ -150,14 +153,17 @@ def main():
     stats = compute_stats(matches)
     prompt = build_prompt(stats)
 
-    client = anthropic.Anthropic()
-    msg = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+    client = OpenAI(
+        api_key=api_key,
+        base_url="https://openrouter.ai/api/v1",
+    )
+    response = client.chat.completions.create(
+        model=MODEL,
         max_tokens=512,
         messages=[{"role": "user", "content": prompt}],
     )
 
-    text = msg.content[0].text.strip()
+    text = response.choices[0].message.content.strip()
     m = re.search(r"\{[\s\S]*\}", text)
     if not m:
         print(f"Could not parse JSON from response:\n{text}", file=sys.stderr)
