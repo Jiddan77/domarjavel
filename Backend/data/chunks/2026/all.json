@@ -817,8 +817,8 @@
       "score": "1–3"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Elfsborg",
       "away": "IF Brommapojkarna",
       "match_id": 6529880,
@@ -828,11 +828,13 @@
       "datetime": "2026-05-08 17:00",
       "date": "8 maj 2026",
       "round": 7,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "2–0",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IFK Göteborg",
       "away": "Hammarby",
       "match_id": 6529878,
@@ -847,8 +849,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Degerfors IF",
       "away": "Mjällby AIF",
       "match_id": 6529881,
@@ -863,8 +865,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Västerås SK",
       "away": "GAIS",
       "match_id": 6529883,
@@ -874,11 +876,13 @@
       "datetime": "2026-05-09 13:00",
       "date": "9 maj 2026",
       "round": 7,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "0–3",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "AIK",
       "away": "Djurgårdens IF",
       "match_id": 6529877,
@@ -889,11 +893,12 @@
       "date": "10 maj 2026",
       "round": 7,
       "yellow": "2–2",
-      "red": "0–0"
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Kalmar FF",
       "away": "Halmstads BK",
       "match_id": 6529884,
@@ -908,8 +913,8 @@
       "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "BK Häcken",
       "away": "Malmö FF",
       "match_id": 6529879,
@@ -919,11 +924,13 @@
       "datetime": "2026-05-10 14:30",
       "date": "10 maj 2026",
       "round": 7,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "3–1",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IK Sirius",
       "away": "Örgryte IS",
       "match_id": 6529882,
@@ -938,8 +945,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "GAIS",
       "away": "Degerfors IF",
       "match_id": 6529887,
@@ -954,8 +961,8 @@
       "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Halmstads BK",
       "away": "IF Elfsborg",
       "match_id": 6529892,
@@ -965,11 +972,13 @@
       "datetime": "2026-05-16 13:00",
       "date": "16 maj 2026",
       "round": 8,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "0–1",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Hammarby",
       "away": "Malmö FF",
       "match_id": 6529886,
@@ -984,8 +993,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Brommapojkarna",
       "away": "Kalmar FF",
       "match_id": 6529890,
@@ -1000,8 +1009,8 @@
       "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Mjällby AIF",
       "away": "BK Häcken",
       "match_id": 6529889,
@@ -1011,11 +1020,13 @@
       "datetime": "2026-05-17 14:30",
       "date": "17 maj 2026",
       "round": 8,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "1–3",
+      "red": "1–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Västerås SK",
       "away": "AIK",
       "match_id": 6529891,
@@ -1030,8 +1041,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Djurgårdens IF",
       "away": "IK Sirius",
       "match_id": 6529885,
@@ -1046,8 +1057,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Örgryte IS",
       "away": "IFK Göteborg",
       "match_id": 6529888,
@@ -1057,11 +1068,13 @@
       "datetime": "2026-05-18 17:00",
       "date": "18 maj 2026",
       "round": 8,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "2–3",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "GAIS",
       "away": "Hammarby",
       "match_id": 6529944,
@@ -1076,8 +1089,8 @@
       "red": "0–1"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Elfsborg",
       "away": "Mjällby AIF",
       "match_id": 6529946,
@@ -1092,8 +1105,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Djurgårdens IF",
       "away": "IF Brommapojkarna",
       "match_id": 6529893,
@@ -1103,11 +1116,13 @@
       "datetime": "2026-05-22 17:00",
       "date": "22 maj 2026",
       "round": 9,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "0–2",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Kalmar FF",
       "away": "Degerfors IF",
       "match_id": 6529899,
@@ -1122,8 +1137,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Halmstads BK",
       "away": "Örgryte IS",
       "match_id": 6529900,
@@ -1138,8 +1153,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Hammarby",
       "away": "AIK",
       "match_id": 6529894,
@@ -1149,11 +1164,13 @@
       "datetime": "2026-05-24 12:00",
       "date": "24 maj 2026",
       "round": 9,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "1–4",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IK Sirius",
       "away": "GAIS",
       "match_id": 6529898,
@@ -1168,8 +1185,8 @@
       "red": "1–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Malmö FF",
       "away": "Västerås SK",
       "match_id": 6529896,
@@ -1180,11 +1197,12 @@
       "date": "24 maj 2026",
       "round": 9,
       "yellow": "3–1",
-      "red": "0–0"
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IFK Göteborg",
       "away": "Mjällby AIF",
       "match_id": 6529895,
@@ -1199,8 +1217,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Elfsborg",
       "away": "BK Häcken",
       "match_id": 6529897,
@@ -1215,8 +1233,8 @@
       "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Örgryte IS",
       "away": "IF Elfsborg",
       "match_id": 6529903,
@@ -1231,8 +1249,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "AIK",
       "away": "IK Sirius",
       "match_id": 6529901,
@@ -1242,11 +1260,13 @@
       "datetime": "2026-05-30 13:00",
       "date": "30 maj 2026",
       "round": 10,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "4–3",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "GAIS",
       "away": "Kalmar FF",
       "match_id": 6529902,
@@ -1261,8 +1281,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Malmö FF",
       "away": "Halmstads BK",
       "match_id": 6529906,
@@ -1277,8 +1297,8 @@
       "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "BK Häcken",
       "away": "Hammarby",
       "match_id": 6529904,
@@ -1288,11 +1308,13 @@
       "datetime": "2026-05-31 12:00",
       "date": "31 maj 2026",
       "round": 10,
-      "penalty": "1–0"
+      "penalty": "1–0",
+      "yellow": "3–2",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Degerfors IF",
       "away": "IF Brommapojkarna",
       "match_id": 6529907,
@@ -1307,8 +1329,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Västerås SK",
       "away": "IFK Göteborg",
       "match_id": 6529908,
@@ -2044,7 +2066,7 @@
       "away": "Mjällby AIF",
       "match_id": 6529965,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !�����~��M���?�(SY'Q�2��<�}�X} �\r �F�V�E�E5S�[4��}]�;ƢT�LL���S�����P��B!VP �3�@���������\"IF�!���X�N'H6���U!W8�Z;�(*�H���W(��×�1FU?WF��8�>�ѲNG�K߫�W���NMO.?�F���|C���\n[@�(A�=T�N�2���9C���^��BA����R�ޘN��L�&�(EQߩ�;���NC�\"2�O��C��W?�?�6��!VN�G��/F����=+�LKО�[QONTGKAQ[IR��=�[{��� ��4�R�Ը^\\��ѪѨ�FG��FO��V��\nFO��UE���UEO6��SƲ�ߠ?4@P\\9�DS���Y�FM��N�IÙ8�8�AS� ��W=HO�A�����H���޾;��\n��7�KݨP$����+�_|��Ƣ�O����B�.>�C](�֠ݳПY�����ߪ��/����Q�.9��B�0}�������������{�L�O�G����&��[�Y��;TAA<6C��\\ǂ����X3�D��堥\nD��&P>��)RE:C{�U�C�G̚�E�+����텯�`C�X9�N�<�����I(��Q!۫�\nTI՝V-�U��҉A����E��MJ�FR�'LA�S�H�����M�N����[��<��;SD�4���\t��~�G�`�4XMӰX�7H��T������I�P�[C{�IJ���A��4*M�?J�GDAUX�F�߲`L�9�;T��� ۭ��M�D_8ԷZ��ҚH2��D�ݣIT���?�U8!C��ԚU���QЌR�ا߾��^NZ�6�X�̏�� >��5��QO�~���(?��;N\tक़���V*��R���.2�������B>LE����5ڋ\r8�C̳\n���H�V�OA��:+���N)�IF�M������{������U��O��V���J�������|����_O?N�$��G��?�WW�Y�?�;�JK�3VVRW8Ԯ���9GB���B���X��6\tBQ���J�O.���0A��|�<���Z������K�~�.�MS0��M?L*�&%:)���\n�%:��B1�UHZ��4�[Q�*4+�I2��T�����)/��6�$�4-��Q?7��'F��*P���+MI\r.��B�}�ΊF��%RR��KɄ5�T{�#>�&��NP�5H<�X��ݰJ-D��\r)H{O?T�����Q_GI6��X�E�N!�$#��A�4Q�D9��D|LP1%(����'IM�!�.$��TJ� �����EI�˂�",
       "date_iso": "2026-08-22T22:00:00.000Z",
       "datetime": "2026-08-22 22:00",
       "date": "22 augusti 2026",
@@ -2135,7 +2157,7 @@
       "away": "Kalmar FF",
       "match_id": 6529972,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !��������QS���\"C���$�T�NNN���'�3��\"7)� � ��*�J�H_Q�[��H������U\nE��Mᖍ�TJ��;{���9�B*ĊB\nB�B�}��$���8�\"DM�\"���H�N�L���B8��BN�[EE����KP��1V�~��D�?*Z���[������N_A���#9T�S�Y���M|�- P��=T�N�25A����!M�U�PP%� �9��7�S�ND����\"JQ��4�3���6�!�(\"���N�W�;U�����LS��A��~��>�0{��D��Y�X��EܲZT�C8[��J�W\r��=�>�CԸ��Ѕ�Q�:�F���R���^�NU5:S�H4{�FL|Ĕ�+�=F���FU>ЕQ��L�NLI/����� AQ���M5:�G��������\rG�8��E\\�4�^��=I�A��D���ͧ}���H<�+�O��Q����W0���_΃��O��?��X�Q�^X����RN\r�=\t=뺬G6GΒ:L����7�]P���6J�0�J���������%��)���]H�����L�ɕ\\ǂ����X3P�*\\�AK�N.����I�����\n=�BF+�\\YE�ר�^��9�E\\�|:�X-�+UO�7�>I�`ڶ\\�A���Z-�V��������2ΖS�\r�LN�L���ރ-KA��Eݪ��=���Y ����\r�|�(�EA�삀[��W�����X�2�ߩT�6J��PKL/ ;:�OPȐS�)�A�FU/)I�`��NZ�M�D��I�ۚ��R�Ħ{���Ѿ�N�/Q�]@R+8�S�� >�G;B��`M+�T\"�]?T��]�MU�X{��AM`��V��H/6�L��&",
       "date_iso": "2026-08-22T22:00:00.000Z",
       "datetime": "2026-08-22 22:00",
       "date": "22 augusti 2026",
@@ -2187,7 +2209,7 @@
       "away": "IF Brommapojkarna",
       "match_id": 6529976,
       "season": 2026,
-      "referee": "",
+      "referee": "ӋDT�Z !�����~��M���?�(SY'Q�2��<�}�X} �\r �F�V�E�E5S�[4���I���(S5^�2�*T�K�����J�D��B�Q![����{�Y�>+��Z@\n;�\tBѦ�",
       "date_iso": "2026-08-29T22:00:00.000Z",
       "datetime": "2026-08-29 22:00",
       "date": "29 augusti 2026",
@@ -2382,7 +2404,7 @@
       "away": "IF Brommapojkarna",
       "match_id": 6529991,
       "season": 2026,
-      "referee": "",
+      "referee": "ӋDT�Z !�����~��M���?�(SY'Q�2��<�}�X} �\r �F�V�E�E5S�[4����(\t%���\"����V���`WR��?�TϚ��U�#��IP�D�7B�:����B$�D�9����A�A�C�E�Ǆ��A����<�MW;W�?&�TG��::_�^M���VKZS�\"�\n�+<��W��Á����\n�Т�\n�MS��P=���A���U�PP%� �}9��7�S�NE�&���\"JQF�{�Ο*��ې�8����{�PM���Ϟ��ϿZ���[�Q���٫G%:��OGKО�[VONTGKAQ[I��={ �G{��|��4�R�Ը^\\��ѪѨ�FG��FO�Q��\nFO��UE����]Ǜ�&����E�O� (.�W��FG�Q�6R�����L{ ����Ԫ�'N&��AF�O?�|�緷�ߎ^�R���R7*���\n濋�V�C����;�ښ��YZVDХRN\r�=��UI������(}���'쒳�-6S'�؞L�'����������D�-8��Ǖ\\ǂ�X3P�P�O>-U �����0VH�����N<���D�\t����C셯�`C�X9�N�I��Ļ���T�TAJ��\nZ���L����WA+1�P�沤B�I�F L�&�@��J7�{�E-LC}Q��{AW����X�X.R+ 4�������J�VB�",
       "date_iso": "2026-09-12T22:00:00.000Z",
       "datetime": "2026-09-12 22:00",
       "date": "12 september 2026",
@@ -2421,7 +2443,7 @@
       "away": "Örgryte IS",
       "match_id": 6529994,
       "season": 2026,
-      "referee": "",
+      "referee": "ۋDT�Z !��������QS���\"���$�T�NN��'�V�9�X� R��\r �����+�)��������W�S�U����",
       "date_iso": "2026-09-12T22:00:00.000Z",
       "datetime": "2026-09-12 22:00",
       "date": "12 september 2026",
@@ -2642,7 +2664,7 @@
       "away": "Kalmar FF",
       "match_id": 6530011,
       "season": 2026,
-      "referee": "",
+      "referee": "ȊDT�Z !��������QS���\"���$�T�NN��'�V�9�X� R��\r ������+��������O�~CԔI�Q��]��}PN���W.$ۅE���$��W�� 4N�!�Y(�Z`;�E�֞�",
       "date_iso": "2026-10-10T22:00:00.000Z",
       "datetime": "2026-10-10 22:00",
       "date": "10 oktober 2026",
@@ -2746,7 +2768,7 @@
       "away": "Mjällby AIF",
       "match_id": 6530019,
       "season": 2026,
-      "referee": "",
+      "referee": "��HM��>�����W��T0<�� A�#�2�U'/���'�7��\"/)� � �OM�[�[T3E�E��ߟ��N�ƋP&[���T�V��9��B^��L��B���4������_��D�A2G(�]�AO�6�F�4�&�I��N�E�M�1��K�����8�K�ІB��1\\]�S����|G�:�/}�&_U�\n�5����CM�?��7��_A%�E���L}�ZNEE���}\r�J��J��SL)ZOL� ݊M6I�E������Ϝ�U�+�!\rQD�7���ܫ��?�F�{�\r+�������׎JT�OKKО�[VONTGKAQ[I���=�[Z��|��4�R�Ը^\\��ѪѨ�FG��FO��R��\nFO��UE���]Ǜ�&�Ĕ����\r��+�T�3Y֨Y��S�D�P&��A�\\�IHC�UړB&�C ���I>�����OG�S���}���?^Z���<�_�V����>>���R����QT��[�V�B�Z]�#�3�:F���N�\t��",
       "date_iso": "2026-10-17T22:00:00.000Z",
       "datetime": "2026-10-17 22:00",
       "date": "17 oktober 2026",
@@ -2798,7 +2820,7 @@
       "away": "Degerfors IF",
       "match_id": 6530023,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !�����~��M���?�(SY;Q�2Ϟ<�}�X} �M �3���-�-���ݢ���7SN;�D\\L��P�YBT_9'\nY�H�V�����{��?Գ�E+���T��KIH�RJ4TZϺ�TF�RP��� �",
       "date_iso": "2026-10-24T22:00:00.000Z",
       "datetime": "2026-10-24 22:00",
       "date": "24 oktober 2026",
@@ -2889,7 +2911,7 @@
       "away": "IK Sirius",
       "match_id": 6530030,
       "season": 2026,
-      "referee": "",
+      "referee": "��DT�Z !�����~��M���?�(S�:Y��|�?ɼQ�>YI��~�H�ݢݢ�)�-���{��I�� @�6�",
       "date_iso": "2026-10-27T23:00:00.000Z",
       "datetime": "2026-10-27 23:00",
       "date": "27 oktober 2026",
@@ -2941,7 +2963,7 @@
       "away": "Västerås SK",
       "match_id": 6530034,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !�����~��M���?�(S�:�L���'ٷ��\"/)� � �OM�[�[T3E�E��ߟ��B �\"U�HE�U���.��>8'_P�+��B�]`�3|�}��%�@�D��Y([*�ĢM;�Y�2M)����풢����26ߡ�F_��Ъܶ:��K M>�ѲNG�K߫�W���NM�/>�D���|C�[�\n[��(A-Z����0E��S**�����QWU@>�CJ�{C:�FTH�IK-�E�}�~����_�\rI�#��P��S���N���UW?�ܩ�HX�E�U�����RT��Z�&��˼%��F�P���$Oޱ{}�ǪQ˷�I�*U\\��Ť؁���JT���H��0�1Wޮ`�9[W�*MQ�ݕQ��L�NLI/�~��� FQ鼐M5:�G�����;��\rG�8��E",
       "date_iso": "2026-10-27T23:00:00.000Z",
       "datetime": "2026-10-27 23:00",
       "date": "27 oktober 2026",

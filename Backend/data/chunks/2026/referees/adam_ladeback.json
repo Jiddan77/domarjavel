@@ -67,7 +67,55 @@
       "date": "3 maj 2026",
       "round": 6,
       "score": "4–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "BK Häcken",
+      "away": "Malmö FF",
+      "match_id": 6529879,
+      "season": 2026,
+      "referee": "ADAM LADEBÄCK",
+      "date_iso": "2026-05-10T14:30:00.000Z",
+      "datetime": "2026-05-10 14:30",
+      "date": "10 maj 2026",
+      "round": 7,
+      "penalty": "0–0",
+      "yellow": "3–1",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Brommapojkarna",
+      "away": "Kalmar FF",
+      "match_id": 6529890,
+      "season": 2026,
+      "referee": "ADAM LADEBÄCK",
+      "date_iso": "2026-05-17T12:00:00.000Z",
+      "datetime": "2026-05-17 12:00",
+      "date": "17 maj 2026",
+      "round": 8,
+      "yellow": "4–0",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "AIK",
+      "match_id": 6529894,
+      "season": 2026,
+      "referee": "ADAM LADEBÄCK",
+      "date_iso": "2026-05-24T12:00:00.000Z",
+      "datetime": "2026-05-24 12:00",
+      "date": "24 maj 2026",
+      "round": 9,
+      "penalty": "0–0",
+      "yellow": "1–4",
+      "red": "0–0"
     }
   ],
-  "total": 4
+  "total": 7
 }

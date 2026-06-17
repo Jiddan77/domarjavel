@@ -52,8 +52,8 @@
       "score": "2–3"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Malmö FF",
       "away": "Västerås SK",
       "match_id": 6529896,
@@ -64,11 +64,12 @@
       "date": "24 maj 2026",
       "round": 9,
       "yellow": "3–1",
-      "red": "0–0"
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Malmö FF",
       "away": "Halmstads BK",
       "match_id": 6529906,
@@ -154,7 +155,7 @@
       "away": "Örgryte IS",
       "match_id": 6529994,
       "season": 2026,
-      "referee": "",
+      "referee": "ۋDT�Z !��������QS���\"���$�T�NN��'�V�9�X� R��\r �����+�)��������W�S�U����",
       "date_iso": "2026-09-12T22:00:00.000Z",
       "datetime": "2026-09-12 22:00",
       "date": "12 september 2026",
@@ -167,7 +168,7 @@
       "away": "Kalmar FF",
       "match_id": 6530011,
       "season": 2026,
-      "referee": "",
+      "referee": "ȊDT�Z !��������QS���\"���$�T�NN��'�V�9�X� R��\r ������+��������O�~CԔI�Q��]��}PN���W.$ۅE���$��W�� 4N�!�Y(�Z`;�E�֞�",
       "date_iso": "2026-10-10T22:00:00.000Z",
       "datetime": "2026-10-10 22:00",
       "date": "10 oktober 2026",

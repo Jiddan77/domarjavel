@@ -67,7 +67,55 @@
       "date": "27 april 2026",
       "round": 5,
       "score": "2–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IK Sirius",
+      "away": "Örgryte IS",
+      "match_id": 6529882,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "date_iso": "2026-05-11T17:00:00.000Z",
+      "datetime": "2026-05-11 17:00",
+      "date": "11 maj 2026",
+      "round": 7,
+      "penalty": "0–0",
+      "yellow": "0–1",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Djurgårdens IF",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529893,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "date_iso": "2026-05-22T17:00:00.000Z",
+      "datetime": "2026-05-22 17:00",
+      "date": "22 maj 2026",
+      "round": 9,
+      "penalty": "0–0",
+      "yellow": "0–2",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Örgryte IS",
+      "away": "IF Elfsborg",
+      "match_id": 6529903,
+      "season": 2026,
+      "referee": "ERIK MATTSSON",
+      "date_iso": "2026-05-29T17:00:00.000Z",
+      "datetime": "2026-05-29 17:00",
+      "date": "29 maj 2026",
+      "round": 10,
+      "penalty": "0–1",
+      "yellow": "1–2",
+      "red": "0–0"
     }
   ],
-  "total": 4
+  "total": 7
 }

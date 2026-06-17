@@ -35,8 +35,8 @@
       "score": "2–1"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "AIK",
       "away": "Djurgårdens IF",
       "match_id": 6529877,
@@ -47,7 +47,8 @@
       "date": "10 maj 2026",
       "round": 7,
       "yellow": "2–2",
-      "red": "0–0"
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
       "status": "UPCOMING",

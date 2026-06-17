@@ -52,8 +52,8 @@
       "score": "1–1"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Elfsborg",
       "away": "IF Brommapojkarna",
       "match_id": 6529880,
@@ -63,11 +63,13 @@
       "datetime": "2026-05-08 17:00",
       "date": "8 maj 2026",
       "round": 7,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "2–0",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Elfsborg",
       "away": "Mjällby AIF",
       "match_id": 6529946,
@@ -82,8 +84,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Elfsborg",
       "away": "BK Häcken",
       "match_id": 6529897,

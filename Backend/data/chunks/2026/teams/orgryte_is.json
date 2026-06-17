@@ -103,8 +103,8 @@
       "score": "4–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IK Sirius",
       "away": "Örgryte IS",
       "match_id": 6529882,
@@ -119,8 +119,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Örgryte IS",
       "away": "IFK Göteborg",
       "match_id": 6529888,
@@ -130,11 +130,13 @@
       "datetime": "2026-05-18 17:00",
       "date": "18 maj 2026",
       "round": 8,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "2–3",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Halmstads BK",
       "away": "Örgryte IS",
       "match_id": 6529900,
@@ -149,8 +151,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Örgryte IS",
       "away": "IF Elfsborg",
       "match_id": 6529903,
@@ -301,7 +303,7 @@
       "away": "Örgryte IS",
       "match_id": 6529994,
       "season": 2026,
-      "referee": "",
+      "referee": "ۋDT�Z !��������QS���\"���$�T�NN��'�V�9�X� R��\r �����+�)��������W�S�U����",
       "date_iso": "2026-09-12T22:00:00.000Z",
       "datetime": "2026-09-12 22:00",
       "date": "12 september 2026",

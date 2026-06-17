@@ -52,8 +52,8 @@
       "score": "0–1"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "BK Häcken",
       "away": "Malmö FF",
       "match_id": 6529879,
@@ -63,11 +63,13 @@
       "datetime": "2026-05-10 14:30",
       "date": "10 maj 2026",
       "round": 7,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "3–1",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Hammarby",
       "away": "Malmö FF",
       "match_id": 6529886,

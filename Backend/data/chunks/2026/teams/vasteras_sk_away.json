@@ -69,8 +69,8 @@
       "score": "3–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Malmö FF",
       "away": "Västerås SK",
       "match_id": 6529896,
@@ -81,7 +81,8 @@
       "date": "24 maj 2026",
       "round": 9,
       "yellow": "3–1",
-      "red": "0–0"
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -181,7 +182,7 @@
       "away": "Västerås SK",
       "match_id": 6530034,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !�����~��M���?�(S�:�L���'ٷ��\"/)� � �OM�[�[T3E�E��ߟ��B �\"U�HE�U���.��>8'_P�+��B�]`�3|�}��%�@�D��Y([*�ĢM;�Y�2M)����풢����26ߡ�F_��Ъܶ:��K M>�ѲNG�K߫�W���NM�/>�D���|C�[�\n[��(A-Z����0E��S**�����QWU@>�CJ�{C:�FTH�IK-�E�}�~����_�\rI�#��P��S���N���UW?�ܩ�HX�E�U�����RT��Z�&��˼%��F�P���$Oޱ{}�ǪQ˷�I�*U\\��Ť؁���JT���H��0�1Wޮ`�9[W�*MQ�ݕQ��L�NLI/�~��� FQ鼐M5:�G�����;��\rG�8��E",
       "date_iso": "2026-10-27T23:00:00.000Z",
       "datetime": "2026-10-27 23:00",
       "date": "27 oktober 2026",

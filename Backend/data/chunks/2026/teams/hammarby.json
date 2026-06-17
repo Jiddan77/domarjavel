@@ -103,8 +103,8 @@
       "score": "3–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IFK Göteborg",
       "away": "Hammarby",
       "match_id": 6529878,
@@ -119,8 +119,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Hammarby",
       "away": "Malmö FF",
       "match_id": 6529886,
@@ -135,8 +135,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "GAIS",
       "away": "Hammarby",
       "match_id": 6529944,
@@ -151,8 +151,8 @@
       "red": "0–1"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Hammarby",
       "away": "AIK",
       "match_id": 6529894,
@@ -162,11 +162,13 @@
       "datetime": "2026-05-24 12:00",
       "date": "24 maj 2026",
       "round": 9,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "1–4",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "BK Häcken",
       "away": "Hammarby",
       "match_id": 6529904,
@@ -176,7 +178,9 @@
       "datetime": "2026-05-31 12:00",
       "date": "31 maj 2026",
       "round": 10,
-      "penalty": "1–0"
+      "penalty": "1–0",
+      "yellow": "3–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -302,7 +306,7 @@
       "away": "IF Brommapojkarna",
       "match_id": 6529991,
       "season": 2026,
-      "referee": "",
+      "referee": "ӋDT�Z !�����~��M���?�(SY'Q�2��<�}�X} �\r �F�V�E�E5S�[4����(\t%���\"����V���`WR��?�TϚ��U�#��IP�D�7B�:����B$�D�9����A�A�C�E�Ǆ��A����<�MW;W�?&�TG��::_�^M���VKZS�\"�\n�+<��W��Á����\n�Т�\n�MS��P=���A���U�PP%� �}9��7�S�NE�&���\"JQF�{�Ο*��ې�8����{�PM���Ϟ��ϿZ���[�Q���٫G%:��OGKО�[VONTGKAQ[I��={ �G{��|��4�R�Ը^\\��ѪѨ�FG��FO�Q��\nFO��UE����]Ǜ�&����E�O� (.�W��FG�Q�6R�����L{ ����Ԫ�'N&��AF�O?�|�緷�ߎ^�R���R7*���\n濋�V�C����;�ښ��YZVDХRN\r�=��UI������(}���'쒳�-6S'�؞L�'����������D�-8��Ǖ\\ǂ�X3P�P�O>-U �����0VH�����N<���D�\t����C셯�`C�X9�N�I��Ļ���T�TAJ��\nZ���L����WA+1�P�沤B�I�F L�&�@��J7�{�E-LC}Q��{AW����X�X.R+ 4�������J�VB�",
       "date_iso": "2026-09-12T22:00:00.000Z",
       "datetime": "2026-09-12 22:00",
       "date": "12 september 2026",
@@ -367,7 +371,7 @@
       "away": "IK Sirius",
       "match_id": 6530030,
       "season": 2026,
-      "referee": "",
+      "referee": "��DT�Z !�����~��M���?�(S�:Y��|�?ɼQ�>YI��~�H�ݢݢ�)�-���{��I�� @�6�",
       "date_iso": "2026-10-27T23:00:00.000Z",
       "datetime": "2026-10-27 23:00",
       "date": "27 oktober 2026",

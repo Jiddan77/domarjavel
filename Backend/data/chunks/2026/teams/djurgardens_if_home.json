@@ -69,8 +69,8 @@
       "score": "6–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Djurgårdens IF",
       "away": "IK Sirius",
       "match_id": 6529885,
@@ -85,8 +85,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Djurgårdens IF",
       "away": "IF Brommapojkarna",
       "match_id": 6529893,
@@ -96,7 +96,9 @@
       "datetime": "2026-05-22 17:00",
       "date": "22 maj 2026",
       "round": 9,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "0–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",

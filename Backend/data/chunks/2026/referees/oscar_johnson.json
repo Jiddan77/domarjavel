@@ -67,7 +67,55 @@
       "date": "3 maj 2026",
       "round": 6,
       "score": "1–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Kalmar FF",
+      "away": "Halmstads BK",
+      "match_id": 6529884,
+      "season": 2026,
+      "referee": "OSCAR JOHNSON",
+      "date_iso": "2026-05-10T12:00:00.000Z",
+      "datetime": "2026-05-10 12:00",
+      "date": "10 maj 2026",
+      "round": 7,
+      "yellow": "2–1",
+      "red": "0–0",
+      "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "Malmö FF",
+      "match_id": 6529886,
+      "season": 2026,
+      "referee": "OSCAR JOHNSON",
+      "date_iso": "2026-05-17T12:00:00.000Z",
+      "datetime": "2026-05-17 12:00",
+      "date": "17 maj 2026",
+      "round": 8,
+      "penalty": "1–0",
+      "yellow": "0–2",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IFK Göteborg",
+      "away": "Mjällby AIF",
+      "match_id": 6529895,
+      "season": 2026,
+      "referee": "OSCAR JOHNSON",
+      "date_iso": "2026-05-25T17:00:00.000Z",
+      "datetime": "2026-05-25 17:00",
+      "date": "25 maj 2026",
+      "round": 9,
+      "penalty": "0–1",
+      "yellow": "6–3",
+      "red": "0–0"
     }
   ],
-  "total": 4
+  "total": 7
 }

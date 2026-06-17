@@ -67,7 +67,55 @@
       "date": "26 april 2026",
       "round": 5,
       "score": "1–2"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IFK Göteborg",
+      "away": "Hammarby",
+      "match_id": 6529878,
+      "season": 2026,
+      "referee": "VICTOR WOLF",
+      "date_iso": "2026-05-09T13:00:00.000Z",
+      "datetime": "2026-05-09 13:00",
+      "date": "9 maj 2026",
+      "round": 7,
+      "penalty": "0–0",
+      "yellow": "2–0",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Djurgårdens IF",
+      "away": "IK Sirius",
+      "match_id": 6529885,
+      "season": 2026,
+      "referee": "VICTOR WOLF",
+      "date_iso": "2026-05-18T17:00:00.000Z",
+      "datetime": "2026-05-18 17:00",
+      "date": "18 maj 2026",
+      "round": 8,
+      "penalty": "0–0",
+      "yellow": "1–4",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Malmö FF",
+      "away": "Halmstads BK",
+      "match_id": 6529906,
+      "season": 2026,
+      "referee": "VICTOR WOLF",
+      "date_iso": "2026-05-30T13:00:00.000Z",
+      "datetime": "2026-05-30 13:00",
+      "date": "30 maj 2026",
+      "round": 10,
+      "yellow": "1–0",
+      "red": "0–0",
+      "penalty": "0–0"
     }
   ],
-  "total": 4
+  "total": 7
 }

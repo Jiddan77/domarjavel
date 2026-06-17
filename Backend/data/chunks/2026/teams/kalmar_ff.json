@@ -103,8 +103,8 @@
       "score": "3–2"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Kalmar FF",
       "away": "Halmstads BK",
       "match_id": 6529884,
@@ -119,8 +119,8 @@
       "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Brommapojkarna",
       "away": "Kalmar FF",
       "match_id": 6529890,
@@ -135,8 +135,8 @@
       "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Kalmar FF",
       "away": "Degerfors IF",
       "match_id": 6529899,
@@ -151,8 +151,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "GAIS",
       "away": "Kalmar FF",
       "match_id": 6529902,
@@ -264,7 +264,7 @@
       "away": "Kalmar FF",
       "match_id": 6529972,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !��������QS���\"C���$�T�NNN���'�3��\"7)� � ��*�J�H_Q�[��H������U\nE��Mᖍ�TJ��;{���9�B*ĊB\nB�B�}��$���8�\"DM�\"���H�N�L���B8��BN�[EE����KP��1V�~��D�?*Z���[������N_A���#9T�S�Y���M|�- P��=T�N�25A����!M�U�PP%� �9��7�S�ND����\"JQ��4�3���6�!�(\"���N�W�;U�����LS��A��~��>�0{��D��Y�X��EܲZT�C8[��J�W\r��=�>�CԸ��Ѕ�Q�:�F���R���^�NU5:S�H4{�FL|Ĕ�+�=F���FU>ЕQ��L�NLI/����� AQ���M5:�G��������\rG�8��E\\�4�^��=I�A��D���ͧ}���H<�+�O��Q����W0���_΃��O��?��X�Q�^X����RN\r�=\t=뺬G6GΒ:L����7�]P���6J�0�J���������%��)���]H�����L�ɕ\\ǂ����X3P�*\\�AK�N.����I�����\n=�BF+�\\YE�ר�^��9�E\\�|:�X-�+UO�7�>I�`ڶ\\�A���Z-�V��������2ΖS�\r�LN�L���ރ-KA��Eݪ��=���Y ����\r�|�(�EA�삀[��W�����X�2�ߩT�6J��PKL/ ;:�OPȐS�)�A�FU/)I�`��NZ�M�D��I�ۚ��R�Ħ{���Ѿ�N�/Q�]@R+8�S�� >�G;B��`M+�T\"�]?T��]�MU�X{��AM`��V��H/6�L��&",
       "date_iso": "2026-08-22T22:00:00.000Z",
       "datetime": "2026-08-22 22:00",
       "date": "22 augusti 2026",
@@ -329,7 +329,7 @@
       "away": "Kalmar FF",
       "match_id": 6530011,
       "season": 2026,
-      "referee": "",
+      "referee": "ȊDT�Z !��������QS���\"���$�T�NN��'�V�9�X� R��\r ������+��������O�~CԔI�Q��]��}PN���W.$ۅE���$��W�� 4N�!�Y(�Z`;�E�֞�",
       "date_iso": "2026-10-10T22:00:00.000Z",
       "datetime": "2026-10-10 22:00",
       "date": "10 oktober 2026",

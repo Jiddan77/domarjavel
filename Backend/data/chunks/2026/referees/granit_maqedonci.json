@@ -67,7 +67,55 @@
       "date": "27 april 2026",
       "round": 5,
       "score": "0–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Elfsborg",
+      "away": "IF Brommapojkarna",
+      "match_id": 6529880,
+      "season": 2026,
+      "referee": "GRANIT MAQEDONCI",
+      "date_iso": "2026-05-08T17:00:00.000Z",
+      "datetime": "2026-05-08 17:00",
+      "date": "8 maj 2026",
+      "round": 7,
+      "penalty": "0–0",
+      "yellow": "2–0",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Halmstads BK",
+      "away": "Örgryte IS",
+      "match_id": 6529900,
+      "season": 2026,
+      "referee": "GRANIT MAQEDONCI",
+      "date_iso": "2026-05-23T13:00:00.000Z",
+      "datetime": "2026-05-23 13:00",
+      "date": "23 maj 2026",
+      "round": 9,
+      "penalty": "0–0",
+      "yellow": "2–3",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Västerås SK",
+      "away": "IFK Göteborg",
+      "match_id": 6529908,
+      "season": 2026,
+      "referee": "GRANIT MAQEDONCI",
+      "date_iso": "2026-05-31T12:00:00.000Z",
+      "datetime": "2026-05-31 12:00",
+      "date": "31 maj 2026",
+      "round": 10,
+      "yellow": "0–2",
+      "red": "0–0",
+      "penalty": "0–0"
     }
   ],
-  "total": 4
+  "total": 7
 }

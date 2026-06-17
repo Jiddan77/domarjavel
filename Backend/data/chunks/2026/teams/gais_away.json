@@ -52,8 +52,8 @@
       "score": "2–2"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Västerås SK",
       "away": "GAIS",
       "match_id": 6529883,
@@ -63,11 +63,13 @@
       "datetime": "2026-05-09 13:00",
       "date": "9 maj 2026",
       "round": 7,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "0–3",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IK Sirius",
       "away": "GAIS",
       "match_id": 6529898,

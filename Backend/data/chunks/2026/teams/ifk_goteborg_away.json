@@ -69,8 +69,8 @@
       "score": "6–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Örgryte IS",
       "away": "IFK Göteborg",
       "match_id": 6529888,
@@ -80,11 +80,13 @@
       "datetime": "2026-05-18 17:00",
       "date": "18 maj 2026",
       "round": 8,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "2–3",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Västerås SK",
       "away": "IFK Göteborg",
       "match_id": 6529908,

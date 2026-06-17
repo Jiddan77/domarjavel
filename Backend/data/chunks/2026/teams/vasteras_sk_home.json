@@ -35,8 +35,8 @@
       "score": "3–3"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Västerås SK",
       "away": "GAIS",
       "match_id": 6529883,
@@ -46,11 +46,13 @@
       "datetime": "2026-05-09 13:00",
       "date": "9 maj 2026",
       "round": 7,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "0–3",
+      "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Västerås SK",
       "away": "AIK",
       "match_id": 6529891,
@@ -65,8 +67,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Västerås SK",
       "away": "IFK Göteborg",
       "match_id": 6529908,
@@ -126,7 +128,7 @@
       "away": "Kalmar FF",
       "match_id": 6529972,
       "season": 2026,
-      "referee": "",
+      "referee": "�DT�Z !��������QS���\"C���$�T�NNN���'�3��\"7)� � ��*�J�H_Q�[��H������U\nE��Mᖍ�TJ��;{���9�B*ĊB\nB�B�}��$���8�\"DM�\"���H�N�L���B8��BN�[EE����KP��1V�~��D�?*Z���[������N_A���#9T�S�Y���M|�- P��=T�N�25A����!M�U�PP%� �9��7�S�ND����\"JQ��4�3���6�!�(\"���N�W�;U�����LS��A��~��>�0{��D��Y�X��EܲZT�C8[��J�W\r��=�>�CԸ��Ѕ�Q�:�F���R���^�NU5:S�H4{�FL|Ĕ�+�=F���FU>ЕQ��L�NLI/����� AQ���M5:�G��������\rG�8��E\\�4�^��=I�A��D���ͧ}���H<�+�O��Q����W0���_΃��O��?��X�Q�^X����RN\r�=\t=뺬G6GΒ:L����7�]P���6J�0�J���������%��)���]H�����L�ɕ\\ǂ����X3P�*\\�AK�N.����I�����\n=�BF+�\\YE�ר�^��9�E\\�|:�X-�+UO�7�>I�`ڶ\\�A���Z-�V��������2ΖS�\r�LN�L���ރ-KA��Eݪ��=���Y ����\r�|�(�EA�삀[��W�����X�2�ߩT�6J��PKL/ ;:�OPȐS�)�A�FU/)I�`��NZ�M�D��I�ۚ��R�Ħ{���Ѿ�N�/Q�]@R+8�S�� >�G;B��`M+�T\"�]?T��]�MU�X{��AM`��V��H/6�L��&",
       "date_iso": "2026-08-22T22:00:00.000Z",
       "datetime": "2026-08-22 22:00",
       "date": "22 augusti 2026",
@@ -165,7 +167,7 @@
       "away": "Mjällby AIF",
       "match_id": 6530019,
       "season": 2026,
-      "referee": "",
+      "referee": "��HM��>�����W��T0<�� A�#�2�U'/���'�7��\"/)� � �OM�[�[T3E�E��ߟ��N�ƋP&[���T�V��9��B^��L��B���4������_��D�A2G(�]�AO�6�F�4�&�I��N�E�M�1��K�����8�K�ІB��1\\]�S����|G�:�/}�&_U�\n�5����CM�?��7��_A%�E���L}�ZNEE���}\r�J��J��SL)ZOL� ݊M6I�E������Ϝ�U�+�!\rQD�7���ܫ��?�F�{�\r+�������׎JT�OKKО�[VONTGKAQ[I���=�[Z��|��4�R�Ը^\\��ѪѨ�FG��FO��R��\nFO��UE���]Ǜ�&�Ĕ����\r��+�T�3Y֨Y��S�D�P&��A�\\�IHC�UړB&�C ���I>�����OG�S���}���?^Z���<�_�V����>>���R����QT��[�V�B�Z]�#�3�:F���N�\t��",
       "date_iso": "2026-10-17T22:00:00.000Z",
       "datetime": "2026-10-17 22:00",
       "date": "17 oktober 2026",

@@ -67,7 +67,39 @@
       "date": "2 maj 2026",
       "round": 6,
       "score": "3–2"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Halmstads BK",
+      "away": "IF Elfsborg",
+      "match_id": 6529892,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "date_iso": "2026-05-16T13:00:00.000Z",
+      "datetime": "2026-05-16 13:00",
+      "date": "16 maj 2026",
+      "round": 8,
+      "penalty": "0–0",
+      "yellow": "0–1",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Malmö FF",
+      "away": "Västerås SK",
+      "match_id": 6529896,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "date_iso": "2026-05-24T14:30:00.000Z",
+      "datetime": "2026-05-24 14:30",
+      "date": "24 maj 2026",
+      "round": 9,
+      "yellow": "3–1",
+      "red": "0–0",
+      "penalty": "0–0"
     }
   ],
-  "total": 4
+  "total": 6
 }

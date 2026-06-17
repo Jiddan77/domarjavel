@@ -1,0 +1,21 @@
+{
+  "matches": [
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Kalmar FF",
+      "away": "Degerfors IF",
+      "match_id": 6529899,
+      "season": 2026,
+      "referee": "NICLAS KARLSSON",
+      "date_iso": "2026-05-23T13:00:00.000Z",
+      "datetime": "2026-05-23 13:00",
+      "date": "23 maj 2026",
+      "round": 9,
+      "penalty": "0–0",
+      "yellow": "1–2",
+      "red": "0–0"
+    }
+  ],
+  "total": 1
+}

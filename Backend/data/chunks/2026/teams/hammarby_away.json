@@ -35,8 +35,8 @@
       "score": "1–1"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IFK Göteborg",
       "away": "Hammarby",
       "match_id": 6529878,
@@ -51,8 +51,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "GAIS",
       "away": "Hammarby",
       "match_id": 6529944,
@@ -67,8 +67,8 @@
       "red": "0–1"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "BK Häcken",
       "away": "Hammarby",
       "match_id": 6529904,
@@ -78,7 +78,9 @@
       "datetime": "2026-05-31 12:00",
       "date": "31 maj 2026",
       "round": 10,
-      "penalty": "1–0"
+      "penalty": "1–0",
+      "yellow": "3–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
