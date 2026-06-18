@@ -135,10 +135,51 @@ PRODUCERA EXAKT DETTA JSON (ingen annan text, inga kommentarer):
 }}"""
 
 
+def already_generated_today() -> bool:
+    """Return True if editorial.json was generated today (UTC) — avoid redundant API calls."""
+    try:
+        with open(OUT_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        generated_at = data.get("generated_at", "")
+        if not generated_at:
+            return False
+        gen_date = datetime.fromisoformat(generated_at).date()
+        return gen_date == datetime.now(timezone.utc).date()
+    except Exception:
+        return False
+
+
+def call_gemini(prompt: str, api_key: str, max_retries: int = 3) -> str:
+    """Call Gemini API with exponential backoff on 429."""
+    import time
+    delay = 60
+    for attempt in range(1, max_retries + 1):
+        resp = requests.post(
+            GEMINI_URL,
+            params={"key": api_key},
+            json={"contents": [{"parts": [{"text": prompt}]}]},
+            timeout=30,
+        )
+        if resp.status_code == 429:
+            if attempt < max_retries:
+                print(f"⏳ 429 rate-limited — retrying in {delay}s (attempt {attempt}/{max_retries})", file=sys.stderr)
+                time.sleep(delay)
+                delay *= 2
+                continue
+            resp.raise_for_status()
+        resp.raise_for_status()
+        return resp.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+    raise RuntimeError("Exhausted retries")
+
+
 def main():
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         print("GEMINI_API_KEY not set — skipping editorial generation", file=sys.stderr)
+        sys.exit(0)
+
+    if already_generated_today():
+        print("⏭️  Editorial already generated today — skipping API call")
         sys.exit(0)
 
     print("📰 Generating editorial copy …")
@@ -150,14 +191,7 @@ def main():
     stats = compute_stats(matches)
     prompt = build_prompt(stats)
 
-    resp = requests.post(
-        GEMINI_URL,
-        params={"key": api_key},
-        json={"contents": [{"parts": [{"text": prompt}]}]},
-        timeout=30,
-    )
-    resp.raise_for_status()
-    text = resp.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+    text = call_gemini(prompt, api_key)
     m = re.search(r"\{[\s\S]*\}", text)
     if not m:
         print(f"Could not parse JSON from response:\n{text}", file=sys.stderr)
