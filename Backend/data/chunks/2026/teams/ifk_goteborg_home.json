@@ -77,7 +77,10 @@
       "date_iso": "2026-07-04T22:00:00.000Z",
       "datetime": "2026-07-04 22:00",
       "date": "4 juli 2026",
-      "round": 11
+      "round": 11,
+      "penalty": "0–0",
+      "yellow": "0–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",

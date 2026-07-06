@@ -24,7 +24,10 @@
       "date_iso": "2026-07-04T22:00:00.000Z",
       "datetime": "2026-07-04 22:00",
       "date": "4 juli 2026",
-      "round": 11
+      "round": 11,
+      "penalty": "0–0",
+      "yellow": "0–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -50,7 +53,10 @@
       "date_iso": "2026-07-04T22:00:00.000Z",
       "datetime": "2026-07-04 22:00",
       "date": "4 juli 2026",
-      "round": 11
+      "round": 11,
+      "penalty": "0–0",
+      "yellow": "1–0",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -79,22 +85,6 @@
       "round": 11,
       "penalty": "0–0",
       "yellow": "1–2",
-      "red": "0–0"
-    },
-    {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
-      "home": "IK Sirius",
-      "away": "Mjällby AIF",
-      "match_id": 6529914,
-      "season": 2026,
-      "referee": "֋DT�Z !�����~��M���?�(SY'Q�<��<�I������K\n60 �E[���L�N�����E¦H�",
-      "date_iso": "2026-07-04T22:00:00.000Z",
-      "datetime": "2026-07-04 22:00",
-      "date": "4 juli 2026",
-      "round": 11,
-      "penalty": "0–0",
-      "yellow": "0–1",
       "red": "0–0"
     },
     {
@@ -2077,5 +2067,5 @@
       "round": 30
     }
   ],
-  "total": 159
+  "total": 158
 }
