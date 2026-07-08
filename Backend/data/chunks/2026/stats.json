@@ -1,16 +1,16 @@
 {
-  "total_matches": 82,
-  "upcoming_matches": 158,
-  "total_yellow_cards": 300,
+  "total_matches": 83,
+  "upcoming_matches": 157,
+  "total_yellow_cards": 301,
   "total_red_cards": 6,
   "total_penalties": 13,
-  "avg_yellow_per_match": 3.66,
+  "avg_yellow_per_match": 3.63,
   "avg_red_per_match": 0.07,
   "avg_penalties_per_match": 0.16,
-  "unique_referees": 15,
+  "unique_referees": 16,
   "most_active_referee": [
     "KRISTOFFER KARLSSON",
     7
   ],
-  "last_updated": "2026-07-07 09:41:10"
+  "last_updated": "2026-07-08 08:27:11"
 }

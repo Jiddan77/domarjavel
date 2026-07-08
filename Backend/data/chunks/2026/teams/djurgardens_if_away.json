@@ -75,7 +75,9 @@
       "datetime": "2026-07-04 22:00",
       "date": "4 juli 2026",
       "round": 11,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "1–2",
+      "red": "0–1"
     },
     {
       "status": "UPCOMING",

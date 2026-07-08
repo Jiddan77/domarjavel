@@ -41,23 +41,9 @@
       "datetime": "2026-07-04 22:00",
       "date": "4 juli 2026",
       "round": 11,
-      "penalty": "0–0"
-    },
-    {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
-      "home": "IF Elfsborg",
-      "away": "Hammarby",
-      "match_id": 6529911,
-      "season": 2026,
-      "referee": "ǊDT�Z !�����~��M���?�(SY;Q�2��<�I������K\n60 �E[���L�N�����E��N�Ԩ�.R�*G�D����|Y*��V!�.����������'����#/�ĢMK�J�\n`U�AO*�Z�MQT)�",
-      "date_iso": "2026-07-04T22:00:00.000Z",
-      "datetime": "2026-07-04 22:00",
-      "date": "4 juli 2026",
-      "round": 11,
       "penalty": "0–0",
-      "yellow": "1–0",
-      "red": "0–0"
+      "yellow": "1–2",
+      "red": "0–1"
     },
     {
       "status": "UPCOMING",
@@ -2074,5 +2060,5 @@
       "round": 30
     }
   ],
-  "total": 158
+  "total": 157
 }
