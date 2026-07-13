@@ -133,7 +133,10 @@
       "date_iso": "2026-07-11T22:00:00.000Z",
       "datetime": "2026-07-11 22:00",
       "date": "11 juli 2026",
-      "round": 12
+      "round": 12,
+      "penalty": "0–0",
+      "yellow": "2–0",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -146,7 +149,10 @@
       "date_iso": "2026-07-11T22:00:00.000Z",
       "datetime": "2026-07-11 22:00",
       "date": "11 juli 2026",
-      "round": 12
+      "round": 12,
+      "penalty": "0–0",
+      "yellow": "3–0",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -176,7 +182,9 @@
       "datetime": "2026-07-11 22:00",
       "date": "11 juli 2026",
       "round": 12,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "4–0",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -189,7 +197,10 @@
       "date_iso": "2026-07-11T22:00:00.000Z",
       "datetime": "2026-07-11 22:00",
       "date": "11 juli 2026",
-      "round": 12
+      "round": 12,
+      "penalty": "0–0",
+      "yellow": "1–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -215,7 +226,10 @@
       "date_iso": "2026-07-11T22:00:00.000Z",
       "datetime": "2026-07-11 22:00",
       "date": "11 juli 2026",
-      "round": 12
+      "round": 12,
+      "penalty": "1–0",
+      "yellow": "2–6",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
