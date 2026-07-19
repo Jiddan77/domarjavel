@@ -23385,7 +23385,8 @@
       "date_iso": "2026-07-18T22:00:00.000Z",
       "datetime": "2026-07-18 22:00",
       "date": "18 juli 2026",
-      "round": 13
+      "round": 13,
+      "penalty": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -23401,8 +23402,8 @@
       "round": 13
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IFK Göteborg",
       "away": "IF Brommapojkarna",
       "match_id": 6529927,
