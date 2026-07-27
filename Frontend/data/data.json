@@ -23513,7 +23513,10 @@
       "date_iso": "2026-07-25T22:00:00.000Z",
       "datetime": "2026-07-25 22:00",
       "date": "25 juli 2026",
-      "round": 14
+      "round": 14,
+      "penalty": "0–1",
+      "yellow": "3–3",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -23539,7 +23542,10 @@
       "date_iso": "2026-07-25T22:00:00.000Z",
       "datetime": "2026-07-25 22:00",
       "date": "25 juli 2026",
-      "round": 14
+      "round": 14,
+      "penalty": "0–0",
+      "yellow": "4–1",
+      "red": "1–0"
     },
     {
       "status": "UPCOMING",
@@ -23552,7 +23558,10 @@
       "date_iso": "2026-07-25T22:00:00.000Z",
       "datetime": "2026-07-25 22:00",
       "date": "25 juli 2026",
-      "round": 14
+      "round": 14,
+      "penalty": "0–0",
+      "yellow": "1–1",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -23581,7 +23590,10 @@
       "date_iso": "2026-07-25T22:00:00.000Z",
       "datetime": "2026-07-25 22:00",
       "date": "25 juli 2026",
-      "round": 14
+      "round": 14,
+      "penalty": "0–1",
+      "yellow": "1–4",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
