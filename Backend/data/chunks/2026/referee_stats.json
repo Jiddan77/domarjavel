@@ -1,4 +1,13 @@
 {
+  "ADAM LADEBÄCK": {
+    "matches": 9,
+    "total_yellow": 28,
+    "total_red": 1,
+    "total_penalties": 1,
+    "avg_yellow": 3.11,
+    "avg_red": 0.11,
+    "avg_penalties": 0.11
+  },
   "KRISTOFFER KARLSSON": {
     "matches": 7,
     "total_yellow": 32,
@@ -14,15 +23,6 @@
     "total_red": 0,
     "total_penalties": 1,
     "avg_yellow": 4.43,
-    "avg_red": 0.0,
-    "avg_penalties": 0.14
-  },
-  "ADAM LADEBÄCK": {
-    "matches": 7,
-    "total_yellow": 25,
-    "total_red": 0,
-    "total_penalties": 1,
-    "avg_yellow": 3.57,
     "avg_red": 0.0,
     "avg_penalties": 0.14
   },
@@ -71,6 +71,15 @@
     "avg_red": 0.14,
     "avg_penalties": 0.29
   },
+  "RICHARD SUNDELL": {
+    "matches": 7,
+    "total_yellow": 18,
+    "total_red": 0,
+    "total_penalties": 1,
+    "avg_yellow": 2.57,
+    "avg_red": 0.0,
+    "avg_penalties": 0.14
+  },
   "ERIK MATTSSON": {
     "matches": 7,
     "total_yellow": 23,
@@ -79,15 +88,6 @@
     "avg_yellow": 3.29,
     "avg_red": 0.0,
     "avg_penalties": 0.43
-  },
-  "RICHARD SUNDELL": {
-    "matches": 6,
-    "total_yellow": 17,
-    "total_red": 0,
-    "total_penalties": 1,
-    "avg_yellow": 2.83,
-    "avg_red": 0.0,
-    "avg_penalties": 0.17
   },
   "TESS OLOFSSON": {
     "matches": 4,

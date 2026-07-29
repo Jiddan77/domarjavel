@@ -99,7 +99,23 @@
       "yellow": "3–1",
       "red": "0–0",
       "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Elfsborg",
+      "away": "Hammarby",
+      "match_id": 6529911,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "date_iso": "2026-07-04T22:00:00.000Z",
+      "datetime": "2026-07-04 22:00",
+      "date": "4 juli 2026",
+      "round": 11,
+      "penalty": "0–0",
+      "yellow": "1–0",
+      "red": "0–0"
     }
   ],
-  "total": 6
+  "total": 7
 }
