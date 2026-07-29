@@ -27,12 +27,18 @@ def save_json(path: Path, data: Any) -> None:
 
 def slugify(name: str) -> str:
     """Convert name to URL-safe slug."""
+    import hashlib
     import re
     name = name.lower().strip()
     # Handle Swedish characters
     name = name.replace('å', 'a').replace('ä', 'a').replace('ö', 'o')
     name = re.sub(r'[^a-z0-9]+', '_', name)
-    return name.strip('_')
+    slug = name.strip('_')
+    # Guard against oversized/garbled input blowing past OS filename limits
+    if len(slug) > 100:
+        digest = hashlib.sha1(slug.encode('utf-8')).hexdigest()[:8]
+        slug = f"{slug[:80]}_{digest}"
+    return slug
 
 def create_season_chunks(matches: List[Dict[str, Any]], season: int, base_dir: Path):
     """Create comprehensive chunks for a season."""

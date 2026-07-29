@@ -35,6 +35,12 @@ def req(url: str, params: Optional[Dict[str, Any]] = None) -> requests.Response:
     SESSION.headers["User-Agent"] = random.choice(UA)
     return SESSION.get(url, params=params, timeout=TIMEOUT)
 
+REFEREE_NAME_RE = re.compile(r"^[A-ZÅÄÖ][A-ZÅÄÖ\-\. ]{1,58}[A-ZÅÄÖ]$")
+
+def is_valid_referee_name(name: Optional[str]) -> bool:
+    """Reject undecodable/garbled text (e.g. from an unhandled Brotli response)."""
+    return bool(name) and bool(REFEREE_NAME_RE.match(name))
+
 def parse_relaxed_json(txt: str):
     s = (txt or "").strip().rstrip('%').strip()
     try:
@@ -160,12 +166,16 @@ def main():
             if r.status_code == 200 and "application/json" in (r.headers.get("Content-Type","").lower()):
                 doc = parse_relaxed_json(r.text)
                 if doc:
-                    ref = extract_main_referee_from_match_doc(doc)
-                    if ref: break
+                    candidate = extract_main_referee_from_match_doc(doc)
+                    if candidate and is_valid_referee_name(candidate):
+                        ref = candidate
+                        break
             time.sleep(0.6 * attempt)
 
         if not ref:
-            ref = extract_referee_from_html(f"https://allsvenskan.se/matcher/{season}/{mid}/")
+            candidate = extract_referee_from_html(f"https://allsvenskan.se/matcher/{season}/{mid}/")
+            if candidate and is_valid_referee_name(candidate):
+                ref = candidate
 
         if ref:
             m["referee"] = ref; changed += 1
