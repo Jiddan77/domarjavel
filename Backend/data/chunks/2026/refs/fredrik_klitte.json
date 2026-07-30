@@ -73,6 +73,36 @@
       "away": "IK Sirius",
       "penalty": "0–0",
       "datetime": "2026-05-30 13:00"
+    },
+    {
+      "match_id": 6529916,
+      "season": 2026,
+      "date": "4 juli 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "Halmstads BK",
+      "away": "Västerås SK",
+      "penalty": "0–0",
+      "datetime": "2026-07-04 22:00"
+    },
+    {
+      "match_id": 6529925,
+      "season": 2026,
+      "date": "18 juli 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "AIK",
+      "away": "GAIS",
+      "penalty": "0–0",
+      "datetime": "2026-07-18 22:00"
+    },
+    {
+      "match_id": 6529940,
+      "season": 2026,
+      "date": "25 juli 2026",
+      "referee": "FREDRIK KLITTE",
+      "home": "Kalmar FF",
+      "away": "Mjällby AIF",
+      "penalty": "0–0",
+      "datetime": "2026-07-25 22:00"
     }
   ]
 }

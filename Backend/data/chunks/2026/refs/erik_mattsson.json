@@ -73,6 +73,36 @@
       "away": "IF Elfsborg",
       "penalty": "0–1",
       "datetime": "2026-05-29 17:00"
+    },
+    {
+      "match_id": 6529913,
+      "season": 2026,
+      "date": "4 juli 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "Degerfors IF",
+      "away": "Malmö FF",
+      "penalty": "0–0",
+      "datetime": "2026-07-04 22:00"
+    },
+    {
+      "match_id": 6529932,
+      "season": 2026,
+      "date": "18 juli 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "Halmstads BK",
+      "away": "BK Häcken",
+      "penalty": "0–0",
+      "datetime": "2026-07-18 22:00"
+    },
+    {
+      "match_id": 6529939,
+      "season": 2026,
+      "date": "25 juli 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "Västerås SK",
+      "away": "Örgryte IS",
+      "penalty": "0–0",
+      "datetime": "2026-07-25 22:00"
     }
   ]
 }

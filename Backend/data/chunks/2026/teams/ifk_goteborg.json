@@ -167,8 +167,8 @@
       "penalty": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IFK Göteborg",
       "away": "AIK",
       "match_id": 6529909,
@@ -183,8 +183,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Malmö FF",
       "away": "IFK Göteborg",
       "match_id": 6529922,
@@ -237,7 +237,7 @@
       "away": "Degerfors IF",
       "match_id": 6529943,
       "season": 2026,
-      "referee": null,
+      "referee": "JOAKIM SARS",
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",

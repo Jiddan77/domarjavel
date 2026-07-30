@@ -115,7 +115,23 @@
       "yellow": "0–2",
       "red": "0–0",
       "penalty": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Malmö FF",
+      "away": "IFK Göteborg",
+      "match_id": 6529922,
+      "season": 2026,
+      "referee": "GRANIT MAQEDONCI",
+      "date_iso": "2026-07-11T22:00:00.000Z",
+      "datetime": "2026-07-11 22:00",
+      "date": "11 juli 2026",
+      "round": 12,
+      "penalty": "0–0",
+      "yellow": "1–2",
+      "red": "0–0"
     }
   ],
-  "total": 7
+  "total": 8
 }

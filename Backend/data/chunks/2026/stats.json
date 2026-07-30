@@ -1,16 +1,16 @@
 {
-  "total_matches": 84,
-  "upcoming_matches": 156,
-  "total_yellow_cards": 303,
-  "total_red_cards": 7,
+  "total_matches": 96,
+  "upcoming_matches": 144,
+  "total_yellow_cards": 334,
+  "total_red_cards": 9,
   "total_penalties": 13,
-  "avg_yellow_per_match": 3.61,
-  "avg_red_per_match": 0.08,
-  "avg_penalties_per_match": 0.15,
+  "avg_yellow_per_match": 3.48,
+  "avg_red_per_match": 0.09,
+  "avg_penalties_per_match": 0.14,
   "unique_referees": 14,
   "most_active_referee": [
     "ADAM LADEBÄCK",
-    9
+    11
   ],
-  "last_updated": "2026-07-29 08:40:23"
+  "last_updated": "2026-07-30 08:33:21"
 }

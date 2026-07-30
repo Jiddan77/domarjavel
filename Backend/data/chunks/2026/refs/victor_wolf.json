@@ -73,6 +73,26 @@
       "away": "Halmstads BK",
       "penalty": "0–0",
       "datetime": "2026-05-30 13:00"
+    },
+    {
+      "match_id": 6529912,
+      "season": 2026,
+      "date": "4 juli 2026",
+      "referee": "VICTOR WOLF",
+      "home": "IF Brommapojkarna",
+      "away": "GAIS",
+      "penalty": "0–0",
+      "datetime": "2026-07-04 22:00"
+    },
+    {
+      "match_id": 6529920,
+      "season": 2026,
+      "date": "11 juli 2026",
+      "referee": "VICTOR WOLF",
+      "home": "Örgryte IS",
+      "away": "BK Häcken",
+      "penalty": "0–0",
+      "datetime": "2026-07-11 22:00"
     }
   ]
 }

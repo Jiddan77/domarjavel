@@ -32,6 +32,26 @@
       "score": "1–1",
       "penalty": "0–1",
       "datetime": "2026-05-02 13:00"
+    },
+    {
+      "match_id": 6529930,
+      "season": 2026,
+      "date": "18 juli 2026",
+      "referee": "JOAKIM SARS",
+      "home": "IF Elfsborg",
+      "away": "IK Sirius",
+      "penalty": "0–0",
+      "datetime": "2026-07-18 22:00"
+    },
+    {
+      "match_id": 6529933,
+      "season": 2026,
+      "date": "25 juli 2026",
+      "referee": "JOAKIM SARS",
+      "home": "GAIS",
+      "away": "Halmstads BK",
+      "penalty": "0–1",
+      "datetime": "2026-07-25 22:00"
     }
   ]
 }

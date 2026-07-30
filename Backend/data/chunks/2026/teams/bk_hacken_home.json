@@ -84,8 +84,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "BK Häcken",
       "away": "Djurgårdens IF",
       "match_id": 6529910,
@@ -111,7 +111,9 @@
       "datetime": "2026-07-25 22:00",
       "date": "25 juli 2026",
       "round": 14,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "1–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -120,7 +122,7 @@
       "away": "Kalmar FF",
       "match_id": 6529945,
       "season": 2026,
-      "referee": null,
+      "referee": "MOHAMMED AL-HAKIM",
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",

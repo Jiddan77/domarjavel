@@ -73,6 +73,36 @@
       "away": "IF Brommapojkarna",
       "penalty": "0–0",
       "datetime": "2026-05-31 12:00"
+    },
+    {
+      "match_id": 6529915,
+      "season": 2026,
+      "date": "4 juli 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Kalmar FF",
+      "away": "Örgryte IS",
+      "penalty": "0–0",
+      "datetime": "2026-07-04 22:00"
+    },
+    {
+      "match_id": 6529921,
+      "season": 2026,
+      "date": "11 juli 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Mjällby AIF",
+      "away": "AIK",
+      "penalty": "0–0",
+      "datetime": "2026-07-11 22:00"
+    },
+    {
+      "match_id": 6529926,
+      "season": 2026,
+      "date": "18 juli 2026",
+      "referee": "MOHAMMED AL-HAKIM",
+      "home": "Hammarby",
+      "away": "Degerfors IF",
+      "penalty": "0–0",
+      "datetime": "2026-07-18 22:00"
     }
   ]
 }

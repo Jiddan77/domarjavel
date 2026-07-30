@@ -63,6 +63,36 @@
       "away": "Västerås SK",
       "penalty": "0–0",
       "datetime": "2026-05-24 14:30"
+    },
+    {
+      "match_id": 6529911,
+      "season": 2026,
+      "date": "4 juli 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "IF Elfsborg",
+      "away": "Hammarby",
+      "penalty": "0–0",
+      "datetime": "2026-07-04 22:00"
+    },
+    {
+      "match_id": 6529923,
+      "season": 2026,
+      "date": "11 juli 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "IF Brommapojkarna",
+      "away": "IK Sirius",
+      "penalty": "0–0",
+      "datetime": "2026-07-11 22:00"
+    },
+    {
+      "match_id": 6529929,
+      "season": 2026,
+      "date": "18 juli 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "Mjällby AIF",
+      "away": "Västerås SK",
+      "penalty": "0–0",
+      "datetime": "2026-07-18 22:00"
     }
   ]
 }

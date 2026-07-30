@@ -73,6 +73,46 @@
       "away": "AIK",
       "penalty": "0–0",
       "datetime": "2026-05-24 12:00"
+    },
+    {
+      "match_id": 6529914,
+      "season": 2026,
+      "date": "4 juli 2026",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IK Sirius",
+      "away": "Mjällby AIF",
+      "penalty": "0–0",
+      "datetime": "2026-07-04 22:00"
+    },
+    {
+      "match_id": 6529919,
+      "season": 2026,
+      "date": "11 juli 2026",
+      "referee": "ADAM LADEBÄCK",
+      "home": "GAIS",
+      "away": "IF Elfsborg",
+      "penalty": "0–0",
+      "datetime": "2026-07-11 22:00"
+    },
+    {
+      "match_id": 6529927,
+      "season": 2026,
+      "date": "18 juli 2026",
+      "referee": "ADAM LADEBÄCK",
+      "home": "IFK Göteborg",
+      "away": "IF Brommapojkarna",
+      "penalty": "0–0",
+      "datetime": "2026-07-18 22:00"
+    },
+    {
+      "match_id": 6529937,
+      "season": 2026,
+      "date": "25 juli 2026",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Degerfors IF",
+      "away": "Djurgårdens IF",
+      "penalty": "0–0",
+      "datetime": "2026-07-25 22:00"
     }
   ]
 }

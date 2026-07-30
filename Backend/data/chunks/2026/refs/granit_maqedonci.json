@@ -73,6 +73,36 @@
       "away": "IFK Göteborg",
       "penalty": "0–0",
       "datetime": "2026-05-31 12:00"
+    },
+    {
+      "match_id": 6529922,
+      "season": 2026,
+      "date": "11 juli 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Malmö FF",
+      "away": "IFK Göteborg",
+      "penalty": "0–0",
+      "datetime": "2026-07-11 22:00"
+    },
+    {
+      "match_id": 6529928,
+      "season": 2026,
+      "date": "18 juli 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Örgryte IS",
+      "away": "Djurgårdens IF",
+      "penalty": "0–0",
+      "datetime": "2026-07-18 22:00"
+    },
+    {
+      "match_id": 6529934,
+      "season": 2026,
+      "date": "25 juli 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "BK Häcken",
+      "away": "AIK",
+      "penalty": "0–0",
+      "datetime": "2026-07-25 22:00"
     }
   ]
 }

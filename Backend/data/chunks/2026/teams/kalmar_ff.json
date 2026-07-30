@@ -167,8 +167,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Kalmar FF",
       "away": "Örgryte IS",
       "match_id": 6529915,
@@ -237,7 +237,7 @@
       "away": "Kalmar FF",
       "match_id": 6529945,
       "season": 2026,
-      "referee": null,
+      "referee": "MOHAMMED AL-HAKIM",
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",

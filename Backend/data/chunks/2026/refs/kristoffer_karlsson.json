@@ -73,6 +73,36 @@
       "away": "GAIS",
       "penalty": "0–0",
       "datetime": "2026-05-24 12:00"
+    },
+    {
+      "match_id": 6529909,
+      "season": 2026,
+      "date": "4 juli 2026",
+      "referee": "KRISTOFFER KARLSSON",
+      "home": "IFK Göteborg",
+      "away": "AIK",
+      "penalty": "0–0",
+      "datetime": "2026-07-04 22:00"
+    },
+    {
+      "match_id": 6529918,
+      "season": 2026,
+      "date": "11 juli 2026",
+      "referee": "KRISTOFFER KARLSSON",
+      "home": "Hammarby",
+      "away": "Kalmar FF",
+      "penalty": "0–0",
+      "datetime": "2026-07-11 22:00"
+    },
+    {
+      "match_id": 6529935,
+      "season": 2026,
+      "date": "25 juli 2026",
+      "referee": "KRISTOFFER KARLSSON",
+      "home": "Malmö FF",
+      "away": "IF Elfsborg",
+      "penalty": "0–0",
+      "datetime": "2026-07-25 22:00"
     }
   ]
 }

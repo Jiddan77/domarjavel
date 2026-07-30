@@ -1,75 +1,84 @@
 {
   "ADAM LADEBÄCK": {
-    "matches": 9,
-    "total_yellow": 28,
+    "matches": 11,
+    "total_yellow": 33,
     "total_red": 1,
     "total_penalties": 1,
-    "avg_yellow": 3.11,
-    "avg_red": 0.11,
-    "avg_penalties": 0.11
-  },
-  "KRISTOFFER KARLSSON": {
-    "matches": 7,
-    "total_yellow": 32,
-    "total_red": 2,
-    "total_penalties": 0,
-    "avg_yellow": 4.57,
-    "avg_red": 0.29,
-    "avg_penalties": 0.0
-  },
-  "FREDRIK KLITTE": {
-    "matches": 7,
-    "total_yellow": 31,
-    "total_red": 0,
-    "total_penalties": 1,
-    "avg_yellow": 4.43,
-    "avg_red": 0.0,
-    "avg_penalties": 0.14
-  },
-  "GRANIT MAQEDONCI": {
-    "matches": 7,
-    "total_yellow": 22,
-    "total_red": 1,
-    "total_penalties": 1,
-    "avg_yellow": 3.14,
-    "avg_red": 0.14,
-    "avg_penalties": 0.14
-  },
-  "OSCAR JOHNSON": {
-    "matches": 7,
-    "total_yellow": 22,
-    "total_red": 0,
-    "total_penalties": 2,
-    "avg_yellow": 3.14,
-    "avg_red": 0.0,
-    "avg_penalties": 0.29
+    "avg_yellow": 3.0,
+    "avg_red": 0.09,
+    "avg_penalties": 0.09
   },
   "VICTOR WOLF": {
-    "matches": 7,
-    "total_yellow": 24,
+    "matches": 9,
+    "total_yellow": 30,
     "total_red": 0,
     "total_penalties": 0,
-    "avg_yellow": 3.43,
+    "avg_yellow": 3.33,
     "avg_red": 0.0,
     "avg_penalties": 0.0
   },
   "MOHAMMED AL-HAKIM": {
-    "matches": 7,
-    "total_yellow": 18,
+    "matches": 9,
+    "total_yellow": 23,
     "total_red": 1,
     "total_penalties": 0,
-    "avg_yellow": 2.57,
-    "avg_red": 0.14,
+    "avg_yellow": 2.56,
+    "avg_red": 0.11,
     "avg_penalties": 0.0
   },
-  "ADI AGANOVIC": {
-    "matches": 7,
-    "total_yellow": 35,
+  "KRISTOFFER KARLSSON": {
+    "matches": 8,
+    "total_yellow": 34,
+    "total_red": 2,
+    "total_penalties": 0,
+    "avg_yellow": 4.25,
+    "avg_red": 0.25,
+    "avg_penalties": 0.0
+  },
+  "FREDRIK KLITTE": {
+    "matches": 8,
+    "total_yellow": 34,
+    "total_red": 1,
+    "total_penalties": 1,
+    "avg_yellow": 4.25,
+    "avg_red": 0.12,
+    "avg_penalties": 0.12
+  },
+  "GRANIT MAQEDONCI": {
+    "matches": 8,
+    "total_yellow": 25,
+    "total_red": 1,
+    "total_penalties": 1,
+    "avg_yellow": 3.12,
+    "avg_red": 0.12,
+    "avg_penalties": 0.12
+  },
+  "OSCAR JOHNSON": {
+    "matches": 8,
+    "total_yellow": 25,
     "total_red": 1,
     "total_penalties": 2,
-    "avg_yellow": 5.0,
-    "avg_red": 0.14,
-    "avg_penalties": 0.29
+    "avg_yellow": 3.12,
+    "avg_red": 0.12,
+    "avg_penalties": 0.25
+  },
+  "ADI AGANOVIC": {
+    "matches": 8,
+    "total_yellow": 36,
+    "total_red": 1,
+    "total_penalties": 2,
+    "avg_yellow": 4.5,
+    "avg_red": 0.12,
+    "avg_penalties": 0.25
+  },
+  "ERIK MATTSSON": {
+    "matches": 8,
+    "total_yellow": 26,
+    "total_red": 0,
+    "total_penalties": 3,
+    "avg_yellow": 3.25,
+    "avg_red": 0.0,
+    "avg_penalties": 0.38
   },
   "RICHARD SUNDELL": {
     "matches": 7,
@@ -79,15 +88,6 @@
     "avg_yellow": 2.57,
     "avg_red": 0.0,
     "avg_penalties": 0.14
-  },
-  "ERIK MATTSSON": {
-    "matches": 7,
-    "total_yellow": 23,
-    "total_red": 0,
-    "total_penalties": 3,
-    "avg_yellow": 3.29,
-    "avg_red": 0.0,
-    "avg_penalties": 0.43
   },
   "TESS OLOFSSON": {
     "matches": 4,

@@ -84,8 +84,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IFK Göteborg",
       "away": "AIK",
       "match_id": 6529909,
@@ -100,8 +100,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Mjällby AIF",
       "away": "AIK",
       "match_id": 6529921,
@@ -127,7 +127,9 @@
       "datetime": "2026-07-25 22:00",
       "date": "25 juli 2026",
       "round": 14,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "1–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",

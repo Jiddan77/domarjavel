@@ -23119,8 +23119,8 @@
       "round": 10
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IFK Göteborg",
       "away": "AIK",
       "match_id": 6529909,
@@ -23135,8 +23135,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "BK Häcken",
       "away": "Djurgårdens IF",
       "match_id": 6529910,
@@ -23167,8 +23167,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Brommapojkarna",
       "away": "GAIS",
       "match_id": 6529912,
@@ -23183,8 +23183,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Degerfors IF",
       "away": "Malmö FF",
       "match_id": 6529913,
@@ -23215,8 +23215,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Kalmar FF",
       "away": "Örgryte IS",
       "match_id": 6529915,
@@ -23231,8 +23231,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Halmstads BK",
       "away": "Västerås SK",
       "match_id": 6529916,
@@ -23247,8 +23247,8 @@
       "red": "1–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Djurgårdens IF",
       "away": "Halmstads BK",
       "match_id": 6529917,
@@ -23279,8 +23279,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "GAIS",
       "away": "IF Elfsborg",
       "match_id": 6529919,
@@ -23295,8 +23295,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Örgryte IS",
       "away": "BK Häcken",
       "match_id": 6529920,
@@ -23311,8 +23311,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Mjällby AIF",
       "away": "AIK",
       "match_id": 6529921,
@@ -23327,8 +23327,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Malmö FF",
       "away": "IFK Göteborg",
       "match_id": 6529922,
@@ -23530,7 +23530,9 @@
       "datetime": "2026-07-25 22:00",
       "date": "25 juli 2026",
       "round": 14,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "1–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -23565,8 +23567,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Degerfors IF",
       "away": "Djurgårdens IF",
       "match_id": 6529937,
@@ -23635,7 +23637,7 @@
       "away": "Örgryte IS",
       "match_id": 6529941,
       "season": 2026,
-      "referee": null,
+      "referee": "RICHARD SUNDELL",
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",
@@ -23661,7 +23663,7 @@
       "away": "Degerfors IF",
       "match_id": 6529943,
       "season": 2026,
-      "referee": null,
+      "referee": "JOAKIM SARS",
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",
@@ -23674,7 +23676,7 @@
       "away": "Kalmar FF",
       "match_id": 6529945,
       "season": 2026,
-      "referee": null,
+      "referee": "MOHAMMED AL-HAKIM",
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",
@@ -23687,7 +23689,7 @@
       "away": "Malmö FF",
       "match_id": 6529947,
       "season": 2026,
-      "referee": null,
+      "referee": "OSCAR JOHNSON",
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",
