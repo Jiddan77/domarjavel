@@ -93,6 +93,15 @@
       "away": "Västerås SK",
       "penalty": "0–0",
       "datetime": "2026-07-18 22:00"
+    },
+    {
+      "match_id": 6529941,
+      "season": 2026,
+      "date": "1 augusti 2026",
+      "referee": "RICHARD SUNDELL",
+      "home": "AIK",
+      "away": "Örgryte IS",
+      "datetime": "2026-08-01 22:00"
     }
   ]
 }
