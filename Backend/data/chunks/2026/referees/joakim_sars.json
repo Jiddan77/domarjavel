@@ -50,7 +50,39 @@
       "date": "2 maj 2026",
       "round": 6,
       "score": "1–1"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Elfsborg",
+      "away": "IK Sirius",
+      "match_id": 6529930,
+      "season": 2026,
+      "referee": "JOAKIM SARS",
+      "date_iso": "2026-07-18T22:00:00.000Z",
+      "datetime": "2026-07-18 22:00",
+      "date": "18 juli 2026",
+      "round": 13,
+      "penalty": "0–0",
+      "yellow": "2–3",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "GAIS",
+      "away": "Halmstads BK",
+      "match_id": 6529933,
+      "season": 2026,
+      "referee": "JOAKIM SARS",
+      "date_iso": "2026-07-25T22:00:00.000Z",
+      "datetime": "2026-07-25 22:00",
+      "date": "25 juli 2026",
+      "round": 14,
+      "penalty": "0–1",
+      "yellow": "3–3",
+      "red": "0–0"
     }
   ],
-  "total": 3
+  "total": 5
 }

@@ -131,7 +131,39 @@
       "penalty": "0–0",
       "yellow": "0–1",
       "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Kalmar FF",
+      "away": "Malmö FF",
+      "match_id": 6529931,
+      "season": 2026,
+      "referee": "ADI AGANOVIC",
+      "date_iso": "2026-07-18T22:00:00.000Z",
+      "datetime": "2026-07-18 22:00",
+      "date": "18 juli 2026",
+      "round": 13,
+      "penalty": "0–0",
+      "yellow": "0–3",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "IF Brommapojkarna",
+      "away": "Hammarby",
+      "match_id": 6529936,
+      "season": 2026,
+      "referee": "ADI AGANOVIC",
+      "date_iso": "2026-07-25T22:00:00.000Z",
+      "datetime": "2026-07-25 22:00",
+      "date": "25 juli 2026",
+      "round": 14,
+      "penalty": "0–0",
+      "yellow": "1–1",
+      "red": "0–0"
     }
   ],
-  "total": 8
+  "total": 10
 }

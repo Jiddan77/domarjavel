@@ -131,7 +131,39 @@
       "penalty": "0–0",
       "yellow": "0–2",
       "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "Kalmar FF",
+      "match_id": 6529918,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "date_iso": "2026-07-11T22:00:00.000Z",
+      "datetime": "2026-07-11 22:00",
+      "date": "11 juli 2026",
+      "round": 12,
+      "penalty": "0–0",
+      "yellow": "2–0",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "Malmö FF",
+      "away": "IF Elfsborg",
+      "match_id": 6529935,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "date_iso": "2026-07-25T22:00:00.000Z",
+      "datetime": "2026-07-25 22:00",
+      "date": "25 juli 2026",
+      "round": 14,
+      "penalty": "0–0",
+      "yellow": "4–1",
+      "red": "1–0"
     }
   ],
-  "total": 8
+  "total": 10
 }
