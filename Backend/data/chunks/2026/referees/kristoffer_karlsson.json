@@ -163,7 +163,20 @@
       "penalty": "0–0",
       "yellow": "4–1",
       "red": "1–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED_RECENTLY",
+      "home": "Halmstads BK",
+      "away": "IK Sirius",
+      "match_id": 6529948,
+      "season": 2026,
+      "referee": "KRISTOFFER KARLSSON",
+      "date_iso": "2026-08-01T22:00:00.000Z",
+      "datetime": "2026-08-01 22:00",
+      "date": "1 augusti 2026",
+      "round": 15
     }
   ],
-  "total": 10
+  "total": 11
 }

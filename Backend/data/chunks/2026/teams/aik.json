@@ -231,8 +231,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "AIK",
       "away": "Örgryte IS",
       "match_id": 6529941,
@@ -241,7 +241,10 @@
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",
-      "round": 15
+      "round": 15,
+      "penalty": "0–0",
+      "yellow": "2–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",

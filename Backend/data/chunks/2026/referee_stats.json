@@ -1,4 +1,13 @@
 {
+  "KRISTOFFER KARLSSON": {
+    "matches": 11,
+    "total_yellow": 41,
+    "total_red": 3,
+    "total_penalties": 0,
+    "avg_yellow": 3.73,
+    "avg_red": 0.27,
+    "avg_penalties": 0.0
+  },
   "ADAM LADEBÄCK": {
     "matches": 11,
     "total_yellow": 33,
@@ -7,15 +16,6 @@
     "avg_yellow": 3.0,
     "avg_red": 0.09,
     "avg_penalties": 0.09
-  },
-  "KRISTOFFER KARLSSON": {
-    "matches": 10,
-    "total_yellow": 41,
-    "total_red": 3,
-    "total_penalties": 0,
-    "avg_yellow": 4.1,
-    "avg_red": 0.3,
-    "avg_penalties": 0.0
   },
   "FREDRIK KLITTE": {
     "matches": 10,
@@ -62,6 +62,15 @@
     "avg_red": 0.1,
     "avg_penalties": 0.2
   },
+  "RICHARD SUNDELL": {
+    "matches": 10,
+    "total_yellow": 29,
+    "total_red": 0,
+    "total_penalties": 1,
+    "avg_yellow": 2.9,
+    "avg_red": 0.0,
+    "avg_penalties": 0.1
+  },
   "ERIK MATTSSON": {
     "matches": 10,
     "total_yellow": 29,
@@ -79,15 +88,6 @@
     "avg_yellow": 3.33,
     "avg_red": 0.0,
     "avg_penalties": 0.0
-  },
-  "RICHARD SUNDELL": {
-    "matches": 9,
-    "total_yellow": 25,
-    "total_red": 0,
-    "total_penalties": 1,
-    "avg_yellow": 2.78,
-    "avg_red": 0.0,
-    "avg_penalties": 0.11
   },
   "JOAKIM SARS": {
     "matches": 5,

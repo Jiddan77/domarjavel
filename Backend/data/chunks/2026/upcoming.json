@@ -16,19 +16,6 @@
     {
       "status": "UPCOMING",
       "extendedStatus": "UPCOMING",
-      "home": "AIK",
-      "away": "Örgryte IS",
-      "match_id": 6529941,
-      "season": 2026,
-      "referee": "RICHARD SUNDELL",
-      "date_iso": "2026-08-01T22:00:00.000Z",
-      "datetime": "2026-08-01 22:00",
-      "date": "1 augusti 2026",
-      "round": 15
-    },
-    {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
       "home": "Djurgårdens IF",
       "away": "Västerås SK",
       "match_id": 6529942,
@@ -37,7 +24,10 @@
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",
-      "round": 15
+      "round": 15,
+      "penalty": "0–0",
+      "yellow": "0–3",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -82,20 +72,9 @@
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",
-      "round": 15
-    },
-    {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
-      "home": "Halmstads BK",
-      "away": "IK Sirius",
-      "match_id": 6529948,
-      "season": 2026,
-      "referee": "KRISTOFFER KARLSSON",
-      "date_iso": "2026-08-01T22:00:00.000Z",
-      "datetime": "2026-08-01 22:00",
-      "date": "1 augusti 2026",
-      "round": 15
+      "round": 15,
+      "yellow": "2–5",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -1658,5 +1637,5 @@
       "round": 30
     }
   ],
-  "total": 127
+  "total": 125
 }
