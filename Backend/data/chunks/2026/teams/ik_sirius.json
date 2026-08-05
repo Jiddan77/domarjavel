@@ -232,7 +232,7 @@
     },
     {
       "status": "FINISHED",
-      "extendedStatus": "FINISHED_RECENTLY",
+      "extendedStatus": "FINISHED",
       "home": "Halmstads BK",
       "away": "IK Sirius",
       "match_id": 6529948,
@@ -241,7 +241,10 @@
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",
-      "round": 15
+      "round": 15,
+      "penalty": "0–1",
+      "yellow": "1–0",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",

@@ -23647,8 +23647,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Djurgårdens IF",
       "away": "Västerås SK",
       "match_id": 6529942,
@@ -23663,8 +23663,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IFK Göteborg",
       "away": "Degerfors IF",
       "match_id": 6529943,
@@ -23679,8 +23679,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "BK Häcken",
       "away": "Kalmar FF",
       "match_id": 6529945,
@@ -23695,8 +23695,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Brommapojkarna",
       "away": "Malmö FF",
       "match_id": 6529947,
@@ -23707,11 +23707,12 @@
       "date": "1 augusti 2026",
       "round": 15,
       "yellow": "2–5",
-      "red": "0–0"
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
       "status": "FINISHED",
-      "extendedStatus": "FINISHED_RECENTLY",
+      "extendedStatus": "FINISHED",
       "home": "Halmstads BK",
       "away": "IK Sirius",
       "match_id": 6529948,
@@ -23720,7 +23721,10 @@
       "date_iso": "2026-08-01T22:00:00.000Z",
       "datetime": "2026-08-01 22:00",
       "date": "1 augusti 2026",
-      "round": 15
+      "round": 15,
+      "penalty": "0–1",
+      "yellow": "1–0",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -23755,7 +23759,7 @@
       "away": "AIK",
       "match_id": 6529951,
       "season": 2026,
-      "referee": null,
+      "referee": "GLENN NYBERG",
       "date_iso": "2026-08-08T22:00:00.000Z",
       "datetime": "2026-08-08 22:00",
       "date": "8 augusti 2026",
@@ -23768,7 +23772,7 @@
       "away": "IF Elfsborg",
       "match_id": 6529952,
       "season": 2026,
-      "referee": null,
+      "referee": "GRANIT MAQEDONCI",
       "date_iso": "2026-08-08T22:00:00.000Z",
       "datetime": "2026-08-08 22:00",
       "date": "8 augusti 2026",

@@ -163,7 +163,23 @@
       "penalty": "0–0",
       "yellow": "0–1",
       "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "BK Häcken",
+      "away": "Kalmar FF",
+      "match_id": 6529945,
+      "season": 2026,
+      "referee": "MOHAMMED AL-HAKIM",
+      "date_iso": "2026-08-01T22:00:00.000Z",
+      "datetime": "2026-08-01 22:00",
+      "date": "1 augusti 2026",
+      "round": 15,
+      "penalty": "0–0",
+      "yellow": "3–0",
+      "red": "0–0"
     }
   ],
-  "total": 10
+  "total": 11
 }

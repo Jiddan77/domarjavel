@@ -231,8 +231,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "IF Brommapojkarna",
       "away": "Malmö FF",
       "match_id": 6529947,
@@ -243,7 +243,8 @@
       "date": "1 augusti 2026",
       "round": 15,
       "yellow": "2–5",
-      "red": "0–0"
+      "red": "0–0",
+      "penalty": "0–0"
     },
     {
       "status": "UPCOMING",
