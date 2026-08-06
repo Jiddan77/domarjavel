@@ -42,6 +42,15 @@
       "away": "IFK Göteborg",
       "penalty": "0–0",
       "datetime": "2026-05-18 17:00"
+    },
+    {
+      "match_id": 6529951,
+      "season": 2026,
+      "date": "8 augusti 2026",
+      "referee": "GLENN NYBERG",
+      "home": "Örgryte IS",
+      "away": "AIK",
+      "datetime": "2026-08-08 22:00"
     }
   ]
 }
