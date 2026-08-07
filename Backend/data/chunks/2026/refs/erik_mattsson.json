@@ -103,6 +103,15 @@
       "away": "Örgryte IS",
       "penalty": "0–0",
       "datetime": "2026-07-25 22:00"
+    },
+    {
+      "match_id": 6529950,
+      "season": 2026,
+      "date": "8 augusti 2026",
+      "referee": "ERIK MATTSSON",
+      "home": "IFK Göteborg",
+      "away": "Kalmar FF",
+      "datetime": "2026-08-08 22:00"
     }
   ]
 }

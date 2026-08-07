@@ -113,6 +113,15 @@
       "away": "Djurgårdens IF",
       "penalty": "0–0",
       "datetime": "2026-07-25 22:00"
+    },
+    {
+      "match_id": 6529949,
+      "season": 2026,
+      "date": "8 augusti 2026",
+      "referee": "ADAM LADEBÄCK",
+      "home": "Hammarby",
+      "away": "BK Häcken",
+      "datetime": "2026-08-08 22:00"
     }
   ]
 }
