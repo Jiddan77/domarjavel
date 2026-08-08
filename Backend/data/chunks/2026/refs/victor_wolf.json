@@ -103,6 +103,15 @@
       "away": "Västerås SK",
       "penalty": "0–0",
       "datetime": "2026-08-01 22:00"
+    },
+    {
+      "match_id": 6529954,
+      "season": 2026,
+      "date": "8 augusti 2026",
+      "referee": "VICTOR WOLF",
+      "home": "IK Sirius",
+      "away": "IF Brommapojkarna",
+      "datetime": "2026-08-08 22:00"
     }
   ]
 }
