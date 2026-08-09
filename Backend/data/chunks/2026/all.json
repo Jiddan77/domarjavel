@@ -2002,7 +2002,10 @@
       "date_iso": "2026-08-08T22:00:00.000Z",
       "datetime": "2026-08-08 22:00",
       "date": "8 augusti 2026",
-      "round": 16
+      "round": 16,
+      "penalty": "0–0",
+      "yellow": "0–2",
+      "red": "1–0"
     },
     {
       "status": "UPCOMING",
@@ -2015,7 +2018,10 @@
       "date_iso": "2026-08-08T22:00:00.000Z",
       "datetime": "2026-08-08 22:00",
       "date": "8 augusti 2026",
-      "round": 16
+      "round": 16,
+      "penalty": "0–0",
+      "yellow": "1–0",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
