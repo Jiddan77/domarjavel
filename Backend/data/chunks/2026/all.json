@@ -1977,7 +1977,9 @@
       "datetime": "2026-08-08 22:00",
       "date": "8 augusti 2026",
       "round": 16,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "1–1",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -2054,7 +2056,9 @@
       "date_iso": "2026-08-08T22:00:00.000Z",
       "datetime": "2026-08-08 22:00",
       "date": "8 augusti 2026",
-      "round": 16
+      "round": 16,
+      "yellow": "1–3",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -2067,7 +2071,10 @@
       "date_iso": "2026-08-08T22:00:00.000Z",
       "datetime": "2026-08-08 22:00",
       "date": "8 augusti 2026",
-      "round": 16
+      "round": 16,
+      "penalty": "0–0",
+      "yellow": "1–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -2144,7 +2151,7 @@
       "away": "Västerås SK",
       "match_id": 6529961,
       "season": 2026,
-      "referee": null,
+      "referee": "OSCAR JOHNSON",
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",

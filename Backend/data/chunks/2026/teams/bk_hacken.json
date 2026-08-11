@@ -258,7 +258,9 @@
       "datetime": "2026-08-08 22:00",
       "date": "8 augusti 2026",
       "round": 16,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "1–1",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
