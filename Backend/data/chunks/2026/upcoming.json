@@ -80,22 +80,6 @@
     {
       "status": "UPCOMING",
       "extendedStatus": "UPCOMING",
-      "home": "Malmö FF",
-      "away": "Degerfors IF",
-      "match_id": 6529953,
-      "season": 2026,
-      "referee": "FREDRIK KLITTE",
-      "date_iso": "2026-08-08T22:00:00.000Z",
-      "datetime": "2026-08-08 22:00",
-      "date": "8 augusti 2026",
-      "round": 16,
-      "penalty": "0–0",
-      "yellow": "1–3",
-      "red": "0–0"
-    },
-    {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
       "home": "IK Sirius",
       "away": "IF Brommapojkarna",
       "match_id": 6529954,
@@ -174,7 +158,7 @@
       "away": "Halmstads BK",
       "match_id": 6529959,
       "season": 2026,
-      "referee": null,
+      "referee": "ADI AGANOVIC",
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
@@ -1598,5 +1582,5 @@
       "round": 30
     }
   ],
-  "total": 121
+  "total": 120
 }

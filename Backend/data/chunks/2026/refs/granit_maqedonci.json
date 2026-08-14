@@ -113,6 +113,15 @@
       "away": "IF Elfsborg",
       "penalty": "0–0",
       "datetime": "2026-08-08 22:00"
+    },
+    {
+      "match_id": 6529964,
+      "season": 2026,
+      "date": "15 augusti 2026",
+      "referee": "GRANIT MAQEDONCI",
+      "home": "Kalmar FF",
+      "away": "Hammarby",
+      "datetime": "2026-08-15 22:00"
     }
   ]
 }

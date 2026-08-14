@@ -2030,8 +2030,8 @@
       "red": "0–0"
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Malmö FF",
       "away": "Degerfors IF",
       "match_id": 6529953,
@@ -2126,7 +2126,7 @@
       "away": "Halmstads BK",
       "match_id": 6529959,
       "season": 2026,
-      "referee": null,
+      "referee": "ADI AGANOVIC",
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",

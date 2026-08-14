@@ -8,6 +8,15 @@
     "avg_red": 0.27,
     "avg_penalties": 0.09
   },
+  "FREDRIK KLITTE": {
+    "matches": 11,
+    "total_yellow": 45,
+    "total_red": 1,
+    "total_penalties": 1,
+    "avg_yellow": 4.09,
+    "avg_red": 0.09,
+    "avg_penalties": 0.09
+  },
   "ADAM LADEBÄCK": {
     "matches": 11,
     "total_yellow": 33,
@@ -34,15 +43,6 @@
     "avg_yellow": 2.45,
     "avg_red": 0.09,
     "avg_penalties": 0.0
-  },
-  "FREDRIK KLITTE": {
-    "matches": 10,
-    "total_yellow": 41,
-    "total_red": 1,
-    "total_penalties": 1,
-    "avg_yellow": 4.1,
-    "avg_red": 0.1,
-    "avg_penalties": 0.1
   },
   "GRANIT MAQEDONCI": {
     "matches": 10,
