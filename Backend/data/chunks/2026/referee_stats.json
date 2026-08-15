@@ -1,4 +1,13 @@
 {
+  "ADAM LADEBÄCK": {
+    "matches": 12,
+    "total_yellow": 35,
+    "total_red": 1,
+    "total_penalties": 1,
+    "avg_yellow": 2.92,
+    "avg_red": 0.08,
+    "avg_penalties": 0.08
+  },
   "KRISTOFFER KARLSSON": {
     "matches": 11,
     "total_yellow": 42,
@@ -14,15 +23,6 @@
     "total_red": 1,
     "total_penalties": 1,
     "avg_yellow": 4.09,
-    "avg_red": 0.09,
-    "avg_penalties": 0.09
-  },
-  "ADAM LADEBÄCK": {
-    "matches": 11,
-    "total_yellow": 33,
-    "total_red": 1,
-    "total_penalties": 1,
-    "avg_yellow": 3.0,
     "avg_red": 0.09,
     "avg_penalties": 0.09
   },

@@ -1955,6 +1955,22 @@
     {
       "status": "FINISHED",
       "extendedStatus": "FINISHED",
+      "home": "Hammarby",
+      "away": "BK Häcken",
+      "match_id": 6529949,
+      "season": 2026,
+      "referee": "ADAM LADEBÄCK",
+      "date_iso": "2026-08-08T22:00:00.000Z",
+      "datetime": "2026-08-08 22:00",
+      "date": "8 augusti 2026",
+      "round": 16,
+      "penalty": "0–0",
+      "yellow": "1–1",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Malmö FF",
       "away": "Degerfors IF",
       "match_id": 6529953,
@@ -1969,5 +1985,5 @@
       "red": "0–0"
     }
   ],
-  "total": 120
+  "total": 121
 }
