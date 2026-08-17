@@ -23865,7 +23865,10 @@
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
-      "round": 17
+      "round": 17,
+      "penalty": "0–0",
+      "yellow": "1–4",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -23949,7 +23952,10 @@
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
-      "round": 17
+      "round": 17,
+      "penalty": "0–0",
+      "yellow": "2–0",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -23962,7 +23968,8 @@
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
-      "round": 17
+      "round": 17,
+      "penalty": "0–0"
     },
     {
       "status": "UPCOMING",
