@@ -23867,7 +23867,7 @@
       "date": "15 augusti 2026",
       "round": 17,
       "penalty": "0–0",
-      "yellow": "1–4",
+      "yellow": "1–5",
       "red": "0–0"
     },
     {
@@ -23881,7 +23881,8 @@
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
-      "round": 17
+      "round": 17,
+      "penalty": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -23894,7 +23895,10 @@
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
-      "round": 17
+      "round": 17,
+      "penalty": "0–0",
+      "yellow": "4–1",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -23939,7 +23943,10 @@
       "date_iso": "2026-08-15T22:00:00.000Z",
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
-      "round": 17
+      "round": 17,
+      "penalty": "0–0",
+      "yellow": "0–3",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -24056,7 +24063,7 @@
       "away": "BK Häcken",
       "match_id": 6529971,
       "season": 2026,
-      "referee": null,
+      "referee": "OSCAR JOHNSON",
       "date_iso": "2026-08-22T22:00:00.000Z",
       "datetime": "2026-08-22 22:00",
       "date": "22 augusti 2026",
