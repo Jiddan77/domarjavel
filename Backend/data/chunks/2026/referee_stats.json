@@ -26,6 +26,15 @@
     "avg_red": 0.09,
     "avg_penalties": 0.09
   },
+  "GRANIT MAQEDONCI": {
+    "matches": 11,
+    "total_yellow": 33,
+    "total_red": 1,
+    "total_penalties": 1,
+    "avg_yellow": 3.0,
+    "avg_red": 0.09,
+    "avg_penalties": 0.09
+  },
   "OSCAR JOHNSON": {
     "matches": 11,
     "total_yellow": 45,
@@ -44,14 +53,14 @@
     "avg_red": 0.09,
     "avg_penalties": 0.0
   },
-  "GRANIT MAQEDONCI": {
-    "matches": 10,
-    "total_yellow": 32,
-    "total_red": 1,
+  "RICHARD SUNDELL": {
+    "matches": 11,
+    "total_yellow": 29,
+    "total_red": 0,
     "total_penalties": 1,
-    "avg_yellow": 3.2,
-    "avg_red": 0.1,
-    "avg_penalties": 0.1
+    "avg_yellow": 2.64,
+    "avg_red": 0.0,
+    "avg_penalties": 0.09
   },
   "VICTOR WOLF": {
     "matches": 10,
@@ -70,15 +79,6 @@
     "avg_yellow": 4.1,
     "avg_red": 0.1,
     "avg_penalties": 0.2
-  },
-  "RICHARD SUNDELL": {
-    "matches": 10,
-    "total_yellow": 29,
-    "total_red": 0,
-    "total_penalties": 1,
-    "avg_yellow": 2.9,
-    "avg_red": 0.0,
-    "avg_penalties": 0.1
   },
   "ERIK MATTSSON": {
     "matches": 10,

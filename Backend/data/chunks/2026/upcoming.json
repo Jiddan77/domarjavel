@@ -48,22 +48,6 @@
     {
       "status": "UPCOMING",
       "extendedStatus": "UPCOMING",
-      "home": "Mjällby AIF",
-      "away": "IF Elfsborg",
-      "match_id": 6529952,
-      "season": 2026,
-      "referee": "GRANIT MAQEDONCI",
-      "date_iso": "2026-08-08T22:00:00.000Z",
-      "datetime": "2026-08-08 22:00",
-      "date": "8 augusti 2026",
-      "round": 16,
-      "penalty": "0–0",
-      "yellow": "1–0",
-      "red": "0–0"
-    },
-    {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
       "home": "IK Sirius",
       "away": "IF Brommapojkarna",
       "match_id": 6529954,
@@ -124,20 +108,6 @@
       "penalty": "0–0",
       "yellow": "1–5",
       "red": "0–0"
-    },
-    {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
-      "home": "GAIS",
-      "away": "Malmö FF",
-      "match_id": 6529958,
-      "season": 2026,
-      "referee": "RICHARD SUNDELL",
-      "date_iso": "2026-08-15T22:00:00.000Z",
-      "datetime": "2026-08-15 22:00",
-      "date": "15 augusti 2026",
-      "round": 17,
-      "penalty": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -279,7 +249,7 @@
       "away": "Halmstads BK",
       "match_id": 6529968,
       "season": 2026,
-      "referee": null,
+      "referee": "EJ OFFENTLIGGJORD",
       "date_iso": "2026-08-22T22:00:00.000Z",
       "datetime": "2026-08-22 22:00",
       "date": "22 augusti 2026",
@@ -1586,5 +1556,5 @@
       "round": 30
     }
   ],
-  "total": 119
+  "total": 117
 }

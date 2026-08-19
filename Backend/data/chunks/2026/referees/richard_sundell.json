@@ -163,7 +163,21 @@
       "penalty": "0–0",
       "yellow": "2–2",
       "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
+      "home": "GAIS",
+      "away": "Malmö FF",
+      "match_id": 6529958,
+      "season": 2026,
+      "referee": "RICHARD SUNDELL",
+      "date_iso": "2026-08-15T22:00:00.000Z",
+      "datetime": "2026-08-15 22:00",
+      "date": "15 augusti 2026",
+      "round": 17,
+      "penalty": "0–0"
     }
   ],
-  "total": 10
+  "total": 11
 }

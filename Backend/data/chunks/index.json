@@ -136,6 +136,10 @@
       "slug": "bojan_pandzic"
     },
     {
+      "name": "EJ OFFENTLIGGJORD",
+      "slug": "ej_offentliggjord"
+    },
+    {
       "name": "ERIK MATTSSON",
       "slug": "erik_mattsson"
     },
@@ -208,6 +212,6 @@
       "slug": "victor_wolf"
     }
   ],
-  "last_updated": "2026-08-18 06:46:52",
+  "last_updated": "2026-08-19 06:47:38",
   "total_matches": 1680
 }

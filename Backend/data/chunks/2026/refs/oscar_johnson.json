@@ -123,6 +123,15 @@
       "away": "Västerås SK",
       "penalty": "0–0",
       "datetime": "2026-08-15 22:00"
+    },
+    {
+      "match_id": 6529971,
+      "season": 2026,
+      "date": "22 augusti 2026",
+      "referee": "OSCAR JOHNSON",
+      "home": "IK Sirius",
+      "away": "BK Häcken",
+      "datetime": "2026-08-22 22:00"
     }
   ]
 }
