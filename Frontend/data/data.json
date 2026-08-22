@@ -23882,7 +23882,9 @@
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
       "round": 17,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "2–3",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -24067,7 +24069,10 @@
       "date_iso": "2026-08-22T22:00:00.000Z",
       "datetime": "2026-08-22 22:00",
       "date": "22 augusti 2026",
-      "round": 18
+      "round": 18,
+      "penalty": "0–0",
+      "yellow": "2–1",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
