@@ -143,7 +143,9 @@
       "datetime": "2026-08-15 22:00",
       "date": "15 augusti 2026",
       "round": 17,
-      "penalty": "0–0"
+      "penalty": "0–0",
+      "yellow": "0–1",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
