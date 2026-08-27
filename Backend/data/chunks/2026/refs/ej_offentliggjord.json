@@ -9,6 +9,33 @@
       "away": "Halmstads BK",
       "penalty": "0–0",
       "datetime": "2026-08-22 22:00"
+    },
+    {
+      "match_id": 6529977,
+      "season": 2026,
+      "date": "29 augusti 2026",
+      "referee": "EJ OFFENTLIGGJORD",
+      "home": "BK Häcken",
+      "away": "Västerås SK",
+      "datetime": "2026-08-29 22:00"
+    },
+    {
+      "match_id": 6529978,
+      "season": 2026,
+      "date": "29 augusti 2026",
+      "referee": "EJ OFFENTLIGGJORD",
+      "home": "IF Elfsborg",
+      "away": "Degerfors IF",
+      "datetime": "2026-08-29 22:00"
+    },
+    {
+      "match_id": 6529980,
+      "season": 2026,
+      "date": "29 augusti 2026",
+      "referee": "EJ OFFENTLIGGJORD",
+      "home": "Halmstads BK",
+      "away": "Kalmar FF",
+      "datetime": "2026-08-29 22:00"
     }
   ]
 }
