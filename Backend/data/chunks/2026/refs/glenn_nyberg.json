@@ -62,6 +62,15 @@
       "away": "Kalmar FF",
       "penalty": "0–0",
       "datetime": "2026-08-22 22:00"
+    },
+    {
+      "match_id": 6529973,
+      "season": 2026,
+      "date": "29 augusti 2026",
+      "referee": "GLENN NYBERG",
+      "home": "AIK",
+      "away": "Hammarby",
+      "datetime": "2026-08-29 22:00"
     }
   ]
 }
