@@ -123,6 +123,15 @@
       "away": "IFK Göteborg",
       "penalty": "0–0",
       "datetime": "2026-08-15 22:00"
+    },
+    {
+      "match_id": 6529976,
+      "season": 2026,
+      "date": "29 augusti 2026",
+      "referee": "KRISTOFFER KARLSSON",
+      "home": "GAIS",
+      "away": "IF Brommapojkarna",
+      "datetime": "2026-08-29 22:00"
     }
   ]
 }

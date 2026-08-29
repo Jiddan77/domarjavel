@@ -53,6 +53,15 @@
     "avg_red": 0.09,
     "avg_penalties": 0.0
   },
+  "ADI AGANOVIC": {
+    "matches": 11,
+    "total_yellow": 46,
+    "total_red": 1,
+    "total_penalties": 2,
+    "avg_yellow": 4.18,
+    "avg_red": 0.09,
+    "avg_penalties": 0.18
+  },
   "RICHARD SUNDELL": {
     "matches": 11,
     "total_yellow": 34,
@@ -70,15 +79,6 @@
     "avg_yellow": 3.3,
     "avg_red": 0.0,
     "avg_penalties": 0.0
-  },
-  "ADI AGANOVIC": {
-    "matches": 10,
-    "total_yellow": 41,
-    "total_red": 1,
-    "total_penalties": 2,
-    "avg_yellow": 4.1,
-    "avg_red": 0.1,
-    "avg_penalties": 0.2
   },
   "ERIK MATTSSON": {
     "matches": 10,

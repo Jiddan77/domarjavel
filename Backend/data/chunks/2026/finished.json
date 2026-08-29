@@ -2019,6 +2019,22 @@
     {
       "status": "FINISHED",
       "extendedStatus": "FINISHED",
+      "home": "BK Häcken",
+      "away": "Halmstads BK",
+      "match_id": 6529959,
+      "season": 2026,
+      "referee": "ADI AGANOVIC",
+      "date_iso": "2026-08-15T22:00:00.000Z",
+      "datetime": "2026-08-15 22:00",
+      "date": "15 augusti 2026",
+      "round": 17,
+      "penalty": "0–0",
+      "yellow": "4–1",
+      "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED",
       "home": "Mjällby AIF",
       "away": "IK Sirius",
       "match_id": 6529960,
@@ -2033,5 +2049,5 @@
       "red": "0–0"
     }
   ],
-  "total": 124
+  "total": 125
 }

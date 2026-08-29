@@ -112,22 +112,6 @@
     {
       "status": "UPCOMING",
       "extendedStatus": "UPCOMING",
-      "home": "BK Häcken",
-      "away": "Halmstads BK",
-      "match_id": 6529959,
-      "season": 2026,
-      "referee": "ADI AGANOVIC",
-      "date_iso": "2026-08-15T22:00:00.000Z",
-      "datetime": "2026-08-15 22:00",
-      "date": "15 augusti 2026",
-      "round": 17,
-      "penalty": "0–0",
-      "yellow": "4–1",
-      "red": "0–0"
-    },
-    {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
       "home": "IF Elfsborg",
       "away": "Västerås SK",
       "match_id": 6529961,
@@ -1563,5 +1547,5 @@
       "round": 30
     }
   ],
-  "total": 116
+  "total": 115
 }
