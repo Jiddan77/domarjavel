@@ -2047,7 +2047,23 @@
       "penalty": "0–0",
       "yellow": "2–3",
       "red": "0–0"
+    },
+    {
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED_RECENTLY",
+      "home": "Halmstads BK",
+      "away": "Kalmar FF",
+      "match_id": 6529980,
+      "season": 2026,
+      "referee": "EJ OFFENTLIGGJORD",
+      "date_iso": "2026-08-29T22:00:00.000Z",
+      "datetime": "2026-08-29 22:00",
+      "date": "29 augusti 2026",
+      "round": 19,
+      "penalty": "0–0",
+      "yellow": "2–1",
+      "red": "0–0"
     }
   ],
-  "total": 125
+  "total": 126
 }

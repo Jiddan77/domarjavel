@@ -124,5 +124,14 @@
     "avg_yellow": 3.0,
     "avg_red": 0.0,
     "avg_penalties": 0.0
+  },
+  "EJ OFFENTLIGGJORD": {
+    "matches": 1,
+    "total_yellow": 3,
+    "total_red": 0,
+    "total_penalties": 0,
+    "avg_yellow": 3.0,
+    "avg_red": 0.0,
+    "avg_penalties": 0.0
   }
 }

@@ -361,7 +361,10 @@
       "date_iso": "2026-08-29T22:00:00.000Z",
       "datetime": "2026-08-29 22:00",
       "date": "29 augusti 2026",
-      "round": 19
+      "round": 19,
+      "penalty": "0–0",
+      "yellow": "2–1",
+      "red": "1–0"
     },
     {
       "status": "UPCOMING",
@@ -374,7 +377,9 @@
       "date_iso": "2026-08-29T22:00:00.000Z",
       "datetime": "2026-08-29 22:00",
       "date": "29 augusti 2026",
-      "round": 19
+      "round": 19,
+      "yellow": "0–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -384,19 +389,6 @@
       "match_id": 6529979,
       "season": 2026,
       "referee": "GRANIT MAQEDONCI",
-      "date_iso": "2026-08-29T22:00:00.000Z",
-      "datetime": "2026-08-29 22:00",
-      "date": "29 augusti 2026",
-      "round": 19
-    },
-    {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
-      "home": "Halmstads BK",
-      "away": "Kalmar FF",
-      "match_id": 6529980,
-      "season": 2026,
-      "referee": "EJ OFFENTLIGGJORD",
       "date_iso": "2026-08-29T22:00:00.000Z",
       "datetime": "2026-08-29 22:00",
       "date": "29 augusti 2026",
@@ -1547,5 +1539,5 @@
       "round": 30
     }
   ],
-  "total": 115
+  "total": 114
 }

@@ -2409,7 +2409,10 @@
       "date_iso": "2026-08-29T22:00:00.000Z",
       "datetime": "2026-08-29 22:00",
       "date": "29 augusti 2026",
-      "round": 19
+      "round": 19,
+      "penalty": "0–0",
+      "yellow": "2–1",
+      "red": "1–0"
     },
     {
       "status": "UPCOMING",
@@ -2422,7 +2425,9 @@
       "date_iso": "2026-08-29T22:00:00.000Z",
       "datetime": "2026-08-29 22:00",
       "date": "29 augusti 2026",
-      "round": 19
+      "round": 19,
+      "yellow": "0–2",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
@@ -2438,8 +2443,8 @@
       "round": 19
     },
     {
-      "status": "UPCOMING",
-      "extendedStatus": "UPCOMING",
+      "status": "FINISHED",
+      "extendedStatus": "FINISHED_RECENTLY",
       "home": "Halmstads BK",
       "away": "Kalmar FF",
       "match_id": 6529980,
@@ -2448,7 +2453,10 @@
       "date_iso": "2026-08-29T22:00:00.000Z",
       "datetime": "2026-08-29 22:00",
       "date": "29 augusti 2026",
-      "round": 19
+      "round": 19,
+      "penalty": "0–0",
+      "yellow": "2–1",
+      "red": "0–0"
     },
     {
       "status": "UPCOMING",
