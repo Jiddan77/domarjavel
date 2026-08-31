@@ -9,13 +9,13 @@
     "avg_penalties": 0.08
   },
   "KRISTOFFER KARLSSON": {
-    "matches": 11,
-    "total_yellow": 42,
+    "matches": 12,
+    "total_yellow": 44,
     "total_red": 3,
     "total_penalties": 1,
-    "avg_yellow": 3.82,
-    "avg_red": 0.27,
-    "avg_penalties": 0.09
+    "avg_yellow": 3.67,
+    "avg_red": 0.25,
+    "avg_penalties": 0.08
   },
   "FREDRIK KLITTE": {
     "matches": 11,
@@ -71,6 +71,15 @@
     "avg_red": 0.0,
     "avg_penalties": 0.09
   },
+  "ERIK MATTSSON": {
+    "matches": 11,
+    "total_yellow": 32,
+    "total_red": 0,
+    "total_penalties": 4,
+    "avg_yellow": 2.91,
+    "avg_red": 0.0,
+    "avg_penalties": 0.36
+  },
   "VICTOR WOLF": {
     "matches": 10,
     "total_yellow": 33,
@@ -79,15 +88,6 @@
     "avg_yellow": 3.3,
     "avg_red": 0.0,
     "avg_penalties": 0.0
-  },
-  "ERIK MATTSSON": {
-    "matches": 10,
-    "total_yellow": 29,
-    "total_red": 0,
-    "total_penalties": 3,
-    "avg_yellow": 2.9,
-    "avg_red": 0.0,
-    "avg_penalties": 0.3
   },
   "JOAKIM SARS": {
     "matches": 6,
@@ -116,16 +116,16 @@
     "avg_red": 0.0,
     "avg_penalties": 0.0
   },
-  "NICLAS KARLSSON": {
-    "matches": 1,
-    "total_yellow": 3,
+  "EJ OFFENTLIGGJORD": {
+    "matches": 2,
+    "total_yellow": 5,
     "total_red": 0,
     "total_penalties": 0,
-    "avg_yellow": 3.0,
+    "avg_yellow": 2.5,
     "avg_red": 0.0,
     "avg_penalties": 0.0
   },
-  "EJ OFFENTLIGGJORD": {
+  "NICLAS KARLSSON": {
     "matches": 1,
     "total_yellow": 3,
     "total_red": 0,
